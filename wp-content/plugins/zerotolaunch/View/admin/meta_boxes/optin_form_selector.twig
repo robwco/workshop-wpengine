@@ -1,0 +1,13 @@
+{{ metabox_nonce_field('ztl_meta_box_optin_form_selector')|raw }}
+<label>Optin Form
+    <select name="ztl-optin-form-id">
+        <option value="0">None</option>
+
+        {% for optin_form in optin_forms %}
+            <option value="{{ optin_form.id }}" {% if selected_id == optin_form.id %}selected="selected"{% endif %}>
+                {{ optin_form.name }}
+            </option>
+        {% endfor %}
+    </select>
+</label>
+<div style="clear:both"></div>

@@ -1,0 +1,138 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}    
+  </div>
+  <div class="content-wrap">
+    <h1>
+      Opt-in Forms
+      <a href="{{ current_page_url() }}&action=edit" class="add-new-h1">Add New</a>
+    </h1>
+
+    <div class="group">
+      <div class="right">
+        <small>Stats reflect the last 7 days</small>
+      </div>
+    </div>
+    <table class="optin-list">
+      <thead>
+        <tr>
+          <th class="column-main 60">Title</th>
+          <th class="center">Views</th>
+          <th class="center">Opt-ins</th>
+          <th class="center">Conversions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for optin_form in optin_forms %}
+            {# Get Values #}
+            {% set current_conversions = 0 %}
+            {% set previous_conversions = 0 %}
+            {% set current_optins = 0 %}
+            {% set previous_optins = 0 %}
+            {% set current_hits = 0 %}
+            {% set previous_hits = 0 %}
+
+            {% set current_conversion_rate = 0 %}
+            {% set previous_conversion_rate = 0 %}
+
+            {% set current_optin_rate = 0 %}
+            {% set previous_optin_rate = 0 %}
+
+            {% set view_comparison = 0 %}
+
+
+
+            {# Current Optins #}
+            {% for optins in optin_form_activity %}
+                {% if optin_form.id == optins.optin_form_id and optins.category == 'Conversion' %}
+                    {% set current_optins = current_optins + optins.hits %}
+                {% endif %}
+                 {% if optin_form.id == optins.optin_form_id and optins.category == 'View' %}
+                    {% set current_hits = current_hits + optins.hits %}
+                {% endif %}
+            {% endfor %}
+
+            {# Previous Optins #}
+            {% for prev_optins in prev_optin_form_activity %}
+                {% if optin_form.id == prev_optins.optin_form_id and prev_optins.category == 'Conversion' %}
+                    {% set previous_optins = previous_optins + prev_optins.hits %}
+                {% endif %}
+                 {% if optin_form.id == prev_optins.optin_form_id and prev_optins.category == 'View' %}
+                    {% set previous_hits = previous_hits + prev_optins.hits %}
+                {% endif %}
+            {% endfor %}
+
+            {# Current Conversion Rate #}
+            {% if current_optins == 0 or current_hits == 0 %}
+                {% set current_conversion_rate = 0 %}
+            {% else %}
+                {% set current_conversion_rate = (current_optins / current_hits * 100)|number_format(1, '.') %}
+            {% endif %}
+
+            {% if previous_optins == 0 or previous_hits == 0 %}
+                {% set previous_conversion_rate = 0 ~ '%' %}
+            {% else %}
+                {% set previous_conversion_rate = (previous_optins / previous_hits * 100)|number_format(1, '.') ~ '%' %}
+            {% endif %}
+
+            {# Current Optin Rate #}
+            {% if previous_optins == 0 or previous_hits == 0 %}
+                {% set previous_optin_rate = 0 ~ '%' %}
+            {% else %}
+                {% set previous_optin_rate = (current_optins / previous_optins * 100)|number_format(1 , '.') ~ '%' %}
+            {% endif %}
+
+            {# View Comparison #}
+            {% if current_hits == 0 or previous_hits == 0 %}
+                {% set view_comparison = 0 ~ '%' %}
+            {% else %}
+                {% set view_comparison = ( (previous_hits / current_hits) / previous_hits )|number_format(1 , '.') ~ '%' %}
+            {% endif %}
+        <tr>
+          <td class="column-main">
+            <h2><a href="{{ current_page_url() }}&action=edit&id={{ optin_form.id }}">{{ optin_form.name }}</a></h2>
+            <p>{{ optin_form.headline|length > 100 ? optin_form.headline|slice(0, 100) ~ '...' : optin_form.headline }}</p>
+            <div class="row-actions"><span class="edit"><a href="{{ current_page_url() }}&action=edit&id={{ optin_form.id }}">Edit</a> | </span><span class="trash">{% include "admin/optin_forms/_delete_form.twig" with {'optin_form': optin_form} %}</span></div>
+            <!-- <p><em>Used by:</em>  <a href="">Page 1</a>, <a href="">Page 2</a>, <a href="">Page 3</a></p> -->
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_hits }}</span>
+            <span class="percentage">{% if previous_hits > current_hits %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %} {{ view_comparison }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_optins }}</span>
+            <span class="percentage">{% if previous_optins > current_optins %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %}{{ previous_optin_rate }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_conversion_rate }}%</span>
+            <span class="percentage">{% if previous_conversion_rate > current_conversion_rate %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %} {{ previous_optin_rate }}</span>
+          </td>
+        </tr>
+
+        {% else %}
+            <tr>
+                <td class="no-records">
+                    {% if optin_form_count == 0 %}
+                        You don't have any Opt-In forms. <a href="{{ current_page_url() }}&action=edit">Create your first one now.</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+
+
+      </tbody>
+    </table>
+
+    <div class="group">
+      <div class="tablenav-pages">
+        <span class="pagination-links">
+          {{ pagination|raw }}
+        </span>
+      </div>
+    </div>
+
+   
+  </div>
+</div>

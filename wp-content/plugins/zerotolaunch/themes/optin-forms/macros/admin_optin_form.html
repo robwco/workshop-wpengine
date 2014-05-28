@@ -1,0 +1,73 @@
+{% macro hiddenSlug(editing, data) %}
+	<input type="hidden" name="ztl-plugin-slug" value="{{ data['ZTLPluginOptinForm']['slug'] }}"/>
+{% endmacro %}
+
+{% macro hiddenFields(source, landingPageID) %}
+	{% if source is defined %}
+	    <input id="source" type="hidden" name="type" value="{{source}}" />
+	{% else %}
+	    <input id="source" type="hidden" name="type" value="page-with-shortcode"/>
+	{% endif %}
+
+	{% if landingPageID is defined %}
+	    <input id="landingPageID" type="hidden" name="landingPageID" value="{{landingPageID}}" />
+	{% else %}
+	    <input id="landingPageID" type="hidden" name="landingPageID" value="page-with-shortcode"/>
+	{% endif %}
+{% endmacro %}
+
+{% macro image(editing, data) %}
+	{% if editing and data['ZTLPluginOptinForm']['display_image'] %}
+	    <img {% if editing %}id="ztl-optin-form-image" class="ztl-upload-media"{% endif %} src="{{ data['ZTLPluginOptinForm']['image_url']|placeholder_url }}" alt="{{ data['ZTLPluginOptinForm']['image_alt']|editor_default("Placeholder image") }}"/>
+	{% elseif (editing == false) %}
+		{% if (data['ZTLPluginOptinForm']['display_image']) %}
+			<img src="{{ data['ZTLPluginOptinForm']['image_url']|placeholder_url }}" alt="{{ data['ZTLPluginOptinForm']['image_alt']|editor_default("Placeholder image") }}"/>
+		{% endif %}			
+	{% endif %}
+{% endmacro %}	
+
+{% macro h1(editing, data) %}
+	<h1 {% if editing %}id="ztl-optin-form-headline" contenteditable="true"{% endif %}>{{ data['ZTLPluginOptinForm']['headline']|editor_default('Join my email list!')|raw }}</h1>
+{% endmacro %}
+
+{% macro submit(editing, data) %}	
+<input {% if editing %}id="ztl-optin-form-c2a-button-text"{% endif %} {% if editing %}disabled{% endif %} type="submit" name="submit" class="optin-submit" value="{{ data['ZTLPluginOptinForm']['c2a_button_text']|default('Sign me up!') }}"/>
+  <p style="width:100%;text-align:center;" class="additional-statements">We will never sell your information or spam you, ever.</p>
+{% endmacro %}
+
+{% macro email(editing, data) %}
+	<input {% if editing %}id="ztl-optin-form-email"{% endif %} type="input" name="email" value="" placeholder="{{ data['ZTLPluginOptinForm']['email_field_text']|editor_default('Your Email') }}"/>
+{% endmacro %}
+
+{% macro name(editing, data) %}
+    {% if editing and data['ZTLPluginOptinForm']['display_name_field'] %}
+        <input {% if editing %}id="ztl-optin-form-name"{% endif %} type="input" name="name" value="" placeholder="{{ data['ZTLPluginOptinForm']['name_field_text']|editor_default('Your Name') }}"/>
+	{% elseif (editing == false) %}   
+		{% if (data['ZTLPluginOptinForm']['display_name_field']) %}     
+			<input type="input" name="name" value="" placeholder="{{ data['ZTLPluginOptinForm']['name_field_text']|editor_default('Your Name') }}"/>	
+		{% endif %}
+    {% endif %}
+{% endmacro %}    
+
+{% macro body(editing, data) %}
+	<div {% if editing %}id="ztl-optin-form-body"{% endif %} class="ztl-optin-form" {% if editing %}contenteditable="true"{% endif %}>
+    {{ data['ZTLPluginOptinForm']['body']|editor_default('<p>Join now and learn everything there is to know about living a rich life, including:</p><ul><li>How to get out of debt</li><li>How to find your Dream Job</li><li>How to start a business</li></ul></p>')|raw }}
+    </div>
+{% endmacro %}
+
+{% macro script(optin_form) %}
+    <script type="text/javascript">
+        var slug = '{{ optin_form.slug }}';
+        var optinFormID = '{{ optin_form.id }}'
+        jQuery(document).ready(function($){
+            if ($('#source').val() == 'landing-page' || $('#source').val() == 'admin-popup-preview') {
+            	//do not log view
+            }
+            else {
+                if ($('.ztl-optin-form-wysiwyg-editor').length == 0) { 
+                    $.get("?logView="+slug+"&id="+optinFormID+"&type=page-with-shortcode");
+                }
+            }
+        });
+    </script>
+{% endmacro %}    

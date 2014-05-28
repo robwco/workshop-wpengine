@@ -1,0 +1,6 @@
+<form action="{{ current_page_url() }}&action=confirm_delete" method="post" data-name="{{ landing_page.name }}" class="ztl-confirm-delete">
+	{{ model_nonce_field(landing_page, 'delete')|raw }}
+
+	<input type="hidden" name="id" value="{{ landing_page.id }}" />
+	<input type="submit" name="submit" value="Delete" />
+</form>

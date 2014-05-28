@@ -1,0 +1,23 @@
+{% import 'macros/admin_optin_form.html' as AdminOptinFormMacro %}
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"/>
+<form id="{{ unique_id }}" class="ztl-optin-form clearfix {{ source }}" action="" method="POST">
+    {{ AdminOptinFormMacro.hiddenSlug(editing, data) }}
+
+    {{ AdminOptinFormMacro.image(editing, data) }}
+
+    <div class="ztl-optin-form-box">
+        {{ AdminOptinFormMacro.h1(editing, data) }}
+
+        {{ AdminOptinFormMacro.body(editing, data) }}
+
+        <form method="post">
+            {{ AdminOptinFormMacro.name(editing, data) }}
+            
+            {{ AdminOptinFormMacro.hiddenFields(source, landingPageID) }}
+
+            {{ AdminOptinFormMacro.email(editing, data) }}
+            {{ AdminOptinFormMacro.submit(editing, data) }}
+        </form>
+    </div>
+    {{ AdminOptinFormMacro.script(optin_form) }}
+</form>

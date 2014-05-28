@@ -1,0 +1,142 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}    
+  </div>
+  <div class="content-wrap">
+    <h1>
+      Landing Pages
+      <a href="{{ current_page_url() }}&action=edit" class="add-new-h1">Add New</a>
+    </h1>
+
+    <div class="group">
+      <div class="right">
+        <small>Stats reflect the last 7 days</small>
+      </div>
+    </div>
+    <table class="optin-list">
+      <thead>
+        <tr>
+          <th class="column-main 60">Title</th>
+          <th class="center">Views</th>
+          <th class="center">Optins</th>
+          <th class="center">Conversions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for landing_page in landing_pages %}
+            {# Get Values #}
+            {% set current_conversions = 0 %}
+            {% set previous_conversions = 0 %}
+            {% set current_optins = 0 %}
+            {% set previous_optins = 0 %}
+            {% set current_hits = 0 %}
+            {% set previous_hits = 0 %}
+
+            {% set current_conversion_rate = 0 %}
+            {% set previous_conversion_rate = 0 %}
+
+            {% set current_optin_rate = 0 %}
+            {% set previous_optin_rate = 0 %}
+
+            {% set view_comparison = 0 %}
+
+
+
+			{# Current Optins #}
+			{% for current_lps in landing_page_activity %}
+				{% if current_lps.landing_page_id == landing_page.id  and current_lps.category == 'Conversion' %}
+					{% set current_optins = current_optins + current_lps.hits %}
+
+				{% endif %}
+				{% if current_lps.landing_page_id == landing_page.id and current_lps.category == 'View' %}
+					{% set current_hits = current_hits + current_lps.hits %}
+				{% endif %}
+			{% endfor %}
+
+			{# Previous Optins #}
+			{% for prev_lps in prev_landing_page_activity %}
+				{% if landing_page.id == prev_lps.landing_page_id and prev_lps.category == 'Conversion' %}
+					{% set previous_optins = previous_optins + prev_lps.hits %}
+				{% endif %}
+				{% if landing_page.id == prev_lps.landing_page_id and prev_lps.category == 'View' %}
+					{% set previous_hits = previous_hits + prev_lps.hits %}
+				{% endif %}
+			{% endfor %}
+
+			{# Current Conversion Rate #}
+			{% if current_optins == 0 or current_hits == 0 %}
+				{% set current_conversion_rate = 0 %}
+			{% else %}
+				{% set current_conversion_rate = (current_optins / current_hits * 100)|number_format(1, '.') %}
+			{% endif %}
+
+			{% if previous_optins == 0 or previous_hits == 0 %}
+				{% set previous_conversion_rate = 0 %}
+			{% else %}
+				{% set previous_conversion_rate = (previous_optins / previous_hits * 100)|number_format(1, '.') ~ '%' %}
+			{% endif %}
+
+			{# Current Optin Rate #}
+			{% if previous_optins == 0 or previous_hits == 0 %}
+				{% set previous_optin_rate = 0 ~ '%' %}
+			{% else %}
+				{% set previous_optin_rate = (current_optins / previous_optins * 100)|number_format(1 , '.') ~ '%' %}
+			{% endif %}
+
+			{# View Comparison #}
+			{% if current_hits == 0 or previous_hits == 0 %}
+				{% set view_comparison = 0 ~ '%' %}
+			{% else %}
+				{% set view_comparison = ( (previous_hits / current_hits) / previous_hits)|number_format(1 , '.') ~ '%' %}
+			{% endif %}
+        <tr>
+          <td class="column-main">
+            <h2><a href="{{ current_page_url() }}&action=edit&id={{ landing_page.id }}">{{ landing_page.name }}</a></h2>
+            <p>{{ landing_page.header|striptags|length > 100 ? landing_page.header|striptags|slice(0, 100) ~ '...' : landing_page.header|striptags }}</p>
+            <div class="row-actions">
+                <span class="edit"><a href="/l/{{ landing_page.slug }}" target="lp_preview">Preview</a> | </span>
+                <span class="edit"><a href="{{ current_page_url() }}&action=edit&id={{ landing_page.id }}">Edit</a> | </span>
+                <span class="trash">{% include "admin/landing_pages/_delete_form.twig" with {'optin_form': optin_form} %}</span></div>
+            <!-- <p><em>Used by:</em>  <a href="">Page 1</a>, <a href="">Page 2</a>, <a href="">Page 3</a></p> -->
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_hits }}</span>
+            <span class="percentage">{% if previous_hits > current_hits %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %} {{ view_comparison }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_optins }}</span>
+            <span class="percentage">{% if previous_optins > current_optins %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %}{{ previous_optin_rate }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_conversion_rate }}%</span>
+            <span class="percentage">{% if previous_conversion_rate > current_conversion_rate %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %} {{ previous_optin_rate }}</span>
+          </td>
+        </tr>
+
+        {% else %}
+            <tr>
+                <td class="no-records">
+                    {% if optin_form_count == 0 %}
+                        You don't have any Landing Pagess. <a href="{{ current_page_url() }}&action=edit">Create your first one now.</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+
+
+      </tbody>
+    </table>
+
+    <div class="group">
+      <div class="tablenav-pages">
+        <span class="pagination-links">
+          {{ pagination|raw }}
+        </span>
+      </div>
+    </div>
+
+   
+  </div>
+</div>

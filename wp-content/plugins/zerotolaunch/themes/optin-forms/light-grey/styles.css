@@ -1,0 +1,104 @@
+/* Light-Grey Styles */
+
+#ztl-optin-form {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    background: #F2F2F2;
+    padding: 20px;
+    color: #333333;
+    box-sizing: border-box;
+    word-wrap: normal;
+    clear: both;
+}
+
+form.ztl-optin-form #ztl-optin-form-headline,
+#ztl-optin-form h1 {
+    font-size: 24px;
+    line-height: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+} 
+
+form.ztl-optin-form #ztl-optin-form-sub-headline,
+#ztl-optin-form h2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+#ztl-optin-form p {
+    color: inherit;
+    font-style: normal;    
+}
+
+#ztl-optin-form .input-controls {
+    margin:10px auto;
+}
+#ztl-optin-form .input-controls .input-control {
+    display: inline-block;
+    width: 49%;
+}
+
+#ztl-optin-form .input-control-button,
+#ztl-optin-form .input-control-button input[type=submit] {
+    width: 100%
+}
+
+#ztl-optin-form .input-control-button {
+    margin:10px 0px 0px 0px;
+}
+
+#ztl-optin-form .input-control-button input[type=submit] {
+    font-size: 24px;
+}
+
+#ztl-optin-form #form-contents {
+    text-align: center;
+}
+
+#ztl-optin-form input[type="input"],
+#ztl-optin-form input[type="text"] {
+    -moz-appearance: none;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1) inset;
+    font-size: 16px;
+    margin-bottom: 0.625em;
+    padding: 2% 12% 2% 2%;
+    width: 100%;
+    color: #757A7D;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+}
+
+#ztl-optin-form input[type="submit"] {
+    font-family: inherit;
+    background: none repeat scroll 0 0 #FFAD00;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 #ae7500;
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.75em;
+    width: 100%;
+}
+
+#ztl-optin-form img {
+    width: 40%;
+}
+
+#ztl-optin-form.widget img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#ztl-optin-form .ztl-optin-form-box  {
+    float: right;
+    width: 50%;
+}
+
+#ztl-optin-form.widget .ztl-optin-form-box  {
+    width: 100%;
+}

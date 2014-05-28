@@ -1,0 +1,51 @@
+   <div id="ztl-plugin" class="main-panel">
+      <div class="header group">
+        <div class="logo">
+          <img src="../wp-content/plugins/zerotolaunch/assets/images/ztl-logo.png" alt="">
+        </div>
+      </div>
+      <div class="content-wrap">
+        <div class="authenticate center">
+          <h1>Student Authentication</h1>
+          <p>Activate your Zero To Launch Tools.</p>
+
+          {% if message is defined and message.type == 'success' %}
+          	{% else %}	        	
+	        <h3 style="color: #222">Please Activate Plug-in</h3>
+	      {% endif %}
+
+	      {% if message is defined %}
+	      	{% if message.type == 'success' %}
+	        	<h3 style="color:#090">{{message.text}}
+	            	<a href="javascript:void(0)" onclick="window.location = window.location.href;"><br/><small>Continue</small></a>
+	           	</h3>
+	        {% else %}
+				<h3 style="color:#900">{{message.text}}</h3>
+	        {% endif %}
+	        {% else %}
+	            <p>We couldn't verify your plugin. Please log in with your <br/>IWTStudents email and password to activate ZTL<p>
+	        {% endif %}
+	                	
+	        {% if message is defined and message.type == 'success' %}
+	        {% else %}
+
+	          <form action="" method="POST" class="group">
+	          	<input type="hidden" name="loginToIWTSFrom" value="dashboard" />
+
+	            <div class="one-third">
+	              <input type="text" name="email" placeholder="Email" />
+	              <p class="small input-help">Email used for your ZTL Course</p>
+	            </div>
+	            <div class="one-third">
+	              <input type="password" value="" autocomplete="off" name="password" placeholder="Password" />
+	              <p class="small input-help">Your ZTL Course Password</p>
+	            </div>
+	            <div class="one-third last">
+	              <input type="submit" value="Activate My Tools">
+	            </div>
+	          </form>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>

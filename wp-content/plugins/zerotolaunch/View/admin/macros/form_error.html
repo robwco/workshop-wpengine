@@ -1,0 +1,7 @@
+{% macro get_class_if_input_has_error(errors, field) %}
+	{% for error in errors %}
+		{% if error.attribute_var == field %}
+			form-invalid
+		{% endif %}
+	{% endfor %}
+{% endmacro %}

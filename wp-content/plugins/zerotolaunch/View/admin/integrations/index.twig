@@ -1,0 +1,236 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+<style type="text/css">
+    #gumroad-integration table {
+        width: 80%;
+    }
+    #gumroad-integration h2 {
+        margin: 36px 0;
+        padding: 0;        
+    }
+    #gumroad-integration a#add-new-sku {
+        margin: 0px 0px 8px 0px;
+        display: inline-block;
+    }
+    #gumroad-integration table tr td p {
+        padding: 0px;
+        margin: 0px;
+    }
+    .integration-tabs img.export-img {    
+        margin-top: 4px;
+    }
+    
+    .integration-tabs li:first {
+        margin-left: 0px;
+    }
+</style>
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+    <div class="content-wrap">
+        <h1>Integrations</h1>
+
+        {% if (message | length) > 0 %}
+            <p class="alert"><strong>{{message}}</strong></p>    
+        {% endif %}
+
+        {% if (errors | length) > 0 %}
+            <ul class="errors">
+                {% set error_declared = false %}
+                {% for error in errors %}
+                    {% set error_declared = true %}
+                    <li class="error">{{ error }}</li>
+                {% endfor %}    
+            </ul>   
+        {% endif %} 
+
+        {% if (success_message | length) > 0 %}
+            <div id="message" class="updated">
+                
+                    <p>{{ success_message }}</p>
+               
+            </div>   
+        {% endif %} 
+     
+      <div class="integration-service">
+            <div class="group">
+                <ul class="tabs integration-tabs">
+                    <li>
+                        <div class="checkmark">
+                            <i class="ss-icon">&#x2713;</i>
+                        </div>
+                        <a href="#mailchimp-integration"><img src="{{ mailchimp_logo }}" width="300" alt="MailChimp"/></a>
+                    </li>
+                    <li>
+                        <div class="checkmark">
+                            <i class="ss-icon">&#x2713;</i>
+                        </div>
+                    <a href="#gumroad-integration"><img src="{{ gumroad_logo }}" width="300" alt="Gumroad" class="gumroad-img"/></a></li>
+                    <li>
+                        <div class="checkmark">
+                            <i class="ss-icon">&#x2713;</i>
+                        </div>
+                    <a href="#export"><img src="{{ export_img }}" width="300" alt="Export" class="export-img"/></a></li>                    
+                </ul>
+                <div class="content">
+                    <div id="export">
+                        <p>Click the button below to download a copy of all of your leads in csv file format.</p>
+                        <form id="ZtlIntegrationExportLeadsForm" method="POST" action="?page=ztl-integration&integration=export">
+                            <input type="hidden" name="ztl_export_leads" value=1 />
+                            <input type="submit" value="Export Leads" id="submit" name="submit">
+                        </form>
+                    </div>
+                    <div id="mailchimp-integration" class="mailchimp">
+                        <p class="ztl-int-subhead">
+                        <p>MailChimp is an email service provider (ESP) that lets you create and grow a subscriber list quickly and easily. A basic account is free, so sign up here.</p>
+                        <p>Once you’ve signed up, you can instantly integrate MailChimp into your Zero to Launch Accelerator software. All you <br/>need is your Mailchimp API Key -- <a href="http://kb.mailchimp.com/article/where-can-i-find-my-api-key/" target="_blank">here’s where to find it</a></p>
+                        <form method="POST" action="">
+                            <input type="hidden" name="ztl_mc_apikey_id" value="{{ mailchimp_api_key.id }}" />
+                            <div class="group{% if error_declared %} form-invalid{% endif %}">
+                                <label class="ztl-widget-label" for="ztl_mc_apikey_id">Enter Your MailChimp API Key Here</label>
+                                <label class="ztl-info-label">Need help finding your MailChimp API key?  <a href="http://kb.mailchimp.com/article/where-can-i-find-my-api-key/">View their excellent documentation.</a></label>
+                                <input type="text" id="ztl_mc_api_key" name="ztl_mc_apikey" value="{{ mailchimp_api_key.api_key }}" placeholder="e.g. 234HRF99UUSS88NSUGH8HLAUD"/>
+                            </div>
+
+                            <p style="color:#009900; font-weight:bold">
+                              <p style="color:#009900; font-weight:bold">“Do I have to use MailChimp?”</p>
+                              <p style="color:#009900; font-weight:bold">We highly recommend MailChimp as it’s currently the only ESP that fully integrates with Zero to Launch Accelerator.&nbsp;&nbsp;But<br />
+                              if you prefer not to use MailChimp, that’s totally fine -- all your other Accelerator software features will still work, even<br />
+                              your opt-in forms (your software will store the subscriber information, which you can download to a spreadsheet at any time).</p>
+                            </p>
+
+                            <p class="submit">
+                                <input type="submit" name="submit" id="submit" value="Save Changes">
+                            </p>
+                        </form>
+                    </div>
+                    <div id="gumroad-integration" class="gumroad">
+                        <p class="ztl-int-subhead">Gumroad helps you sell your products easily and beautifully, making payments and subscriptions a breeze.<br/>If you haven't already, <a href="https://gumroad.com/" target="_blank">sign up here</a>.</p>
+                        <h2>Wishlist Member Product Integration</h2>
+                        <ol class="ztl-gumroad-instructions">
+                          <li><a href="http://member.wishlistproducts.com/quick-start-video/" target="_blank">Watch a video to understand how to setup your Wishlist Membership Level, and why.</a></li>
+                          <li><a href="/wp-admin/admin.php?page=WishListMember&wl=membershiplevels">Setup your WishList Membership Level</a></li>
+                          <li>Click "Attach New Membership Level" below </li>
+                          <li>Choose the membership level</li>
+                          <li>Click 'Save Changes'</li>
+                          <li>Copy the URL we created, shown next to the level</li>
+                          <li>Log into Gumroad, and enable yourself as a developer <a href="https://gumroad.com/settings/developer" target="_blank">here</a>.</li>
+						  <li><a href="https://gumroad.com/" target="_blank">Create a product in Gumroad</a>, and choose "Use webhooks to give a unique product (license key) to every customer."</li>
+						  <li>Add the name of the product, price and paste the URL above into the "http://" box"</li>
+                        </ol>
+                        <div style="clear:both"></div>
+                        <a id="add-new-sku" class="add-new-h1" href="javascript:void(0);">Attach New Membership Level</a>
+                        <form id="ZtlIntegrationForm" method="POST" action="?page=ztl-integration&integration=gumroad">
+                            <table id="table">
+                                <thead>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>SKU</th>
+                                        <th>URL</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for sku in skus %}
+                                        <tr>
+                                            <td><p>{{sku.level_name}}</p> 
+                                            </td>
+                                            <td>
+                                                <p>{{sku.sku}}</p> 
+                                            </td>
+                                            <td>
+                                                <p>http://{{site_url}}/index.php/gumroad/{{sku.sku}}</p>
+                                            </td>                                
+                                            <td>
+                                                <a href="?page=ztl-integration&integration=gumroad&action=delete&id={{sku.id}}" 
+                                                    onclick="if 
+                                                        (confirm('Are you sure you want to delete this record?')) {
+                                                            return true;
+                                                        } 
+                                                        else { 
+                                                            return false;
+                                                        };">Delete</a>
+                                            </td>
+                                        </tr>                        
+                                    {% endfor %}                            
+                                </tbody>
+                            </table>
+                            <p class="submit">
+                                <input type="submit" name="submit" id="submit" value="Save Changes">
+                            </p>                
+                        </form>
+                    </div>
+
+                </div>
+                {#<div class="group">
+                  <h4><strong>Import/Export Settings</strong></h4>
+                  <div class="group">
+                    <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <label for="">Upload Your Settings</label>
+                    <input type="file">
+                    <p><a href="">Download your settings</a></p>
+                  </div>
+                </div>#}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    jQuery(function($) {
+        $('#ZtlIntegrationForm').submit(function(){
+            var skus = $(this).find('table tr td input.sku').val();
+            
+            if (skus.length > 0) {
+                alert('A new Membership level has been added.');
+                return true;
+            }
+            alert('You must select a Wishlist level');
+            return false;
+        });
+        
+        var tabs = $( ".integration-service" ).tabs();
+
+        tabs.addClass( "ui-tabs-horizontal ui-helper-clearfix" );
+        $( ".integration-service li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+        {% if integration %}
+            // Set the selected tab on page load.
+            var integrations = ['mailchimp', 'gumroad'];
+            tabs.tabs("option", "active", integrations.indexOf('{{ integration }}'));
+        {% endif %}
+        
+        $('body').on('change', '#gumroad-integration .select-row .wl-level-name', function(){
+            var selectedLevel = $('#gumroad-integration .select-row .wl-level-name').val();
+            var levelID = $(this).find(':selected').attr('id');
+            
+            var trElement = $(this).parent().parent().parent();
+            var hiddenFieldLevelID = trElement.find('td .levelID')            
+            hiddenFieldLevelID.val(levelID);
+            
+            var sku = trElement.find('td .sku');
+            sku.val(levelID);
+        });
+        
+        $('#gumroad-integration a#add-new-sku').click(function(){
+            //fetch ajax newline
+            var url = "?page=ztl-integration&integration=gumroad&action=add-new-sku";
+            $.ajax(url, {
+                dataType: 'json',
+                success: function(e) {
+                    if (e.error) {
+
+                        $('table#table tbody').html('<p style="padding: 10px 20px">'+e.error+'</p>');
+                    }
+                    else if (e.result) {
+                        $('table#table tbody').append(e.result);    
+                    }
+                    else if (e.alert) {
+                        alert(e.alert);
+                    }                    
+                }
+            });            
+        });
+    });
+</script>

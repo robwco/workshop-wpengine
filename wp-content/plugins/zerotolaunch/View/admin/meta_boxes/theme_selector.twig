@@ -1,0 +1,12 @@
+{{ metabox_nonce_field('ztl_theme_meta_box_optin_form_selector')|raw }}
+<label>Theme
+    <select name="ztl-theme-name">
+        <option value="0">None</option>
+        {% for theme in themes %}
+            <option value="{{ theme.name }}" {% if selected_name == theme.name %}selected="selected"{% endif %}>
+                {{ theme.name }}
+            </option>
+        {% endfor %}
+    </select>
+</label>
+<div style="clear:both"></div>

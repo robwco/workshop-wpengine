@@ -1,0 +1,376 @@
+
+body {
+
+  margin: 0;
+  padding: 0;
+    @media (max-width:770px) {
+      padding: 0em 2em;
+    }
+    @media (max-width:660px) {
+      font-size: 18px;
+      padding: 0em 2em;
+    }
+    @media (max-width:440px) {
+      font-size: 16px;
+      padding: 0em 1em;
+    }
+  button {
+    cursor: pointer;
+
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+  }
+
+  /*----------------------------------------------------
+  NAV
+  ----------------------------------------------------*/
+  nav.home_menu {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+    @media (max-width:600px) {
+      
+    }
+
+  }
+  nav.home_menu a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+
+  }
+
+  /*----------------------------------------------------
+  HOMEPAGE SECTION
+  ----------------------------------------------------*/
+  div.page.home {
+  margin: 90px auto;
+  position: relative;
+  width:100%; 
+  max-width: 33em;
+  }
+
+
+  /*----------------------------------------------------
+  BUTTONS
+  ----------------------------------------------------*/
+
+  .button {
+    padding: 10px 15px; 
+    background-color: $red;
+    border-radius: 5px; 
+    max-width: 400px; 
+    margin: auto; 
+    margin-top:40px; 
+    color:#FFF; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 70%; 
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color:$highlight-red;
+      text-decoration: none;
+    
+    }
+  }
+
+  a.button:hover {
+    text-decoration: none;
+  }
+  a.cta visited {
+    color: $white;
+  }
+
+  .cta {
+    color: $white;
+    display: block;
+    font-size: 105%;
+    padding: 20px 30px;
+    text-transform: none;
+    letter-spacing: .075em;
+    max-width: 33em; 
+    margin: 1em auto 1em auto;
+
+  }
+
+  a#button {
+    font-weight: $bold;
+    letter-spacing: .1em;
+    background: $red;
+    border: none;
+    border-bottom: 2px solid $header-red;
+    color: #fff;
+    font-size: 80%;
+    padding: .75em 1em .7em;
+    cursor: pointer;
+    margin: auto; 
+    text-decoration: none;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  a#button:hover {
+    background: $highlight-red;
+  }
+  a#button:active,
+  a#button:focus {
+    background: $header-red;
+    border-bottom: 0;
+    border-top: 2px solid $red;
+    outline: none;
+    box-shadow: 0 2px 1px #fff;
+    -moz-box-shadow: 0 2px 1px #fff;
+    -webkit-box-shadow: 0 2px 1px #fff;
+  }
+  a#button-blue {
+    font-weight: $bold;
+    letter-spacing: .1em;
+    background: $link-blue;
+    border: none;
+    border-bottom: 2px solid $dark-blue;
+    color: #fff;
+    font-size: 80%;
+    padding: .75em 1em .7em;
+    cursor: pointer;
+    margin: auto; 
+    text-decoration: none;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  a#button-blue:hover {
+    background: $light-blue;
+  }
+  a#button-blue:active,
+  a#button-blue:focus {
+    background: $link-hover;
+    border-bottom: 0;
+    border-top: 2px solid $link-blue;
+    outline: none;
+    box-shadow: 0 2px 1px #fff;
+    -moz-box-shadow: 0 2px 1px #fff;
+    -webkit-box-shadow: 0 2px 1px #fff;
+  }
+  button.ten-free {
+    width:70%;
+    margin: -.6em auto 1em auto;
+    text-align: center;
+    display: block;
+  }
+  .signin-btn {
+    width: 4em;
+    float: left;
+    margin-top: 0em;
+    margin-left: 1em;
+    padding: .2em .4em .3em .6em;
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: left;
+    font: .65em/1.5em Verdana, Helvetica, sans-serif;
+  }
+
+  /*----------------------------------------------------
+  CALL TO ACTION BOX
+  ----------------------------------------------------*/
+
+  .gaurantee {
+    font-size: .75em;
+    border-radius:.5em;
+    padding: .1em .5em;;
+    font-weight: $black;
+    margin-left: -5.75em;
+    margin-right: 1em;
+    @media (max-width:880px) {
+      margin: 0em .5em 0em 0em;
+    }
+  }
+
+  div.nav-foot {
+  margin-top: 2.5em;
+  display:block; 
+  width:100%; 
+  border-top: 1px solid $hr-gray;
+  font-size: 90%;
+      a {
+        text-decoration: underline;
+      }
+  }
+
+  .plan {
+    padding:.5em 2em .5em 2em;
+      @media (max-width:880px) {
+        padding:.25em 1em .25em 1em;
+      }
+    .leads {
+      margin: -.5em 0 2em 0;
+      padding: 0 0 0 0em;
+      vertical-align: text-top;
+      width: 10em;
+      display: inline-block;
+      list-style-type: none;
+        & li:before {
+            margin-right: .5em;
+            color: $link-blue;
+        }
+        & h2 {
+          text-indent: 0em;
+        }
+    }
+    .bonus {
+      padding:.25em 1em .25em 1em;
+      border-radius: .3em;
+      box-shadow: 0px 2px 0px 0px #dbdbdb;
+        @media (max-width:880px) {    
+          padding:.125em .5em .125em .5em;
+        }
+        span.new {
+          color: $header-red;
+        }
+        ul, li {
+          padding: 0;
+          list-style: none;
+        }
+    }
+  }
+
+  .pricing-option-1 {
+    margin: 2em 0 2em 0;
+  }
+
+  /*----------------------------------------------------
+  SIGN IN
+  ----------------------------------------------------*/
+
+  .signin {
+    padding-top: 3em;
+    text-align: center;
+    width: 18em;
+    margin: auto;
+  }
+
+
+  /*----------------------------------------------------
+  HOMEPAGE NEWSLETTER SIGN UP
+  ----------------------------------------------------*/
+
+  .newsletter-form {
+    margin: 0 auto 0 auto;
+    width: 100%;
+
+    @media (max-width:730px) {
+        width: 16em;
+      }
+
+
+  }
+  /*----------------------------------------------------
+  INPUTS
+  ----------------------------------------------------*/
+  input {
+    width: 100%;
+    max-width: 16em;
+    height: 1.5em;
+    font: 1em/1.5em "brandon-grotesque", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+    padding-left: .4em;
+    border-radius: .2em;
+
+  }
+
+  input.ten-free {
+    max-width: 15em;
+    margin-right: .5em;
+    float: left;
+    display:inline-block;
+    margin-top: -.5em;
+    margin-bottom: 1em;
+  }
+
+
+
+  input.right {
+    float: left;
+    margin-top: -.55em;
+    margin-right: 0em;
+  }
+
+  input:focus {
+    background-color: #FAFFBD;
+    outline: 0;
+
+  }
+
+
+
+
+} /*END BODY*/
+  
+  /*----------------------------------------------------
+  FADE IN ANIMATION
+  ----------------------------------------------------*/
+  #fade2 {
+    -webkit-animation:fade-in-up 1s both;-moz-animation:fade-in-up 1s both;-ms-animation:fade-in-up 1s both;-o-animation:fade-in-up 1s both;animation:fade-in-up 1s both;
+      animation: fadein 2s;
+      -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s; /* Safari and Chrome */
+      -o-animation: fadein 2s; /* Opera */
+  }
+
+  #fade1 {
+      animation: fadein 5s;
+      -moz-animation: fadein 5s; /* Firefox */
+      -webkit-animation: fadein 5s; /* Safari and Chrome */
+      -o-animation: fadein 5s; /* Opera */
+  }
+
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+
+  @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+
+  @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+  }

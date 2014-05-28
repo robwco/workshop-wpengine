@@ -1,0 +1,101 @@
+/* Warm Red Styles */
+#ztl-optin-form {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 2px solid #E85429;
+    color: #333333;
+    box-sizing: border-box;
+    clear: both;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    text-align: center;
+    word-wrap: normal;
+}
+
+#ztl-optin-form-headline,
+#ztl-optin-form h1 {
+    font-size: 24px;
+    line-height: 100%;
+    margin: 40px 0;
+    padding: 20px;
+    color: #000;
+    background-color: #E85429;
+    font-style: italic;
+} 
+
+#ztl-optin-form #ztl-optin-form-sub-headline,
+#ztl-optin-form h2 {
+    font-size: 18px;
+    margin: 2em 20px 1em 20px;
+}
+
+#ztl-optin-form p {
+    color: inherit;
+    font-style: normal;
+    text-align: left;
+    margin: 1em 20px;
+}
+#ztl-optin-form ul { font-size: 13px; padding: 0 0 0 30px; text-align: left; list-style-type: disc }
+#ztl-optin-form ol { font-size: 13px; padding: 0 0 0 30px; text-align: left; }
+
+#ztl-optin-form img {
+    width: 100%;
+}
+
+#ztl-optin-form .input-controls {
+    margin:10px auto;
+}
+
+#ztl-optin-form .input-controls .input-control {
+    display: inline-block;
+    width: 49%;
+}
+
+#ztl-optin-form .input-control-button,
+#ztl-optin-form .input-control-button input[type=submit] {
+    width: 100%
+}
+
+#ztl-optin-form .input-control-button {
+    margin:10px 0px 0px 0px;
+}
+
+#ztl-optin-form .input-control-button input[type=submit] {
+    font-size: 24px;
+}
+
+#ztl-optin-form input[type="input"], 
+#ztl-optin-form input[type="text"] {
+    -moz-appearance: none;
+    border: 2px solid #757A7D;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 1em;
+    padding: 2%;
+    width: 75%;
+    color: #757A7D;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#ztl-optin-form input[type="submit"] {
+    font-family: inherit;
+    background: none repeat scroll 0 0 #FFAD00;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 #ae7500;
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.75em 5%;
+    margin: 10px 0 40px 0;
+    width: 70%;
+}

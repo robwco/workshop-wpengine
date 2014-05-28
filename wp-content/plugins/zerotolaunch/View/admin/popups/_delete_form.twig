@@ -1,0 +1,6 @@
+<form action="{{ current_page_url() }}&action=confirm_delete" method="post" data-name="{{ popup.name }}" class="ztl-confirm-delete">
+    {{ model_nonce_field(popup, 'delete')|raw }}
+
+    <input type="hidden" name="id" value="{{ popup.id }}" />
+    <input type="submit" name="submit" value="Delete" />
+</form>

@@ -1,0 +1,415 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+<div id="ztl-plugin" class="main-panel optin-forms">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+  <div class="content-wrap ztl optin-forms">
+    {% if optin_form.id %}
+        <h1>
+            Edit Opt-in
+        </h1>
+    {% else %}
+        <h1>
+            Add New Opt-in
+        </h1>
+    {% endif %}
+
+    <div class="group ztl-optin-form-editor">
+            
+        <ul class="errors">
+            {% set error_declared = '' %}
+            {% for error in optin_form.errors.get_error_list %}
+                {% set error_declared= error.attribute_var %}
+                <li class="error">{{ error.msg }}</li>
+            {% endfor %}
+            {% for error in errors %}
+                <li class="error">{{ error }}</li>
+            {% endfor %}                
+        </ul>
+        
+        {% if (success_message | length) > 0 and (optin_form.errors.get_error_list | length) == 0 %}
+        <div id="message" class="updated">        
+            <p>{{ success_message }}</p>
+        </div>   
+    {% endif %}  
+    
+        <div class="form-wrap">
+            <form method="post" class="validate">
+                {{ model_nonce_field(optin_form)|raw }}
+
+                <input type="hidden" name="optin_form[id]" value="{{ optin_form.id }}" />
+                <input type="hidden" id="ztl-optin-form-headline-field" name="optin_form[headline]" value="{{ optin_form.headline }}" />
+                <input type="hidden" id="ztl-optin-form-email-field-text-field" name="optin_form[email_field_text]" value="{{ optin_form.email_field_text }}" />
+                <input type="hidden" id="ztl-optin-form-name-field-text-field" name="optin_form[name_field_text]" value="{{ optin_form.name_field_text }}" />
+                <input type="hidden" id="ztl-optin-form-body-field" name="optin_form[body]" value="{{ optin_form.body }}" />
+                <input type="hidden" id="ztl-optin-form-image-url" name="optin_form[image_url]" value="{{ optin_form.image_url }}" />
+                <input type="hidden" id="ztl-optin-form-image-width" name="optin_form[image_width]" value="{{ optin_form.image_width }}" />
+                <input type="hidden" id="ztl-optin-form-image-height" name="optin_form[image_height]" value="{{ optin_form.image_height }}" />
+                <input type="hidden" id="ztl-optin-form-image-alt" name="optin_form[image_alt]" value="{{ optin_form.image_alt }}" />
+                <div class="group{% if error_declared == "name" %} form-invalid{% endif %}">
+                    <label class="ztl-widget-label" for="optinName">Opt-in Form Name</label>
+                    <label class="ztl-info-label"><i>Give your Opt-in a descriptive name, so you can reference it later.</i></label>
+                    <input type="text" id="ztl-optin-form-name-field" name="optin_form[name]" value="{{ optin_form.name }}" placeholder="Example: My First Opt-in Form">
+                    <input id="ztl-optin-form-slug-field" type="hidden" name="optin_form[slug]" value="{{ optin_form.slug }}"/>
+                </div>
+
+                <div class="group">
+                  <label class="ztl-widget-label">Select an Opt-in Theme</label>
+                  <label class="ztl-info-label"><i>Select how your Opt-in will appear to visitors.</i></label>
+                  <div class="group">
+                    {% for theme in themes %}   
+                        {% if theme != 'landing-pages' %}
+                            <div alt={{theme}} class="thumb{% if theme == selected_theme %} selected{% endif %}">
+                                <input type='checkbox' {%if theme == selected_theme %}checked="checked"{% endif %} value="{{ theme }}" name="optin_form[theme]" style="display:none;" id="ztl-optin-theme"/>
+                                <div class="checkmark">
+                                    <i class="ss-icon">&#x2713;</i>
+                                </div>
+                                <img src="../wp-content/plugins/zerotolaunch/themes/optin-forms/{{ theme }}/thumbnail.png" alt="">
+                            </div>
+                        {% endif %}
+
+                    {% endfor %}
+                </div>
+            </form>
+
+            <div class="group">
+                <div class="ztl-optin-form-wysiwyg-editor">
+                    <div class="col-wrap">
+                        <label class="ztl-widget-label" style="text-align:center;">Edit by clicking the text or images below.</label>
+                        <label class="ztl-info-label"><i>Click the image to upload a new image, or click the text to change it.</i></label>
+                        <h2 class="nav-tab-wrapper">
+                        </h2>
+                        <div class="editor-container">
+                           {{ render_optin_form(optin_form, 'editing')|raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    {% if lists|length > 0 %}
+        <div class="group">
+          <label for="optin_form[mailing_list_id]">List</label>
+          <select name="optin_form[mailing_list_id]">
+            {% for list in lists %}
+                <option value="{{ list.id }}" {% if list.id == optin_form.mailing_list_id %}selected="selected"{% endif %}>{{ list.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+    {% endif %}
+
+    <div class="group form-field form-required">
+        <label class="ztl-widget-label" for="optin_form[c2a_button_text]">Call-to-Action Button</label>
+        <label class="ztl-info-label"><i>Give your button a complelling and clear Call-To-Action.</i></label>
+        <input type="text" id="ztl-optin-form-c2a-button-text-field" name="optin_form[c2a_button_text]" value="{{ optin_form.c2a_button_text|default('Sign me up!') }}"/>
+    </div>
+
+    <div class="group form-field form-required">
+      <label class="ztl-widget-label" for="optin_form[redirect_url]">After confirm, send users to</label>
+      <label class="ztl-info-label"><i>After some one joins your list, you'll typically want to send them to a confirmation or thank you page (that you create yourself in Wordpress.)  However, if you don't have a confirmation page setup yet, you can always redirect them to your homepage for now.</i></label>
+      <input type="text" name="optin_form[redirect_url]" value="{{ optin_form.redirect_url|default('/thank-you/') }}"/>
+    </div>
+    <div class="group">
+      <label class="ztl-widget-label">Options</label>
+        <label>
+        <input type="hidden" name="optin_form[display_image]" value="0"/>
+        <input type="checkbox" id="ztl-optin-form-display-image-field" name="optin_form[display_image]" value="1" {% if optin_form.display_image %}checked="checked"{% endif %}/>
+        Display an Image
+        <label class="ztl-info-label"><i>An image isn't required, but can often help increase opt-in rates.</i></label>
+      </label>
+    </div>
+    <div class="group">
+        <label>
+            <input type="hidden" name="optin_form[display_name_field]" value="0"/>
+            <input type="checkbox" id="ztl-optin-form-display-name-field-field" name="optin_form[display_name_field]" value="1" {% if optin_form.display_name_field %}checked="checked"{% endif %}/>
+            Ask user for name
+            <label class="ztl-info-label"><i>I prefer to collect my readers' names, but some site owners report getting better opt-in rates when they don't ask for a name.</i></label>
+      </label>
+    </div>
+    <p class="submit">
+      <input type="submit" name="submit" id="submit" value="Save Changes">
+    </p>
+    </form>
+  </div>
+</div>
+
+<script>
+    var postData = {};
+    {# TODO move to admin.js and cleanup #}
+    jQuery(function ($) {
+        function initializeCKEditor() {
+            var bodyEditor = document.getElementById("ztl-optin-form-body");
+
+            CKEDITOR.disableAutoInline = true;
+
+            for (var i= 0, numEditors = miniInlineEditors.length; i < numEditors; i++) {
+                if (miniInlineEditors[i]) {
+                    CKEDITOR.inline(document.getElementById(miniInlineEditors[i]), {
+                        toolbar: [["Bold", "Italic", "Underline", "Strike"]]
+                    });
+                }
+            }
+
+            if (bodyEditor) {
+                CKEDITOR.inline(bodyEditor, {
+                    toolbar: [["Bold", "Italic", "Underline", "Strike", "-", "NumberedList","BulletedList","-","Outdent","Indent","Blockquote","CreateDiv"]]
+                });
+            }       
+            
+            var optinFormImage = $("#ztl-optin-form-image");
+            ZTL.promptMediaSelection('#ztl-optin-form-image', function(attachment) {
+                $("#ztl-optin-form-image-url").val(optinFormImage[0].src = attachment.url);
+                $("#ztl-optin-form-image-height").val(attachment.height);
+                $("#ztl-optin-form-image-width").val(attachment.width);
+                $("#ztl-optin-form-image-alt").val(optinFormImage[0].alt = attachment.alt);
+            });                 
+        }
+        //sets the post data variable for fetching the new theme editor via ajax
+        function setEditorForTheme(aTheme) {
+            var headlineText = $('#ztl-optin-form-headline').html();
+            
+            var bodyText;
+            if (postData.body) {
+                bodyText = postData.body;
+            }
+            if ($('#ztl-optin-form-body').html()) {
+                bodyText = $('#ztl-optin-form-body').html();
+            }
+
+            var namePlaceholderText;
+            if (postData.namePlaceholder) {
+                namePlaceholderText = postData.namePlaceholder;
+            }
+            
+            if ( $("#ztl-optin-form-name").attr('placeholder')) {
+                namePlaceholderText =  $("#ztl-optin-form-name").attr('placeholder');
+            }
+            
+            if ($('#ztl-optin-form-name').val()) {
+                namePlaceholderText = $('#ztl-optin-form-name').val();
+            }
+            
+            var emailPlaceholderText;
+            if (postData.emailPlaceholder) {
+                emailPlaceholderText = postData.emailPlaceholder;
+            }
+            
+            if ( $("#ztl-optin-form-email").attr('placeholder')) {
+                emailPlaceholderText =  $("#ztl-optin-form-email").attr('placeholder');
+            }            
+            
+            if ($('#ztl-optin-form-email').val()) {
+                emailPlaceholderText = $('#ztl-optin-form-email').val();
+            }
+            
+            var formC2AButtonText = $('#ztl-optin-form-c2a-button-text').val();
+            var hasDisplayImage = 0;
+            if ($('#ztl-optin-form-display-image-field').attr('checked') == 'checked') {
+                hasDisplayImage = 1;
+            }
+            
+            var hasDisplayName = 0
+            if ($('#ztl-optin-form-display-name-field-field').attr('checked') == 'checked') {
+                hasDisplayName = 1;
+            }
+            
+            var displayImage;
+            if (postData.displayImage) {
+                displayImage = postData.displayImage;
+            }
+            
+            if ($('#ztl-optin-form-image').attr('src')) {
+                displayImage = $('#ztl-optin-form-image').attr('src');
+            }
+            
+            postData = {
+                    theme : aTheme,
+                    id : optinFormId,
+                    headline : headlineText,
+                    body: bodyText,
+                    namePlaceholder: namePlaceholderText,
+                    emailPlaceholder: emailPlaceholderText,
+                    formC2AButton: formC2AButtonText,
+                    hasDisplayImage: hasDisplayImage,
+                    hasDisplayName: hasDisplayName,
+                    displayImage: displayImage
+                };
+        }
+        var optinFormId;
+        
+        {% if optin_form.id is defined and optin_form.id is not null%}
+            optinFormId = '{{optin_form.id}}';
+        {% else %}
+            optinFormId = 'new';
+        {% endif %}
+        
+        var contentContainer = $(".ztl-optin-form-wysiwyg-editor .ztl-optin-form"),
+                optinFormName = $("#ztl-optin-form-name"),
+                optinFormImage = $("#ztl-optin-form-image"),
+                miniInlineEditors = ["ztl-optin-form-headline"];
+                            
+        initializeCKEditor();
+
+        ZTL.tabs(".editor .nav-tab", function() {});
+        $(".ztl-optin-form-wysiwyg-editor .desktop").on('click', function (event) {
+            contentContainer.removeClass("mobile");
+            $('#desktop-nav-tab').addClass("nav-tab-active");
+            $('#mobile-nav-tab').removeClass("nav-tab-active");
+        });
+
+        $(".ztl-optin-form-wysiwyg-editor .mobile").on('click', function (event) {
+            contentContainer.addClass("mobile");
+            $('#mobile-nav-tab').addClass("nav-tab-active");
+            $('#desktop-nav-tab').removeClass("nav-tab-active");            
+        });
+
+        // Prevent the user from accidently submitting the optin form while editing
+        $(".ztl-optin-form-wysiwyg-editor form").on("submit", function(event) { return false; });
+
+        // Update the c2a button based upon the c2a field
+        $("#ztl-optin-form-c2a-button-text-field").on("keyup", function(event) {
+            $("#ztl-optin-form-c2a-button-text").val(event.delegateTarget.value);
+        });
+
+        // Hide/display the image when display image checkbox is checked/unchecked
+        ZTL.linkDisplayToCheckbox($("#ztl-optin-form-display-name-field-field"), optinFormName);
+        ZTL.linkDisplayToCheckbox($("#ztl-optin-form-display-image-field"), optinFormImage);
+
+        {% if not optin_form.display_name_field %}
+            optinFormName.hide();
+        {% endif %}
+
+        {% if not optin_form.display_image %}
+            optinFormImage.hide();
+        {% endif %}
+
+        // Update our content fields based upon the contents of the inline editors
+        $(".ztl-optin-form-editor form").on('submit', function(event){
+            $("#ztl-optin-form-headline-field").val(CKEDITOR.instances['ztl-optin-form-headline'].getData());
+            $("#ztl-optin-form-body-field").val(CKEDITOR.instances['ztl-optin-form-body'].getData());
+            
+            var nameFieldVal;
+            if ($("#ztl-optin-form-name").attr('placeholder')) {
+                nameFieldVal = $("#ztl-optin-form-name").attr('placeholder');
+            }
+            
+            if ($("#ztl-optin-form-name").val()) {
+                nameFieldVal = $("#ztl-optin-form-name").val();
+            }
+
+            $("#ztl-optin-form-name-field-text-field").val(nameFieldVal);
+            
+            var emailFieldVal;
+           if ($("#ztl-optin-form-email").attr('placeholder')) {
+                emailFieldVal = $("#ztl-optin-form-email").attr('placeholder');
+            }
+            
+            if ($("#ztl-optin-form-email").val()) {
+                emailFieldVal = $("#ztl-optin-form-email").val();
+            }            
+            $("#ztl-optin-form-email-field-text-field").val(emailFieldVal);
+        });
+
+        $('.thumb').on('click', function(event){
+            if ($(this).hasClass('selected') ) {
+                // One thumb must always be selected, so don't do anything since the already
+                // selected thumb was selected again.
+            } else {
+                $('.thumb').removeClass('selected');
+                
+                //uncheck all first
+                $('.thumb').each(function(){
+                    $(this).contents('#ztl-optin-theme').attr('checked' , false);
+                });                
+                $(this).addClass('selected').contents('#ztl-optin-theme').attr('checked' , true);
+                //fetch new html via ajax
+
+                setEditorForTheme($(this).attr('alt'));
+                
+                var url = "?page=ztl-optin-page-settings&action=render_optin_ajax";
+                $.ajax(url, {
+                    data : postData,
+                    type: 'POST',
+                    async : false,
+                    success: function(e) {
+                        $('#ztl-plugin .editor-container').html(e);
+                        initializeCKEditor();
+                    }
+                });
+            }
+        });
+        $('li.error').val(function() {
+
+        })
+        // update the slug
+        function updateSlug(title){
+            var slug = $.trim(title.toLowerCase().replace(/[^a-z0-9\s_-]+/g, ''));
+            slug = slug.replace(/\s+/g, ' ');
+            slug = slug.replace(/\s/g, '-');
+
+            $('#ztl-optin-form-slug-field').val(ZTL.slugify(title));
+        }
+
+        $('#ztl-optin-form-name-field').on('change', function(){
+            updateSlug($(this).val());
+        });
+        
+        $('#ztl-optin-form-display-image-field').on('change', function(){
+            var theme;
+            $('.thumb').each(function(){
+                if ($(this).hasClass('selected') ) {
+                    theme = $(this).attr('alt');
+                    return;
+                }
+            });
+            
+            setEditorForTheme(theme);
+            
+            var hasDisplayImage = 0
+            if ($(this).attr('checked') == 'checked') {
+                hasDisplayImage = 1;
+            }      
+            
+            postData.hasDisplayImage = hasDisplayImage;      
+            
+            var url = "?page=ztl-optin-page-settings&action=render_optin_ajax";
+            $.ajax(url, {
+                data : postData,
+                type: 'POST',
+                async : false,
+                success: function(e) {
+                    $('#ztl-plugin .editor-container').html(e);
+                    initializeCKEditor();
+                }
+            });            
+        });
+        $('#ztl-optin-form-display-name-field-field').on('change', function(){
+            var theme;
+            $('.thumb').each(function(){
+                if ($(this).hasClass('selected') ) {
+                    theme = $(this).attr('alt');
+                    return;
+                }
+            });
+            
+            setEditorForTheme(theme);
+            
+            var hasDisplayName = 0
+            if ($(this).attr('checked') == 'checked') {
+                hasDisplayName = 1;
+            }      
+            
+            postData.hasDisplayName = hasDisplayName;      
+            
+            var url = "?page=ztl-optin-page-settings&action=render_optin_ajax";
+            $.ajax(url, {
+                data : postData,
+                type: 'POST',
+                async : false,
+                success: function(e) {
+                    $('#ztl-plugin .editor-container').html(e);
+                    initializeCKEditor();
+                }
+            });            
+        });        
+    });
+</script>
