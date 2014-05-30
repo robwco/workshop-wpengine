@@ -1,0 +1,308 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+
+<div id="ztl-plugin" class="main-panel landing-page">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+	<div class="content-wrap ztl landing-page">
+  	{% if landing_page.id %}
+		<h1>Edit Landing Page</h1>
+    {% else %}
+		<h1>Add New Landing Page</h1>
+    {% endif %}
+	{% if landing_page.slug %}
+		<p class="alert">This page can be accessed from <a href="/l/{{ landing_page.slug }}" target="lp_preview">/l/{{ landing_page.slug }}</a></p>
+	{% endif %}
+
+    <div class="group ztl-landing-page-editor">
+        <ul class="errors">
+            {% set error_declared = '' %}
+            {% for error in landing_page.errors.get_error_list %}
+                {% set error_declared= error.attribute_var %}
+                <li class="error">{{ error.msg }}</li>
+            {% endfor %}
+            {% for error in errors %}
+                <li class="error">{{ error }}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="form-wrap">
+            <form method="post" class="validate" id="FormLPEditor">
+                {{ model_nonce_field(landing_page)|raw }}
+
+                <input type="hidden" name="landing_page[id]" value="{{ landing_page.id }}" />
+                <input type="hidden" id="ztl-landing-page-header-field" name="landing_page[header]" value="{{ landing_page.header }}" />
+                <input type="hidden" id="ztl-landing-page-body-field" name="landing_page[body]" value="{{ landing_page.body }}" />
+        				<input type="hidden" id="ztl-landing-page-logo_url-field" name="landing_page[logo_url]" value="{{ landing_page.logo_url }}" />
+
+				        <div class="group{% if error_declared == "name" %} form-invalid{% endif %}">
+					        <label class="ztl-widget-label">Landing Page Name</label>
+                  <label class="ztl-info-label"><i>Give your Landing Page a descriptive name, so you can reference it later.</i></label>
+                  <input type="text" id="ztl-landing-page-name-field" name="landing_page[name]" value="{{ landing_page.name }}" placeholder="Example: My first Landing page">
+                  <input id="ztl-landing-page-slug-field" type="hidden" name="landing_page[slug]" value="{{ landing_page.slug }}"/>
+                </div>
+
+
+
+            <div class="group">
+        <label class="ztl-widget-label">Main Body Copy</label>
+        <label class="ztl-info-label"><i>Edit the page copy below, click to change images.</i></label>
+				{#<div style="max-width: 760px;">{{ wp_editor( landing_page.body, 'lpmainbodyeditor') }}</div>#}
+				<div>
+					<a href="#" id="setFullScreen">Go full screen</a>
+					<a href="#" id="removeFullScreen" style="display:none;">Close full screen</a>
+				</div>
+				<iframe id="lpeditor" src="?page=ztl-landing-pages&action=display&theme={{ landing_page.theme|default('demo') }}&editing=1"></iframe>
+            </div>
+
+			<div class="group">
+				<label class="ztl-widget-label">Opt-in Form</label>
+				<label class="ztl-info-label"><i>Choose the Opt-in form to use when displaying your landing page.</i></label>
+				<div class="{{ FormErrorMacro.get_class_if_input_has_error(landing_page.errors.get_error_list, 'optin_form_id') }}">
+					{% if optin_forms is not empty %}
+					<select name="landing_page[optin_form_id]" id="selectOptinForm">
+						{% for optin_form in optin_forms %}
+							<option {% if optin_form.id == landing_page.optin_form_id %}selected="selected"{% endif %} value="{{ optin_form.id }}">{{ optin_form.name }}</option>
+						{% endfor %}
+					</select>
+					{% else %}
+						<label class="ztl-info-label">There are no Opt-in Forms Created. <a href="/wp-admin/admin.php?page=ztl-optin-page-settings&action=edit">Create your first one now.</a></label>
+					{% endif %}
+				</div>
+			</div>
+
+				<div class="group">
+          <label class="ztl-widget-label">Select a Theme</label>
+          <label class="ztl-info-label"><i>Edit how your landing page will appear to visitors.</i></label>
+					<div class="group">
+
+						{% for theme in themes %}
+							{% if theme != 'landing-pages' %}
+								<div class="thumb{% if theme == selected_theme %} selected{% endif %}">
+									<input type='checkbox' value="{{ theme }}" name="landing_page[theme]" style="display:none;" class="ztl-lp-theme"/>
+									<div class="checkmark">
+										<i class="ss-icon">&#x2713;</i>
+									</div>
+									<img src="../wp-content/plugins/zerotolaunch/themes/landing-pages/{{ theme }}/thumbnail.png" alt="">
+								</div>
+							{% endif %}
+
+						{% endfor %}
+
+					</div>
+				</div>
+
+
+
+
+    <p class="submit">
+      <input type="submit" name="submit" id="submit" value="Save Changes">
+    </p>
+    </form>
+  </div>
+</div>
+
+	  <script src="/wp-content/plugins/zerotolaunch/assets/js/ckeditor/adapters/jquery.js"></script>
+
+  <style>
+	  #lpeditor{
+		  height: 500px; width: 100%;
+		  border: solid 1px #e5e5e5
+	  }
+	  #lpeditor.fullscreen{
+		  position: fixed;
+		  top: 25px;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: 1600;
+	  }
+	  #removeFullScreen{
+		  position: fixed;
+		  top: 50px;
+		  right: 50px;
+		  z-index: 3000;
+		  display: inline-block;
+	  }
+
+
+  </style>
+
+<script>
+	var $editorFrame;
+    {# TODO move to admin.js and cleanup #}
+
+    // Define at top so that all functions have access
+    var iFrameEditorContentForSave = null;
+    var getIframeEditorContent = null;
+    var setIframeEditorContent = null;
+    var setIframeOptinForm = null;
+
+	function delayMediaSelector(){
+		if(document.readyState !== 'complete' || !(typeof jQuery === 'function')){
+			setTimeout(function(){delayMediaSelector();}, 1000);
+		} else {
+			attachMediaSelector();
+		}
+	}
+
+	function attachMediaSelector(selector, $parent){
+
+		$editorFrame = jQuery('#lpeditor').contents();
+		$parent = $editorFrame.find('body');
+		selector = 'img[data-toggle="editable"]';
+
+		$parent.on('click', selector, function (event) {
+			var options = {};
+			var $el = jQuery(this);
+			event.preventDefault();
+
+			//If the frame already exists, reopen it
+			if (typeof(custom_file_frame) !== "undefined") {
+				custom_file_frame.close();
+			}
+
+			//Create WP media frame.
+			custom_file_frame = wp.media.frames.customHeader = wp.media({
+				//Title of media manager frame
+				title: options['title'] || "Select an image",
+				library: {
+					type: options['type'] || 'image'
+				},
+				button: {
+					//Button text
+					text: options['button_text'] || "Use selected image"
+				},
+				//Do not allow multiple files, if you want multiple, set true
+				multiple: false
+			});
+
+			//callback for selected image
+			custom_file_frame.on('select', function () {
+				var attachment = custom_file_frame.state().get('selection').first().toJSON();
+
+				imageAttachCallback($el, attachment);
+			});
+
+			//Open modal
+			custom_file_frame.open();
+		});
+	}
+	function imageAttachCallback($el, attachment){
+
+		$el.attr({
+			src: attachment.url,
+			height: attachment.height,
+			width: attachment.width,
+			alt: attachment.alt
+		}).attr('data-cke-saved-src', attachment.url);
+	}
+
+
+	// Load DB content if we are editing an existing item
+	{% if landing_page.id %}
+	function loadInitialContent(){
+		if(setIframeEditorContent == null || setIframeOptinForm == null){
+			setTimeout(function(){loadInitialContent()}, 500);
+		} else {
+			iFrameEditorContentForSave = {{ {
+				header: landing_page.header,
+				body:landing_page.body,
+				logo_url: landing_page.logo_url
+			}|json_encode(constant('JSON_FORCE_OBJECT'))|raw }};
+			setIframeEditorContent(iFrameEditorContentForSave);
+
+			// Set optin
+			setIframeOptinForm(jQuery('#selectOptinForm').val());
+
+		}
+	}
+	loadInitialContent();
+	{% endif %}
+
+    jQuery(function ($) {
+
+//		console.log($('#lpeditor').contents());
+
+		$('#setFullScreen').click(function(){
+			$('#lpeditor').addClass('fullscreen');
+			$('#removeFullScreen').show();
+		});
+		$('#removeFullScreen').click(function(){
+			$('#lpeditor').removeClass('fullscreen');
+			$('#removeFullScreen').hide();
+		});
+
+		// Update our content fields based upon the contents of the inline editors
+		$('#FormLPEditor').submit(function(){
+
+			iFrameEditorContentForSave = getIframeEditorContent();
+			$("#ztl-landing-page-header-field").val(iFrameEditorContentForSave.header);
+			$("#ztl-landing-page-body-field").val(iFrameEditorContentForSave.body);
+			$("#ztl-landing-page-footer-field").val(iFrameEditorContentForSave.footer);
+			$("#ztl-landing-page-logo_url-field").val(iFrameEditorContentForSave.logo_url);
+
+		});
+
+		// Prevent the user from accidently submitting the optin form while editing
+		$(".ztl-landing-page-wysiwyg-editor form").on("submit", function(event) { return false; });
+
+		// Switch out the Optin Form
+		$('#selectOptinForm').on('change', function(){
+			setIframeOptinForm($(this).val());
+		});
+
+		$('.thumb').on('click', function(event){
+			if ($(this).hasClass('selected') ) {
+				// One thumb must always be selected, so don't do anything since the already
+				// selected thumb was selected again.
+			} else {
+				$('.thumb').removeClass('selected');
+
+				//uncheck all first
+				$('.thumb').each(function(){
+					$(this).contents('.ztl-lp-theme').attr('checked' , false);
+				});
+				$(this).addClass('selected').contents('.ztl-lp-theme').attr('checked' , true);
+				//fetch new html via ajax
+
+				var themeName = $(this).find('input').val();
+
+				iFrameEditorContentForSave = getIframeEditorContent();
+//				console.log(iFrameEditorContentForSave);
+				setIframeEditorContent = null;
+				$('#lpeditor').attr('src', '?page=ztl-landing-pages&action=display&theme=' + themeName + '}&editing=1');
+
+				var iframeReadyInt = setInterval(function(){
+					if(setIframeEditorContent != null){
+						clearInterval(iframeReadyInt);
+
+						setIframeEditorContent(iFrameEditorContentForSave);
+						// Set optin
+						setIframeOptinForm($('#selectOptinForm').val());
+					}
+				}, 500);
+			}
+		});
+
+		/**
+		 * update the slug
+ 		 * @param title
+		 */
+		function updateSlug(title){
+			var slug = $.trim(title.toLowerCase().replace(/[^a-z0-9\s_-]+/g, ''));
+			slug = slug.replace(/\s+/g, ' ');
+			slug = slug.replace(/\s/g, '-');
+
+			$('#ztl-landing-page-slug-field').val(ZTL.slugify(title));
+		}
+
+		$('#ztl-landing-page-name-field').change(function(){
+			updateSlug($(this).val());
+		});
+
+
+    });
+</script>

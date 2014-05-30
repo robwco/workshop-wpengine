@@ -1,0 +1,133 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+{# Current Optins #}
+{% set current_optins = 0 %}
+{% set current_conversions = 0 %}
+{% for optins in optin_form_activity %}
+  {% if optins.category == 'Conversion' %}
+      {% set current_optins = current_optins + optins.hits %}
+  {% endif %}
+{% endfor %}
+
+{% set current_conversions = total_hits > 0 ? current_optins / total_hits * 100 : 0 %}
+
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+  <div class="content-wrap">
+    <h1>Dashboard</h1>
+    <p><strong>Latest From Ramit</strong></p>
+    <div class="group media">
+      <div class="panel checklist-container">
+        <p><i class="ss-check"></i></p>
+          <h3 class="hndle">Setup Checklist</h3>
+            <div class="main">
+              <form id="checklistForm" action="">
+				<h4>Module 2: Your Audience</h4>
+                  <p><input type="checkbox" value="" class="form-input-tip" name="plugin-installed"{% if has_installed_ztl_plugin == 1 %} checked{% endif %} disabled><a href="{{ admin_url('plugins.php') }}">Set up your website</a></p>
+                  <p><input type="checkbox" value="" class="form-input-tip" name="theme-enabled" checked disabled ><a href="{{ admin_url('themes.php') }}">Choose your theme</a></p>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="created-aboutme" checked disabled ><a href="/about-me/">Create your About Me page</a></p>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="created-post" checked disabled ><a href="/welcome-to-my-first-ztl-blog-post/">Create your first post</a></p>
+                  <p><input type="checkbox" value="" class="form-input-tip" name="created-optin"{% if has_created_an_optin == 1 %} checked{% endif %} disabled><a href="{{ current_page_url('ztl-optin-page-settings') }}">Created an Opt-in Form</a></p>
+                  {% if landing_page_enabled %}
+                    <p><input type="checkbox" value="" class="form-input-tip" name="created-landing-page"{% if has_created_a_landing_page == 1 %} checked{% endif %} disabled><a href="{{ admin_url('post-new.php?post_type=ztl_landing_page') }}">Created a Landing Page</a></p>
+                  {% endif %}
+                  <p><input type="checkbox" value="" class="form-input-tip" name="recieved-optin" {% if has_received_first_customer_optin == 1 %} checked{% endif %} disabled>Received first email Opt-in</p>
+                  <p><input type="checkbox" value="" class="form-input-tip" name="domain"{% if has_setup_domain_name == 1 %} checked{% endif %} disabled ><a href="{{ admin_url('options-general.php') }}">Customize your Domain</a></p>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="mailchimp-integration"{% if has_mailchimp_integration_complete == 1 %}checked{% endif %} disabled><a href="{{ current_page_url('ztl-integration&integration=mailchimp') }}">Set up your email list</a></p>
+
+				  <h4 style="margin-top: 30px">Module 3: Your Product</h4>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="created-membership-level"{% if has_created_a_membership_level == 1 %} checked{% endif %} disabled><a href="/wp-admin/admin.php?page=WishListMember&wl=membershiplevels">Created a Wishlist Membership Level</a></p>
+
+				  <h4 style="margin-top: 30px">Module 4: Your Sales</h4>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="gumroad-integration"{% if has_gumroad_integration_complete == 1 %} checked{% endif %} disabled><a href="{{ current_page_url('ztl-integration&integration=gumroad') }}">Set up Gumroad Shopping Cart</a></p>
+				  <p><input type="checkbox" value="" class="form-input-tip" name="recieved-optin" disabled>Made first Wishlist Sale</p>
+
+              </form>
+            </div>
+      </div>
+      <div class="media-image">
+        <img class="ramit" src="../wp-content/plugins/zerotolaunch/assets/images/ramit.png" alt="">
+      </div>
+      <div class="bd">
+        <p>You can control your entire website from this page.</p>
+        <p><h3>New Accelerator Features:</h3>
+        <ul>
+          <li><strong>The Setup Checklist</strong> gives you step-by-step directions to get your beautiful, high-converting website up and running.&nbsp;&nbsp;&#8658;</li>
+          <li>&#8656;<strong>Wordpress Administration Menu.</strong>  Use these options to create new posts or customize your new site. Don’t worry about learning everything at once -- just play around with it and have fun!</li>
+          <li><strong>Your Analytics Dashboard</strong> automatically tracks your traffic, email opt-ins, and even your sales conversions.&nbsp;&nbsp;&#10549;</li>
+        </ul>
+        </p>
+        <br/><p><h3>Need help?</h3></p>
+        <p>We’re here to help. I recommend you start by completing all the steps in the setup checklist. After that...
+          <ul>
+            <li>Use our <a href="http://zerotolaunch.iwtstudents.com/accelerator" target="_blank">step-by-step walkthroughs</a> to learn the ins-and-outs of your Accelerator software</li>
+            <li>For strategic questions (like “Why do I need an email list?”), <a href="http://zerotolaunch.iwtstudents.com/modules/view/your-audience" target="_blank">review the lessons in the "Your Audience” module</a></li>
+            <li>For technical questions, contact <a href="mailto:support@iwillteachyoutoberich.com">support@iwillteachyoutoberich.com</a></li>
+          </ul></p>
+        <br/>
+        <p>Most importantly, remember to trust the system, pace yourself, and have fun! </p>
+        <p>-Ramit</p>
+      </div>
+    </div>
+    <div class="dash group">
+      <div class="one-third panel traffic center">
+        <p class="ss-icon slate">&#xE672;</p>
+        <p class="dash-box-title">Your Traffic This Week</p>
+        <p class="dash-box-stat">{{ total_hits }}</p>
+      </div>
+      <div class="one-third panel optins center">
+        <p class="ss-icon orange">&#xE400;</p>
+        <p class="dash-box-title">Opt-ins This Week</p>
+        <p class="dash-box-stat">{{ current_optins }}</p>
+      </div>
+      <div class="one-third panel conversions center last">
+        <p class="ss-icon blue">&#xE570;</p>
+        <p class="dash-box-title">Conversion Rate</p>
+        <p class="dash-box-stat">{{ current_conversions|number_format(1,'.',',') }}%</p>
+      </div>
+    </div>
+    <table class="one-third popular-posts">
+      <thead>
+        <tr>
+          <th class="column-main">Most Popular Posts</th>
+          <th class="column-views">Views This Week</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for posts in topPosts %}
+        <tr>
+          <td class="column-main">
+            <a href="post.php?post={{ posts.post_id }}&action=edit">{{ posts.post_title }}</a>
+          </td>
+          <td class="column-views">{{ posts.meta_value }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <table class="one-third popular-optin-forms">
+      <thead>
+        <tr>
+          <th class="column-main">Most Popular Opt-in Forms</th>
+          <th class="column-optins">Opt-ins This Week</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for top_optins in popular_optins %}
+        <tr>
+          <td class="column-main">
+            {% for optin_form in optin_forms %}
+              {% if optin_form.id == top_optins.optin_form_id %}
+              <a href="">{{ optin_form.name }}</a>
+              {% endif %}
+              {% endfor %}
+          </td>
+          <td class="column-optins">{{ top_optins.hits }}</td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+
+  </div>
+</div>

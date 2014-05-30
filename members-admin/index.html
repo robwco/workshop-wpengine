@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Workshop - The best freelance leads in your inbox.</title>
+  <meta name="description" content="Workshop - The best freelance opportunities delivered to your inbox every day.">
+  <meta name="keywords" content="Workshop, Letsworkshop, freelance, leads, job, board, boards, best, inbox, deleted my portfolio, made 30k in six months, the email line that's client repellant">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <!--STRIPE-->
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+<style media="screen" type="text/css">
+
+button {
+  cursor: pointer;
+}
+
+.cancel {
+  padding-bottom: 2em;
+}
+
+.checkmark-plan {
+
+}
+.form-row {
+  padding-bottom:1em;
+}
+
+input .exp {
+  width: 4em;
+}
+
+.form-row span {
+  width: 10em;
+  float: left;
+  font-weight: bold;
+
+}
+
+.form-row input {
+  width: 100%;
+}
+
+.billing-container {
+  display: block;
+  width: 100%;
+}
+
+h1.welcome-app {
+  font-size: 1.75em;
+
+}
+#qn-logged-in {
+  margin-top: -.5em;
+  margin-bottom: 1em;
+}
+
+.login-photo {
+  margin-bottom: -.2em;
+}
+
+
+
+th {
+  width: 8em;
+  text-align: left;
+}
+
+table tr th {border-bottom:2px solid #F8F8F8;}
+
+table { border-collapse: collapse; }
+table tr {border-bottom:2px solid #F8F8F8; margin-bottom: 3px; }
+
+.account-heading {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+input[type=CHECKBOX] {
+  width: 2em;
+  text-align: left; 
+  margin-top: .5em; 
+  margin-bottom: .5em; 
+  vertical-align: middle;
+}
+
+
+.lead-row {
+  float: left;
+  width: 50%;
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+.active-text, .cancelled-text {
+  font-weight: bold;
+}
+
+.active-text {
+  color: #3477d3;
+}
+
+.cancelled-text {
+  color: #E44727;
+}
+
+@media (max-width:880px) {
+
+  .gaurantee {
+    margin: 0em .5em 0em 0em;
+
+  }
+  .plan {
+    padding:.25em 1em .25em 1em;
+  }
+
+ .bonus {    
+      padding:.125em .5em .125em .5em;
+    }
+
+  .lead-row {
+    min-width: 100%;
+    display: block;  
+    margin-bottom: -.8em;
+  }
+
+  .lead-row+.lead-row {
+    margin-bottom: 0em;
+  }
+
+    input[type=CHECKBOX] {
+    width: 2em;
+    text-align: left; 
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width:770px) {
+  body {
+  padding: 0em 2em;
+  }
+}
+
+@media (max-width:660px) {
+  body {
+  font-size: 18px;
+  padding: 0em 2em;
+  }
+
+  .sticky {
+    margin: 1em auto 1em auto;
+  }
+
+
+
+}
+
+@media (max-width:615px) {
+  .sticky3 {
+    margin-left: 5em;
+  }
+  .sticky2 {
+
+    float: right;
+  }
+
+
+}
+
+@media (max-width:440px) {
+  body {
+  font-size: 16px;
+  padding: 0em 1em;
+  }
+
+  h1 {
+  }
+
+}
+
+
+
+.members-table-sorting {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  display: table;
+}
+
+.members-table-sorting li {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  margin-right: .75em;
+  padding: 0;
+
+
+}
+
+table.members {
+  width: 100%
+}
+
+#qn-members {
+ margin-top: .5em;
+ margin-bottom: 2em;
+}
+
+td.email {
+}
+td.status {
+}
+
+td.name {
+  width: 8em;
+  font-weight: bold;
+}
+
+.email {
+  width: 9em;
+}
+
+.action {
+  text-align: center;
+
+  width: 1.5em;
+}
+
+.status {
+  width:4em;
+}
+.member-plan {
+  width:5em;
+}
+.member-photo {
+  width: 3em;
+}
+
+.member-since {
+  width: 6em;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 1px solid #eee;
+        border-radius: 3px;
+        margin-top: 1em; }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 2px solid #f8f8f8; 
+    position: relative;
+    text-align: center;
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /*
+  Label the data
+  */
+
+td.name , .action , .status , .member-plan , .member-photo , .email, .member-since {
+  width: 100%;
+}
+
+
+}
+</style>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45184123-1', 'letsworkshop.com');
+    ga('send', 'pageview');
+  </script>
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/adx2xiv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <div class="quick-nav" id="qn-members">
+    <ul>
+
+      <li>
+        <a href="#"><strong>Sign Out</strong></a>
+      </li>
+      <li>
+      <input type=search results=5 autosave=some_unique_value placeholder=Search members... name=s>
+      </li>
+
+    </ul>
+  </div>
+  <div class="members-content" id="fade2" >
+
+    <h1>Workshop Members</h1>
+    <div>
+    <ul class="members-table-sorting small">
+      <li>
+        All Active Members (210)
+      </li>
+      <li>
+        <a href="#">Consultancy (78)</a>
+      </li>
+      <li>
+        <a href="#">Designer (39)</a>
+      </li>
+      <li>
+        <a href="#">Developer (90)</a>
+      </li>
+      <li>
+        <a href="#">Inactive (100)</a>
+      </li>
+      <li>
+        <strong><a href="#">+ New Member</a></strong>
+      </li>
+    </ul>
+
+
+
+<table style="float:left;" class="members small">
+  <thead>
+  <tr>
+    <th colspan="2">Member <a style="font-size:.5em;"href="#">&#9660;</a></th>
+
+    <th class="email">Email <a style="font-size:.5em;"href="#">&#9660;</a></th>
+    <th class="member-since">Member Since <a style="font-size:.5em;"href="#">&#9650;</a></th>
+    <th class="member-plan">Plan <a style="font-size:.5em;"href="#">&#9660;</a></th>
+    <th class="status">Status <a style="font-size:.5em;"href="#">&#9660;</a></th>
+    <th class="action"></th>
+  </tr>
+  </thead>
+  <tbody>
+
+
+    <tr>
+    <td class="member-photo" style="padding-top:.5em;">
+      <a href="../logged-in-admin">
+        <img style="width:3em; height:3em; border-radius:10em; margin:0;" src="https://pbs.twimg.com/profile_images/378800000603422139/7c686dc4acd801077ec80c7c5cc6e1a1.jpeg">
+      </a>
+    </td>
+    <td class="name">Kurt Elster</td>
+    <td class="email">kurt@ethercycle.com</td>
+    <td class="member-since">29 Feb 2013</td>    
+    <td class="member-plan ">Consultancy</td>    
+       <td class="status"><span class="active-text">Active</span></td>
+       <td class="action"><strong><a href="#" class="" style="color:#E44727">&times;</a></strong></td>
+  </tr>
+  <tr>
+    <td class="member-photo" style="padding-top:.5em;">
+          <a href="../logged-in-admin">
+              <img style="width:3em; height:3em; border-radius:10em; margin:0;" src="https://s3.amazonaws.com/clarityfm-production/users/pictures/401/normal_square/mugshot.png?1347465455">
+          </a>
+        </td>
+    <td class="name">Brennan Dunn</td>
+    <td class="email">brennan@planscope.io</td>
+    <td class="member-since">26 Feb 2013</td>
+    <td class="member-plan">Comped</td>    
+    <td class="status"><span class="active-text">Active</span><strong></td>
+    <td class="action"><strong><a class="" href="#" style="color:#E44727">&times;</a></strong></td>
+
+
+  </tr>
+  <tr>
+    <td class="member-photo" style="padding-top:.5em;">
+          <a href="../logged-in-admin">
+              <img style="width:3em; height:3em; border-radius:10em; margin:0;" src="https://pbs.twimg.com/profile_images/80603031/patrick-mckenzie.jpg">
+          </a>
+        </td>
+    <td class="name">Patrick McKenzie</td>
+    <td class="email">patrick@kalzumeus.com</td>
+    <td class="member-since">24 Feb 2013</td>
+    <td class="member-plan">Consultancy</td>      
+    <td class="status"><span class="cancelled-text">Cancelled</span><strong></td>
+      <td class="action"></td>
+
+  </tr>
+
+
+  <tr>
+    <td class="member-photo" style="padding-top:.5em;">
+      <a href="../logged-in-admin">
+        <img style="width:3em; height:3em; border-radius:10em; margin:0;" src="../images/testimonials/robert-williams.png">
+      </a>
+    </td>
+    <td class="name">Robert Williams</td>
+    <td class="email">rob@robw.co</td>
+    <td class="member-since">22 Feb 2013</td>    
+    <td class="member-plan">Admin</td>    
+       <td class="status"><span class="active-text">Active</span><strong></td>
+       <td class="action"><strong><a class="" href="#" style="color:#E44727">&times;</a></strong></td>
+  </tr>
+
+
+  </tbody>
+</table>
+</div>
+</div>
+<!--
+<div class="nav-foot" style="margin-top: 5em; padding-top:2em; text-align: center;">
+
+  
+          <a class="cancel" href="/cancel.html">
+            Cancel my account
+        </a>
+</div>
+ 
+-->
+
+
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+  </body>
+</html>    
+
+
+

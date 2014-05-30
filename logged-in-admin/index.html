@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Workshop - The best freelance leads in your inbox.</title>
+  <meta name="description" content="Workshop - The best freelance opportunities delivered to your inbox every day.">
+  <meta name="keywords" content="Workshop, Letsworkshop, freelance, leads, job, board, boards, best, inbox, deleted my portfolio, made 30k in six months, the email line that's client repellant">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <!--STRIPE-->
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+<style media="screen" type="text/css">
+
+button {
+  cursor: pointer;
+}
+
+.cancel {
+  padding-bottom: 2em;
+}
+
+.checkmark-plan {
+
+}
+.form-row {
+  padding-bottom:1em;
+}
+
+input .exp {
+  width: 4em;
+}
+
+.form-row span {
+  width: 10em;
+  float: left;
+  font-weight: bold;
+
+}
+
+.form-row input {
+  width: 100%;
+}
+
+.billing-container {
+  display: block;
+  width: 100%;
+}
+
+h1.welcome-app {
+  font-size: 1.75em;
+
+}
+#qn-logged-in {
+  margin-top: -.5em;
+  margin-bottom: 1em;
+}
+
+.login-photo {
+  margin-bottom: -.2em;
+}
+
+
+
+th {
+  width: 8em;
+  text-align: left;
+}
+
+table tr th {border-bottom:2px solid #F8F8F8;}
+
+table { border-collapse: collapse; }
+table tr {border-bottom:2px solid #F8F8F8; margin-bottom: 3px; }
+
+.account-heading {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+input[type=CHECKBOX] {
+  width: 2em;
+  text-align: left; 
+  margin-top: .5em; 
+  margin-bottom: .5em; 
+  vertical-align: middle;
+}
+
+
+.lead-row {
+  float: left;
+  width: 50%;
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+.lead-row div {
+  border-bottom:2px solid #F8F8F8; margin-bottom: 3px;
+}
+
+@media (max-width:880px) {
+
+  .gaurantee {
+    margin: 0em .5em 0em 0em;
+
+  }
+  .plan {
+    padding:.25em 1em .25em 1em;
+  }
+
+ .bonus {    
+      padding:.125em .5em .125em .5em;
+    }
+
+  .lead-row {
+    min-width: 100%;
+    display: block;  
+    margin-bottom: -.8em;
+  }
+
+  .lead-row+.lead-row {
+    margin-bottom: 0em;
+  }
+
+    input[type=CHECKBOX] {
+    width: 2em;
+    text-align: left; 
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width:770px) {
+  body {
+  padding: 0em 2em;
+  }
+}
+
+@media (max-width:660px) {
+  body {
+  font-size: 18px;
+  padding: 0em 2em;
+  }
+
+  .sticky {
+    margin: 1em auto 1em auto;
+  }
+
+
+
+}
+
+@media (max-width:615px) {
+  .sticky3 {
+    margin-left: 5em;
+  }
+  .sticky2 {
+
+    float: right;
+  }
+
+
+}
+
+@media (max-width:440px) {
+  body {
+  font-size: 16px;
+  padding: 0em 1em;
+  }
+
+  h1 {
+  }
+
+}
+
+
+
+</style>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45184123-1', 'letsworkshop.com');
+    ga('send', 'pageview');
+  </script>
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/adx2xiv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <div class="quick-nav" id="qn-logged-in">
+    <ul>
+
+      <li>
+        <a href="#"><strong>Sign Out</strong></a>
+      </li>
+      <li>
+        <a href="MAILTO:support@letsworkshop.com">Support</a>
+      </li>
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="content" id="fade2" >
+    <div>
+      <h1 class="welcome-app">
+        <span class="unbold">      
+          <script type="text/javascript">
+    function greeting() {
+    Now = new Date()
+    Hour = Now.getHours();
+    if (Hour < 5)
+    msg ="Happy late-night,"
+    else if(Hour < 12)
+    msg ="Good morning,"
+    else if(Hour < 18)
+    msg ="Good afternoon,"
+    else if (Hour < 24)
+    msg ="Good evening,"
+    return( msg )
+    }
+    document.write(greeting())
+
+      </script>
+        </span>  Robert Williams<span class="unbold">...</span>  
+      </h1>
+
+            <hr>
+      <h2 class="account-heading">Your Workshop Account</h2>
+      <p class="lead">
+        You're on the <span class="green" style="margin-right:-.1em;">&#10004;</span> <strong>Consultancy Plan</strong>, you receive <strong>10+ leads per day</strong>.
+      </p>
+
+      <p>
+        That means if your hourly rate is <strong>$100</strong>, you save <strong>$1,200+/month</strong> in billable hours with your <strong>$64/month</strong> subscription. Go Robert! No seriously, go land some work.
+      </p>
+
+      <hr>
+
+      <h2 class="account-heading">Update Personal Info</h2>
+
+  <table id="account" width="100%" cellspacing="0" cellpadding="8em">
+  <tr>
+    <th></th>
+    <td>
+      <img class="../images/testimonials/quote-photo" style="width:4em; height:4em; border-radius:10em; margin:0;" src="../images/testimonials/robert-williams.png">
+      <br>
+      <a href="#" class="small" style="text-decoration: underline; display: inline;">Upload a photo</a>
+    </td>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Name" type="text" value="Robert Williams">
+    </td>
+  </tr>
+
+  <tr>
+    <th>Email</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Email" type="text" value="rob@robw.co">
+    </td>
+  </tr>
+  <tr>
+    <th></th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="2nd Email" type="text" placeholder="Second Email (Optional)">
+    </td>
+  </tr>
+
+    <tr>
+    <th>Password</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="password" name="password" title="Password" type="password" placeholder="•••••••">
+    </td>
+  </tr>
+       
+    <tr>
+    <th>Plan</th>
+    <td>
+      <select>
+        <option>Consultancy ($64/month)</option>
+        <option>Developer ($39/month)</option>
+        <option>Designer ($39/month)</option>
+      </select>
+    </td>
+  </tr>  
+</table>
+
+
+      <h2 class="account-heading">Choose Lead Specialty Preferences <strong>(Feature Coming Soon!)</strong></h2>
+
+<div class="lead-row">
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Agency RFP
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Full-service projects
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Consulting
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Web design
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> UI design
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Branding
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Art Direction
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Graphic Design
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> 3D Design
+  </div>
+</div>
+
+<div class="lead-row">
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Ruby Development 
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Mobile Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Ecommerce Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> WP Design / Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> CMS Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Front-end Development
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> PHP Development
+  </div>
+      <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Drupal Development
+  </div>
+      <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Drupal Development
+  </div>
+</div>
+
+
+      <h2 class="account-heading" style="float: left;">Update Billing Info</h2>
+
+
+
+
+  <table id="account" width="100%" cellspacing="0" cellpadding="8em">
+
+  <tr>
+    <th>Card Number</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="CC number" type="text" pattern="[0-9]{13,16}" placeholder="XXXX-XXXXXX–8109">
+    </td>
+  </tr>
+
+    <tr>
+    <th>CVC</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Secret Code" type="text" placeholder="XXXX">
+    </td>
+  </tr>
+  <tr>
+    <th>Expiration (MM/YYYY)</th>
+    <td>
+      <input style="max-width:3em;" autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" type=text pattern="[0-9]{13,16}" placeholder="09">
+
+      <input style="max-width:5em;" autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" type=text pattern="[0-9]{13,16}" placeholder="2016">
+    </td>
+  </tr>
+
+</table>
+</div>
+
+  <div style="width:100%; display:table;">
+      <button style="float:left; display:block; margin-top:4em;">
+          Update My Information</button>
+      </div>
+</div>
+
+<!--
+  <table class="account">
+
+  <tr>
+    <th>Name</th>
+    <td>Robert Williams</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>rob@robw.co</td>
+  </tr>
+  <tr>
+    <th>Additional Email (optional)</th>
+    <td>none</td>
+  </tr>
+  <tr>
+    <th>Password</th>
+    <td>•••••••</td>
+  </tr>
+    <tr>
+    <th></th>
+    <td><img class="quote-photo login-photo" src="../robert-williams.png"> <input type="file" class="small upload-text" name="datafile" size="40"></td>
+  </tr>
+</table>
+
+
+      <hr>
+      <h2>Billing / Invoice</h2>
+
+  <table class="account">
+  <tr>
+    <th>Password</th>
+    <td>•••••••</td>
+  </tr>
+</table>
+
+
+      <p><strong>Current Plan:</strong>  </p>
+
+      <p>
+        <span class="input-wrapper">
+          <label for="username" class="overlabel" style="display:none;">Username or Email</label>
+          <input autocapitalize="off" autocomplete="on" autocorrect="off" id="username" name="username" title="Email" type="text" placeholder="Email">
+        </span>
+      </p>
+
+      <p>
+        <span class="input-wrapper">
+          <label for="password" class="overlabel" style="display:none;">Password</label>
+          <input autocapitalize="off" autocomplete="on" autocorrect="off" id="password" name="password" title="Password" type="password" placeholder="Password">
+        </span>
+      </p>
+
+      
+      <a href="https://confirmsubscription.com/h/i/7030908AEF2E8C7E">
+          <div class="button signin-btn">
+            Sign in
+          </div>
+        </a>
+
+  </div>
+</div>
+
+
+
+<div class="nav-foot" style="margin-top: 9em; text-align: center;">
+      <a href="https://confirmsubscription.com/h/i/7030908AEF2E8C7E">
+          <div class="button signin-btn">
+            Cancel my account
+          </div>
+        </a>
+</div>
+-->
+
+<div class="content">
+
+
+  <hr>
+
+    <h2 class="account-heading">Account Notes</h2>
+
+
+  <table id="account" width="100%" cellspacing="0" cellpadding="8em">
+  <tr>
+    <p>This client's website is <a href="http://robw.co">http://robw.co</a> <strong><span class="small gray-text">17 FEB 2014</span> <a href="#" style="color:#E44727">&times; </a></strong></p>
+  </tr>
+    <tr>
+    <p>Robert wears a XL size shirt. <strong><span class="small gray-text">17 FEB 2014</span> <a href="#" style="color:#E44727">&times;</a></strong></p>
+  </tr>
+
+  <tr>
+    <p>Robert has requested he be sent an invoice every month at the following adresss: 30900 Olympia Rose Dr. Murrieta California 92563. <strong><span class="small gray-text">17 FEB 2014</span> <a href="#" style="color:#E44727">&times;</a> </strong> </p>
+  </tr>
+  </table>
+
+          <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="40" tabindex="4"></textarea>
+          <br>
+          <button>Add note</button>
+
+        </a>
+
+
+    <h2 class="account-heading">Role</h2>
+
+
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Admin
+<br>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Free User
+<br>
+  <INPUT NAME="options" TYPE="CHECKBOX" VALUE="o1"> Pause Account
+
+
+  </div>
+
+
+<div class="nav-foot" style="margin-top: 5em; padding-top:2em; text-align: center;">
+
+  
+          <a class="cancel small" href="/cancel.html">
+            Cancel my account
+        </a>
+</div>
+ 
+
+
+
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+  </body>
+</html>    
+
+
+

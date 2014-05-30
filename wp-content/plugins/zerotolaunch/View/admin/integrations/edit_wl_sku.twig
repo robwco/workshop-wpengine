@@ -1,0 +1,21 @@
+<tr>
+	<td>
+        <div class="select-row">
+            <select class="wl-level-name" name="Wishlist[{{i}}][level]">		
+		        <option></option>            	
+				{% for key, level in levels %}
+		            <option id="{{key}}">{{level.name}}</option>
+		        {% endfor %}
+			</select>
+        </div> 
+    </td>
+    
+    <td>
+    	<input name="Wishlist[{{i}}][levelID]" class="levelID" type="hidden"/>
+        <input name="Wishlist[{{i}}][sku]" class="sku" type="hidden"/>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+</tr>

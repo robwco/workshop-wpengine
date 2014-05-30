@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Workshop - The best freelance leads in your inbox.</title>
+  <meta name="description" content="Workshop - The best freelance opportunities delivered to your inbox every day.">
+  <meta name="keywords" content="Workshop, Letsworkshop, freelance, leads, job, board, boards, best, inbox, deleted my portfolio, made 30k in six months, the email line that's client repellant">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <!--STRIPE-->
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+<style media="screen" type="text/css">
+
+button {
+  cursor: pointer;
+}
+
+.cancel {
+  padding-bottom: 2em;
+}
+
+.checkmark-plan {
+
+}
+.form-row {
+  padding-bottom:1em;
+}
+
+input .exp {
+  width: 4em;
+}
+
+.form-row span {
+  width: 10em;
+  float: left;
+  font-weight: bold;
+
+}
+
+.form-row input {
+  width: 100%;
+}
+
+.billing-container {
+  display: block;
+  width: 100%;
+}
+
+h1.welcome-app {
+  font-size: 1.75em;
+
+}
+#qn-logged-in {
+  margin-top: -.5em;
+  margin-bottom: 1em;
+}
+
+.login-photo {
+  margin-bottom: -.2em;
+}
+
+.red {
+  color: #E44727;}
+
+
+th {
+  width: 8em;
+  text-align: left;
+}
+
+table tr th {border-bottom:2px solid #F8F8F8;}
+
+table { border-collapse: collapse; }
+table tr {border-bottom:2px solid #F8F8F8; margin-bottom: 3px; }
+
+.account-heading {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+input[type=CHECKBOX] {
+  width: 2em;
+  text-align: left; 
+  margin-top: .5em; 
+  margin-bottom: .5em; 
+  vertical-align: middle;
+}
+
+
+.lead-row {
+  float: left;
+  width: 50%;
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+.lead-row div {
+  border-bottom:2px solid #F8F8F8; margin-bottom: 3px;
+}
+
+@media (max-width:880px) {
+
+  .gaurantee {
+    margin: 0em .5em 0em 0em;
+
+  }
+  .plan {
+    padding:.25em 1em .25em 1em;
+  }
+
+ .bonus {    
+      padding:.125em .5em .125em .5em;
+    }
+
+  .lead-row {
+    min-width: 100%;
+    display: block;  
+    margin-bottom: -.8em;
+  }
+
+  .lead-row+.lead-row {
+    margin-bottom: 0em;
+  }
+
+    input[type=CHECKBOX] {
+    width: 2em;
+    text-align: left; 
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width:770px) {
+  body {
+  padding: 0em 2em;
+  }
+}
+
+@media (max-width:660px) {
+  body {
+  font-size: 18px;
+  padding: 0em 2em;
+  }
+
+  .sticky {
+    margin: 1em auto 1em auto;
+  }
+
+
+
+}
+
+@media (max-width:615px) {
+  .sticky3 {
+    margin-left: 5em;
+  }
+  .sticky2 {
+
+    float: right;
+  }
+
+
+}
+
+@media (max-width:440px) {
+  body {
+  font-size: 16px;
+  padding: 0em 1em;
+  }
+
+  h1 {
+  }
+
+}
+
+
+
+</style>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45184123-1', 'letsworkshop.com');
+    ga('send', 'pageview');
+  </script>
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/adx2xiv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <div class="quick-nav" id="qn-logged-in">
+    <ul>
+
+      <li>
+        <a href="#"><strong>Sign Out</strong></a>
+      </li>
+      <li>
+        <a href="MAILTO:support@letsworkshop.com">Support</a>
+      </li>
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="content" id="fade2" >
+    <div>
+      <h1 class="welcome-app">
+        <span class="unbold">      
+          <script type="text/javascript">
+    function greeting() {
+    Now = new Date()
+    Hour = Now.getHours();
+    if (Hour < 5)
+    msg ="Happy late-night,"
+    else if(Hour < 12)
+    msg ="Good morning,"
+    else if(Hour < 18)
+    msg ="Good afternoon,"
+    else if (Hour < 24)
+    msg ="Good evening,"
+    return( msg )
+    }
+    document.write(greeting())
+
+      </script>
+        </span>  Robert Williams<span class="unbold">...</span>  
+      </h1>
+
+            <hr>
+      <h2 class="account-heading">Your Workshop Account</h2>
+      <p class="lead" style="text-indent: -.75em;">
+        <strong class="red">&times; Your Workshop account is currently  not active</strong>. You cancelled your account on <strong>12 February 2014</strong> and no longer recieve any leads.
+      </p>
+
+      <p>
+       Sorry to hear you didn't land enough work on your first try, I totally get why you've decided to cancel. A ton of people find they contact more prospects when they're getting leads every morning and decide to sign up again. If in the future that's you, you can do so below - <strong>and get 25% off on your first month back.</strong></p>
+
+
+      <hr>
+
+
+  <div style="width:100%; display:table;">
+      <button style="float:left; display:block; margin-top:4em;">
+          Re-activate my Account</button>
+      </div>
+</div>
+</div>
+
+<div class="nav-foot" style="margin-top: 5em; padding-top:2em; text-align: center;">
+
+  
+          <a class="cancel small" title="Oh no!" href="#">
+            Delete my account forever
+        </a>
+</div>
+ 
+
+
+
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+  </body>
+</html>    
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Get specific tips on landing your dream job in months instead of years -- Dreamjob from I Will Teach You To Be Rich</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="/wp-content/plugins/zerotolaunch/themes/landing-pages/ztl-iwt/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Some of the pages don't have JQuery Installed. Make sure it exists -->
+    <script type="text/javascript">
+        if (typeof jQuery === 'undefined'){
+            document.write("<scr" + "ipt type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\"></scr" + "ipt>");
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="inner-wrap group">
+        <div class="header group">
+            <div class="logo">
+                <img {{ editing ? 'data-toggle="editable" id="ZTLContentLogo"' }} src="{{ landingPage.logo_url }}" alt="" style="max-height: 100px;">
+            </div>
+        </div>
+    </div>
+    <div class="inner-wrap">
+
+        <div class="headline" {{ editing ? 'contenteditable="true" data-toggle="editableContent"  id="ZTLContentHeader"' }}>
+            {{ landingPage.header|raw }}
+        </div>
+
+        <div class="main group">
+            <div class="wide left" {{ editing ? 'contenteditable="true" data-toggle="editableContent" id="ZTLContentBody"' }}>
+                {{ landingPage.body|raw }}
+            </div>
+
+            <!-- Sidebar starts -->
+            <div class="narrow right">
+
+                <div id="ZTLOptinForm">
+                    {{ optinForm ? render_optin_form(optinForm, landingPage.id)|raw  }}
+                </div>
+
+            </div><!-- Sidebar ends -->
+        </div> <!-- End of main and narrow sidebar group -->
+
+    </div> <!-- Closes Innerwrap -->
+</div> <!-- closes wrap -->
+
+<div class="footer group">
+    <div class="inner-wrap">
+        <div class="copyright center" {{ editing ? 'contenteditable="true" data-toggle="editableContent" id="ZTLContentFooter"' }}>
+            <p>Copyright &copy; 2014 I Will Teach You To Be Rich</p>
+            <p>2269 Chestnut Street #160, San Francisco, CA 94123</p>
+        </div>
+    </div>
+</div> <!-- end of footer -->
+
+{% if editing %}
+    {% include 'editor_code.php' %}
+{% else %}
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery.get("?logView={{ optinForm.slug }}&id={{ optinForm.id }}&type=landing_page&landingPageID={{ landingPage.id }}&c=" + new Date().toDateString());
+            // Fix for Vertical Optin Widgets
+            jQuery('#ZTLOptinForm form').addClass('widget');
+        });
+    </script>
+{% endif %}
+
+
+</body>
+</html>

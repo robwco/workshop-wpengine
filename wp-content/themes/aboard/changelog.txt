@@ -1,0 +1,195 @@
+/*--------------------------------------------------------------------*/
+/*   ABOARD CHANGELOG - DEMO.THEMEBEANS.COM/ABOARD
+/*--------------------------------------------------------------------*/ 
+
+
+OCT 4 2013 - Version 1.8.2
+	*Bean Social Plugin Compatibility
+		-style.css (2770)
+	*Performance & Maintenance
+		-style.css (version number)
+		-screenshot.png (updated branding)
+		-style.css (line 445 - header WP3.6 fix)
+		-lib/functions/core-functions.php (updated links)
+		-lib/functions/theme-functions.php (updated links)
+
+
+AUG 27 2013 - Version 1.8.1
+	*Gallery post format re-ordering
+		-lib/functions/media.php (line 233)
+	*Performance & Maintenance
+		-lib/functions/theme-setup.php (line 27 - child theme fix)
+		-style.css (version number)
+		 
+		 
+June 19 2013 - Version 1.8
+	*Removed Twitter Widget (in lieu of Bean Tweets Plugin)
+	    -/assets/js/twitter-widget.js (REMOVED)	
+		-/lib/widgets/widget-twitter.php (REMOVED)
+		-/functions.php (REMOVED - include(.../widget-twitter.php' ) )
+		-/lib/functions/core-functions.php (Bean Tweets Plugin Admin Notice)
+    	-Download Tweets Plugin at http://themebeans.com/plugins/bean-tweets-plugin
+	*Bean Shortcodes Plugin Compatibility
+		-functions.php (removed shortcodes references)
+		-lib/functions/theme-setup.php
+		-lib/assets/js/custom.js (removed shortcodes jquery)
+		-ib/assets/js/custom-libraries.js (removed shortcodes jquery)
+		-lib/shortcodes (REMOVED)
+		-assets/images/shortcodes (REMOVED)	
+		-Download Bean Shortcodes Plugin at http://themebeans.com/plugins/bean-shortcodes-plugin
+	*Performance & Maintenance
+		-style.css (version number)	
+		-assets/images/apple-touch-icon.png (updated branding)
+		-lib/admin/options/assets/js/options.js (faster theme options panel)
+		
+		
+MAY 2 2013 - Version 1.7
+	*SEO Title Update/Touch-up
+		-header.php (title)
+	*Retina update (now supporting FF 2.0)
+		-assets/css/mobile.css (line 881)
+		-assets/css/shortcodes.css (line 955)	
+	*Animation - Fade in on page load (Theme Options Option)
+		-lib/functions/theme-options.php (not_animated)
+		-lib/functions/theme-setup.php (not_animated statement)
+		-lib/functions/core-functions.php (line 69)
+		-style.css (Theme Animations)	
+	*Shortcode Pop-Up Modal Update - fade / drop animation
+		-/assets/css/shortcodes.css (lines 741 - 876)
+		-/lib/shortcodes/theme-shortcodes.php (line 617)
+		-/assets/css/js/custom-libraries.js (line 616)
+	*Twitter widget mobile bug fix
+		-lib/widgets/widget-twitter.php	
+		-assets/js/twitter-widget.js (new)
+	*Added /rtl.css stylesheet base for improved language support
+	*Google Analytics bug fix
+		-lib/functions/theme-options.php (header_analytics & other_analytics)	
+	*Bean form builder enhancements & error animation	
+		-lib/admin/forms.php
+		-style.css (lines 223-235 & BeanFadeOut CSS Animation)
+		-assets/css/framework.css (line 485)
+	*Performance & Maintenance
+		-header.php (head elements)
+		-style.css (version number)	
+		-screenshot.png (updated branding)
+		
+		
+MAR 18 2013 - Version 1.6
+	*Added Custom CSS Input via Theme Options 
+		-header.php (lines 81)
+		-lib/functions/theme-options.php (lines 421-436)
+		-lib/functions/theme-functions.php (lines 938-961)
+		-lib/admin/options/assets/css/options.css (lines 485-501)
+	*Framework Backend Maintenance
+		-lib/admin/options/options.php (line 82)
+		-lib/admin/options/options-init.php (lines 45-46, 116-128)
+		-lib/functions/theme-functions.php (lines 87-96)
+	*Theme Options Admin Bar Button
+		-lib/functions/theme-functions.php (lines 67-82)
+	*Performance & maintenance
+		-style.css (version number)		
+
+
+MAR 11 2013 - Version 1.5
+ 	*Blog Header Title Input Fix
+ 		-lib/functions/theme-functions.php (lines 901-933)
+ 		-lib/functions/theme-options.php (lines 86-100)
+ 		-lib/content/content-header.php (lines 87-90)
+ 	*Performance & maintenance
+ 		-style.css (version number)
+ 		-style.css (text widget footer touch-up line 2741)
+ 		-screenshot.png (retina quality image)
+ 		
+
+FEB 17 2013 - Version 1.4
+ 	*Added Facebook & Twitter social sharing option.
+ 		-style.css (lines 1450-1486)
+ 		-lib/functions/theme-functions.php (lines 829 - 895)
+ 		-lib/functions/theme-options.php (lines 147 - 186)
+ 		-single.php (lines 7, 47-61)
+ 	*Added custom skills widget	
+ 		-style.css (lines 2920-2978)
+ 		-lib/widgets/widget-skills.php (new file)
+ 		-functions.php (line 291)
+ 	*Added "about the author" theme option	
+ 		-style.css (lines 1451- 1513, 1548)
+ 		-lib/functions/theme-options.php (lines 109 - 116)
+ 		-lib/functions/theme-setup.php (accent color, line 172)
+ 		-single.php (lines 61-81)
+ 	*Performance & maintenance	
+ 		-style.css (version number)
+ 		-style.css (UI ToTop FireFox fix, line 171)
+ 		-lib/functions/theme-setup.php (FireFox accent color fix, lines 172-203)
+ 		-lib/content/content-header.php (author archives lines 50-59)
+ 
+
+JAN 24 2013 - Version 1.3
+ 	*Performance & maintenance
+ 		-style.css (version number)
+ 		-theme-setup.php (line 26)
+ 		-renamed radium.css to framework.css (UX improvement)
+ 		-removed assets/rtl
+ 		-removed radium_message_overlay.js (not needed)
+ 		-removed lib/content/content-status.php (no status post format)
+ 		-lib/content (typo in comments)
+ 		-screenshot.png
+		-style.css (fixed WP editor bug, lines 1-31)
+		
+		
+JAN 6 2013 - Version 1.2
+ 	*Fixed moderation bug
+ 		-style.css (line 1620 & line 1550)
+ 	*Fixed portfolio custom hover text bug
+ 		-archive-portfolio.php (line 106)
+ 		-single-portfolio.php (line 191)	
+ 	*Removed ref to custom-form-sprites.png
+ 		-assets/images/custom-form-sprites.png
+ 		-mobile.css
+ 		-mobile-rtl.css
+ 		-rtl.css	
+ 	*Performance & maintenance	
+ 		-style.css (version number)
+ 		-theme-setup.php (removed line 29 - font reference)
+ 		-lib/admin/forms/admin.php (UI mods)
+ 		-style.css (clean-up)
+ 		-lib/content/content-header.php
+ 	
+ 	
+DEC 28 2012 - Version 1.1
+ 	*Added blogroll and single post sidebar capability
+ 	*Added page-sidebar-right.php
+ 	*Added page-sidebar-left.php
+ 	*Added social media widget
+ 		-lib/widgets/widget-social.php
+ 		-mobile.css (retina css)
+ 	*Added sidebar styles
+ 		-style.css
+ 		-core-funtions.php
+ 	*Added blog author option to theme options panel
+ 		-theme-functions.php
+ 		-theme-options.php
+ 	*Search & Search Form Modifications
+ 		-searchform.php
+ 		-search.php
+ 		-content-header.php
+ 	*Performance & maintenance
+ 		-style.css (version number)
+ 		-image.php
+ 		-theme-setup.php
+ 		-theme-functions.php
+ 		-theme-options.php
+ 		-screenshot.png
+ 		-widget-flickr.php
+ 		-single-faq.php
+ 		-shortcodes.css
+ 		-meta-post.php
+ 		-style.css
+ 		-single-portfolio.php
+ 		-lib/content
+ 		-index.php
+ 		-single.php
+ 		-page-portfolio.php
+ 
+ 
+DEC 17 2012 - Version 1.0
+ 	-First Release

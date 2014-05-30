@@ -1,0 +1,249 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+{% import 'admin/macros/form_error.html' as FormErrorMacro %}
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+  <div class="content-wrap">
+    
+    {% if popup.id %}
+    <h1>
+        Edit Lightbox
+    </h1>
+    {% else %}
+    <h1>
+        Add New Lightbox 
+    </h1>
+    {% endif %}
+    
+    <ul class="errors">
+        {% for error in errors %}
+            <li class="error">{{ error }}</li>
+        {% endfor %}
+        {% for error in popup.errors.get_error_list %}
+            {# set error_declared[]= error.attribute_var #}
+            <li class="error">{{ error.msg }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if (success_message | length) > 0 and (popup.errors.get_error_list | length) == 0 %}
+        
+        <div id="message" class="updated">        
+            <p>{{ success_message }}</p>
+        </div>
+         
+    {% endif %}  
+
+    <div class="group">
+        <form action="{{ current_page_url() }}&action=save" method="post" class="ztl-popup-form">
+            {{ model_nonce_field(popup)|raw }}
+            <input type="hidden" name="popup[id]" value="{{ popup.id }}"/>
+            <input type="hidden" name="_wp_http_referer" value="/wordpress/wp-admin/post.php?post=86&amp;action=edit&amp;message=1" />
+            <label class="ztl-widget-label">Lightbox Name</label>
+            <label class="ztl-info-label"><i>Give your Lightbox a descriptive name, so you can reference it later.</i></label>
+            <div class="{{ FormErrorMacro.get_class_if_input_has_error(popup.errors.get_error_list, 'name') }}">
+                <input type="text" id="ztl-popup-name-field" name="popup[name]" value="{{ popup.name }}" placeholder="Enter Lightbox name here"/>
+            </div>
+            <input type="hidden" id="ztl-popup-slug-field" name="popup[slug]" value="{{ popup.slug }}"/>
+    </div>
+    
+    <div class="group">
+        <label class="ztl-widget-label">Opt-in Form</label>
+        <label class="ztl-info-label"><i>Choose the Opt-in form to use when displaying your Lightbox.</i></label>
+        <div class="{{ FormErrorMacro.get_class_if_input_has_error(popup.errors.get_error_list, 'optin_form_id') }}">
+                {% if optin_forms is not empty %}
+                  <select id="selectOptinForm" name="popup[optin_form_id]">
+                  {% for optin_form in optin_forms %}
+                      <option {% if optin_form.id == popup.optin_form_id %}selected="selected"{% endif %} value="{{ optin_form.id }}">{{ optin_form.name }}</option>
+                  {% endfor %}
+                  </select> 
+                  <a style="vertical-align:center;padding-left:5px;" id="previewPopup" href="javascript:void(0);"><span style="font-size:15px">Preview Lightbox</span></a>
+                {% else %}
+                  <label class="ztl-info-label">There are no Opt-in Forms Created. <a href="/wp-admin/admin.php?page=ztl-optin-page-settings&action=edit">Create your first one now.</a></label>
+                {% endif %}
+            <!-- THIS NEEDS ADDRESSED/PLUGGED UP -->
+            {#
+              {% for optin_form in optin_forms %}
+                    {% if optin_form.id == popup.optin_form_id %}
+
+                    <p>List Name: {% for list in lists %}{{ list.name }} {% endfor %}<br />
+                        Redirect to: <a href="{{ optin_form.redirect_url }}">{{ optin_form.redirect_url }}</a><br />
+                    {% endif %}
+                {% endfor %}
+              </p>
+            #}
+        </div>
+    </div>
+
+    <div class="group">
+      <label class="ztl-widget-label">User Targeting Settings</label>
+      <label class="ztl-info-label"><i>The default values are recommended by Zero To Launch for maximum effectiveness.</i></label>
+<p>
+      <div style="float:left;clear:left;display:inline-block;" class="form-field dropdown">
+        <label class="ztl-in-line-widget-label">1.  When a user closes the lightbox, wait</label>
+        <select style="float:left;" name="popup[timeout_in_days]">
+            {% for days in range(1, 60) %}
+                <option {% if popup.timeout_in_days == days %}selected="selected"{% endif %} value="{{ days }}">{{ days }}</option>
+            {% endfor %}
+        </select>
+        <label class="ztl-in-line-widget-label"><strong>days</strong> before showing it again.</label>
+      </div>
+      <div style="float:left;clear:left;display:inline-block;" class="form-field dropdown">
+        <label class="ztl-in-line-widget-label">2.  The user will view the page for</label>
+        <select style="float:left" name="popup[time_to_popup]">
+            {% for seconds in range(1, 90) %}
+            <option {% if popup.time_to_popup == seconds %}selected="selected"{% endif %} value="{{ seconds }}">{{ seconds }}</option>
+            {% endfor %}
+        </select>
+        <label class="ztl-in-line-widget-label"><strong>seconds</strong> before the Lightbox appears.</label>
+      </div>
+      <div style="float:left;clear:left;display:inline-block;" class="form-field dropdown">
+        <label class="ztl-in-line-widget-label">3.  The user must visit</label>
+        <select style="float:left" name="popup[page_delay]">
+            {% for pages in range(1, 5) %}
+            <option {% if popup.page_delay == pages %}selected="selected"{% endif %} value="{{ pages }}">{{ pages }}</option>
+            {% endfor %}
+        </select>
+        <label class="ztl-in-line-widget-label"><strong>pages</strong> before the Lightbox appears.</label>
+      </div>
+    </div>
+
+
+
+    <div class="group">
+      <label class="ztl-widget-label">Active Pages <small>(Each Page may only have one lightbox associated with it)</small> </label>
+      <label class="ztl-info-label"><i>Active Pages define which page your Lightbox appears on.</i></label>
+        <div class="{{ FormErrorMacro.get_class_if_input_has_error(popup.errors.get_error_list, 'display_location') }}">
+            <label>      
+                {% if "frontpage" in existingPopupNames %}
+                    <input type="radio" name="popup[display_location]" 
+                        disabled="disabled" value="frontpage"/> Front Page (Used by:
+                            <a href="?page=ztl-popups&action=edit&id={{existingPopups['frontpage']['id']}}">{{existingPopups['frontpage']['name']}}</a>)
+                {% else %}
+                    <input type="radio" name="popup[display_location]" 
+                        value="frontpage" 
+                    {% if popup.display_location == "frontpage" %}checked{% endif %}/> Front Page
+                {% endif %}
+            </label>
+            <label>
+                {% if "blogtop" in existingPopupNames %}
+                    <input type="radio" name="popup[display_location]" 
+                        disabled="disabled" value="blogtop"/> Blog Home Page (Used by:
+                            <a href="?page=ztl-popups&action=edit&id={{existingPopups['blogtop']['id']}}">{{existingPopups['blogtop']['name']}}</a>)
+                {% else %}
+                    <input type="radio" name="popup[display_location]" value="blogtop" 
+                    {% if popup.display_location == "blogtop" %}checked{% endif %}/> Blog Home Page
+                {% endif %}
+            </label>
+                                    
+            <label>
+                {% if "everywhere" in existingPopupNames %}
+                    <input type="radio" name="popup[display_location]" 
+                        disabled="disabled" value="everywhere"/> Everywhere (Used by: 
+                            <a href="?page=ztl-popups&action=edit&id={{existingPopups['everywhere']['id']}}">{{existingPopups['everywhere']['name']}}</a>)
+                {% else %}
+                    <input type="radio" name="popup[display_location]" 
+                         value="everywhere" 
+                        {% if popup.display_location == "everywhere" or popup.display_location == ''%}checked{% endif %}/> Everywhere            
+                {% endif %}
+            </label>
+            <label>
+                <input type="radio" id="specific-pages" 
+                name="popup[display_location]" value="pages" 
+                {% if popup.display_location == "pages" %}checked{% endif %}/> Specific page
+            </label>
+
+            <div class="active-pages">
+                <p>Pages:</p>
+
+                {% for post in posts %}
+                    {% if post.ID != frontpage and post.ID != postpage %}
+                        <label>
+                            {% if (post.ID in existingPageIDs) %}
+                                <input type="radio" name="popup[valid_page_ids][]" 
+                                    value="{{ post.ID }}" {% if post.ID in valid_page_ids %} checked{% endif %} 
+                                    class="page-selector" disabled="disabled"/> {{ post.post_title }} (Used by: 
+                                        <a href="?page=ztl-popups&amp;action=edit&amp;id={{existingPages[post.ID]['id']}}">{{existingPages[post.ID]['name']}}</a> )<br />
+                            {% else %}
+                                <input type="radio" name="popup[valid_page_ids][]" 
+                                    value="{{ post.ID }}" {% if post.ID in valid_page_ids %} checked{% endif %} 
+                                    class="page-selector"/> {{ post.post_title }} <br />
+                            {% endif %}
+                        </label>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>              
+    </div>
+
+    <div>
+      <label class="ztl-widget-label">Options</label>
+        <label>
+            <input type="hidden" name="popup[status]" value="draft" />
+            <input type="checkbox" name="popup[status]" value="publish" {% if popup.status == 'publish' %}checked="checked" {% endif %}/>Publish this Lightbox
+        </label>
+    </div>
+
+    <p class="submit">
+      <input type="submit" name="submit" id="submit" value="Save Changes">
+    </p>
+    </form>
+  </div>
+</div>
+<div id="popup-container">
+</div>
+<script type="text/javascript">
+    jQuery(function($) {
+        var pageList = $('.active-pages');
+        ZTL.tabs(".ztl .editor");
+
+        {% if popup.display_location == 'everywhere' or popup.display_location == 'blogtop' or 
+                popup.display_location == 'frontpage' or popup.display_location == '' %}
+            pageList.hide();
+        {% elseif popup.display_location == "pages" %}
+            pageList.show();
+        {% endif %}
+
+        $('input[name=popup\\[display_location\\]]').change(function(){
+            if ($(this).val() == "pages") {
+                pageList.show();
+            }
+            else if ($(this).val() == 'everywhere' || $(this).val() == 'frontpage' || $(this).val() == 'blogtop') {
+                pageList.hide();
+                $('input[name=popup\\[valid_page_ids\\]\\[\\]]').prop('checked', false);
+            }
+        });
+
+        $('#ztl-popup-name-field').change(function(){
+            $('#ztl-popup-slug-field').val(ZTL.slugify($(this).val()));
+        });
+        
+        $('form.ztl-popup-form').submit(function(){
+            if ($('#specific-pages').attr('checked') == 'checked') {
+                var hasSelectedPage = false;
+                
+                $('.page-selector').each(function(){
+                    if ($(this).attr('checked') == 'checked') {
+                        hasSelectedPage = true;
+                        return;
+                    }
+                });
+                
+                if (hasSelectedPage) {
+                    return true;
+                }
+                else {
+                    alert("Sorry, you chose 'Specific page' but didn't select any page.");
+                    return false
+                }                
+            }
+            
+            return true;
+        });
+        
+        $('#previewPopup').click(function(){
+            var url = "?page=ztl-popups&action=render_popup_ajax";
+            ZTLAdminPopupPreview(url, $('#popup-container'));
+        });        
+    });
+</script>

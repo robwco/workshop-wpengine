@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Get specific tips on landing your dream job in months instead of years -- Dreamjob from I Will Teach You To Be Rich</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+	<link rel="stylesheet" href="/wp-content/plugins/zerotolaunch/themes/premium/theme-fitness/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="/wp-content/plugins/zerotolaunch/themes/premium/theme-fitness/images/favicon.ico" />
+	
+	<link rel='stylesheet' id='google-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C800%2C700%2C600%2C300&#038;ver=3.8.3' type='text/css' media='all' />
+	<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/zerotolaunch/assets/js/fancy/jquery.fancybox.css?ver=2.1.5' type='text/css' media='all' />
+
+    <!-- Some of the pages don't have JQuery Installed. Make sure it exists -->
+    <script type="text/javascript">
+        if (typeof jQuery === 'undefined'){
+            document.write("<scr" + "ipt type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></scr" + "ipt>");
+            document.write("<scr" + "ipt type=\"text/javascript\" src=\"/wp-includes/js/jquery/jquery-migrate.js?ver=1.2.1\"></scr" + "ipt>");
+        }
+    </script>
+	<script type='text/javascript' src='/wp-content/plugins/zerotolaunch/themes/premium/theme-fitness/js/responsiveImages.js?ver=3.8.3'></script>
+	<script type='text/javascript' src='/wp-content/plugins/zerotolaunch/themes/premium/theme-fitness/js/functions.js?ver=3.8.3'></script>
+</head>
+<body class="page page-id-2 page-template page-template-template-landing-php landing-page">
+
+<div class="wrapper">
+	<div class="header">
+		<div class="shell cf">
+			<h1 class="logo">
+                <img {{ editing ? 'data-toggle="editable" id="ZTLContentLogo"' }} src="{{ landingPage.logo_url }}" alt="" style="max-height: 70px;">
+            </h1><!-- /.logo notext -->
+
+
+		</div><!-- /.shell -->
+	</div><!-- /.header -->
+	<div class="main">
+		<div class="shell cf">
+
+			<div class="sidebar right">
+                <div id="ZTLOptinForm">
+                    {{ optinForm ? render_optin_form(optinForm, landingPage.id)|raw  }}
+                </div>
+			</div><!-- /.sidebar -->
+			<div class="content left">
+                <div class="headline" {{ editing ? 'contenteditable="true" data-toggle="editableContent"  id="ZTLContentHeader"' }}>
+                    {{ landingPage.header|raw }}
+                </div>
+
+                <div class="wide left" {{ editing ? 'contenteditable="true" data-toggle="editableContent" id="ZTLContentBody"' }}>
+                    {{ landingPage.body|raw }}
+                </div>
+            </div><!-- /.content -->
+
+		</div><!-- /.shell -->
+	</div><!-- /.main -->
+
+	<div class="footer-push notext">&nbsp;</div><!-- /.footer-push notext -->
+</div><!-- /.wrapper -->
+<div class="footer">
+	<div class="shell cf">
+        <div class="copyright center" {{ editing ? 'contenteditable="true" data-toggle="editableContent" id="ZTLContentFooter"' }}>
+            <p>Copyright &copy; 2014 I Will Teach You To Be Rich</p>
+            <p>2269 Chestnut Street #160, San Francisco, CA 94123</p>
+        </div>
+	</div><!-- /.nav -->
+</div><!-- /.footer -->
+
+{% if editing %}
+    {% include 'editor_code.php' %}
+{% else %}
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery.get("?logView={{ optinForm.slug }}&id={{ optinForm.id }}&type=landing_page&landingPageID={{ landingPage.id }}&c=" + new Date().toDateString());
+            // Fix for Vertical Optin Widgets
+            jQuery('#ZTLOptinForm form').addClass('widget');
+        });
+    </script>
+{% endif %}
+</body>
+</html>

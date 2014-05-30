@@ -1,0 +1,139 @@
+$white: #fff;
+$black: #111;
+$body-black: #444;
+$header-red: #B72A22;
+$hr-gray: #D9D3CF;
+$light-blue: #4B8BE2;
+$link-blue: #3477d3;
+$dark-blue: #0B4AA1;
+$link-hover: #26599b;
+$link-visited: #7C3B7D;
+$quote-text: #9b9993;
+$quote-name: #9b9993;
+$quote-strong: #727167;
+$plan-bg: #EFEFEF;
+$red: #E44727;
+$highlight-red: #F75432;
+$bonus-bg: #fcfcfc;
+$gold: #FFD084;
+$gray: #bfbfbf;
+$green-text: #19963C;
+$text-gray: #9F9D99;
+
+
+body {
+	background-color: $white;
+	color: $body-black;
+}
+
+h1, strong 
+{
+	color: $black;
+}
+
+h2 {
+	color: $black;
+}
+
+hr {
+  background-color: $hr-gray;
+}
+
+a {
+	color: $link-blue;
+	
+	&:visited {
+	  color: $link-blue;
+	}
+}
+
+li:before {
+    color: $black;
+}
+
+.green {
+	color: $green-text;
+
+}
+
+blockquote {
+
+		& p {
+	color: $body-black;
+
+			& strong {
+	color: $body-black;
+			}
+		& span {
+		} 
+	}
+		& p.name a {
+	}
+		& p.name a:visited {
+	}
+		& span {
+		}
+		& .by-line p {
+	}
+}
+
+
+div.quick-nav {
+
+  ul,li  {
+
+  }
+  li {
+
+    a {
+    	color: $link-blue;
+    	strong {
+    		color: $link-blue;
+    	}
+      
+    }
+  }
+}
+
+.gray-text {
+	color: #aaa;
+}
+
+.text-red {
+	color: $header-red;
+	letter-spacing: .05em;
+	text-transform: none;
+}
+
+.text-blue {
+	color: $link-blue;
+	letter-spacing: .05em;
+	text-transform: none;
+}
+
+.plan {
+	background-color: $plan-bg;
+	.red {
+		background-color: $red;
+	}
+	h1.bonus-text {
+		background-color: none;
+		color: $quote-name;
+	}
+
+	.bonus {
+		background-color: $bonus-bg;
+	}
+}
+
+.gaurantee {
+
+  background-color: $gold;
+
+}
+
+
+
+/*DIV TITLE BORDER-BOTTOM COLOR IN UI.SCSS*/
+
+/*BLOCKQUOTE BORDERS IN TYPOGRAPHY.SCSS*/

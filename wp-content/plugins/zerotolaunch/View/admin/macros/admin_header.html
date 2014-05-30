@@ -1,0 +1,16 @@
+{% macro header(user) %}
+	<div class="logo">
+		<a href="admin.php?page=ztl-dashboard"><img src="../wp-content/plugins/zerotolaunch/assets/images/ztl-logo.png" alt="Zero To Launch"></a>
+	</div>
+	<div class="ztl-user media">
+		<div class="ztl-user-inner">
+			<div class="media-image">
+				<img src="http://www.gravatar.com/avatar/{{user.email_hash}}?s=100" alt="Your photo via gravatar"/>
+			</div>
+			
+			<div class="bd">
+				<p><strong>{{user.first_name}} {{user.last_name}}</strong> Verified on {{user.last_logged_in|date("m/d/Y")}}</p>
+			</div>
+		</div>
+	</div>
+{% endmacro %}

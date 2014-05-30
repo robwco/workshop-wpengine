@@ -1,0 +1,164 @@
+{% import 'admin/macros/admin_header.html' as AdminHeaderMacro %}
+<div id="ztl-plugin" class="main-panel">
+  <div class="header group">
+    {{ AdminHeaderMacro.header(user) }}
+  </div>
+  <div class="content-wrap">
+    <h1>
+      Lightboxes
+      <a href="{{ current_page_url() }}&action=new" class="add-new-h1">Add New</a>
+    </h1>
+    <div class="group">
+      <ul class="subsubsub left">
+
+        <li class="all"><a href="{{ current_page_url() }}&status=all" {% if popup_status == 'all' %}class="current"{% endif %}>All <span class="count">({{ status_counts.all }})</span></a> |</li>
+        <li class="publish"><a href="{{ current_page_url() }}&status=publish" {% if popup_status == 'publish' %}class="current"{% endif %}>Published <span class="count">({{ status_counts.publish }})</span></a></li>
+        <li class="drafts"><a href="{{ current_page_url() }}&status=draft" {% if popup_status == 'draft' %}class="current"{% endif %}>Drafts <span class="count">({{ status_counts.draft }})</span></a></li>
+
+      
+      </ul>
+      <div class="right">
+        <small>Stats reflect the last 7 days</small>
+      </div>
+    </div>
+    <table class="optin-list">
+      <thead>
+        <tr>
+          <th class="column-main 60">Title</th>
+          <th class="center">Views</th>
+          <th class="center">Opt-ins</th>
+          <th class="center">Conversions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+        {% for popup in popups %}
+
+
+        {# Analytics #}
+        {# Get Values #}
+            {% set current_conversions = 0 %}
+            {% set previous_conversions = 0 %}
+            {% set current_optins = 0 %}
+            {% set previous_optins = 0 %}
+            {% set current_hits = 0 %}
+            {% set previous_hits = 0 %}
+
+            {% set current_conversion_rate = 0 %}
+            {% set previous_conversion_rate = 0 %}
+
+            {% set current_optin_rate = 0 %}
+            {% set previous_optin_rate = 0 %}
+
+            {% set view_comparison = 0 %}
+
+
+
+            {# Current Optins #}
+            {% for current_popups in popup_activity %}
+                {% if current_popups.optin_form_id == popup.optin_form_id  and current_popups.category == 'Conversion' %}
+                    {% set current_optins = current_optins + current_popups.hits %}
+                    
+                {% endif %}
+                {% if current_popups.optin_form_id == popup.optin_form_id and current_popups.category == 'View' %}
+                    {% set current_hits = current_hits + current_popups.hits %}
+                {% endif %}
+            {% endfor %}
+
+            {# Previous Optins #}
+            {% for prev_popups in prev_popup_activity %}
+                {% if popup.id == prev_popups.optin_form_id and prev_popups.category == 'Conversion' %}
+                    {% set previous_optins = previous_optins + prev_popups.hits %}
+                {% endif %}
+                 {% if popup.id == prev_popups.optin_form_id and prev_popups.category == 'View' %}
+                    {% set previous_hits = previous_hits + prev_popups.hits %}
+                {% endif %}
+            {% endfor %}
+
+            {# Current Conversion Rate #}
+            {% if current_optins == 0 or current_hits == 0 %}
+                {% set current_conversion_rate = 0 %}
+            {% else %}
+                {% set current_conversion_rate = (current_optins / current_hits * 100)|number_format(1, '.') %}
+            {% endif %}
+
+            {% if previous_optins == 0 or previous_hits == 0 %}
+                {% set previous_conversion_rate = 0 %}
+            {% else %}
+                {% set previous_conversion_rate = (previous_optins / previous_hits * 100)|number_format(1, '.') ~ '%' %}
+            {% endif %}
+
+            {# Current Optin Rate #}
+            {% if previous_optins == 0 or previous_hits == 0 %}
+                {% set previous_optin_rate = 0 ~ '%' %}
+            {% else %}
+                {% set previous_optin_rate = (current_optins / previous_optins * 100)|number_format(1 , '.') ~ '%' %}
+            {% endif %}
+
+            {# View Comparison #}
+            {% if current_hits == 0 or previous_hits == 0 %}
+                {% set view_comparison = 0 ~ '%' %}
+            {% else %}
+                {% set view_comparison = ( (previous_hits / current_hits) / previous_hits)|number_format(1 , '.') ~ '%' %}
+            {% endif %}
+
+
+
+        <tr>
+          <td class="column-main">
+            <h2><a href="{{ current_page_url() }}&action=edit&id={{ popup.id }}">{{ popup.name }}</a> <span class="post-state">- {{ popup.status|capitalize }}</span></h2>
+             <div class="row-actions"><span class="edit"><a href="{{ current_page_url() }}&action=edit&id={{ popup.id }}">Edit</a> | </span><span class="trash">{% include "admin/popups/_delete_form.twig" with {'popup': popup} %}</span></div>
+            {# <p><em>Used by:</em>  <a href="">Page 1</a>, <a href="">Page 2</a>, <a href="">Page 3</a></p> #}
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_hits }}</span>
+            <span class="percentage">{% if previous_hits > current_hits %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %}{{ view_comparison }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_optins }}</span>
+            <span class="percentage">{% if previous_optins > current_optins %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %}{{ previous_optin_rate }}</span>
+          </td>
+          <td class="column-views center">
+            <span class="data">{{ current_conversion_rate }}%</span>
+            <span class="percentage">{% if previous_conversion_rate > current_conversion_rate %}<i class="ss-icon down">&#x2B07;</i>{% else %}<i class="ss-icon up">&#x2B06;</i>{% endif %}{{ previous_conversion_rate }}%</span>
+          </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td class="no-records">
+                {% if status_counts.all > 0 and popup == 'draft' %}
+                    You do not have any draft Lightboxes.
+                {% elseif status_counts.all > 0 and popup == 'publish' %}
+                    You do not have any published Lightboxes.
+                {% else %}
+                    You don't have any Lightboxes. <a href="{{ current_page_url() }}&action=new">Create your first one now.</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="group">
+      <div class="tablenav-pages">
+        <span class="pagination-links">
+          {{ pagination|raw }}
+        </span>
+      </div>
+    </div>
+
+    {#<div class="group">
+      <div class="tablenav-pages">
+        <span class="displaying-num">14 items</span>
+        <span class="pagination-links">
+          <a class="first-page disabled" title="Go to the first page" href="">«</a>
+          <a class="prev-page disabled" title="Go to the previous page" href="">‹</a>
+          <span class="paging-input">1 of <span class="total-pages">2</span></span>
+          <a class="next-page" title="Go to the next page" href="">›</a>
+          <a class="last-page" title="Go to the last page" href="">»</a>
+        </span>
+      </div>
+    </div>#}
+  </div>
+</div>
+

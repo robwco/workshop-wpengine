@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Workshop - The best freelance leads in your inbox.</title>
+  <meta name="description" content="Workshop - The best freelance opportunities delivered to your inbox every day.">
+  <meta name="keywords" content="Workshop, Letsworkshop, freelance, leads, job, board, boards, best, inbox, deleted my portfolio, made 30k in six months, the email line that's client repellant">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <!--STRIPE-->
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+<style media="screen" type="text/css">
+
+button {
+  cursor: pointer;
+}
+
+.cancel {
+  padding-bottom: 2em;
+}
+
+.checkmark-plan {
+
+}
+.form-row {
+  padding-bottom:1em;
+}
+
+input .exp {
+  width: 4em;
+}
+
+.form-row span {
+  width: 10em;
+  float: left;
+  font-weight: bold;
+
+}
+
+.form-row input {
+  width: 100%;
+}
+
+.billing-container {
+  display: block;
+  width: 100%;
+}
+
+h1.welcome-app {
+  font-size: 1.75em;
+
+}
+#qn-logged-in {
+  margin-top: -.5em;
+  margin-bottom: 1em;
+}
+
+.login-photo {
+  margin-bottom: -.2em;
+}
+
+
+table.hourly-rate-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table.hourly-rate-table td, table.hourly-rate-table th {
+  border: 2px solid #111;
+  padding: .5em;
+}
+table.hourly-rate-table tr:first-child th {
+  border-top: 0;
+  color: black;
+  line-height: 1em;
+}
+table.hourly-rate-table tr:last-child td {
+  border-bottom: 0;
+}
+table.hourly-rate-table tr td:first-child,
+table.hourly-rate-table tr th:first-child {
+  border-left: 0;
+}
+table.hourly-rate-table tr td:last-child,
+table.hourly-rate-table tr th:last-child {
+  border-right: 0;
+}
+
+table.hourly-rate-table tr {border-bottom:0; margin-bottom: 3px; }
+
+
+th {
+  width: 8em;
+  text-align: left;
+}
+
+table tr th {border-bottom:2px solid #F8F8F8;}
+
+table { border-collapse: collapse; }
+table tr {border-bottom:2px solid #F8F8F8; margin-bottom: 3px; }
+
+.account-heading {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+input[type=CHECKBOX] {
+  width: 2em;
+  text-align: left; 
+  margin-top: .5em; 
+  margin-bottom: .5em; 
+  vertical-align: middle;
+}
+
+.register-cta {
+  display: table;
+  margin: 1em auto 1em auto;
+}
+
+.lead-row {
+  float: left;
+  width: 50%;
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+.lead-row div {
+  border-bottom:2px solid #F8F8F8; margin-bottom: 3px;
+}
+
+th.workshop-plans , td.workshop-plans {
+  width: 6em;
+}
+
+th.daily-leads , td.daily-leads {
+  width: 2.5em;
+}
+
+@media (max-width:880px) {
+
+  .gaurantee {
+    margin: 0em .5em 0em 0em;
+
+  }
+  .plan {
+    padding:.25em 1em .25em 1em;
+  }
+
+ .bonus {    
+      padding:.125em .5em .125em .5em;
+    }
+
+  .lead-row {
+    min-width: 100%;
+    display: block;  
+    margin-bottom: -.8em;
+  }
+
+  .lead-row+.lead-row {
+    margin-bottom: 0em;
+  }
+
+    input[type=CHECKBOX] {
+    width: 2em;
+    text-align: left; 
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width:770px) {
+  body {
+  padding: 0em 2em;
+  }
+}
+
+@media (max-width:660px) {
+  body {
+  font-size: 18px;
+  padding: 0em 2em;
+  }
+
+  .sticky {
+    margin: 1em auto 1em auto;
+  }
+
+
+
+}
+
+@media (max-width:615px) {
+  .sticky3 {
+    margin-left: 5em;
+  }
+  .sticky2 {
+
+    float: right;
+  }
+
+
+}
+
+@media (max-width:440px) {
+  body {
+  font-size: 16px;
+  padding: 0em 1em;
+  }
+
+  h1 {
+  }
+
+}
+
+
+
+</style>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45184123-1', 'letsworkshop.com');
+    ga('send', 'pageview');
+  </script>
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/adx2xiv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <!--<div class="quick-nav" id="qn-logged-in">
+    <ul>
+
+      <li>
+        <a href="#"><strong>Sign Out</strong></a>
+      </li>
+      <li>
+        <a href="MAILTO:support@letsworkshop.com">Support</a>
+      </li>
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+    </ul>
+  </div>-->
+  <div class="content" id="fade2" >
+    <div>
+      <h1 class="welcome-app" style="margin:1.5em 0 1em 0;">
+      Get the best freelance leads delivered to your inbox every morning. <span class="unbold small" style="color: #ae6c00;">30-day money back guarantee.</span>
+      </h1>
+
+
+
+
+
+
+<table class="hourly-rate-table">
+  <tr>
+    <th class="workshop-plans">Workshop Plan</th>
+    <th class="daily-leads">Daily Leads</th>
+    <th class="roi">Billable time saved @ $100/hr</th>
+  </tr>
+  <tr>
+    <td class="workshop-plans">Consultancy</td>
+    <td class="daily-leads">10+</td>
+    <td class="roi">40 <span class="small">hrs</span> or $3900+ <span class="small">a month</span></td>
+  </tr>
+  <tr>
+    <td class="workshop-plans">Developer</td>
+    <td class="daily-leads">5+</td>
+    <td class="roi">20 <span class="small">hrs</span> or $1900+ <span class="small">a month</span></td>
+  </tr>    
+  <tr>
+    <td class="workshop-plans">Designer</td>
+    <td class="daily-leads">5+</td>
+    <td class="roi">20 <span class="small">hrs</span> or $1900+ <span class="small">a month</span></td>
+  </tr>  
+</table>
+
+
+
+      <h2 class="account-heading" style="display:table; margin-top:2em;">Let's get started! Enter your personal information&hellip;</h2>
+
+  <table id="account" width="100%" cellspacing="0" cellpadding="8em">
+  <tr>
+    <th>Name</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Name" type="text" value="Robert Williams">
+    </td>
+  </tr>
+
+  <tr>
+    <th>Email</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Email" type="text" value="rob@robw.co">
+    </td>
+  </tr>
+  <tr>
+    <th></th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="2nd Email" type="text" placeholder="Second Email (Optional)">
+    </td>
+  </tr>
+
+    <tr>
+    <th>Password</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="password" name="password" title="Password" type="password" placeholder="•••••••">
+    </td>
+  </tr>
+       
+    <tr>
+    <th>Plan</th>
+    <td>
+      <select>
+        <option>Consultancy ($64/month)</option>
+        <option>Developer ($39/month)</option>
+        <option>Designer ($39/month)</option>
+      </select>
+    </td>
+  </tr>  
+</table>
+
+
+<div style="display:table;">
+      <h2 class="account-heading">Now, choose your lead preferences&hellip; <strong>(feature coming soon!)</strong></h2>
+
+<div class="lead-row">
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Agency RFP
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Full-service projects
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Consulting
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Web design
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> UI design
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Branding
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Art Direction
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Graphic Design
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> 3D Design
+  </div>
+</div>
+
+<div class="lead-row">
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Ruby Development 
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Mobile Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Ecommerce Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> WP Design / Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> CMS Development
+  </div>
+  <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Front-end Development
+  </div>
+    <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> PHP Development
+  </div>
+      <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Drupal Development
+  </div>
+      <div>
+  <INPUT checked NAME="options" TYPE="CHECKBOX" VALUE="o1"> Drupal Development
+  </div>
+</div>
+</div>
+
+      <h2 class="account-heading" style="float: left;">And lastly, give us your billing info&hellip;</h2>
+
+
+
+
+  <table id="account" width="100%" cellspacing="0" cellpadding="8em">
+
+  <tr>
+    <th>Card Number</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="CC number" type="text" pattern="[0-9]{13,16}" placeholder="XXXX-XXXXXX–8109">
+    </td>
+  </tr>
+
+    <tr>
+    <th>CVC</th>
+    <td>
+      <input autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" name="name" title="Secret Code" type="text" placeholder="XXXX">
+    </td>
+  </tr>
+  <tr>
+    <th>Expiration (MM/YYYY)</th>
+    <td>
+      <input style="max-width:3em;" autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" type=text pattern="[0-9]{13,16}" placeholder="09">
+
+      <input style="max-width:5em;" autocapitalize="off" autocomplete="on" autocorrect="off" id="name form-not-blank" type=text pattern="[0-9]{13,16}" placeholder="2016">
+    </td>
+  </tr>
+
+</table>
+</div>
+
+
+<div class="register-cta">
+  <h1 style="text-align:center;">
+
+     <span class="small" style="color:#aaa; font-weight: normal;"><strike><span class="small">$129</strike></span>
+
+    <span class="small" style="vertical-align:text-top;">$</span>64/<span class="small">month</span></h1>
+
+      <a href="#" class="button">
+          Pay and start getting leads!
+        </a>
+
+        <p class="small" style="text-align:center;">30-day money back gaurantee. Cancel anytime.</p>
+</div>
+
+
+      <blockquote>
+        <p>
+          <span>&ldquo;</span>Since starting with Workshop, I've had an unbroken chain of daily lead generation activity no matter what.<span>&rdquo;</span> 
+        </p>
+        <div class="by-line">
+          <img class="quote-photo" src="../images/testimonials/quote-kurt-elster.png"/><p class="name">
+           &mdash; Kurt Elster | Ethercycle
+          </p>
+        </div>
+        </blockquote>
+</div>
+
+
+
+
+<div class="nav-foot" style="margin-top: 5em; padding-top:2em; text-align: center;">
+
+  
+        <p class="disclaimer">
+          All text &amp; design is copyright &copy; 2014 Workshop.
+        </p>
+</div>
+ 
+
+
+
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+  </body>
+</html>    
+
+
+

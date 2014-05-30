@@ -1,0 +1,12 @@
+<div class="wrap">
+    <p>Are you sure that you want to delete the Opt-in form "{{ optin_form.name }}"?</p>
+
+    <form action="{{ current_page_url() }}&action=delete" method="post">
+        {{ model_nonce_field(optin_form, 'delete')|raw }}
+
+        <input type="hidden" name="id" value="{{ optin_form.id }}" />
+
+        <a href="{{ current_page_url() }}">Cancel</a>
+        <input type="submit" name="submit" value="Delete" class="button button-primary" />
+    </form>
+</div>
