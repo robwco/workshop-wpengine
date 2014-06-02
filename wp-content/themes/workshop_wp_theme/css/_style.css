@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*MIXINS*/
-/*NOMIXINS*/
 /*
 Theme Name: workshop_wp_theme
 Theme URI: http://letsworkshop.com
@@ -26,6 +24,9 @@ body {
     margin-bottom: 0em; }
     body h1 .kern {
       letter-spacing: -.1em; }
+    body h1 .price {
+      background-color: #e44727;
+      border-radius: 10em; }
   body h2 {
     font-weight: normal;
     font-size: 140%;
@@ -81,7 +82,7 @@ body {
     border: none;
     color: #FFF;
     text-transform: uppercase;
-    padding: .5em 1em;
+    padding: .5em 2em;
     font-weight: 700;
     display: inline-block;
     letter-spacing: .1em;
@@ -152,11 +153,6 @@ body {
     @media (max-width: 880px) {
       body .gaurantee {
         margin: 0em .5em 0em 0em; } }
-  body .gig-price {
-    background-color: #e44727;
-    border-radius: 10em;
-    width: 100px;
-    height: 100px; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {
