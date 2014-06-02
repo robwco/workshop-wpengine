@@ -1,0 +1,52 @@
+/*---
+IMAGES
+*/
+.quote-photo {
+  border-radius: 25px;
+  margin: 10px 10px;
+  height: 50px;
+  width: 50px; }
+
+.feast-or-famine {
+  max-width: 613px;
+  width: 100%;
+  margin: auto; }
+
+/*-- DIJA ANIMATION */
+#pulling-dija {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  max-height: 229px;
+  padding: 0px; }
+
+#pulling-dija img {
+  width: 100%;
+  max-width: 600px; }
+
+#pulling-dija:hover {
+  -webkit-animation: move 1s ease-in-out infinite;
+  -moz-animation: move 1s ease-in-out infinite;
+  -ms-animation: move 1s ease-in-out infinite;
+  animation: move 1s ease-in-out infinite; }
+
+@-moz-keyframes move {
+  0%, 100% {
+    left: 0; }
+
+  50% {
+    left: 10px; } }
+
+@-webkit-keyframes "move" {
+  0%, 100% {
+    left: 0; }
+
+  50% {
+    left: 10px; } }
+
+@-ms-keyframes "move" {
+  0%, 100% {
+    left: 0; }
+
+  50% {
+    left: 10px; } }

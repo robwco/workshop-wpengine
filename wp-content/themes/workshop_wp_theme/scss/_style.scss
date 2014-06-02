@@ -1,0 +1,44 @@
+/*
+Theme Name: workshop_wp_theme
+Theme URI: http://letsworkshop.com
+Author: Robert Williams
+Author URI: http://letsworkshop.com
+workshop_wp_theme WordPress Theme © 2014 Workshop
+*/
+    body {width: 37em; margin: auto; font-size: 21px; font-family: "futura-pt", Helvetica, sans-serif; padding-top: 2em; color: #444; 
+    h1, h2 {text-align: center;}
+    h1, strong {color: #111; font-weight: 800;}
+    h1 { font-size: 210%; line-height: 1em;}
+    h2 { font-weight: normal; font-size: 140%; margin-bottom: 1em;}
+    aside { float:left; width:400px; padding-right: 20px;}
+    ul { list-style: none; padding:0; margin:0; }
+    li { padding-left: 1em; text-indent: -1.9em; margin-top: .75em;}
+    li:before { content: "• "; color: #111; font-size: 150%; line-height: .75em; vertical-align: bottom; /* or whatever color you prefer */}
+    form { float:right; width:300px; padding:0em 1em; background-color: #FFF; box-shadow: 0px 0px 10px #A6A498; border-radius: 5px;}
+    input { width: 100%; max-width: 13.5em; height: 1.5em; font: 1em/1.5em "futura-pt", Helvetica, sans-serif; padding-left: .4em; border-radius: .2em; }
+    input+input { margin-top: .5em; }
+    button { background-color: #E44727; border-radius: 3px; cursor: pointer; font: .8em/1.5em "futura-pt", Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 2em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; width:100%;}
+    input:focus { background-color: #FAFFBD; outline: 0; }
+    hr { border: 0; height: 1px; background-color: #D9D3CF;}
+    .logo { font-weight: 800; font-size: .8em; color: #111;}
+    .sub_logo {font-family: "House Slant"; color: #E44727; font-size: .9em; letter-spacing: .1em;}
+    .logo_container { display: inline;}
+    .bonus { margin: 20px 0 10px -60px; background: url('/images/marketing/leads-promo.png') no-repeat; height: 107px;}
+    .bonus p {font-size: 80%; width:210px; float: right;}
+    .testimonial {display: table; width: 100%; text-align: center; padding-top: 2em;font-size: 140%;}
+    .trust {font-size: 70%; padding-bottom: 1em; text-align: center;}
+    .center {text-align: center;}
+/* BODY CLOSE DON'T DELETE */
+  }
+
+
+
+    @font-face {
+          font-family: "House Slant";
+          src: url('fonts/HouseSlant.eot');
+          src: url("fonts/HouseSlant.eot?#iefix") format("embedded-opentype"),
+               url("fonts/HouseSlant.woff") format("woff");
+          font-style: normal;
+          font-weight: 400;
+          font-stretch: normal;
+      }

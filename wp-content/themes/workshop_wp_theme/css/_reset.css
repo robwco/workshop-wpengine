@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*
+Theme Name: workshop_wp_theme
+Theme URI: http://wordpress.org/themes/workshop_wp_theme
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of workshop_wp_theme (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: workshop_wp_theme is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving workshop_wp_theme, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/workshop_wp_theme/3.3&new_path=/workshop_wp_theme/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/workshop_wp_theme/3.3&new_path=/workshop_wp_theme/4.0) just how much we've revamped things. Last, but not least, workshop_wp_theme has now been <a href="https://github.com/tidythemes/workshop_wp_theme">opened up on GitHub</a> (github.com/tidythemes/workshop_wp_theme) if anyone would like to make suggested code additions/improvements. Thank you for using workshop_wp_theme.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: workshop_wp_theme
+
+workshop_wp_theme WordPress Theme © 2011-2014 TidyThemes
+workshop_wp_theme is distributed under the terms of the GNU GPL
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+body {
+  width: 37em;
+  margin: auto;
+  font-size: 21px;
+  font-family: "futura-pt", Helvetica, sans-serif;
+  padding-top: 2em;
+  color: #444; }
+
+h1, h2 {
+  text-align: center; }
+
+h1, strong {
+  color: #111; }
+
+h1 {
+  font-size: 210%;
+  line-height: 1em;
+  margin-bottom: -.25em; }
+
+h2 {
+  font-weight: normal;
+  font-size: 140%;
+  margin-bottom: 1em; }
+
+aside {
+  float: left;
+  width: 400px;
+  padding-right: 20px; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  padding-left: 1em;
+  text-indent: -1.9em;
+  margin-top: .75em; }
+
+li:before {
+  content: "• ";
+  color: #111;
+  font-size: 150%;
+  line-height: .75em;
+  vertical-align: bottom;
+  /* or whatever color you prefer */ }
+
+form {
+  float: right;
+  width: 300px;
+  padding: 0em 1em;
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px #A6A498;
+  border-radius: 5px; }
+
+input {
+  width: 100%;
+  max-width: 13.5em;
+  height: 1.5em;
+  font: 1em/1.5em "futura-pt", Helvetica, sans-serif;
+  padding-left: .4em;
+  border-radius: .2em; }
+
+input + input {
+  margin-top: .5em; }
+
+button {
+  background-color: #E44727;
+  border-radius: 3px;
+  cursor: pointer;
+  font: .8em/1.5em "futura-pt", Helvetica, sans-serif;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .1em;
+  border-bottom: 2px solid #b72a22;
+  margin: auto;
+  width: 100%; }
+
+input:focus {
+  background-color: #FAFFBD;
+  outline: 0; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #D9D3CF; }
+
+.logo {
+  font-weight: 800;
+  font-size: .8em;
+  color: #111; }
+
+.sub_logo {
+  font-family: "House Slant";
+  color: #E44727;
+  font-size: .9em; }
+
+.logo_container {
+  display: inline; }
+
+.bonus {
+  margin: 20px 0 10px -60px;
+  background: url("leads-promo.png") no-repeat;
+  height: 107px; }
+
+.bonus p {
+  font-size: 80%;
+  width: 210px;
+  float: right; }
+
+.testimonial {
+  display: table;
+  width: 100%;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 140%; }
+
+.trust {
+  font-size: 70%;
+  padding-bottom: 1em;
+  text-align: center; }
+
+.center {
+  text-align: center; }
+
+@font-face {
+  font-family: "House Slant";
+  src: url("HouseSlant.eot");
+  src: url("HouseSlant.eot?#iefix") format("embedded-opentype"), url("HouseSlant.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal; }

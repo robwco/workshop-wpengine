@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+  color: #444444; }
+
+h1, strong, h2, h3 {
+  color: #111111; }
+
+.sub-logo {
+  color: #e44727; }
+
+hr {
+  background-color: #d9d3cf; }
+
+a {
+  color: #3477d3; }
+  a:visited {
+    color: #3477d3; }
+
+li:before {
+  color: #111111; }
+
+.green {
+  color: #19963c; }
+
+blockquote p {
+  color: #444444; }
+  blockquote p strong {
+    color: #444444; }
+
+div.quick-nav li a {
+  color: #3477d3; }
+  div.quick-nav li a strong {
+    color: #3477d3; }
+
+.gray-text {
+  color: #aaa; }
+
+.text-red {
+  color: #b72a22;
+  letter-spacing: .05em;
+  text-transform: none; }
+
+.text-blue {
+  color: #3477d3;
+  letter-spacing: .05em;
+  text-transform: none; }
+
+.plan {
+  background-color: #efefef; }
+  .plan .red {
+    background-color: #e44727; }
+  .plan h1.bonus-text {
+    background-color: none;
+    color: #9b9993; }
+  .plan .bonus {
+    background-color: #fcfcfc; }
+
+.gaurantee {
+  background-color: #ffd084; }
+
+/*DIV TITLE BORDER-BOTTOM COLOR IN UI.SCSS*/
+/*BLOCKQUOTE BORDERS IN TYPOGRAPHY.SCSS*/
