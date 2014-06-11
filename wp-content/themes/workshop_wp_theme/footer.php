@@ -1,8 +1,7 @@
 <div class="clear"></div>
 </div>
 <footer id="footer" role="contentinfo">
-<hr>
-<p class="trust">All text &amp; design is copyright &copy; 2014 Workshop.</p>
+<!--<p class="trust">All text &amp; design is copyright &copy; 2014 Workshop.</p>-->
 </footer>
 </div>
 <?php wp_footer(); ?>

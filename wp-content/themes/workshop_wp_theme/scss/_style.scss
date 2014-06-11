@@ -27,10 +27,11 @@ $gray: #bfbfbf;
 $green-text: #19963C;
 $text-gray: #9F9D99;
 $light-gray: #F1F0EC;
+$link-gray: #7191BC;
 
   body {width: 37em; margin: auto; font-size: 21px; font-family: "futura-pt", Helvetica, sans-serif; padding-top: 2em; color: #444;
     h1, h2 {text-align: center;}
-    h1, h3, strong {color: #111; font-weight: 800;}
+    h1, h3, strong {color: #111; font-weight: 500;}
     h1 { font-size: 210%; line-height: 1em; margin-bottom: 0em;
         .kern {letter-spacing: -.1em;}
     }
@@ -43,12 +44,14 @@ $light-gray: #F1F0EC;
     }
     aside { float:left; width:400px; padding-right: 20px;}
     ul { list-style: none; padding:0; margin:0; }
-    li { padding-left: 1em; text-indent: -1.9em; margin-top: .75em;}
-    li:before { content: "• "; color: #111; font-size: 150%; line-height: .75em; vertical-align: bottom; /* or whatever color you prefer */}
+    ol li { margin-top: .75em;}
+    ul li { padding-left: 1em; text-indent: -1.9em; margin-top: .75em;}
+    ul li:before { content: "• "; color: #111; font-size: 150%; line-height: .75em; vertical-align: bottom; /* or whatever color you prefer */}
     form { float:right; width:300px; padding:0em 1em; background-color: #FFF; box-shadow: 0px 0px 10px #A6A498; border-radius: 5px;}
-    input { width: 100%; max-width: 13.5em; height: 1.5em; font: 1em/1.5em "futura-pt", Helvetica, sans-serif; padding-left: .4em; border-radius: .2em; }
+    input { font: 1em/1.5em "futura-pt", Helvetica, sans-serif; padding-left: .4em; border-radius: .2em; }
     input + br + input { margin-top: .5em; }
-    button { background-color: #E44727; border-radius: 3px; cursor: pointer; font: 1em/1.5em "futura-pt", Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; width:100%;
+    input[type=text], input[type=email] { height: 1.5em;  width: 100%; max-width: 13.5em;}
+    input[type=submit] { margin: auto; background-color: #E44727; border-radius: 3px; cursor: pointer; font: .9em/1.5em "futura-pt", Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; width: 100%;
       &:hover { background: $highlight-red; }
       &:active, &:focus { background: $header-red; border-bottom: 0; border-top: 2px solid $red;  outline: none; box-shadow: 0 2px 1px #fff; -moz-box-shadow: 0 2px 1px #fff; -webkit-box-shadow: 0 2px 1px #fff; }
     }
@@ -68,6 +71,24 @@ $light-gray: #F1F0EC;
       @media (max-width:880px) { margin: 0em .5em 0em 0em; }
     }
     .gig-price { background-color: $red; border-radius: 10em; width: 100px; height: 100px; }
+    #site-title { text-align: center; font-size: 150%; font-weight: bold;
+      a { color: $black; text-decoration: none; font-size: 1em; text-transform: uppercase; text-align: left;}
+      span.sub_logo {  font-family: "flood-std"; color: $red; font-weight: normal; font-size: 110%; letter-spacing: .05em;}
+    }
+    .masthead { font-weight: normal; text-align: center; color: $text-gray; font-size: .85em; margin-top: 0;
+      a {color: $link-gray; text-decoration: underline; }
+      a:hover {color: $link-blue;}
+    }
+    h1.entry-title, .entry-title { font-size: 210%; font-weight: 500; margin: 1em 0 .6em 0; text-decoration: none; 
+      a {color: $black; text-decoration: none;  }
+      a:hover { color: $body-black; border-bottom: 1px dashed $light-gray;}
+    }
+    .author { font-style: italic; color: $text-gray; text-align: left; font-size: .85em; margin-top: 3em;
+      img {border-radius: 100px; vertical-align: text-top;}
+    }
+    .small {  margin: .5em 0;}
+    article + nav { margin: 0; }
+    .masthead + .masthead + .masthead {margin-bottom: 3em;}
 
 } /* <--- BODY CLOSE DON'T DELETE */
 

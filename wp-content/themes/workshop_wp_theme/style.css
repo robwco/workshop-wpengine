@@ -19,7 +19,7 @@ body {
     text-align: center; }
   body h1, body h3, body strong {
     color: #111;
-    font-weight: 800; }
+    font-weight: 500; }
   body h1 {
     font-size: 210%;
     line-height: 1em;
@@ -46,11 +46,13 @@ body {
     list-style: none;
     padding: 0;
     margin: 0; }
-  body li {
+  body ol li {
+    margin-top: .75em; }
+  body ul li {
     padding-left: 1em;
     text-indent: -1.9em;
     margin-top: .75em; }
-  body li:before {
+  body ul li:before {
     content: "• ";
     color: #111;
     font-size: 150%;
@@ -65,19 +67,21 @@ body {
     box-shadow: 0px 0px 10px #A6A498;
     border-radius: 5px; }
   body input {
-    width: 100%;
-    max-width: 13.5em;
-    height: 1.5em;
     font: 1em/1.5em "futura-pt", Helvetica, sans-serif;
     padding-left: .4em;
     border-radius: .2em; }
   body input + br + input {
     margin-top: .5em; }
-  body button {
+  body input[type=text], body input[type=email] {
+    height: 1.5em;
+    width: 100%;
+    max-width: 13.5em; }
+  body input[type=submit] {
+    margin: auto;
     background-color: #E44727;
     border-radius: 3px;
     cursor: pointer;
-    font: 1em/1.5em "futura-pt", Helvetica, sans-serif;
+    font: .9em/1.5em "futura-pt", Helvetica, sans-serif;
     border: none;
     color: #FFF;
     text-transform: uppercase;
@@ -87,10 +91,11 @@ body {
     letter-spacing: .1em;
     border-bottom: 2px solid #b72a22;
     margin: auto;
+    text-align: center;
     width: 100%; }
-    body button:hover {
+    body input[type=submit]:hover {
       background: #f75432; }
-    body button:active, body button:focus {
+    body input[type=submit]:active, body input[type=submit]:focus {
       background: #b72a22;
       border-bottom: 0;
       border-top: 2px solid #e44727;
@@ -157,6 +162,59 @@ body {
     border-radius: 10em;
     width: 100px;
     height: 100px; }
+  body #site-title {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold; }
+    body #site-title a {
+      color: #111111;
+      text-decoration: none;
+      font-size: 1em;
+      text-transform: uppercase;
+      text-align: left; }
+    body #site-title span.sub_logo {
+      font-family: "flood-std";
+      color: #e44727;
+      font-weight: normal;
+      font-size: 110%;
+      letter-spacing: .05em; }
+  body .masthead {
+    font-weight: normal;
+    text-align: center;
+    color: #9f9d99;
+    font-size: .85em;
+    margin-top: 0; }
+    body .masthead a {
+      color: #7191bc;
+      text-decoration: underline; }
+    body .masthead a:hover {
+      color: #3477d3; }
+  body h1.entry-title, body .entry-title {
+    font-size: 210%;
+    font-weight: 500;
+    margin: 1em 0 .6em 0;
+    text-decoration: none; }
+    body h1.entry-title a, body .entry-title a {
+      color: #111111;
+      text-decoration: none; }
+    body h1.entry-title a:hover, body .entry-title a:hover {
+      color: #444444;
+      border-bottom: 1px dashed #f1f0ec; }
+  body .author {
+    font-style: italic;
+    color: #9f9d99;
+    text-align: left;
+    font-size: .85em;
+    margin-top: 3em; }
+    body .author img {
+      border-radius: 100px;
+      vertical-align: text-top; }
+  body .small {
+    margin: .5em 0; }
+  body article + nav {
+    margin: 0; }
+  body .masthead + .masthead + .masthead {
+    margin-bottom: 3em; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {

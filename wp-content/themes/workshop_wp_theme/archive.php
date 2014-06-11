@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section id="content" role="main">
 <header class="header">
-<h1 class="entry-title"><?php 
+<h1 class="entry-title"><?php
 if ( is_day() ) { printf( __( 'Daily Archives: %s', 'workshop_wp_theme' ), get_the_time( get_option( 'date_format' ) ) ); }
 elseif ( is_month() ) { printf( __( 'Monthly Archives: %s', 'workshop_wp_theme' ), get_the_time( 'F Y' ) ); }
 elseif ( is_year() ) { printf( __( 'Yearly Archives: %s', 'workshop_wp_theme' ), get_the_time( 'Y' ) ); }

@@ -14,16 +14,15 @@
 <form action="https://www.getdrip.com/forms/9298754/submissions" method="post" target="_blank" data-drip-embedded-form="1306">
 	<p class="center"><strong>Take control.</strong></p>
 	<p>Get the guide to finding an endless stream of clients and actionable tips on how to land them.</p>
-	<div>
-	<input type="text" name="fields[name]" value="" placeholder="Your name" />
-	<input type="email" name="fields[email]" value="" placeholder="Your email" />
-	</div>
-	<div class="bonus"><p><strong>Bonus:</strong> Get 10 free leads delivered straight to your inbox after signing up.</p></div>
-	<div>
-	<input type="submit" name="submit" value="Subscribe for free" data-drip-attribute="sign-up-button" />
-	</div>
+<div>
+    <input type="text" name="fields[name]" value="" placeholder="Your name" />
+    <input type="email" name="fields[email]" value="" placeholder="Your email" />
+</div>
+<div class="bonus"><p><strong>Bonus:</strong> Get 10 free leads delivered straight to your inbox after signing up.</p></div>
+  <div>
+    <input type="submit" name="submit" value="Subscribe for free" data-drip-attribute="sign-up-button" />
+  </div>
 <p class="trust">I’ll never share your email address or spam you.</p>
 </form>
 <p class="testimonial">&ldquo;Since starting with Workshop, I've had an unbroken chain of daily lead generation activity no matter what.&rdquo;</p>
 <p class="center"><img src="/images/testimonials/kurt.png" style="border-radius: 100%; width: 55px; height: 55px; vertical-align: middle;"> – Kurt Elster</p>
-
