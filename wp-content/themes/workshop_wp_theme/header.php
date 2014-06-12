@@ -25,3 +25,4 @@
 <header id="header" role="banner">
 </header>
 <div id="container">
+<h3 class="masthead">Written by <a href="http://letsworkshop.com">Workshop</a>, a tiny community and newsletter for web design and development consultancies.</h3>
