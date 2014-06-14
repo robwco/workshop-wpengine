@@ -200,6 +200,14 @@ body {
     body h1.entry-title a:hover, body .entry-title a:hover {
       color: #444444;
       border-bottom: 1px dashed #f1f0ec; }
+  body blockquote {
+    font-style: italic;
+    color: #9f9d99;
+    text-align: left;
+    font-size: .85em; }
+    body blockquote img {
+      border-radius: 100px;
+      vertical-align: text-top; }
   body .author {
     font-style: italic;
     color: #9f9d99;
