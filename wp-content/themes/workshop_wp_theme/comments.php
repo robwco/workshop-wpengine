@@ -1,11 +1,13 @@
 <?php if ( 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) return; ?>
 <section id="comments">
+	<hr>
 <?php
 if ( have_comments() ) :
 global $comments_by_type;
 $comments_by_type = &separate_comments( $comments );
 if ( ! empty( $comments_by_type['comment'] ) ) :
 ?>
+
 <section id="comments-list" class="comments">
 <h3 class="comments-title"><?php comments_number(); ?></h3>
 <?php if ( get_comment_pages_count() > 1 ) : ?>
@@ -36,6 +38,6 @@ $ping_count = count( $comments_by_type['pings'] );
 <?php
 endif;
 endif;
-if ( comments_open() ) comment_form();
+if ( comments_open() ) comment_form(array('title_reply' => "Are you a happy Workshop member? Leave Your Testimonial!", 'comment_notes_after' => "", 'label_submit' => 'Leave your Testimonial' ));
 ?>
 </section>

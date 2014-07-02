@@ -51,7 +51,7 @@ function workshop_wp_theme_custom_pings( $comment )
 $GLOBALS['comment'] = $comment;
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
-<?php 
+<?php
 }
 add_filter( 'get_comments_number', 'workshop_wp_theme_comments_number' );
 function workshop_wp_theme_comments_number( $count )

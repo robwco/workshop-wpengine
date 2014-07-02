@@ -223,6 +223,72 @@ body {
     margin: 0; }
   body .masthead + .masthead + .masthead {
     margin-bottom: 3em; }
+  body form.comment-form {
+    width: 100%;
+    float: left;
+    margin-bottom: 3em;
+    box-shadow: none; }
+    body form.comment-form input, body form.comment-form textarea {
+      margin-left: -9em; }
+    body form.comment-form textarea {
+      font: 1em/1.5em "futura-pt", Helvetica, sans-serif;
+      padding-left: .4em;
+      border-radius: .2em;
+      width: 100%;
+      max-width: 13.5em;
+      border: solid 2px #d9d3cf; }
+    body form.comment-form textarea:focus {
+      background-color: #FAFFBD;
+      outline: 0; }
+    body form.comment-form input[type=submit] {
+      width: 500px;
+      margin: auto;
+      text-align: center; }
+    body form.comment-form label {
+      width: 220px;
+      text-align: right;
+      float: left;
+      margin-right: 2em; }
+      body form.comment-form label .required {
+        margin-right: -.75em; }
+  body li.comment {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px; }
+    body li.comment p {
+      box-shadow: 0px 0px 10px #A6A498;
+      border-radius: 5px;
+      text-indent: 0;
+      padding: 1em 1.5em;
+      margin: auto; }
+    body li.comment:before {
+      display: none; }
+    body li.comment .commentmetadata, body li.comment .reply, body li.comment .says {
+      display: none; }
+    body li.comment .comment-author {
+      text-align: center;
+      bottom: 2px;
+      position: relative;
+      margin-bottom: 15px;
+      font-size: .85em; }
+      body li.comment .comment-author a {
+        text-decoration: none;
+        color: #9f9d99;
+        margin-left: 5px; }
+      body li.comment .comment-author img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        border-radius: 100px;
+        margin-bottom: 15px; }
+  body .comments-title {
+    display: none; }
+  body #respond {
+    margin-top: 5em;
+    border-top: 1px solid #d9d3cf;
+    text-align: center;
+    width: 100%; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {
