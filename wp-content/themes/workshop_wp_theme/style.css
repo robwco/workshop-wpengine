@@ -123,7 +123,7 @@ body {
     display: inline; }
   body .bonus {
     margin: 20px 0 10px -60px;
-    background: url("/images/marketing/leads-promo.png") no-repeat;
+    background: url("/images/marketing/ten-leads.png") no-repeat;
     height: 107px; }
   body .bonus p {
     font-size: 80%;
@@ -289,6 +289,24 @@ body {
     border-top: 1px solid #d9d3cf;
     text-align: center;
     width: 100%; }
+  body .locked {
+    background: url("/images/marketing/locked-1.png") no-repeat center;
+    width: 100px;
+    height: 151px;
+    margin: auto; }
+  body .lead {
+    font-size: 1.3em; }
+  body .avatar {
+    border-radius: 100%; }
+  body .launchpage-image a {
+    position: relative;
+    width: 100%;
+    /* for IE 6 */ }
+    body .launchpage-image a p {
+      position: absolute;
+      left: auto;
+      text-align: center;
+      width: 100%; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {

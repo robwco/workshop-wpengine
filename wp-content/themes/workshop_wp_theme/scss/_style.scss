@@ -25,6 +25,7 @@ $bonus-bg: #fcfcfc;
 $gold: #FFD084;
 $gray: #bfbfbf;
 $green-text: #19963C;
+$green: #19963C;
 $text-gray: #9F9D99;
 $light-gray: #F1F0EC;
 $link-gray: #7191BC;
@@ -60,7 +61,7 @@ $link-gray: #7191BC;
     .logo { font-weight: 800; font-size: .8em; color: #111;}
     .sub_logo {font-family: "House Slant"; color: #E44727; font-size: .9em; letter-spacing: .1em;}
     .logo_container { display: inline;}
-    .bonus { margin: 20px 0 10px -60px; background: url('/images/marketing/leads-promo.png') no-repeat; height: 107px;}
+    .bonus { margin: 20px 0 10px -60px; background: url('/images/marketing/ten-leads.png') no-repeat; height: 107px;}
     .bonus p {font-size: 80%; width:210px; float: right;}
     .testimonial {display: table; width: 100%; text-align: center; padding-top: 2em;font-size: 140%;}
     .trust {font-size: 70%; padding-bottom: 1em; text-align: center;}
@@ -112,6 +113,21 @@ $link-gray: #7191BC;
     }
     .comments-title {display: none;}
     #respond {margin-top: 5em; border-top: 1px solid $hr-gray; text-align: center; width: 100%;}
+    .locked { background: url('/images/marketing/locked-1.png') no-repeat center; width: 100px; height: 151px; margin: auto;}
+    .lead {font-size:1.3em;}
+    .avatar {border-radius:100%;}
+    .launchpage-image a { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+     p { 
+     position: absolute; 
+left: auto;
+text-align: center;
+     width: 100%; 
+  }
+}
+
+
 
 } /* <--- BODY CLOSE DON'T DELETE */
 
