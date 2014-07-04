@@ -39,7 +39,7 @@ $link-gray: #7191BC;
     h2 { font-weight: normal; font-size: 140%; margin-bottom: 1em;
       a { text-decoration: none; }
     }
-    a, li a, h1 a,  { color: $link-blue;
+    a, li a, h1 a,  { color: $link-blue; text-decoration: none;
       &:hover { color: $link-hover;}
       &:visited { color: $link-visited;}
     }
@@ -116,18 +116,7 @@ $link-gray: #7191BC;
     .locked { background: url('/images/marketing/locked-1.png') no-repeat center; width: 100px; height: 151px; margin: auto;}
     .lead {font-size:1.3em;}
     .avatar {border-radius:100%;}
-    .launchpage-image a { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-     p { 
-     position: absolute; 
-left: auto;
-text-align: center;
-     width: 100%; 
-  }
-}
-
-
+    span.new {font-family: "flood-std"; color: $red; font-weight: normal; font-size: 70%; letter-spacing: .01em; vertical-align: text-top;}
 
 } /* <--- BODY CLOSE DON'T DELETE */
 

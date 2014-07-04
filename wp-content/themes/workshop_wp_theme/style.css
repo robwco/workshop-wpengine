@@ -33,7 +33,8 @@ body {
     body h2 a {
       text-decoration: none; }
   body a, body li a, body h1 a {
-    color: #3477d3; }
+    color: #3477d3;
+    text-decoration: none; }
     body a:hover, body li a:hover, body h1 a:hover {
       color: #26599b; }
     body a:visited, body li a:visited, body h1 a:visited {
@@ -298,15 +299,13 @@ body {
     font-size: 1.3em; }
   body .avatar {
     border-radius: 100%; }
-  body .launchpage-image a {
-    position: relative;
-    width: 100%;
-    /* for IE 6 */ }
-    body .launchpage-image a p {
-      position: absolute;
-      left: auto;
-      text-align: center;
-      width: 100%; }
+  body span.new {
+    font-family: "flood-std";
+    color: #e44727;
+    font-weight: normal;
+    font-size: 70%;
+    letter-spacing: .01em;
+    vertical-align: text-top; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {

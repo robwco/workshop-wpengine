@@ -36,19 +36,20 @@ Template Name: Account
 	document.write(greeting())
 </script>
 
-<span style="vertical-align: middle;"><?php
+
+
+<span style="font-weight:800;"><?php get_currentuserinfo(); echo $current_user->user_firstname; ?></span> <span style="vertical-align: middle;"><?php
        global $current_user;
        get_currentuserinfo();
        echo get_avatar( $current_user->ID, 40 );
 ?>
-</span>
-
-<span style="font-weight:800;"><?php get_currentuserinfo(); echo $current_user->user_firstname; ?></span>... </h1>
+</span> ... </h1>
 <hr>
 <h3 style="font-weight:800;">Get Started! Customize your Workshop account</h3>
 <ol>
-	<li><a href="../guides/multiple-email-addresses/">Set your lead preferences to receive only the leads you want.</a></li>
-	<li><a href="../guides/multiple-email-addresses/">Share leads with your entire team.</a></li>
+	<li><a href="../guides/multiple-email-addresses/">Set your lead preferences to receive only the leads you want in your inbox.</a></li>
+	<li><a href="../guides/multiple-email-addresses/">Share your leads with the entire team.</a></li>
+	<li><a href="mailto:support@letsworkshop.com?subject=I'd like an invite to Workshop's groupbuzz">Get an invite to the Shed (typically takes up to 24 hours).</a></li>
 </ol>
 
 
@@ -70,24 +71,15 @@ Template Name: Account
 <table>
 	<tr>
 		<td style="padding:0 1em 0 0; text-align:center;">
-				<h3 style="font-weight:800;"><img src="../images/logo/workshop-logo-handdrawn.png" style="width: 1.5em; vertical-align: middle; margin-bottom: .3em;"><br>Leads Center</h3>
+				<h3 style="font-weight:800;"><img src="../images/logo/workshop-logo-handdrawn.png" style="width: 1.75em; vertical-align: middle; margin-bottom: .3em;"><br>Leads Center <span class="new">New!</span></h3>
 					<p class="masthead" style=" margin-top: -1em;">An easy-to-scan digest of every lead sent your way.</p>
 				<div class="launchpad-image">
-					
 				      <p>Coming soon</p>
 				</div>
 		</td>
-		<td style="padding:0 .5em 0 .5em; text-align:center;">
-				<h3 style="font-weight:800;"><img src="../images/logo/the-shed.png" style="width: 2em; vertical-align: middle; margin-bottom: .3em;"><br>The Shed</h3>
-					<p class="masthead" style="margin-top: -1em;">A members-only discussion community full of valuable tips.</p>
-				<div class="launchpad-image">
-					<a href="http://workshop.groupbuzz.io/topics">
-					      <p>Go to the Shed</p>
-					</a>
-				</div>
-		</td>
+
 		<td style="padding:0 0 0 1em; text-align:center;">
-				<h3 style="font-weight:800;"><br>Happy Hour</h3>
+				<h3 style="font-weight:800;"><img src="../images/marketing/happy-hour1.png" style="width: 3.2em; vertical-align: middle; margin-bottom: .3em;"><br>Happy Hour</h3>
 					<p class="masthead" style=" margin-top: -1em;">Periodic round-table chats with members and guests.</p>
 				<div class="launchpad-image">
 					<a href="http://letters.letsworkshop.com/h/i/CC87F61930AF6586">
@@ -95,12 +87,17 @@ Template Name: Account
 					</a>
 				</div>
 		</td>
+				<td style="padding:0 .5em 0 .5em; text-align:center;">
+				<h3 style="font-weight:800;"><img src="../images/marketing/theshed1.png" style="width: 3em; vertical-align: middle; margin-bottom: .3em;"><br>The Shed</h3>
+					<p class="masthead" style="margin-top: -1em;">A members-only discussion community full of valuable tips.</p>
+				<div class="launchpad-image">
+					<a href="http://workshop.groupbuzz.io/topics">
+					      <p>Go to the Shed</p>
+					</a>
+				</div>
+		</td>
 	</tr>
 </table>
-<hr>
-<p class="masthead">
-<a href="<?php echo wp_logout_url(); ?>" title="Logout">Logout</a>
-<p>
 
 <?php endif; ?>
 

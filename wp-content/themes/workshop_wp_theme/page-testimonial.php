@@ -13,6 +13,8 @@ Template Name: Testimonial Index Page
 <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 <?php the_content(); ?>
 <div class="entry-links"><?php wp_link_pages(); ?></div>
+
+<h1>Testing</h1>
 </section>
 </article>
 <?php endwhile; endif; ?>
