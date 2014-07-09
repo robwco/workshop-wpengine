@@ -46,8 +46,9 @@ Template Name: Account
 </span> ... </h1>
 <hr>
 <h3 style="font-weight:800;">Get Started! Customize your Workshop account</h3>
-<ol>
-	<li><a href="../guides/multiple-email-addresses/">Set your lead preferences to receive only the leads you want in your inbox.</a></li>
+<ol id="guide-checklist">
+	<li><a href="../guides/tour/">Take a tour of Workshop and see how it all works.</a></li>
+	<li><a href="../guides/lead-preferences/">Set your lead preferences to receive only the leads you want in your inbox.</a></li>
 	<li><a href="../guides/multiple-email-addresses/">Share your leads with the entire team.</a></li>
 	<li><a href="mailto:support@letsworkshop.com?subject=I'd like an invite to Workshop's groupbuzz">Get an invite to the Shed (typically takes up to 24 hours).</a></li>
 </ol>
@@ -71,7 +72,7 @@ Template Name: Account
 <table>
 	<tr>
 		<td style="padding:0 1em 0 0; text-align:center;">
-				<h3 style="font-weight:800;"><img src="../images/logo/workshop-logo-handdrawn.png" style="width: 1.75em; vertical-align: middle; margin-bottom: .3em;"><br>Leads Center <span class="new">New!</span></h3>
+				<h3 style="font-weight:800;"><img src="../images/logo/workshop-logo-handdrawn.png" style="width: 1.75em; vertical-align: middle; margin-bottom: .3em;"><br>Lead Factory <span class="new">New!</span></h3>
 					<p class="masthead" style=" margin-top: -1em;">An easy-to-scan digest of every lead sent your way.</p>
 				<div class="launchpad-image">
 				      <p>Coming soon</p>
@@ -98,6 +99,8 @@ Template Name: Account
 		</td>
 	</tr>
 </table>
+
+
 
 <?php endif; ?>
 

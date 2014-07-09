@@ -38,7 +38,8 @@ body {
     body a:hover, body li a:hover, body h1 a:hover {
       color: #26599b; }
     body a:visited, body li a:visited, body h1 a:visited {
-      color: #7c3b7d; }
+      color: #7c3b7d;
+      text-decoration: line-through; }
   body aside {
     float: left;
     width: 400px;
@@ -306,6 +307,9 @@ body {
     font-size: 70%;
     letter-spacing: .01em;
     vertical-align: text-top; }
+  body #guide-checklist a:visited {
+    color: #9f9d99;
+    text-decoration: line-through; }
 
 /* <--- BODY CLOSE DON'T DELETE */
 @font-face {

@@ -41,7 +41,7 @@ $link-gray: #7191BC;
     }
     a, li a, h1 a,  { color: $link-blue; text-decoration: none;
       &:hover { color: $link-hover;}
-      &:visited { color: $link-visited;}
+      &:visited { color: $link-visited; text-decoration: line-through;}
     }
     aside { float:left; width:400px; padding-right: 20px;}
     ul { list-style: none; padding:0; margin:0; }
@@ -117,6 +117,8 @@ $link-gray: #7191BC;
     .lead {font-size:1.3em;}
     .avatar {border-radius:100%;}
     span.new {font-family: "flood-std"; color: $red; font-weight: normal; font-size: 70%; letter-spacing: .01em; vertical-align: text-top;}
+    #guide-checklist a:visited { color: $text-gray; text-decoration: line-through; }
+
 
 } /* <--- BODY CLOSE DON'T DELETE */
 
