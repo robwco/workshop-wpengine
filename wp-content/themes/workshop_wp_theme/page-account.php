@@ -1,6 +1,6 @@
 <?php
-/*
-Template Name: Account
+/**
+*Template Name: Account
 */
 ?>
 <?php get_header( 'account' ); ?>
