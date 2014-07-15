@@ -1,29 +1,44 @@
 /*Color Mix-ins*/
+
+/*White*/
 $white: #fff;
+$plan-bg: #EFEFEF;
+$bonus-bg: #fcfcfc;
+
+/*Black*/
 $black: #111;
 $body-black: #444;
+
+/*Red*/
 $header-red: #B72A22;
+$red: #E44727;
+$highlight-red: #F75432;
+
+/*Gray*/
 $hr-gray: #D9D3CF;
+$quote-text: #9b9993;
+$quote-name: #9b9993;
+$quote-strong: #727167;
+$text-gray: #9F9D99;
+$text-gray-dark: #868480;
+$light-gray: #F1F0EC;
+$link-gray: #7191BC;
+$gray: #bfbfbf;
+
+/*Blue*/
 $light-blue: #4B8BE2;
 $link-blue: #3477d3;
 $dark-blue: #0B4AA1;
 $link-hover: #26599b;
 $link-visited: #7C3B7D;
-$quote-text: #9b9993;
-$quote-name: #9b9993;
-$quote-strong: #727167;
-$plan-bg: #EFEFEF;
-$red: #E44727;
-$highlight-red: #F75432;
-$bonus-bg: #fcfcfc;
+
+/*Yellow*/
 $gold: #FFD084;
-$gray: #bfbfbf;
+
+/*Green*/
 $green-text: #19963C;
 $green: #19963C;
-$text-gray: #9F9D99;
-$text-gray-dark: #868480;
-$light-gray: #F1F0EC;
-$link-gray: #7191BC;
+
 
 /*Text-Shadow Mix-ins*/
 $shadow: 0px 0px 3px #A6A498;

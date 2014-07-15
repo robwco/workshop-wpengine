@@ -9,11 +9,22 @@
 ?>
 
 	</div><!-- #content -->
-<hr>
+
 
 <footer>
 
-<p><strong>Workshop</strong> | A tiny newsletter and community loaded with potential gigs for designers and developers.</p>
+<div style="width:34em; margin: auto;">
+	<div style="width:25%; float: left; display:inline-block; vertical-align: 3em;">
+		<p>
+			<strong style="font-weight:900; font-size: 1.15em;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.3em; display: inline-block; vertical-align: -.25em; margin-right: .3em;">Workshop</strong>
+		</p>
+	</div>
+	<div style="width: 75%; float: right; display:inline-block;">
+		<p>
+			A tiny newsletter and community loaded with potential gigs for designers and developers.
+		</p>
+	</div>
+</div>
 
 </footer>
 </div><!-- #page -->

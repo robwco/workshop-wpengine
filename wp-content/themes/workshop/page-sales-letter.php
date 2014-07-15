@@ -26,4 +26,4 @@ get_header( 'home' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer( 'sales-letter' ); ?>
+<?php get_footer( 'home' ); ?>

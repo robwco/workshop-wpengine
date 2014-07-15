@@ -26,5 +26,3 @@ get_header( 'essay' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>

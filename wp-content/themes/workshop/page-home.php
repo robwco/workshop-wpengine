@@ -42,4 +42,5 @@ get_header( 'home' ); ?>
 <p class="testimonial">&ldquo;Since starting with Workshop, I've had an unbroken chain of daily lead generation activity no matter what.&rdquo;</p>
 <p class="center"><img src="/images/testimonials/kurt.png" class="testimonial-img"> – Kurt Elster, Founder and Creative Director, <img src="../images/testimonials/logo-ethercycle.png" style="width:20px; border-radius:3px; vertical-align: -2px;"> Ethercycle</p>
 </section>
+<hr>
 <?php get_footer( 'home' ); ?>

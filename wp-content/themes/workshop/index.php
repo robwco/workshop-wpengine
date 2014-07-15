@@ -17,7 +17,7 @@ get_header( 'home' ); ?>
 		<main id="main" class="site-main" role="main">
 
 
-<h2>Essays on design, writing, and business by <img src="/images/logo/workshop-logo-handdrawn.png" style="width:1em; vertical-align: -.2em;"> <a href="http://letsworkshop.com" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;">Workshop</a>.</h2>
+<h2>Essays on design, writing, and business by <img src="/images/logo/workshop-hd-100.png" style="width:1em; vertical-align: -.2em; margin-right: -.1em;"> <a href="/" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;">Workshop</a>.</h2>
 <hr>
 
 
