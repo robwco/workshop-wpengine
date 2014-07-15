@@ -5,11 +5,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php edit_post_link( __( 'Edit', 'workshop' ), '<span class="edit-link">', '</span>' ); ?>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title single">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php workshop_posted_on(); ?>
+			<p class="author full-opacity">by  <?php echo get_avatar( get_the_author_email(), '30' ); ?> <?php the_author(); ?></p>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -24,39 +25,33 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'workshop' ) );
+<hr>
+<div style="display: table;">
+		<p class="center" style="font-size: 1.2em; line-height: 1.2em;"><strong>If you learned something new in this essay</strong>, check out <a href="/" style="text-decoration: underline;">my free course on generating new work</a> that's helped thousands & comes with 10 free leads.</p>
+	</div>
+</div>
+	</div>
 
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'workshop' ) );
 
-			if ( ! workshop_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'workshop' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'workshop' );
-				}
 
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'workshop' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'workshop' );
-				}
+	<hr>
+	<div style="width:30em; margin: 0 auto 0 auto;">
+	<div style="margin-top:2em; float: left;">
+	<?php echo get_avatar( get_the_author_email(), '100' ); ?>
+	</div>
+	<div style="width:24em; float: right;">
+	<p style="margin-bottom: 0;"><strong>About the author <?php the_author(); ?></strong></p>
+	<p style="margin-top: .5em;"><?php the_author_description(); ?></p>
+	</div>
+	</div>
+<div style="width:100%; padding-top:0em; display: table;">
+	<hr>
 
-			} // end check for categories on this blog
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+			<p class="masthead" style="margin:1.5em;">Want to see everything I've written? <a href="/blog">Here are all my essays</a>.</p>
+		</nav><!-- #site-navigation -->
 
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
-		?>
+</div>
 
-		<?php edit_post_link( __( 'Edit', 'workshop' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

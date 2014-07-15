@@ -16,17 +16,14 @@ Template Name: Home Drip Opt-in
 get_header( 'home' ); ?>
 
 <section id="content" role="main">
-<nav style="width: 100%; display: table;">
-<p style="float:right; text-align:right;"><img style="margin-right:.5em; vertical-align: middle; width: 1.5em; height: 1.5em;" src="./images/logo/workshop-logo-handdrawn.png"><a href="./account/">Member sign in</a></p>
-</nav>
-<h1 style="margin-top: 0em;">Don't waste another day not knowing how to generate new work.</h1>
+<h1>Don't waste another day not knowing how to generate new work.</h1>
 <h2>You have a growing consultancy – referrals are great – but relying on them too much causes dry spells.</h2>
 <aside>
 	<ul>
-		<li><strong>Sign up now to access my free guide on creating an endless stream of clients:</strong></li>
+		<li><strong>Sign up now to access my free course on creating an endless stream of clients:</strong></li>
 		<li>Watch 2 advanced freelance strategy sessions with Nick Disabato and Samuel Hulick (2+ hours).</li>
 		<li>Download my endless leads cheatsheet, a massive list of the best links for finding work (updated regularly).</li>
-		<li>Get perfect client feedback with my world-class-feedback-generator.</li>
+		<li>Perfect your client's feedback with my world-class feedback generator.</li>
 	</ul>
 </aside>
 <form class="drip-opt-in" action="https://www.getdrip.com/forms/9298754/submissions" method="post" target="_blank" data-drip-embedded-form="1306">
@@ -36,13 +33,13 @@ get_header( 'home' ); ?>
     <input type="text" name="fields[name]" value="" placeholder="Your name" />
     <input type="email" name="fields[email]" value="" placeholder="Your email" />
 </div>
-<div class="bonus"><p><strong>Bonus:</strong> Get 10 free leads delivered straight to your inbox after signing up.</p></div>
+<div class="bonus"><p><strong>Bonus:</strong> Get 10 complimentary leads delivered straight to your inbox upon sign up.</p></div>
   <div>
     <input type="submit" name="submit" value="Subscribe for free" data-drip-attribute="sign-up-button" />
   </div>
 <p class="trust">I’ll never share your email address or spam you.</p>
 </form>
 <p class="testimonial">&ldquo;Since starting with Workshop, I've had an unbroken chain of daily lead generation activity no matter what.&rdquo;</p>
-<p class="center"><img src="/images/testimonials/kurt.png" style="border-radius: 100%; width: 55px; height: 55px; vertical-align: middle;"> – Kurt Elster, Founder and Creative Director, Ethercycle</p>
+<p class="center"><img src="/images/testimonials/kurt.png" class="testimonial-img"> – Kurt Elster, Founder and Creative Director, <img src="../images/testimonials/logo-ethercycle.png" style="width:20px; border-radius:3px; vertical-align: -2px;"> Ethercycle</p>
 </section>
-<?php get_footer(); ?>
+<?php get_footer( 'home' ); ?>

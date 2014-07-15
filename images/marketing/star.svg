@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="94px" height="90px" viewBox="0 0 94 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>star</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="star105" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)" fill="#FFD084">
+            <path d="M1.327,36.274 C8.845,43.164 16.785,49.537 25.43,54.959 C22.58,64.636 19.473,74.228 16.144,83.751 C15.534,85.496 16.714,86.701 18.124,86.971 C18.83,87.401 19.728,87.452 20.646,86.797 C29.001,80.83 37.582,75.19 46.032,69.359 C54.576,75.637 62.928,82.17 71.876,87.876 C73.859,89.141 75.726,87.431 75.843,85.611 C75.942,85.214 75.958,84.775 75.838,84.29 C73.475,74.678 70.698,65.208 66.433,56.275 C75.612,50.409 83.037,42.353 91.6,35.66 C93.206,34.405 92.543,32.59 91.178,31.724 C90.744,31.168 90.074,30.785 89.154,30.785 L60.321,30.785 C56.466,21.092 52.532,11.432 49.401,1.473 C48.469,-1.492 44.199,-0.657 44.077,1.945 C39.586,11.529 35.464,21.253 33.065,31.579 C22.805,31.514 12.55,31.086 2.289,31.055 C-0.829,31.046 -1.143,35.367 1.327,36.274 L1.327,36.274 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

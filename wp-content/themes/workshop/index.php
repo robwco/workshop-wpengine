@@ -11,11 +11,17 @@
  * @package Workshop
  */
 
-get_header(); ?>
+get_header( 'home' ); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" >
 		<main id="main" class="site-main" role="main">
 
+
+<h2>Essays on design, writing, and business by <img src="/images/logo/workshop-logo-handdrawn.png" style="width:1em; vertical-align: -.2em;"> <a href="http://letsworkshop.com" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;">Workshop</a>.</h2>
+<hr>
+
+
+<div style="padding-top: 1em; max-width: 28em; margin: auto; padding-top: 2em;">
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -26,21 +32,21 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'essay' );
 				?>
 
 			<?php endwhile; ?>
 
-			<?php workshop_paging_nav(); ?>
 
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+</div>
+
+<hr>
+			<div class="masthead" style="text-align: center; margin-bottom: 2em;"><?php posts_nav_link('|','Back','More Essays'); ?> </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
