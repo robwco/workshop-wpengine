@@ -14,7 +14,7 @@ Template Name: Testimonials
  */
 
 get_header( 'page' ); ?>
-<h1>Members have made well over six-figures</h1>
+<h1>My members have made well over six-figures</h1>
 <h2>Hundreds of freelance and consultancy businesses don't worry about finding new work anymore because they've switched to Workshop.</h2>
 <hr>
 <section id="content" role="main" style="max-width:30em; margin: auto; margin-bottom: 2em;">
@@ -51,7 +51,7 @@ if($testimonial_posts)
 
 <hr>
 <center>
-	<h2 style="font-weight: bold; color: #111;">Ready to put your worries at ease? <br><a href="/sign_up/#pricing" style="font-weight: normal;">Try Workshop risk-free for 30 days.</a></h2>
+	<h2 style="font-weight: bold; color: #111;">Ready to put your work finding worries at ease? <br><a href="/sign_up/#pricing" style="font-weight: normal;">Try Workshop risk-free for 30 days.</a></h2>
 </center>
 
 </section>
