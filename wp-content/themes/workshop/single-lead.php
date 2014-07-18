@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Single Lead
+*/
 /**
  * The template for displaying all single posts.
  *

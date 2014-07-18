@@ -24,7 +24,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer" style="margin-top:3em;">
 <hr>
 <div style="display: table;">
 		<p class="center" style="font-size: 1.2em; line-height: 1.2em;"><strong>If you learned something new in this essay</strong>, check out <a href="/" style="text-decoration: underline;">my free course on generating new work</a> that's helped thousands & comes with 10 free leads.</p>
