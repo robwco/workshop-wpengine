@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Color Mix-ins*/
+/*Backgrounds*/
 /*White*/
 /*Black*/
 /*Red*/
@@ -540,11 +541,24 @@ body {
       position: relative;
       bottom: -11px;
       left: 50%;
-      margin-left: -25px;
+      margin: 0 auto 0 auto;
       width: 20px;
       height: 20px;
       -moz-transform: rotate(45deg);
       -webkit-transform: rotate(45deg); }
+  body .quote-arrow2 {
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 50%;
+    margin-left: -25px;
+    width: 30px;
+    height: 30px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    box-shadow: -1px -1px 0px #D8D5CF; }
   body .logo {
     font-weight: 800;
     font-size: .8em;
@@ -798,6 +812,24 @@ body {
     text-decoration: line-through; }
 
 /* <--- BODY CLOSE DON'T DELETE */
+.connect {
+  width: 100%;
+  background-color: #f5f3f0; }
+
+.connect-wrap h1 {
+  font-weight: 900;
+  margin-bottom: 2em;
+  color: #9f9d99; }
+.connect-wrap .connect-letter {
+  background-color: white;
+  width: 100%;
+  max-width: 26em;
+  margin: 2em auto;
+  box-shadow: 0px 0px 3px #a6a498;
+  padding: .25em 2em 2em 2em;
+  font-size: .9em;
+  border-radius: 5px; }
+
 /* DIMA JE ILLUSTRATION */
 #pulling-dija {
   position: relative;
