@@ -23,8 +23,8 @@ get_header( 'connect' ); ?>
 		</p>
 	</div>
 	<div style="width: 55%; display:inline-block;">
-		<p style="padding: 0 0 0 2em; margin: .6em 0 1em 0; display: inline-block;">
-			Send your project directly to the inbox of 200+ world-class freelancers and studios.
+		<p style="padding: 0 .5em 0 1.5em; margin: .6em 0 1em 0; display: inline-block;">
+			Send your project directly to the inbox of 200+ world-class freelancers and studios by tomorrow.
 
 		</p>
 	</div>		
