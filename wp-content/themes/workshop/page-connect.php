@@ -14,7 +14,7 @@ Template Name: Post to Workshop
  */
 
 get_header( 'connect' ); ?>
-<div style="width:40em; margin: -2em auto 3em auto; display: table; border-bottom: 1px solid #D9D3CF;">
+<div style="width:40em; margin: 1em auto 3em auto; display: table; border-bottom: 1px solid #D9D3CF;">
 
 
 	<div style="width:18%; float: left; display:inline-block; vertical-align: 3em;">
@@ -29,7 +29,7 @@ get_header( 'connect' ); ?>
 		</p>
 	</div>		
 		<div style="width: 25%; text-align: center; float: right; display: inline; font-size: .75em; margin-top: 1.4em;">
-			<a href="https://letsworkshop.wufoo.com/forms/fill-out-this-form-to-post-your-project/"><input type="submit" name="submit" value="POST A JOB FOR FREE"></a>
+			<a href="https://letsworkshop.wufoo.com/forms/create-a-workshop-listing/"><input type="submit" name="submit" value="POST A JOB FOR FREE"></a>
 		</div>
 	
 </div>
@@ -83,7 +83,7 @@ get_header( 'connect' ); ?>
 </h3>
 <a href="http://deviseapp.com"><img style="max-width: 290px; margin-right: 1em; margin-left: -8em; display: inline-block;" align="left" src="/images/testimonials/devise-site.png"></a>
 <p>
-	I now have a working product and have since dipped back into my inbox to reach out other developers when I need extra help.
+	I now have a working product and have since dipped back into my inbox to reach out to other developers when I need extra help.
 </p>
 <p>
 	It&#39;s a huge relief to know that I can continue growing Devise by hiring through Workshop in the future.
@@ -155,7 +155,7 @@ get_header( 'connect' ); ?>
 				<p style="color:#9F9D99;">Post your project in minutes. If you get a single spammy reply, I'll pay to post your project elsewhere.</p>
 		</center>
 	<div style="text-align: center; margin: 2em auto; max-width: 20em;">
-		<a href="https://letsworkshop.wufoo.com/forms/fill-out-this-form-to-post-your-project/"><input type="submit" name="submit" value="POST A JOB FOR FREE" data-drip-attribute="sign-up-button"></a>
+		<a href="https://letsworkshop.wufoo.com/forms/create-a-workshop-listing/"><input type="submit" name="submit" value="POST A JOB FOR FREE" data-drip-attribute="sign-up-button"></a>
 	</div>
 
 
