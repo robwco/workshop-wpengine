@@ -10,7 +10,7 @@
 <?php
 if( get_field('featured_hn') )
 {
-    echo '<div style="margin-left: -30px; margin-top: -23px; margin-bottom: -5px;"><img src="/images/marketing/star.svg" style="display:inline-block; width:18px; fill: #ace63c; "></div>';
+    echo '<div style="margin-left: -30px; margin-top: -23px; margin-bottom: -5px;"><img src="/images/marketing/star1.svg" style="display:inline-block; width:18px; fill: #ace63c; "></div>';
 }
 else
 {

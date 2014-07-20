@@ -27,4 +27,4 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-<h3 class="masthead">Written by <a href="/">Workshop</a>, a tiny newsletter and community loaded with potential gigs for designers and developers.</h3>
+<h3 class="masthead">Written by <a href="/"><?php bloginfo( 'name' ); ?></a>. <?php bloginfo( 'description' ); ?> </h3>
