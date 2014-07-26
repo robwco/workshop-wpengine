@@ -540,7 +540,6 @@ body {
       display: block;
       position: relative;
       bottom: -11px;
-      left: 50%;
       margin: 0 auto 0 auto;
       width: 20px;
       height: 20px;
@@ -616,6 +615,15 @@ body {
       body .plan .box-shadow .quote-arrow {
         background-color: #f5f3f0;
         border: none; }
+    body .plan ul {
+      margin-bottom: 1em;
+      background-color: #f5f3f0;
+      padding: 1em;
+      border-radius: 5px; }
+      body .plan ul li {
+        margin: .25em;
+        font-size: .85em;
+        font-style: italic; }
   body .gaurantee {
     background-color: #ffd084;
     font-size: .75em;

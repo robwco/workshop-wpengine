@@ -109,3 +109,123 @@
 		<div id="pricing">
 
 		</div>
+		<div class="plan">
+
+
+	<h1 style="font-size: 42px;">
+		Try Workshop risk-free for 30 days
+	</h1>
+	<h2>
+		If you're not completely blown away, get a full refund.
+	</h2>
+	<div class="box-shadow">
+		<h2 class="center">
+			“Totally a no-brainer for most freelancers"
+		</h2><span class="quote-arrow"></span>
+	</div>
+	<p class="center">
+		<img src="/images/testimonials/ruben.png" class="testimonial-img"> – Ruben Gamez, Founder, <img src="../images/testimonials/bidsketch-logo.png" style="width:27px; border-radius:3px; vertical-align: -7px;"> Bidsketch
+	</p>
+	<hr>
+	<h3 class="center">You get a daily newsletter full of potential gigs. ($64/month)</h3>
+	<p><img src="../images/marketing/package-newsletter.png" alt="" style="width: 12em; margin-left: .75em;  " align="right">
+		The key to the service is the daily leads I'll be sending to your inbox each weekday. From the day you sign up you'll have the highest quality leads on the web, qualified and sorted into you inbox and made easy to scan. </p>
+
+
+<strong>Agency and Team Gigs:</strong> Requests for proposals, Consulting gigs, Full-service design and development inquiries, Copywriting, Promotion, Project management.
+	<p>
+		<strong>Design Gigs:</strong> Wordpress design, Web design, UI design, Branding/Logo design, Graphic design, Motion graphics, Packaging, Art direction and branding, Infographics. Animation, 3D design, Interface design, Industrial design, User experience, and Interaction design
+	</p>
+	<p>
+		<strong>Development Gigs:</strong> Front-end development, Drupal development, Javascript development, Python and django development, PHP development, Back-end development, System administration, Web development, Game development, Mobile development, Ruby and rails development, CMS development, Image processing, HTML/CSS development, Magento development, Data development, .NET development.
+	</p>
+<p>Each lead is carefully looked over and I make sure they ALL are...</p>
+<ul>
+<li>Worth your time</li>
+<li>Leads you actually care about (not stuff you don't even do)</li>
+<li>Looking for a consultancy or freelancer (aka short-term gigs, not full-time work)</li>
+<li>High quality budgets above $1,000</li>
+<li>Location independent, open to workers from anywhere</li>
+<li>The right type of clients for your business</li>
+</ul>
+
+
+		<hr>
+		<div style="display: table;">
+<h3 class="center">Special Bonus #1: A mini-course developed to help you land those gigs. ($99 value)</h3>
+
+	<p style="margin-bottom:2em;"><img src="../images/marketing/package-mini-course.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> The leads emails are great, but along with those, I also send material specifically designed to help you land work. We'll discuss pricing, email-writing, and the psychology behind replying to leads successfully. You'll learn the exact words I to use at every step of the process.</p>
+<p>By the end of this mini-course you'll know...
+<ul>
+<li>What to do to get an inbox full of warm leads that are ready to become clients</li>
+<li>How to be successful with Workshop (or any lead service)</li>
+<li>How to reply to a job post in less than 2 minutes</li>
+<li>The exact template I use for writing emails to leads that has netted me over $100k</li>
+<li>How to get stagnant clients to reply your emails after weeks of ignoring you</li>
+<li>How to make sure you hear back from every email you send</li>
+<li>What to do if no one responds to your emails</li>
+</ul></p>
+</div>
+		<hr>
+		<div style="display: table;">
+<h3 class="center">Special Bonus #2: Workshop groupbuzz discussion community ($99/year value)</h3>
+
+	<p style="margin-bottom:2em;"><img src="../images/marketing/package-forum.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> It's not just me that will help you land clients. There's actually a full, thriving community of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz. Here's a few ways that I plan to use this group for improving my business and you can too:</p>
+
+<ul>
+<li>Getting reliable answers to my freelance business's complex problems.</li>
+<li>Getting inspired, share awesome resources and links.</li>
+<li>Expand my network of internet buddies.</li>
+<li>Work together with awesome an bunch, even though I'm alone in a room by myself.</li>
+<li>Improve my website's sales funnel.</li>
+<li>Ask for tips on filing my end of year taxes</li>
+<li>Share stuff I'm working on.</li>
+<li>Ask about how to deal with sticky client situations.</li>
+</ul>
+
+<p>Now I'll finally be able to freelance remotely, and not alone. You can too - and best of all it's a free bonus to your Workshop account. This active community has already covered a wealth of valuable topics, including...</p>
+
+<ul>
+<li>Why novice freelancers give discounts while seasoned consultants triple their client's budget</li>
+<li>How to stop feeling intimidated</li>
+<li>Best way to renegotiate following scope creep</li>
+<li>Making your onboarding process not suck</li>
+<li>How to price your services perfectly</li>
+</ul>
+		<hr>
+		<div style="display: table;">
+<h3 class="center">Special Bonus #3: Workshop hipchat ($99/year value)</h3>
+
+	<p style="margin-bottom:2em;"><img src="../images/marketing/package-chat.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> My personal favorite, the Workshop hipchat, is there for real-time connection with other members.  </p>
+
+<p>The discussion is extremely diverse but in the past has included...</p>
+
+<ul>
+<li>Sales funnel masterminds</li>
+<li>World Cup 2014 discussion</li>
+<li>2-week business goal round-robin</li>
+<li>Advice from members who have run multiple million-dollar agencies</li>
+<li>Friday night happy hour</li>
+</ul>
+<p> ...plus a lot of other fun stuff. </p>
+<hr>
+
+	<h1>
+		All for about 30¢ per lead
+	</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

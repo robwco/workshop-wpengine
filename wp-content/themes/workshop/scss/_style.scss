@@ -494,7 +494,7 @@ CUSTOMIZATION STARTS HERE
     #menu-single-footer {}
     .box-shadow { color: $black;  margin: 2em 0 0 0; background-color:#f5f3f0; border-radius: 5px; padding: .1em 1em 0em 1em;
       p { margin: .7em 0 0 0;}
-      .quote-arrow { background-color: #f5f3f0; content: ''; display: block; position: relative; bottom: -11px; left: 50%; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+      .quote-arrow { background-color: #f5f3f0; content: ''; display: block; position: relative; bottom: -11px; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
 
 }
             .quote-arrow2 { background-color: #fff; content: ''; display: block; position: relative; top: -20px; left: 50%; margin-left: -25px; width: 30px; height: 30px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); box-shadow: -1px -1px 0px #D8D5CF;}
@@ -512,6 +512,9 @@ CUSTOMIZATION STARTS HERE
       .box-shadow {box-shadow: none; background-color: #f5f3f0; width: 80%; margin: auto;
         h2 { margin: .5em 0 0 0; color: $black; }
         .quote-arrow {background-color: #f5f3f0; border:none;}
+      }
+      ul { margin-bottom: 1em; background-color: #f5f3f0; padding: 1em ; border-radius: 5px;
+        li { margin: .25em; font-size: .85em; font-style: italic; }
       }
     }
     .gaurantee { background-color: $gold; font-size: .75em; border-radius:.5em;  padding: .1em .5em; font-weight: 800; margin-left: -6em; margin-right: 1em;

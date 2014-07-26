@@ -22,6 +22,8 @@ get_header( 'home' ); ?>
 			<?php include("inc/sales-letter.php"); ?>
 						<!--Don't remove-->
 			<?php include("inc/plan-standard.php"); ?>
+			<!--Don't remove-->
+			<?php include("inc/sales-letter-end.php"); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
