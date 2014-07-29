@@ -490,6 +490,8 @@ body {
     border: 0;
     height: 1px;
     background-color: #d9d3cf; }
+  body .connect {
+    background-color: #f5f3f0; }
   body .center {
     text-align: center; }
   body .home-optin {

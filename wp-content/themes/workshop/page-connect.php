@@ -38,7 +38,7 @@ get_header( 'connect' ); ?>
 
 	<div id="primary" class="content-area connect-wrap">
 		<main id="main" class="site-main" role="main">
-<h2 style="font-size: 2.5em;">
+<h2  class="center" style="font-size: 2.5em;">
 	"I just want to get this <em>built</em> already."
 </h2><!--
 	<img src="/images/testimonials/marcie-bg.jpg" style="display: inline; left: 15%; top: 50%; position: fixed; transform:rotate(-4deg);
@@ -164,5 +164,5 @@ get_header( 'connect' ); ?>
 
 
 	<hr> </div>
-	<p class="masthead" style="margin: 3em 0 5em 0;">Are you a freelancer? <a href="http://letsworkshop.com">Click here to get leads from people like Marcella</a>.</p>
+	<p class="masthead" style="margin: 3em 0 5em 0;">Are you a freelancer? <a href="/">Click here to get leads from people like Marcella</a>.</p>
 	</div><!-- #primary -->
