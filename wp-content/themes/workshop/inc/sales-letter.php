@@ -1,4 +1,4 @@
-<div id="fade2" class="home page">
+<div id="fade2" class="sales-letter">
 
 	<section>
 
@@ -36,7 +36,7 @@
 		</strong></p>
 
 		<p>
-			It's way more effective to contact a few opportunities every day so <strong>why wait until your schedule (or wallet) is empty to blast every lead in sight?</strong> Don't. Make contacting a few leads part of your daily routine and have a consistent stream of new opportunities at your disposal at all times. How do you find these leads? In a perfect world, they would come to you and you'd get right to the important part: pitching and landing work.
+			It's way more effective to contact a few opportunities every day so <strong>why wait until your schedule (or wallet) is empty?</strong> Don't. Make contacting a few leads part of your daily routine and have a consistent stream of new opportunities at your disposal at all times. How do you find these leads? In a perfect world, they would come to you and you'd get right to the important part: pitching and landing work.
 		</p> 
 		<p>
 			But the truth is it takes time to find opportunities online (at least a few hours a day) and doing this yourself means a loss of over of over $2,000+ billable time per month! Even if you paid someone just $10 an hour, that would be too much money ($600/month) and they'd most likely be at a loss about what a quality lead even looks like for your business.
@@ -50,7 +50,7 @@
 		<p class="center"> – Scott O.</p>
 
 		<p><strong>
-			Introducing: Workshop, affordable <em>hands-free</em> lead-generation for freelancers and studios...
+			Introducing: Workshop, affordable <em>hands-free</em> lead-generation...
 		</strong></p>
 
 		<p>
@@ -101,7 +101,7 @@
 		</strong></p>
 
 		<p>
-			I usually send about 5-10 leads per day, depending on the package you sign up for. Sometimes it will end up being more, <strong>but the whole point of Workshop is that I send fewer, better leads.</strong> I never send a lead just to hit a quota. In fact, Workshop's value is equally about the leads I don't send as it is about the ones I do. The thousands of leads I eliminate from your life completely make the handful I do send more important.
+			I usually send 8-10 leads per day. Sometimes it will end up being more, <strong>but the whole point of Workshop is that I send fewer, better leads.</strong> I never send a lead just to hit a quota. In fact, Workshop's value is equally about the leads I don't send as it is about the ones I do. The thousands of leads I eliminate from your life completely make the handful I do send more important.
 		</p> 
 		<p>
 			The fact is, you don't need all that many leads to make a lot of money; you just need the right leads. If you're looking for hundreds of freelance leads in your inbox every day, than Workshop isn’t the right service for you. On the other hand if you're looking for the best leads it is.
@@ -112,7 +112,7 @@
 		<div class="plan">
 
 
-	<h1 style="font-size: 42px;">
+	<h1>
 		Try Workshop risk-free for 30 days
 	</h1>
 	<h2>

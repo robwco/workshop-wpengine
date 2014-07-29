@@ -1,7 +1,30 @@
 /*Color Mix-ins*/
 
+/*Type*/
+$header: #111;
+$body: #868480;
+$link: #7191BC;
+$hover: #3477d3;
+$light-body: #9F9D99;
+
+/*UI*/
+$hr: #D9D3CF;
+$button: #E44727;
+$button-hover: #F75432;
+$button-focus: #B72A22;
+
 /*Backgrounds*/
+$white: #fff;
 $off-white: #f5f3f0;
+$input-focus: #FAFFBD;
+$gold: #FFD084;
+
+
+/*Effects Mix-ins*/
+$shadow: 0px 0px 3px #A6A498;
+
+/*Font Mix-ins*/
+$anon: 18px 'Anonymous Pro', Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 
 
 /*White*/
@@ -24,7 +47,6 @@ $quote-text: #9b9993;
 $quote-name: #9b9993;
 $quote-strong: #727167;
 $text-gray: #9F9D99;
-$text-gray-dark: #868480;
 $light-gray: #F1F0EC;
 $link-gray: #7191BC;
 $gray: #bfbfbf;
@@ -44,8 +66,3 @@ $green-text: #19963C;
 $green: #19963C;
 
 
-/*Text-Shadow Mix-ins*/
-$shadow: 0px 0px 3px #A6A498;
-
-/*Font Mix-ins*/
-$anon: 18px 'Anonymous Pro', Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

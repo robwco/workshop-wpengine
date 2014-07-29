@@ -3,7 +3,7 @@
 	<p><strong>What happens if I don't like it?</strong>
 	</p>
 	<p>
-		<span class="gaurantee">30-DAY</span> 100% Satisfaction Guarantee. Enjoy my leads for a full month, and if you don't like the service for any reason, send me an email and I'll issue you a refund. I don't want your money if you're not 100% blown away by my service.
+		<span class="guarantee">30-DAY</span> 100% Satisfaction Guarantee. Enjoy my leads for a full month, and if you don't like the service for any reason, send me an email and I'll issue you a refund. I don't want your money if you're not 100% blown away by my service.
 	</p>
 	<p>
 		<strong>Who are you?</strong>

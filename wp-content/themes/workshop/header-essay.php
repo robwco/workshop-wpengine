@@ -19,8 +19,8 @@
 <!-- Don't remove -->
 <?php include("inc/all-headers.php"); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<div class="sales-letter">
+<body <?php body_class(' '); ?> >
 
 	<div id="content" class="site-content">
 <nav id="site-navigation" class="main-navigation" role="navigation">

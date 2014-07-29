@@ -13,11 +13,11 @@
 
 get_header( 'home' ); ?>
 
-	<div id="primary" class="content-area" >
+	<div id="primary" class="content-area sales-letter" >
 		<main id="main" class="site-main" role="main">
 
 
-<h2>Essays on design, writing, and business by <img src="/images/logo/workshop-hd-100.png" style="width:1.35em; vertical-align: -.2em; margin-right: -.1em;"> <a href="/" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;"><?php bloginfo( 'name' ); ?></a>.</h2>
+<h2 class="center">Essays on design, writing, and business by <img src="/images/logo/workshop-hd-100.png" style="width:1.35em; vertical-align: -.2em; margin-right: -.1em;"> <a href="/" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;"><?php bloginfo( 'name' ); ?></a>.</h2>
 <hr>
 
 

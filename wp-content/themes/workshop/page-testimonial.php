@@ -14,8 +14,10 @@ Template Name: Testimonials
  */
 
 get_header( 'page' ); ?>
-<h1>My members have made well over 6-figures</h1>
-<h2>Hundreds of freelance and consultancy businesses don't worry about finding new work anymore because they've switched to Workshop.</h2>
+
+<div class="sales-letter" >
+<h1 class="center">A few members who have landed gigs</h1>
+<h2 class="center">Hundreds of our customers don't worry about finding new work anymore because they've switched to Workshop.</h2>
 <hr>
 <section id="content" role="main" style="max-width:30em; margin: auto; margin-bottom: 2em;">
 
@@ -53,9 +55,10 @@ if($testimonial_posts)
 </section>
 <hr>
 <center>
-	<h2 style="font-weight: bold; color: #111;">Ready to put your work finding worries at ease? <br><a href="/sign_up/#pricing" style="font-weight: normal;">Try Workshop risk-free for 30 days.</a></h2>
+	<h2 style="font-weight: bold; color: #111;">Ready to put your work finding problems at ease? <br><a href="/sign_up/#pricing" style="font-weight: normal;">Try Workshop risk-free for 30 days.</a></h2>
 </center>
 
 
 <hr>
 <?php get_footer( 'home' ); ?>
+</div>

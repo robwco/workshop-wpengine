@@ -12,6 +12,7 @@
 
 get_header( 'page' ); ?>
 
+<div class="sales-letter" >
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main" style="margin-bottom:3em;">
 
@@ -32,3 +33,4 @@ get_header( 'page' ); ?>
 	</div><!-- #primary -->
 <hr>
 <?php get_footer( 'home' ); ?>
+</div>

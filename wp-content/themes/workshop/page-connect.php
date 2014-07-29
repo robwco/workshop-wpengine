@@ -81,7 +81,7 @@ get_header( 'connect' ); ?>
 <h3>
 	Just one month later, my project had come to life.
 </h3>
-<a href="http://deviseapp.com"><img style="max-width: 290px; margin-right: 1em; margin-left: -8em; display: inline-block;" align="left" src="/images/testimonials/devise-site.png"></a>
+<a href="http://deviseapp.com"><img style="max-width: 290px; margin-right: 1em; margin-left: -4em; display: inline-block;" align="left" src="/images/testimonials/devise-site.png"></a>
 <p>
 	I now have a working product and have since dipped back into my inbox to reach out to other developers when I need extra help.
 </p>
@@ -95,7 +95,7 @@ get_header( 'connect' ); ?>
 	If you&#39;re looking to find a developer or designer, I highly recommend getting in touch below.
 </p>
 
-<p>– Marcie</p>
+<p>– Marcella</p>
 
 
 <!--
@@ -150,7 +150,7 @@ get_header( 'connect' ); ?>
 
 		<center>
 			<h3 style="margin: 2em 0 -.75em 0;">
-				Find the most qualified freelancers and consultancies  for your project today.
+				Find the most qualified people for your project today.
 			</h3>
 				<p style="color:#9F9D99;">Post your project in minutes. If you get a single spammy reply, I'll pay to post your project elsewhere.</p>
 		</center>

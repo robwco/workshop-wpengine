@@ -12,7 +12,6 @@
 
 
 <footer>
-
 <div style="width:34em; margin: auto;">
 	<div style="width:25%; float: left; display:inline-block; vertical-align: 3em;">
 		<p>
