@@ -492,12 +492,12 @@ CUSTOMIZATION STARTS HERE
         }
     }
     hr { border: 0; height: 1px; background-color: $hr;}
-    .connect {background-color: $off-white;}
+    .connect {background-color: $off-white;  }
     .center {text-align: center;}
-    .home-optin { width: 33em; max-width: 100%; margin: auto; }
+    .home-optin { width: 33em; max-width: 100%; margin: auto; padding: 2em 0; }
     .sales-letter { width: 38em; max-width: 100%; margin: auto;
-    }
-    .entry-content { width: 28em; max-width: 100%; margin: auto;}
+    padding: 1em 0; }
+    .entry-content { width: 28em; max-width: 100%; margin: auto; }
     .menu-primary-menu-container, #menu-single-footer {
       font-weight: normal; text-align: right; font-size: .8em; margin: 0 1.5em 1.5em 0; padding: 0;
       li { display: inline-block; text-indent: 0; margin: 0 .5em;}
@@ -530,18 +530,24 @@ CUSTOMIZATION STARTS HERE
         li { margin: .25em; font-size: .85em; font-style: italic; }
       }
     }
-    .cta-arrow { margin: 0 0 0 2em; background-image: url('/images/marketing/arrow.png'); display: inline-block; width: 134px; height: 108px; float: left;
+    .cta-arrow {margin: 2em 0 0 2.5em; background-image: url('/images/marketing/arrow.png'); display: inline-block; width: 134px; height: 108px; float: left;
 
-      @media (max-width:720px) {
-        margin: 0 auto 0 2em;
-        transform:rotate(45deg);
-        -ms-transform:rotate(45deg); /* IE 9 */
-        -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */}
-      @media (max-width:610px) {
-        margin: -1em 0 2em 6em;
+
+      @media (max-width:630px) {
+        margin: 2em 0 2em 6em;
         transform:rotate(90deg);
         -ms-transform:rotate(90deg); /* IE 9 */
         -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */}
+      p { font-family: parkermedium; color: $header-red; letter-spacing: .15em; text-align: center;  margin-top: -1.5em; margin-left: -2em; line-height: .9em;
+        span {letter-spacing: -.2em;}
+
+      @media (max-width:630px) {
+        margin: -3.25em 0 0 -3.5em;
+        transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg); /* IE 9 */
+        -webkit-transform:rotate(-90deg); /* Opera, Chrome, and Safari */}
+      }
+
 
     }
     .guarantee { background-color: $gold; font-size: .75em; border-radius:.5em;  padding: .1em .5em; font-weight: 800; margin-left: -6em; margin-right: 1em;
@@ -556,7 +562,7 @@ CUSTOMIZATION STARTS HERE
     }
     .entry-title.single { text-align: center; margin-bottom: .5em;}
     .summary { strong { color: $text-gray; } color: $text-gray; font-size: .85em; margin: .25em 0; }
-    blockquote { font-style: italic; color: $text-gray; text-align: left; font-size: .85em;
+    blockquote { font-style: italic; color: $blockquote; text-align: left; font-size: .85em;
       strong {color: $body;}
       img {border-radius: 100px; vertical-align: text-top;}
     }
@@ -619,3 +625,16 @@ CUSTOMIZATION STARTS HERE
     @-moz-keyframes move {  0%, 100% { left: 0; } 50% { left: 10px; } }
     @-webkit-keyframes "move" { 0%, 100% { left: 0; } 50% { left: 10px; } }
     @-ms-keyframes "move" { 0%, 100% { left: 0; } 50% { left: 10px; } }
+
+
+@font-face {
+    font-family: 'parkermedium';
+    src: url('./fonts/parker-webfont.eot');
+    src: url('./fonts/parker-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/parker-webfont.woff') format('woff'),
+         url('./fonts/parker-webfont.ttf') format('truetype'),
+         url('./fonts/parker-webfont.svg#parkermedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

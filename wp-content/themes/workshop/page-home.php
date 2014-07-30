@@ -16,7 +16,7 @@ Template Name: Home Drip Opt-in V2
 get_header( 'home' ); ?>
 <div class="home-optin">
 <h1 class="value-prop">A free five-week guide to finding new clients online – without the time wasting. You’ll get 10 pre-qualified leads, 2 advanced strategy sessions, & a massive list of the best sites for finding gigs.</h1>
-<div class="cta-arrow" align="left"></div>
+<div class="cta-arrow" align="left"><p>END<span> </span>YOUR<span> </span>DRY<span> </span>SPELL</p></div>
 <form class="drip-opt-in" action="https://www.getdrip.com/forms/9298754/submissions" method="post" target="_blank" data-drip-embedded-form="1306">
 <div style="width:15em; margin: auto;">
     <input type="text" name="fields[name]" value="" placeholder="Your name" />
@@ -34,7 +34,7 @@ get_header( 'home' ); ?>
 
 <img class="customer-illustration" src="/images/marketing/kurt-illustration.png" align="left">
 
-<iframe align="left" src="//fast.wistia.net/embed/iframe/vbhrczg77u" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed customer-video" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="300" height="169"></iframe>
+<iframe align="left" src="//fast.wistia.net/embed/iframe/vbhrczg77u" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed customer-video" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen max-width="300" height="169"></iframe>
 <div class="customer-pointer">
 <img src="/images/marketing/kurt-arrow.png" align="left" style="margin: 2em .5em  0 0;">
 <p class="small-gray-text">This is Kurt, he's one of our world-class freelancers.<br><a href="/saying-nope-to-spec-work/">See how his agency in Chicago uses Workshop</a>.</p>

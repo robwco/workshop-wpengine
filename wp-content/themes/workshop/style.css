@@ -497,11 +497,13 @@ body {
   body .home-optin {
     width: 33em;
     max-width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding: 2em 0; }
   body .sales-letter {
     width: 38em;
     max-width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding: 1em 0; }
   body .entry-content {
     width: 28em;
     max-width: 100%;
@@ -617,28 +619,38 @@ body {
         font-size: .85em;
         font-style: italic; }
   body .cta-arrow {
-    margin: 0 0 0 2em;
+    margin: 2em 0 0 2.5em;
     background-image: url("/images/marketing/arrow.png");
     display: inline-block;
     width: 134px;
     height: 108px;
     float: left; }
-    @media (max-width: 720px) {
+    @media (max-width: 630px) {
       body .cta-arrow {
-        margin: 0 auto 0 2em;
-        transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        /* IE 9 */
-        -webkit-transform: rotate(45deg);
-        /* Opera, Chrome, and Safari */ } }
-    @media (max-width: 610px) {
-      body .cta-arrow {
-        margin: -1em 0 2em 6em;
+        margin: 2em 0 2em 6em;
         transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         /* IE 9 */
         -webkit-transform: rotate(90deg);
         /* Opera, Chrome, and Safari */ } }
+    body .cta-arrow p {
+      font-family: parkermedium;
+      color: #b72a22;
+      letter-spacing: .15em;
+      text-align: center;
+      margin-top: -1.5em;
+      margin-left: -2em;
+      line-height: .9em; }
+      body .cta-arrow p span {
+        letter-spacing: -.2em; }
+      @media (max-width: 630px) {
+        body .cta-arrow p {
+          margin: -3.25em 0 0 -3.5em;
+          transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Opera, Chrome, and Safari */ } }
   body .guarantee {
     background-color: #ffd084;
     font-size: .75em;
@@ -679,7 +691,7 @@ body {
       color: #9f9d99; }
   body blockquote {
     font-style: italic;
-    color: #9f9d99;
+    color: #b72a22;
     text-align: left;
     font-size: .85em; }
     body blockquote strong {
@@ -858,3 +870,10 @@ body {
 
   50% {
     left: 10px; } }
+
+@font-face {
+  font-family: 'parkermedium';
+  src: url("./fonts/parker-webfont.eot");
+  src: url("./fonts/parker-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/parker-webfont.woff") format("woff"), url("./fonts/parker-webfont.ttf") format("truetype"), url("./fonts/parker-webfont.svg#parkermedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
