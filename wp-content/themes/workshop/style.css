@@ -427,7 +427,8 @@ body {
       letter-spacing: -.1em; }
   body h2, body h1.value-prop, body h1.entry-title, body .entry-title {
     font-size: 150%;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    line-height: 1.15em; }
   body a {
     color: #7191bc;
     text-decoration: none;
@@ -442,7 +443,7 @@ body {
   body form.drip-opt-in {
     max-width: 100%;
     padding: 0em 1em;
-    margin: 0 auto 4em auto; }
+    margin: 0 auto 2em auto; }
     body form.drip-opt-in input[type=submit] {
       max-width: 100%;
       width: 15.75em;
@@ -634,6 +635,7 @@ body {
         -webkit-transform: rotate(90deg);
         /* Opera, Chrome, and Safari */ } }
     body .cta-arrow p {
+      width: 5em;
       font-family: parkermedium;
       color: #b72a22;
       letter-spacing: .15em;
@@ -691,7 +693,6 @@ body {
       color: #9f9d99; }
   body blockquote {
     font-style: italic;
-    color: #b72a22;
     text-align: left;
     font-size: .85em; }
     body blockquote strong {

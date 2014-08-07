@@ -15,30 +15,53 @@ Template Name: Home Drip Opt-in V2
 
 get_header( 'home' ); ?>
 <div class="home-optin">
-<h1 class="value-prop">A free five-week guide to finding new clients online – without the time wasting. You’ll get 10 pre-qualified leads, 2 advanced strategy sessions, & a massive list of the best sites for finding gigs.</h1>
+<h1 class="value-prop center">Get your 10 sample freelance consulting leads <em>(worth thousands of dollars in new work)</em> and actionable advice on how to land them sent straight to your inbox.</h1>
 <div class="cta-arrow" align="left"><p>END<span> </span>YOUR<span> </span>DRY<span> </span>SPELL</p></div>
 <form class="drip-opt-in" action="https://www.getdrip.com/forms/9298754/submissions" method="post" target="_blank" data-drip-embedded-form="1306">
-<div style="width:15em; margin: auto;">
+<div style="width:15em; margin: auto; text-align: center;">
     <input type="text" name="fields[name]" value="" placeholder="Your name" />
     <input type="email" name="fields[email]" value="" placeholder="Your email" />
 </div>
-  <div style="width:15em; margin: auto;">
-    <input type="submit" name="submit" value="Get it now for free" data-drip-attribute="sign-up-button" />
+  <div style="width:15em; margin: auto; text-align: center;">
+    <input type="submit" name="submit" value="Get more work" data-drip-attribute="sign-up-button" />
   </div>
-<p class="small-gray-text center">I’ll never share your email or send you bullshit.</p>
+	<div style="margin: 1em auto; text-align: center;">
+		<p>Brought to you by
+			<strong style="font-weight:900; font-size: 1em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
+		</p>
+	</div>
 </form>
 <hr>
-<div style="display: table;">
-	<center>
-<h4 style="margin: 1em 0 2em 0;">This free guide is brought to you by <span style="display: inline-block; "><strong style="font-weight:900; font-size: 1em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .1em;"><?php bloginfo( 'name' ); ?></strong></span> – a tiny newsletter and community for ambitious freelancers & consultancies.</h4></center>
+<div style="display: table; padding: 2em 0;">
+
 
 <img class="customer-illustration" src="/images/marketing/kurt-illustration.png" align="left">
 
-<iframe align="left" src="//fast.wistia.net/embed/iframe/vbhrczg77u" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed customer-video" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen max-width="300" height="169"></iframe>
+<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="300" height="169"></iframe>
 <div class="customer-pointer">
 <img src="/images/marketing/kurt-arrow.png" align="left" style="margin: 2em .5em  0 0;">
-<p class="small-gray-text">This is Kurt, he's one of our world-class freelancers.<br><a href="/saying-nope-to-spec-work/">See how his agency in Chicago uses Workshop</a>.</p>
+<p class="small-gray-text">This is Kurt, he's one of our world-class consultants.<br><a href="/saying-nope-to-spec-work/">See how his agency in Chicago uses Workshop</a>.</p>
+
 </div>
+
 </div>
-</div>
+
+
+
+
+
+</div><!-- #content -->
+
+
+
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+<!--Don't remove-->
+<?php include("inc/all-footers.php"); ?>
+
+</body>
+</html>
+
 
