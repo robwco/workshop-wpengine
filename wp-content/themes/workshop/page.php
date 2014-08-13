@@ -31,6 +31,5 @@ get_header( 'page' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<hr>
 <?php get_footer( 'home' ); ?>
 </div>

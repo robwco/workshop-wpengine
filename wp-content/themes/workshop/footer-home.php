@@ -12,21 +12,19 @@
 
 
 <footer>
-<div style="width:34em; margin: auto;">
-	<div style="width:25%; float: left; display:inline-block; vertical-align: 3em;">
-		<p>
-			<strong style="font-weight:900; font-size: 1em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
-		</p>
-	</div>
-	<div style="width: 75%; float: right; display:inline-block;">
-		<p>
-			<?php bloginfo( 'description' ); ?> 
-		</p>
-	</div>
-</div>
+<section class="big-wrap" style="margin:5em auto;"><hr></section>
+<center>
+<h3>Learn more</h3>
+<nav id="site-navigation" class="main-navigation" role="navigation" style="margin-bottom: 5em;">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav><!-- #site-navigation -->
 
+</center>
 </footer>
+
+
 </div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 

@@ -14,13 +14,13 @@ Template Name: Post to Workshop
  */
 
 get_header( 'connect' ); ?>
-<div style="width:40em; margin: 1em auto 3em auto; display: table; border-bottom: 1px solid #D9D3CF;">
+<div style="width:55em; margin: 1em auto 3em auto; display: table; border-bottom: 1px solid #D9D3CF;">
 
 
-	<div style="width:18%; float: left; display:inline-block; vertical-align: 3em;">
-		<p>
+	<div style="width:18%; float: left; display:inline-block; vertical-align: 3em;" >
+		<h3 id="logo">
 			<strong style="font-weight:900; font-size: 1em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
-		</p>
+		</h3>
 	</div>
 	<div style="width: 55%; display:inline-block;">
 		<p style="padding: 0 .5em 0 1.5em; margin: .6em 0 1em 0; display: inline-block;">

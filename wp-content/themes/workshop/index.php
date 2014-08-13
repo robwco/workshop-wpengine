@@ -17,11 +17,7 @@ get_header( 'home' ); ?>
 		<main id="main" class="site-main" role="main">
 
 
-<h2 class="center">Essays on design, writing, and business by <img src="/images/logo/workshop-hd-100.png" style="width:1.35em; vertical-align: -.2em; margin-right: -.1em;"> <a href="/" style="font-weight:800; color: #000; font-size: .9em;vertical-align:0em; border-bottom: 1px solid #9F9D99;"><?php bloginfo( 'name' ); ?></a>.</h2>
-<hr>
-
-
-<div style="padding-top: 1em; max-width: 28em; margin: auto; padding-top: 2em;">
+<div class="small-wrap">
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -45,8 +41,11 @@ get_header( 'home' ); ?>
 		<?php endif; ?>
 </div>
 
+
+			<div class="small-wrap" style="text-align: center; margin-bottom: 2em;">
 <hr>
-			<div class="masthead" style="text-align: center; margin-bottom: 2em;"><?php posts_nav_link('|','Back','More Essays'); ?> </div>
+				<?php posts_nav_link('|','Back','More Essays'); ?> </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<?php get_footer( 'home' ); ?>

@@ -6,19 +6,18 @@
  */
 
 get_header(); ?>
-
+<section class="big-wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
+			<center>
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'workshop' ); ?></h1>
-					<h2>This shouldn't have happened, so please let me know how you got here: <a href="MAILTO:robert@letsworkshop.com">robert@letsworkshop.com</a></h2>
+					<h1 class="page-title"><?php _e( 'Oops! That page isn&rsquo;t here.', 'workshop' ); ?></h1>
+					<p>This shouldn't have happened, so please let me know how you got here: <a href="MAILTO:robert@letsworkshop.com">robert@letsworkshop.com</a></p>
 				</header><!-- .page-header -->
-
-			</section><!-- .error-404 -->
+			</center>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('home'); ?>
+</section>

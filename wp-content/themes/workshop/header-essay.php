@@ -11,7 +11,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+		
+		<title><?php wp_title( '|', true, 'right' ); ?></title>
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
@@ -20,11 +22,4 @@
 <?php include("inc/all-headers.php"); ?>
 </head>
 <div class="sales-letter">
-<body <?php body_class(' '); ?> >
-
-	<div id="content" class="site-content">
-<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-
-<h3 class="masthead">Written by <a href="/"><?php bloginfo( 'name' ); ?></a>. <?php bloginfo( 'description' ); ?> </h3>
+<body <?php body_class(' '); ?>

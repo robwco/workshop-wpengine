@@ -1,224 +1,226 @@
-<div id="fade2" class="sales-letter">
 
-	<section>
 
-		<h1 class="center" style="margin-bottom: 0;">
-			You Spend Hundreds Every Month on Finding Leads for Your Consultancy ...
+<section class="small-wrap plan">
+<div  style="text-align: right; display: block;">
+
+		<h1 id="logo">
+			<strong style="font-weight:900; font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
 		</h1>
 
-		<h2>
-			... Instead, Get a Daily Email with the Best Opportunities and Focus Only on the Important Part: Landing Them. <a href="#pricing">Sign up now.</a>
-		</h2>
+</div>
+	<p>Dear ambitious freelance consultant,
+	</p>
+	<h1>
+		<strong>I know it <em>pains you</em> to admit that your business is plagued by dry spells.</strong>
+	</h1>
+	<p>
+		See, like me, you know first-hand how many thousands of businesses would benefit from hiring you. More than benefit, possibly even transform their business (and life) forever as a result of working with you.
+	</p>
+	<p>
+		That's why <em>it's your duty</em> to find them.
+	</p>
+	<p>
+		I don't mean you have to do what most blog posts and internet comments suggest, which is waste your time "content marketing", "social networking", "growth-hacking", and/or "putting your name out there."
+	</p>
+	<p>
+		No, I mean you need to contact people that need your services by reaching out directly with a friendly email or phone call. I know, a revolutionary concept.
+	</p>
 
-		<div id="pulling-dija" style="text-align: center;">
-			<img class="dima-illustration" src="../images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
-		</div>
 
-		<p><strong>
-			Having to constantly find leads by yourself sucks.
-		</p></strong>
+	<h2>
+		But it's not easy to find the right opportunities all the time–especially when you're already working too many hours.
+	</h2>
 
-		<p>
-			Being out of work can make you desperate — but contacting every lead under the sun doesn't work. The fact is, job boards aren't designed for freelancers — so if you're loaded with work, you just don't have time to look for leads. If you're like I was, once you finish up a project, you have to scramble to find work again. I know first-hand this can lead to wasted time, or even worse, taking on bad clients <em>"just so you can pay the bills".</em>
-		</p>
+	<section style="max-width: 100%; width: 35em; margin: 2em auto auto auto;">
+		<a href="https://workshop.memberful.com/orders/new?plan=1798">
+			<div id="pulling-dija" style="text-align: center;">
+				<img class="dima-illustration" src="../images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
+			</div>
+		</a>
+	</section>
 
-		<div class="box-shadow">
-			<p class="center">
-				&ldquo;My clients were always my priority, but when I had too much client work, I neglected sales activities and my pipeline suffered. <strong>Since starting with Workshop, I've had an unbroken chain of daily lead generation activity no matter what.</strong> I use my inbox as a to-do list and every day that Workshop email is a convenient reminder to get selling.&rdquo;
-			</p><span class="quote-arrow"></span>
-		</div>
-		<p class="center">
-			<img src="/images/testimonials/kurt.png" class="testimonial-img"> – Kurt Elster, Founder and Creative Director, <img src="../images/testimonials/logo-ethercycle.png" style="width:20px; border-radius:3px; vertical-align: -2px;"> Ethercycle
-		</p>
+	<p>
+		After all, you're trying to do your own lead generation now and it sucks.
+	</p>
+	<p>
+		If you currently go the job board route, you know finding a good one is almost impossible. Truthfully, even if you <em>did find one</em> you wouldn't have time to look through it every day. The thought of checking two dozen job boards everyday for the rest of your career just doesn't sound appealing.
+	</p>
+	<p>
+		You want to do the work you love, not find it.
+	</p>
+	<p>
+		That's why you default to waiting for work to come to you (ie. you do nothing at all). So when easy clients (that are less-than-ideal)  come along, you take them. Sure, they don't pay what you're worth, but <em>someone</em> needs to pay the bills, right?
+	</p>
+	<p>
+		I know this all to well because I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. Then I did something about it.
+	</p>
+	<p>
+		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and their marketing efforts when work ran out.
+	</p>
+	<h2>
+		That's why I realized: people who pitch their services to more prospects simply make more money.
+	</h2>
+	<p>
+		How we find prospects varies. Some have heavily-trafficked websites. Some are in tight user-groups that refer work to one another. Others find their leads online, but all successful consultancies find a way to get their foot in the door with new clients regularly.
+	</p>
+	<p>
+		For my own business's sake, I became serious about finding prospects regularly. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
+	</p>
+	<p>
+		I then contacted each lead with a custom, highly-specific email and my business took off.
+	</p>
+	<p>
+		In fact my revenue doubled, all from leads I found online.
+	</p>
+	<p>
+		But it wasn't sustainable. I needed help.
+	</p>
+	<p>
+		I searched for someone to help me on elance, but I could not find someone who did the job as well as I did. They were also too expensive. A virtual assistant, for example, charged me $600/month at $10/hour (and lacked basic english skills).
+	</p>
+	<p>
+		So, I decided I needed an actual freelancer to do this work for me. Only someone intimately familiar with the work I did would be able to sniff out and recognize the projects that I wanted.
+	</p>
+	<p>
+		But which sane freelancer was going to do this? Why wouldn't they just keep the work for themself?
+	</p>
+	<p>
+		<strong>I decided to build this service for freelancers that I wished existed: an affordable lead-gen service for consultancies like mine.</strong>
+	</p>
+	<p>
+		Instead of spending your time looking for leads, you hire me to send them directly to your email. That way, all you have to do is reply to the ones you're interested in straight from your inbox. This takes you a few minutes (instead of hours) and will give your sales pipeline a constant stream of activity, which lets you focus almost exclusively on billable work.
+	</p>
+	<h2>
+		I'm proposing you let me sort through thousands of job posts and email you the best leads.
+	</h2>
 
-		<p><strong>
-			Freelancing <em>doesn’t</em> have to be feast or famine.
-		</strong></p>
+	<p>
+		<strong>Imagine what you could accomplish today if you didn't have to worry about finding work.</strong>
+	</p>
 
-		<p>
-			It's way more effective to contact a few opportunities every day so <strong>why wait until your schedule (or wallet) is empty?</strong> Don't. Make contacting a few leads part of your daily routine and have a consistent stream of new opportunities at your disposal at all times. How do you find these leads? In a perfect world, they would come to you and you'd get right to the important part: pitching and landing work.
-		</p> 
-		<p>
-			But the truth is it takes time to find opportunities online (at least a few hours a day) and doing this yourself means a loss of over of over $2,000+ billable time per month! Even if you paid someone just $10 an hour, that would be too much money ($600/month) and they'd most likely be at a loss about what a quality lead even looks like for your business.
-		</p>
+	<p>
+		Would you add that extra feature to your client's project and blow them away? Would you go for a walk with your child or significant other? Would you work on that side-project you've been itching to build?
+	</p>
+	<p>
+		Sorting through thousands of job posts just isn't the best use of your time. There's countless amounts of crappy job posts. There's new job boards popping up all the time—it's a constant game of catch up. Why not pay a fraction of your hourly rate each month and let me do it for you?
+	</p>
 
-		<div class="box-shadow">
-			<p class="center">
-				“<strong>In the first week of my subscription, Workshop landed my agency a $30k project.</strong> What can I say besides, WOW.”
-			</p><span class="quote-arrow"></span>
-		</div>
-		<p class="center"> – Scott O.</p>
+	<p>
+		<strong>"Wait. Can’t I just find these leads myself for free?"</strong>
+	</p>
 
-		<p><strong>
-			Introducing: Workshop, affordable <em>hands-free</em> lead-generation...
-		</strong></p>
-
-		<p>
-			Instead of spending your time looking for leads (or hiring someone expensive to do it for you) simply get them delivered to your email automatically—so all you have to do is reply to the ones you're interested in straight from your inbox. This takes a few minutes (instead of hours) and will give your sales pipeline a constant stream of activity, which lets you focus almost exclusively on billable work.
-		</p>
-
-		<div class="box-shadow">
-			<p class="center">
-			“Man you are really kicking ass. <strong>I feel like you're doing all of the work and I just get to be all la-tee-da over picking who I reach out to.</strong> Keep up the good work! I've been super pleased with my choice to invest in Workshop. You've proven to be a low-risk way to get more leads to my door and as a busy owner, you're exactly the type of person I want to work with for a long time. Please don't stop!”
-			</p><span class="quote-arrow"></span>
-		</div>
-		<p class="center"><img src="/images/testimonials/nick-hance.jpeg" class="testimonial-img"> – Nick Hance, Founder, <img src="../images/testimonials/re-enhanced-logo.png" style="width:20px; border-radius:3px; vertical-align: -4px;"> Reenhanced </p>
-
-		<p><strong>
-			I sort through thousands of job posts and email you the best leads.
-		</strong></p>
-
-		<p>
-			With the countless amounts of crappy job posts, trust me, you don't want to sort through it all yourself. Not to mention how many new job boards pop up all the time—you’d be playing a constant game of catch up. In fact, I'm constantly adding new job board sources—you can even suggest one, and I'll personally monitor it for you!
-		</p>
-
-		<p><strong>
-			Wait. Can’t I just find these leads myself for free?
-		</strong></p>
-
-		<p>
-			Leads are available for free, but your time is worth money. Technically, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
-		</p>
-
-		<p><strong>
-			Are you any good at finding leads?
-		</strong></p>
+	<p>
+		No. You see, sure some leads are available for free online, but your time is worth money. Technically, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
+	</p>
+	<p>
+		<strong>
+			"Will you be any good at finding leads <em>for me</em>?"
+		</strong>
+	</p>
 
 		<p>
 			Workshop members think the leads I pick out reply at a higher rate, but the truth is they also have an unfair advantage over you. Job boards no longer suck up all their time, so they're actually better at contacting leads because they no longer teeter-totter between work overload and an empty checking account. Some have landed huge projects, or even full-time remote dream jobs. All have saved the most precious resource: time.
 		</p>
-
-		<p><strong>
-			I look over every single lead, personally, to make sure they meet strict criteria:
-		</strong></p>
-
 		<p>
-			They MUST be freelance leads, not full-time work. They MUST be remote, and open to freelancers anywhere. They MUST be quality projects: no budgets below $1,000. And, preferably, there must be an email attached to the lead.
+			<em>I look over every single lead, personally, to make sure they meet a strict criteria:</em> they MUST be freelance leads, not full-time work. They MUST be remote, and open to freelancers anywhere. They MUST be quality projects: no budgets below $1,000. And, preferably, there must be an email attached to the lead.
 		</p>
-
-		<p><strong>
-			How many leads will be sent, and how often?
-		</strong></p>
-
+		<p>
+			<strong>"How many leads will be sent, and how often?"</strong>
+		</p>
 		<p>
 			I usually send 8-10 leads per day. Sometimes it will end up being more, <strong>but the whole point of Workshop is that I send fewer, better leads.</strong> I never send a lead just to hit a quota. In fact, Workshop's value is equally about the leads I don't send as it is about the ones I do. The thousands of leads I eliminate from your life completely make the handful I do send more important.
-		</p> 
-		<p>
-			The fact is, you don't need all that many leads to make a lot of money; you just need the right leads. If you're looking for hundreds of freelance leads in your inbox every day, than Workshop isn’t the right service for you. On the other hand if you're looking for the best leads it is.
 		</p>
-		<div id="pricing">
+		<p>
+			The fact is, you don't need all that many leads to make a lot of money; you just need the right leads. If you're looking for hundreds of freelance leads in your inbox every day, than Workshop isn’t the right service for you. On the other hand if you're looking for the best leads, it is.
+		</p>
+		<p>
+			<strong>"How long have you been doing this, does it work?"</strong>
+		</p>
+		<p>
+			I started doing this with select consultancies in November, 2013. Since then I've helped hundreds land work. Some have even made hundreds of thousands of dollars from my leads. Now, I focus on Workshop full-time, which wouldn't be possible if it didn't produce massive results for my customers:
+		</p>
 
-		</div>
-		<div class="plan">
+		<section style="margin:auto; width: 350px; margin-bottom: 2em;">
+			<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
+		</section>
 
+		<h2>
+			<strong>Get started now and try Workshop risk-free for 30 days</strong>
+		</h2>
 
-	<h1>
-		Try Workshop risk-free for 30 days
-	</h1>
-	<h2>
-		If you're not completely blown away, get a full refund.
+		<p>
+			If you're not completely blown away, get a full refund.
+		</p>
+
+		<p>
+			Like you, I know there are a ton businesses that will benefit from my service. I've built a team (including other experienced Workshop customers) to help you reach those businesses. This letter is my way of reaching out to you individually. It's time for you to start reaching out to your customers in the same direct way.
+		</p>
+		<p>
+			Luckily, I've designed every inch of this service for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into you inbox so that they're easy to scan.
+		</p> 
+		<h2>
+			You get a daily newsletter delivering quality gigs to your inbox. ($768/year value)
 	</h2>
-	<div class="box-shadow">
-		<h2 class="center">
-			“Totally a no-brainer for most freelancers"
-		</h2><span class="quote-arrow"></span>
-	</div>
-	<p class="center">
-		<img src="/images/testimonials/ruben.png" class="testimonial-img"> – Ruben Gamez, Founder, <img src="../images/testimonials/bidsketch-logo.png" style="width:27px; border-radius:3px; vertical-align: -7px;"> Bidsketch
-	</p>
-	<hr>
-	<h3 class="center">You get a daily newsletter full of potential gigs. ($64/month)</h3>
-	<p><img src="../images/marketing/package-newsletter.png" alt="" style="width: 12em; margin-left: .75em;  " align="right">
-		The key to the service is the daily leads I'll be sending to your inbox each weekday. From the day you sign up you'll have the highest quality leads on the web, qualified and sorted into you inbox and made easy to scan. </p>
-
-
-<strong>Agency and Team Gigs:</strong> Requests for proposals, Consulting gigs, Full-service design and development inquiries, Copywriting, Promotion, Project management.
 	<p>
-		<strong>Design Gigs:</strong> Wordpress design, Web design, UI design, Branding/Logo design, Graphic design, Motion graphics, Packaging, Art direction and branding, Infographics. Animation, 3D design, Interface design, Industrial design, User experience, and Interaction design
+		This daily email includes:
 	</p>
+		<ul>
+			<li>
+				<strong>Workshop-exclusive Gigs:</strong> People now come to Workshop to connect with world-class consultancies and freelancers directly. The only way to get connected to these people is by having an active subscription. These are some of the most valuable leads because often times you're competing with only a handful of people, and the clients are people who want to pay for value.
+			</li>
+			<li>
+				<strong>Agency and Team Gigs:</strong> I look all over the web for people specifically looking to hire a creative agency or team. This includes: requests for proposals, consulting opportunities, copywriting, promotion, project management, and full-service design and development projects.
+			</li>
+			<li>
+				<strong>Design and Development Gigs:</strong> I go to all the places people post design and development gigs. The most common types of projects are: wordpress, web or user interface, branding, logos, packaging, infographics, front-end, drupal, javascript, python, django, PHP, back-end, system administration, ruby, rails, CMS, image processing, HTML/CSS, magento, and .NET.
+			</li>
+		</ul>
+
+
+
+		<h2>
+			Plus a mini-course developed to help you land those gigs. ($99 value)
+		</h2>
+
+		<p>
+			<img src="../images/marketing/package-mini-course.png" alt="" style="width: 10em; margin-left: .75em;  " align="right"> Along with the newsletter, I also send you material specifically designed to help you land work. We'll discuss pricing, email-writing, and the psychology behind replying to leads successfully. You'll learn the exact words to use at every step of the process.
+		</p>
+		<p>
+			<strong>By the end of this mini-course you'll know...</strong>
+		</p>
+		<ul>
+			<li>What to do to get an inbox full of warm leads that are ready to become clients.</li>
+			<li>How to be successful with Workshop (or any lead service).</li>
+			<li>How to reply to a job post in less than 2 minutes.</li>
+			<li>The exact template to use for writing emails (which has made me over $100k).</li>
+			<li>How to get stagnant clients to reply your emails after weeks of ignoring you.</li>
+			<li>How to make sure you hear back from every possible email you send.</li>
+		</ul>
+		<h2>
+			And a members-only groupbuzz discussion community and hipchat chatroom ($199/year value)
+		</h2>
+
 	<p>
-		<strong>Development Gigs:</strong> Front-end development, Drupal development, Javascript development, Python and django development, PHP development, Back-end development, System administration, Web development, Game development, Mobile development, Ruby and rails development, CMS development, Image processing, HTML/CSS development, Magento development, Data development, .NET development.
+		<img src="../images/marketing/package-chat.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> <img src="../images/marketing/package-forum.png" alt="" style="width: 11em; margin-left: .75em;  " align="right"> It's not just me that will help you land clients. There's actually a full, thriving community of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz and my personal favorite, the Workshop hipchat. These will be there for real-time connection with other members. Based on how we've used them so far, here's a few ways you can improve your business with these tools:
 	</p>
-<p>Each lead is carefully looked over and I make sure they ALL are...</p>
-<ul>
-<li>Worth your time</li>
-<li>Leads you actually care about (not stuff you don't even do)</li>
-<li>Looking for a consultancy or freelancer (aka short-term gigs, not full-time work)</li>
-<li>High quality budgets above $1,000</li>
-<li>Location independent, open to workers from anywhere</li>
-<li>The right type of clients for your business</li>
-</ul>
 
+	<ul>
+		<li>Get reliable and experience-filled answers to your freelance business's most complex problems (like dealing with a sticky client situation).</li>
+		
+		<li>Get inspired, share what you're working on, discover awesome resources and expand your network of internet buddies by working together (it's like coworking form your home office).
+		</li>
 
-		<hr>
-		<div style="display: table;">
-<h3 class="center">Special Bonus #1: A mini-course developed to help you land those gigs. ($99 value)</h3>
+		<li>Ask questions about a ton of topics like; improving your website's sales funnel, filing your end of year taxes, giving discounts, renegotiating scope creep, onboarding new clients, pricing your services perfectly and more.</li>
 
-	<p style="margin-bottom:2em;"><img src="../images/marketing/package-mini-course.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> The leads emails are great, but along with those, I also send material specifically designed to help you land work. We'll discuss pricing, email-writing, and the psychology behind replying to leads successfully. You'll learn the exact words I to use at every step of the process.</p>
-<p>By the end of this mini-course you'll know...
-<ul>
-<li>What to do to get an inbox full of warm leads that are ready to become clients</li>
-<li>How to be successful with Workshop (or any lead service)</li>
-<li>How to reply to a job post in less than 2 minutes</li>
-<li>The exact template I use for writing emails to leads that has netted me over $100k</li>
-<li>How to get stagnant clients to reply your emails after weeks of ignoring you</li>
-<li>How to make sure you hear back from every email you send</li>
-<li>What to do if no one responds to your emails</li>
-</ul></p>
-</div>
-		<hr>
-		<div style="display: table;">
-<h3 class="center">Special Bonus #2: Workshop groupbuzz discussion community ($99/year value)</h3>
+		<li>Plus get access to my <strong>advanced freelance strategy sessions with world-class consultants</strong> live over google hangouts every month.</li>
 
-	<p style="margin-bottom:2em;"><img src="../images/marketing/package-forum.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> It's not just me that will help you land clients. There's actually a full, thriving community of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz. Here's a few ways that I plan to use this group for improving my business and you can too:</p>
+	</ul>
 
-<ul>
-<li>Getting reliable answers to my freelance business's complex problems.</li>
-<li>Getting inspired, share awesome resources and links.</li>
-<li>Expand my network of internet buddies.</li>
-<li>Work together with awesome an bunch, even though I'm alone in a room by myself.</li>
-<li>Improve my website's sales funnel.</li>
-<li>Ask for tips on filing my end of year taxes</li>
-<li>Share stuff I'm working on.</li>
-<li>Ask about how to deal with sticky client situations.</li>
-</ul>
+<center>
 
-<p>Now I'll finally be able to freelance remotely, and not alone. You can too - and best of all it's a free bonus to your Workshop account. This active community has already covered a wealth of valuable topics, including...</p>
-
-<ul>
-<li>Why novice freelancers give discounts while seasoned consultants triple their client's budget</li>
-<li>How to stop feeling intimidated</li>
-<li>Best way to renegotiate following scope creep</li>
-<li>Making your onboarding process not suck</li>
-<li>How to price your services perfectly</li>
-</ul>
-		<hr>
-		<div style="display: table;">
-<h3 class="center">Special Bonus #3: Workshop hipchat ($99/year value)</h3>
-
-	<p style="margin-bottom:2em;"><img src="../images/marketing/package-chat.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> My personal favorite, the Workshop hipchat, is there for real-time connection with other members.  </p>
-
-<p>The discussion is extremely diverse but in the past has included...</p>
-
-<ul>
-<li>Sales funnel masterminds</li>
-<li>World Cup 2014 discussion</li>
-<li>2-week business goal round-robin</li>
-<li>Advice from members who have run multiple million-dollar agencies</li>
-<li>Friday night happy hour</li>
-</ul>
-<p> ...plus a lot of other fun stuff. </p>
-<hr>
-
-	<h1>
-		All for about 30¢ per lead
-	</h1>
-
-
-
-
-
-
+	<h2>
+		<strong>All for about 30¢ per lead</strong>
+	</h2>
 
 
 

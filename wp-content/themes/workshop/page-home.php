@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home Drip Opt-in V2
+Template Name: Drip Sign Up
 */
 /**
  * The template for displaying all pages.
@@ -14,8 +14,9 @@ Template Name: Home Drip Opt-in V2
  */
 
 get_header( 'home' ); ?>
+<section class="small-wrap plan">
 <div class="home-optin">
-<h1 class="value-prop center">Get your 10 sample freelance leads&mdash;worth thousands of dollars in consulting work&mdash;and actionable advice on how to land them sent straight to your inbox.</h1>
+<h1 class="value-prop center">Get your 10 sample freelance leads&mdash;worth thousands of dollars in consulting work&mdash;and actionable tools to help you land them sent straight to your inbox.</h1>
 <div class="cta-arrow" align="left"><p>END<span> </span>YOUR<span> </span>DRY<span> </span>SPELL</p></div>
 <form class="drip-opt-in" action="https://www.getdrip.com/forms/9298754/submissions" method="post" target="_blank" data-drip-embedded-form="1306">
 <div style="width:15em; margin: auto; text-align: center;">
@@ -35,12 +36,12 @@ get_header( 'home' ); ?>
 <div style="display: table; padding: 2em 0;">
 
 
-<img class="customer-illustration" src="/images/marketing/kurt-illustration.png" align="left">
+<img src="/images/marketing/kurt-illustration.png" align="left" class="customer-illustration">
 
 <iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="300" height="169"></iframe>
 <div class="customer-pointer">
 <img src="/images/marketing/kurt-arrow.png" align="left" style="margin: 2em .5em  0 0;">
-<p class="small-gray-text">This is Kurt, a world-class consultant / Workshop member.<br><a href="/saying-nope-to-spec-work/">See how his agency in Chicago uses Workshop</a>.</p>
+<p>This is Kurt, a world-class consultant / Workshop member.<br><a href="/saying-nope-to-spec-work/">See how his agency in Chicago uses Workshop</a>.</p>
 
 </div>
 
@@ -55,6 +56,7 @@ get_header( 'home' ); ?>
 
 
 </div><!-- #page -->
+</section>
 
 <?php wp_footer(); ?>
 

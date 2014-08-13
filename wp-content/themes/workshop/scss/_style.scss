@@ -449,24 +449,20 @@ th {
 CUSTOMIZATION STARTS HERE
 ----------------*/
 
-  body { background-color: $white; max-width: 100%; margin: auto; font-size: 22px; font-family: "futura-pt", Helvetica, sans-serif; color: $body;
-      @media (max-width:880px) { font-size:19px; }
-      @media (max-width:500px) { font-size:17px; }
-      @media (max-width:300px) { font-size:14px; }
+  body { font: $body-font; background-color: $white; max-width: 100%; margin: auto; color: $body;
     button, div, img, p, .entry-content {max-width: 100%;}
     /*p strong { color: $body; font-weight: 500;}*/
-    p, h1, h2, h3, h4 {
-    @media (max-width:500px) { padding: 0 1em; 
-        }
+    h1, h2, h3, h4 {
+      font: $header-font;
       }
     h1 + h2 { margin-top: .5em;}
-    h1, h3, strong {color: $header; font-weight: 900;}
+    h1 {color: $header; font-weight: 900;}
     h2, h4 { color: $body; font-weight: normal;
       }
-    h1, .entry-title.single { font-size: 210%; line-height: 1em; margin-bottom: 0em;
+    h1, .entry-title.single { padding-top: 1em; font-size: 325%; line-height: 1.3em; margin-bottom: 0;
         .kern {letter-spacing: -.1em;}
       }
-    h2, h1.value-prop, h1.entry-title, .entry-title { font-size: 150%; margin-bottom: 1em; line-height: 1.15em;
+    h2, h1.value-prop, h1.entry-title, .entry-title { font-size: 200%; line-height: 1.5em;
       }
     a { color: $link; text-decoration: none;
          transition: color .25s ease-in-out;
@@ -484,20 +480,47 @@ CUSTOMIZATION STARTS HERE
       &:focus { background-color: $input-focus; outline: 0; }
     }
     input + input { margin-top: .5em; }
-    input[type=text], input[type=email] { height: 1.5em;  width: 100%; max-width: 13.45em;}
-    input[type=submit] { margin: auto; background-color: $button; border-radius: 3px; cursor: pointer; font: .9em/1.5em "futura-pt", Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; width: 100%;
+    input[type=text], input[type=email] { font: $header-font; height: 1.5em;  width: 100%; max-width: 13.45em;}
+    input[type=submit] { margin: auto; background-color: $button; border-radius: 3px; cursor: pointer; font: $button-font, Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; max-width: 100%;
         &:hover { background: $button-hover;
         }
         &:active, &:focus { background: $button-focus; border-bottom: 0; border-top: 2px solid $red;  outline: none; box-shadow: 0 2px 1px #fff; -moz-box-shadow: 0 2px 1px #fff; -webkit-box-shadow: 0 2px 1px #fff;
         }
     }
+    .desktop-button {text-align: center;}
+    .mobile-button {display: none;}
+    @media (max-width:700px) { 
+      .desktop-button {display: none; }
+      .mobile-button {text-align: center; display: inline-block; margin: auto;}
+      } 
     hr { border: 0; height: 1px; background-color: $hr;}
     .connect {background-color: $off-white;  }
     .center {text-align: center;}
-    .home-optin { width: 33em; max-width: 100%; margin: auto; padding: 2em 0; }
-    .sales-letter { width: 38em; max-width: 100%; margin: auto;
-    padding: 1em 0; }
-    .entry-content { width: 28em; max-width: 100%; margin: auto; }
+    .small-wrap { width: 100%; max-width: 40em; margin: auto; padding: 1em 0 0 0;
+      h2 { font: $header-font; color: $black; font-weight: 900; font-size: 150%;  } }
+    .mid-wrap { width: 50em; max-width: 100%; margin: auto; }
+    .big-wrap { width: 60em; max-width: 100%; margin: auto; }
+    #logo {font: $logo-font; color: $header;
+    }
+    .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0;
+      p { margin: .75em 0 0 0; text-align: left;}
+    .quote-arrow { background-color:$off-white; content: ''; display: block; position: relative; bottom: -11px; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);
+        }
+      }
+    .testimonial-img {border-radius: 100%; width: 40px; height: 40px; vertical-align: middle;}
+    .plan { padding: 2.5em 5em; margin: 2em auto; background-color: $off-white;
+      h2 strong {font-size: 150%;}
+      @media (max-width: 40em) { margin: 0 auto; padding: .0; background-color: $white; width: 95%; 
+      }
+      strong {}
+      h1, h2 { margin: 0; padding: 0; font: $header-font; font-weight:900; color: $header; }
+      h1 { /* font-size: 210%; line-height: 1.2em;*/}
+      .box-shadow { box-shadow: none; background-color: $off-white; width: 80%; margin: auto;
+        h2 { margin: .5em 0 0 0; color: $header;  
+
+        }
+        .quote-arrow {background-color: #f5f3f0; border:none;}
+      }
     .menu-primary-menu-container, #menu-single-footer {
       font-weight: normal; text-align: right; font-size: .8em; margin: 0 1.5em 1.5em 0; padding: 0;
       li { display: inline-block; text-indent: 0; margin: 0 .5em;}
@@ -505,29 +528,20 @@ CUSTOMIZATION STARTS HERE
     }
     #menu-single-footer {}
 
-    .box-shadow { color: $header;  margin: 2em 0 0 0; background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; line-height: 1.2em;
-      p { margin: .75em 0 0 0;}
-      .quote-arrow { background-color: $off-white; content: ''; display: block; position: relative; bottom: -11px; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);
-        }
-      }
+
     .quote-arrow2 { background-color: #fff; content: ''; display: block; position: relative; top: -20px; left: 50%; margin-left: -25px; width: 30px; height: 30px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); box-shadow: -1px -1px 0px #D8D5CF;
       }
-    .testimonial-img {border-radius: 100%; width: 55px; height: 55px; vertical-align: middle;}
-    .customer-pointer {display: inline-block; margin: 0 -3em 0 0;  float: right; max-width: 100%; width: 25em;
+
+    .customer-pointer {display: inline-block; margin: 0 -3em 0 0;  float: right; max-width: 100%;
     p { margin: 2.5em 0 0 0; }
           @media (max-width:900px) { margin: 0 1em 2em 1em;  float: left; img {display: none;} width: auto; }
         }
     .customer-illustration {width: 300px; margin: 0 -1.5em 0 -2em; @media (max-width:720px) { margin: 0 0 -3em 0; width: 200px;} @media (max-width:600px) { display: none;}
     }
     .customer-video { @media (max-width:720px) { margin: 0 1em 0 2em;  float: left; img {display: none;} width: auto; } }
-    .plan { padding: .01em 2em; background-color: $white; box-shadow: $shadow; border-radius: 5px;
-      h1 { text-align: center; }
-      .box-shadow { box-shadow: none; background-color: $off-white; width: 80%; margin: auto;
-        h2 { margin: .5em 0 0 0; color: $header; }
-        .quote-arrow {background-color: #f5f3f0; border:none;}
-      }
-      ul { margin-bottom: 1em; background-color: #f5f3f0; padding: 1em ; border-radius: 5px;
-        li { margin: .25em; font-size: .85em; font-style: italic; }
+   
+      ul { margin-bottom: 1em; padding: 0; border-radius: 5px;
+        li { margin: 1em 0; }
       }
     }
     .cta-arrow {margin: 2em 0 0 2.5em; background-image: url('/images/marketing/arrow.png'); display: inline-block; width: 134px; height: 108px; float: left;
@@ -550,23 +564,23 @@ CUSTOMIZATION STARTS HERE
 
 
     }
-    .guarantee { background-color: $gold; font-size: .75em; border-radius:.5em;  padding: .1em .5em; font-weight: 800; margin-left: -6em; margin-right: 1em;
+    .guarantee { background-color: $gold; font-size: 1em; border-radius:.5em;  padding: .2em .5em; font-weight: 800; margin-left: -7.75em; margin-right:2em; color: $header;
       @media (max-width:880px) { margin: 0em .5em 0em 0em; }
     }
     .masthead { color: $light-body; font-weight: normal; text-align: center; font-size: .85em; margin-top: 0;
     }    
-    h1.entry-title, .entry-title { font-size: 100%; margin: 0; text-decoration: none; text-align: left;
+    h1.entry-title, .entry-title { font-size: 110%; text-decoration: none; text-align: left;
       a {color: $black; text-decoration: none;  }
       a:hover { color: $link-blue; }
       a:hover, .author { opacity: 1;}
     }
-    .entry-title.single { text-align: center; margin-bottom: .5em;}
-    .summary { strong { color: $text-gray; } color: $text-gray; font-size: .85em; margin: .25em 0; }
+    .entry-title.single { text-align: center;}
+    .summary { strong { color: $text-gray; } color: $text-gray; font-size: 1em; margin: .25em 0; }
     blockquote { font-style: italic; text-align: left; font-size: .85em;
       strong {color: $body;}
       img {border-radius: 100px; vertical-align: text-top;}
     }
-    .author { color: $text-gray; opacity: .7; text-align: left; font-size: .75em; margin: 0 0 3em 0;
+    .author { color: $text-gray; opacity: .7; text-align: left; font-size: 1em; margin: 0 0 1em 0;
       img {border-radius: 100px; vertical-align: text-top; margin: 0; }
 
     }
@@ -579,7 +593,7 @@ CUSTOMIZATION STARTS HERE
     .masthead + .masthead + .masthead {margin-bottom: 3em;}
     form.comment-form {width:100%; float: left; margin-bottom: 3em; box-shadow: none;
       input, textarea { margin-left: -9em;}
-      textarea { font: 1em/1.5em "futura-pt", Helvetica, sans-serif; padding-left: .4em; border-radius: .2em;    width: 100%; max-width: 13.5em; border: solid 2px $hr-gray;}
+      textarea { font: $body-font; padding-left: .4em; border-radius: .2em;    width: 100%; max-width: 13.5em; border: solid 2px $hr-gray;}
       textarea:focus {background-color: #FAFFBD; outline: 0; }
       input[type=submit] { max-width: 100%; width: 500px; margin: auto; text-align: center;}
     label { width: 220px; text-align: right; float: left; margin-right: 2em;
@@ -605,7 +619,7 @@ CUSTOMIZATION STARTS HERE
     #list_confirmation { }
 
 
-	} /* <--- BODY CLOSE DON'T DELETE */
+  } /* <--- BODY CLOSE DON'T DELETE */
 
     .connect { width: 100%; background-color: $off-white;
     .marcie-photo { }
@@ -613,7 +627,7 @@ CUSTOMIZATION STARTS HERE
 
 .connect-wrap {
   h1 { font-weight: 900; margin-bottom: 2em; color: $text-gray;}
-  .connect-letter {background-color: $white; width:100%;max-width:26em; margin: 2em auto; box-shadow: $shadow; padding: .25em 2em 2em 2em; font-size: .9em; border-radius: 5px; }
+  .connect-letter {background-color: $white; margin: 2em auto; max-width: 100%; max-width: 40em; box-shadow: $shadow; padding: .25em 2em 2em 2em; font-size: .9em; border-radius: 5px; }
 }
 
 /* DIMA JE ILLUSTRATION */
