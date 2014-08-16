@@ -14,21 +14,21 @@
 		<strong>I know it <em>pains you</em> to admit that your business is plagued by dry spells.</strong>
 	</h1>
 	<p>
-		See, like me, you know first-hand how many thousands of businesses would benefit from hiring you. More than benefit, possibly even transform their business (and life) forever as a result of working with you.
+		See, you know first-hand how many thousands of businesses would benefit from hiring you. More than benefit, possibly even transform their company (and life) forever as a result of working with your consultancy. You know this. The problem is, they don't.
 	</p>
 	<p>
 		That's why <em>it's your duty</em> to find them.
 	</p>
 	<p>
-		I don't mean you have to do what most blog posts and internet comments suggest, which is waste your time "content marketing", "social networking", "growth-hacking", and/or "putting your name out there."
+		I don't mean by "content marketing", "social networking", "growth-hacking", and/or "putting your name out there."
 	</p>
 	<p>
-		No, I mean you need to contact people that need your services by reaching out directly with a friendly email or phone call. I know, a revolutionary concept.
+		No, I mean contacting people that need your services by reaching out directly with a friendly email or phone call. I know, a revolutionary concept.
 	</p>
 
 
 	<h2>
-		But it's not easy to find the right opportunities all the time–especially when you're already working too many hours.
+		But it's not always easy to find the right opportunities–especially when you're already working too many hours.
 	</h2>
 
 	<section style="max-width: 100%; width: 35em; margin: 2em auto auto auto;">
@@ -40,90 +40,96 @@
 	</section>
 
 	<p>
-		After all, you're trying to do your own lead generation now and it sucks.
+		Doing lead generation on top of running a consulting business sucks.
 	</p>
 	<p>
-		If you currently go the job board route, you know finding a good one is almost impossible. Truthfully, even if you <em>did find one</em> you wouldn't have time to look through it every day. The thought of checking two dozen job boards everyday for the rest of your career just doesn't sound appealing.
+		The thought of checking two dozen job boards, or worse: elance, every day for the rest of your career just doesn't sound appealing.
 	</p>
 	<p>
-		You want to do the work you love, not find it.
+		You want to do the work you love, not search for it.
 	</p>
 	<p>
-		That's why you default to waiting for work to come to you (ie. you do nothing at all). So when easy clients (that are less-than-ideal)  come along, you take them. Sure, they don't pay what you're worth, but <em>someone</em> needs to pay the bills, right?
+		As a result, too many freelancers wait for work to come to them (read: do nothing at all) because it's easier. That's why we complain about less-than-ideal clients online instead of just refusing to work with them altogether. We think, "I'll just take on this one project to pay the bills this month." In reality we end up working for less than we're worth for years.
 	</p>
 	<p>
-		I know this all to well because I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. Then I did something about it.
+		I know this all too well because I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. Then I did something about it.
 	</p>
 	<p>
-		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and their marketing efforts when work ran out.
+		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced six-figure consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and marketing efforts during slow periods.
+	</p>
+	<p>
+		 I began to realize something that few freelancers ever notice.
 	</p>
 	<h2>
-		That's why I realized: people who pitch their services to more prospects simply make more money.
+		People who pitch their services to more qualified prospects simply make more money.
 	</h2>
 	<p>
-		How we find prospects varies. Some have heavily-trafficked websites. Some are in tight user-groups that refer work to one another. Others find their leads online, but all successful consultancies find a way to get their foot in the door with new clients regularly.
+		And the ones who don't, get leap-frogged. Each year you don't have a system for generating qualified prospects, is another year wasted.
 	</p>
 	<p>
-		For my own business's sake, I became serious about finding prospects regularly. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
+		Most of us don't have the benefit of heavily-trafficked websites or tight user-groups that refer work to one another. Most of us have to find our leads online. Still, all successful consultancies find a way to get their foot in the door with new clients regularly.
+	</p>
+
+	<p>
+		You could do it yourself–but is sorting through thousands of job posts really the best use of your time?
 	</p>
 	<p>
-		I then contacted each lead with a custom, highly-specific email and my business took off.
+		I don't think so. There's just too many crappy job posts, too many new job boards that pop up, and you'd be in a constant game of catch up.
 	</p>
 	<p>
-		In fact my revenue doubled, all from leads I found online.
+		You could build a team or hire someone to do it for you, but would they be able to do it as well as you? Also, would they be worth the extra money? A virtual assistant, for example, charges $10/hour (and may lack basic english skills). So you're looking at over $600/month.
 	</p>
 	<p>
-		But it wasn't sustainable. I needed help.
+		Don't you wish you could have it done for you for a fraction of your hourly rate?
+	</p>
+
+	<h2>
+		Imagine what you could accomplish today if you didn't have to worry about finding new work.</strong>
+	</h2>
+	<p>
+		Once I came to this realization, I had to become serious about finding prospects regularly. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
 	</p>
 	<p>
-		I searched for someone to help me on elance, but I could not find someone who did the job as well as I did. They were also too expensive. A virtual assistant, for example, charged me $600/month at $10/hour (and lacked basic english skills).
+		<strong>High-quality prospective clients that I could build my business (and future) around.</strong>
 	</p>
 	<p>
-		So, I decided I needed an actual freelancer to do this work for me. Only someone intimately familiar with the work I did would be able to sniff out and recognize the projects that I wanted.
+		I then contacted each lead with a custom, highly-specific email and my business took off. In fact my revenue doubled, all from leads I found online.
 	</p>
 	<p>
-		But which sane freelancer was going to do this? Why wouldn't they just keep the work for themself?
+		Today, you can buy this system from me; an affordable, hands-free way to get more qualified prospects to your door. Think about that, and think about what you would do with this?
 	</p>
 	<p>
-		<strong>I decided to build this service for freelancers that I wished existed: an affordable lead-gen service for consultancies like mine.</strong>
+		If instead of wasting time looking for leads, you had them sent directly to your email. If all you had to do was reply to the ones you're interested in straight from your inbox. This would take you a few minutes (instead of hours) and fill your sales pipeline each morning with a constant stream of activity, allowing you to focus almost exclusively on billable work. 
 	</p>
 	<p>
-		Instead of spending your time looking for leads, you hire me to send them directly to your email. That way, all you have to do is reply to the ones you're interested in straight from your inbox. This takes you a few minutes (instead of hours) and will give your sales pipeline a constant stream of activity, which lets you focus almost exclusively on billable work.
+		What then? Would you add that extra feature to your client's project and blow them away? Would you go for a walk with your child or significant other? Would you work on that side-project you've been itching to build?
 	</p>
 	<h2>
-		I'm proposing you let me sort through thousands of job posts and email you the best leads.
+		Let me sort through thousands of job posts and email you the best leads.
 	</h2>
 
 	<p>
-		<strong>Imagine what you could accomplish today if you didn't have to worry about finding work.</strong>
-	</p>
-
-	<p>
-		Would you add that extra feature to your client's project and blow them away? Would you go for a walk with your child or significant other? Would you work on that side-project you've been itching to build?
-	</p>
-	<p>
-		Sorting through thousands of job posts just isn't the best use of your time. There's countless amounts of crappy job posts. There's new job boards popping up all the time—it's a constant game of catch up. Why not pay a fraction of your hourly rate each month and let me do it for you?
-	</p>
-
+		I've designed this service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into you inbox so that they're easy to scan in minutes.
+	</p> 
 	<p>
 		<strong>"Wait. Can’t I just find these leads myself for free?"</strong>
 	</p>
 
 	<p>
-		No. You see, sure some leads are available for free online, but your time is worth money. Technically, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
+		No. You see, sure some leads are available for free online, but your time is worth money. Of course, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
 	</p>
 	<p>
 		<strong>
-			"Will you be any good at finding leads <em>for me</em>?"
+			"Will you be any good at finding leads <em>for me?"</em>
 		</strong>
 	</p>
-
-		<p>
-			Workshop members think the leads I pick out reply at a higher rate, but the truth is they also have an unfair advantage over you. Job boards no longer suck up all their time, so they're actually better at contacting leads because they no longer teeter-totter between work overload and an empty checking account. Some have landed huge projects, or even full-time remote dream jobs. All have saved the most precious resource: time.
-		</p>
 		<p>
 			<em>I look over every single lead, personally, to make sure they meet a strict criteria:</em> they MUST be freelance leads, not full-time work. They MUST be remote, and open to freelancers anywhere. They MUST be quality projects: no budgets below $1,000. And, preferably, there must be an email attached to the lead.
 		</p>
+		<p>
+			Workshop members think the leads I pick out reply at a higher rate, but the truth is they also have an unfair advantage over you. Job boards no longer suck up all their time, so they're actually better at contacting leads because they no longer teeter-totter between work overload and an empty checking account. Some have landed huge projects, or even full-time remote dream jobs. All have saved the most precious resource: time.
+		</p>
+
 		<p>
 			<strong>"How many leads will be sent, and how often?"</strong>
 		</p>
@@ -147,18 +153,14 @@
 		<h2>
 			<strong>Get started now and try Workshop risk-free for 30 days</strong>
 		</h2>
-
+		<p>
+			Like you, I know there are a ton of businesses that will benefit from my service. I've built a team (including other experienced Workshop customers) to help you reach those businesses. This letter is my way of reaching out to you individually. It's time for you to start reaching out to your customers in the same direct way.
+		</p>
 		<p>
 			If you're not completely blown away, get a full refund.
 		</p>
 
-		<p>
-			Like you, I know there are a ton businesses that will benefit from my service. I've built a team (including other experienced Workshop customers) to help you reach those businesses. This letter is my way of reaching out to you individually. It's time for you to start reaching out to your customers in the same direct way.
-		</p>
-		<p>
-			Luckily, I've designed every inch of this service for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into you inbox so that they're easy to scan.
-		</p> 
-		<h2>
+	<h2>
 			You get a daily newsletter delivering quality gigs to your inbox. ($768/year value)
 	</h2>
 	<p>
@@ -172,7 +174,7 @@
 				<strong>Agency and Team Gigs:</strong> I look all over the web for people specifically looking to hire a creative agency or team. This includes: requests for proposals, consulting opportunities, copywriting, promotion, project management, and full-service design and development projects.
 			</li>
 			<li>
-				<strong>Design and Development Gigs:</strong> I go to all the places people post design and development gigs. The most common types of projects are: wordpress, web or user interface, branding, logos, packaging, infographics, front-end, drupal, javascript, python, django, PHP, back-end, system administration, ruby, rails, CMS, image processing, HTML/CSS, magento, and .NET.
+				<strong>Design and Development Gigs:</strong> I go to all the places people look for freelance designers and developers. The most common types of projects are: wordpress, web or user interface, branding, logos, packaging, infographics, front-end, drupal, javascript, python, django, PHP, back-end, system administration, ruby, rails, CMS, image processing, HTML/CSS, magento, and .NET.
 			</li>
 		</ul>
 
@@ -193,7 +195,7 @@
 			<li>How to be successful with Workshop (or any lead service).</li>
 			<li>How to reply to a job post in less than 2 minutes.</li>
 			<li>The exact template to use for writing emails (which has made me over $100k).</li>
-			<li>How to get stagnant clients to reply your emails after weeks of ignoring you.</li>
+			<li>How to get stagnant clients to reply to your emails after weeks of ignoring you.</li>
 			<li>How to make sure you hear back from every possible email you send.</li>
 		</ul>
 		<h2>
