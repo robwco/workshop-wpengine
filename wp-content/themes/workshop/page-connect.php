@@ -27,11 +27,11 @@ get_header( 'connect' ); ?>
 			Send your project directly to the inbox of 200+ world-class freelancers and studios by tomorrow.
 
 		</p>
-	</div>		
+	</div>
 		<div style="width: 25%; text-align: center; float: right; display: inline; font-size: .75em; margin-top: 1.4em;">
 			<a href="https://letsworkshop.wufoo.com/forms/create-a-workshop-listing/"><input type="submit" name="submit" value="POST A JOB FOR FREE"></a>
 		</div>
-	
+
 </div>
 
 

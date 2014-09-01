@@ -49,16 +49,16 @@
 		You want to do the work you love, not search for it.
 	</p>
 	<p>
-		As a result, too many freelancers wait for work to come to them (read: do nothing at all) because it's easier. That's why we complain about less-than-ideal clients online instead of just refusing to work with them altogether. We think, "I'll just take on this one project to pay the bills this month." In reality we end up working for less than we're worth for years.
+		As a result, too many freelancers wait for work to come to them (read: do nothing at all) because it's easier. That's why we complain about less-than-ideal clients instead of just refusing to work with them altogether. We think, "I'll just take on this one project to pay the bills this month." In reality we end up working for less than we're worth for years.
 	</p>
 	<p>
 		I know this all too well because I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. Then I did something about it.
 	</p>
 	<p>
-		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced six-figure consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and marketing efforts during slow periods.
+		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced six-figure consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and marketing efforts during slow periods along the way.
 	</p>
 	<p>
-		 I began to realize something that few freelancers ever notice.
+		 It began to *click*. I realized something that few freelancers ever notice.
 	</p>
 	<h2>
 		People who pitch their services to more qualified prospects simply make more money.
@@ -80,7 +80,7 @@
 		You could build a team or hire someone to do it for you, but would they be able to do it as well as you? Also, would they be worth the extra money? A virtual assistant, for example, charges $10/hour (and may lack basic english skills). So you're looking at over $600/month.
 	</p>
 	<p>
-		Don't you wish you could have it done for you for a fraction of your hourly rate?
+		Don't you wish you could have it done <em>for you</em> each month at a fraction of your hourly rate?
 	</p>
 
 	<h2>
@@ -109,14 +109,14 @@
 	</h2>
 
 	<p>
-		I've designed this service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into you inbox so that they're easy to scan in minutes.
+		I've designed this service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into your inbox so that they're easy to scan in minutes.
 	</p> 
 	<p>
 		<strong>"Wait. Can’t I just find these leads myself for free?"</strong>
 	</p>
 
 	<p>
-		No. You see, sure some leads are available for free online, but your time is worth money. Of course, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
+		No. Sure some leads are available for free online, but your time is worth money. Of course, you could find the leads yourself, but why haven't you? Committing to finding leads day-in and day-out is tough. The truth is, you’d rather wait for work to fall into your lap, than find even one qualified prospect to email this week.
 	</p>
 	<p>
 		<strong>
