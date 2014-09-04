@@ -453,16 +453,14 @@ CUSTOMIZATION STARTS HERE
     button, div, img, p, .entry-content {max-width: 100%;}
     /*p strong { color: $body; font-weight: 500;}*/
     h1, h2, h3, h4 {
-      font: $header-font;
+      font: $header-font; color: $header; font-weight: 900;
       }
+    h2 { font: $header-font; color: $black; font-weight: 900; font-size: 150%;  }
     h1 + h2 { margin-top: .5em;}
-    h1 {color: $header; font-weight: 900;}
-    h2, h4 { color: $body; font-weight: normal;
-      }
     h1, .entry-title.single { padding-top: 1em; font-size: 325%; line-height: 1.3em; margin-bottom: 0;
         .kern {letter-spacing: -.1em;}
       }
-    h2, h1.value-prop, h1.entry-title, .entry-title { font-size: 200%; line-height: 1.5em;
+    h1.value-prop, h1.entry-title, .entry-title { font-size: 200%; line-height: 1.5em;
       }
     a { color: $link; text-decoration: none;
          transition: color .25s ease-in-out;
@@ -496,11 +494,12 @@ CUSTOMIZATION STARTS HERE
     hr { border: 0; height: 1px; background-color: $hr;}
     .connect {background-color: $off-white;  }
     .center {text-align: center;}
-    .small-wrap { width: 100%; max-width: 40em; margin: auto; padding: 1em 0 0 0;
-      h2 { font: $header-font; color: $black; font-weight: 900; font-size: 150%;  } }
-    .mid-wrap { width: 50em; max-width: 100%; margin: auto; }
-    .big-wrap { width: 60em; max-width: 100%; margin: auto; }
-    #logo {font: $logo-font; color: $header;
+    .small-wrap { width: 100%; max-width: 30em; margin: auto; padding: 1em 0 0 0;
+       }
+    .mid-wrap { width: 40em; max-width: 100%; margin: auto; }
+    .big-wrap { width: 50em; max-width: 100%; margin: auto; }
+    h1#logo {font: $logo-font; color: $header;
+
     }
     .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0;
       p { margin: .75em 0 0 0; text-align: left;}
@@ -508,7 +507,7 @@ CUSTOMIZATION STARTS HERE
         }
       }
     .testimonial-img {border-radius: 100%; width: 40px; height: 40px; vertical-align: middle;}
-    .plan { padding: 2.5em 5em; margin: 2em auto; background-color: $off-white;
+    .plan { padding: 2.5em 5em; margin: 2em auto; 
       h2 strong {font-size: 150%;}
       @media (max-width: 40em) { margin: 0 auto; padding: .0; background-color: $white; width: 95%; 
       }

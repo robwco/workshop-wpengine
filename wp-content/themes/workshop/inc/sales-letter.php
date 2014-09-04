@@ -14,7 +14,7 @@
 		<strong>I know it <em>pains you</em> to admit that your business is plagued by dry spells.</strong>
 	</h1>
 	<p>
-		See, you know first-hand how many thousands of businesses would benefit from hiring you. More than benefit, possibly even transform their company (and life) forever as a result of working with your consultancy. You know this. The problem is, they don't.
+		After all, you know first-hand that there are thousands of businesses out there right now who would benefit greatly from hiring you. Not just benefit, possibly even transform their company (and life) forever as a result of working with your consultancy. You know this. The problem is, they don't.
 	</p>
 	<p>
 		That's why <em>it's your duty</em> to find them.
@@ -23,7 +23,7 @@
 		I don't mean by "content marketing", "social networking", "growth-hacking", and/or "putting your name out there."
 	</p>
 	<p>
-		No, I mean contacting people that need your services by reaching out directly with a friendly email or phone call. I know, a revolutionary concept.
+		No, I mean directly reaching out to people that need help with a friendly email or phone call. I know, a revolutionary concept.
 	</p>
 
 
@@ -49,35 +49,35 @@
 		You want to do the work you love, not search for it.
 	</p>
 	<p>
-		As a result, too many freelancers wait for work to come to them (read: do nothing at all) because it's easier. That's why we complain about less-than-ideal clients instead of just refusing to work with them altogether. We think, "I'll just take on this one project to pay the bills this month." In reality we end up working for less than we're worth for years.
+		That's why too many freelancers wait for work to come to them (read: do nothing at all) – because it's easier. That's why we complain about less-than-ideal clients instead of just firing them. That why we think, "I'll do this project just this once to pay the bills this month," and end up working for less than we're worth for years.
 	</p>
 	<p>
 		I know this all too well because I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. Then I did something about it.
 	</p>
 	<p>
-		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced six-figure consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and marketing efforts during slow periods along the way.
+		I read books about pricing and positioning. I took world-class courses on freelancing. I asked experienced six-figure consultants how they found work. I even surveyed hundreds of freelancers, recording thousands of data points on salary and marketing efforts along the way.
 	</p>
 	<p>
-		 It began to *click*. I realized something that few freelancers ever notice.
+		 Suddenly, it began to click. I realized something that few freelancers ever notice.
 	</p>
 	<h2>
 		People who pitch their services to more qualified prospects simply make more money.
 	</h2>
 	<p>
-		And the ones who don't, get leap-frogged. Each year you don't have a system for generating qualified prospects, is another year wasted.
+		And the ones who don't, get leap-frogged. Each year that they don't have a system for generating qualified prospects, is another year wasted.
 	</p>
 	<p>
 		Most of us don't have the benefit of heavily-trafficked websites or tight user-groups that refer work to one another. Most of us have to find our leads online. Still, all successful consultancies find a way to get their foot in the door with new clients regularly.
 	</p>
 
 	<p>
-		You could do it yourself–but is sorting through thousands of job posts really the best use of your time?
+		You could do it yourself – but is sorting through thousands of job posts really the best use of your time?
 	</p>
 	<p>
 		I don't think so. There's just too many crappy job posts, too many new job boards that pop up, and you'd be in a constant game of catch up.
 	</p>
 	<p>
-		You could build a team or hire someone to do it for you, but would they be able to do it as well as you? Also, would they be worth the extra money? A virtual assistant, for example, charges $10/hour (and may lack basic english skills). So you're looking at over $600/month.
+		You could build a team or hire someone to do it for you, but would they be able to do it as well as you? Would they be worth the extra money? A virtual assistant, for example, charges $10/hour (and may lack basic english skills). So you're looking at over $600/month.
 	</p>
 	<p>
 		Don't you wish you could have it done <em>for you</em> each month at a fraction of your hourly rate?
@@ -87,7 +87,7 @@
 		Imagine what you could accomplish today if you didn't have to worry about finding new work.</strong>
 	</h2>
 	<p>
-		Once I came to this realization, I had to become serious about finding prospects regularly. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
+		Once you realize this the game changes. I was no different. I suddenly became serious about finding prospects. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
 	</p>
 	<p>
 		<strong>High-quality prospective clients that I could build my business (and future) around.</strong>
@@ -96,10 +96,10 @@
 		I then contacted each lead with a custom, highly-specific email and my business took off. In fact my revenue doubled, all from leads I found online.
 	</p>
 	<p>
-		Today, you can buy this system from me; an affordable, hands-free way to get more qualified prospects to your door. Think about that, and think about what you would do with this?
+		Today, if I told you could buy the system I built, and instantly plug it in to your business so that you skipped the years of tweaking and just got 10+ highly-qualified leads, what would you do with it?
 	</p>
 	<p>
-		If instead of wasting time looking for leads, you had them sent directly to your email. If all you had to do was reply to the ones you're interested in straight from your inbox. This would take you a few minutes (instead of hours) and fill your sales pipeline each morning with a constant stream of activity, allowing you to focus almost exclusively on billable work. 
+		If tomorrow, instead of wasting time looking for leads, you had them sent directly to your email. If all you had to do was reply to the ones you're interested in straight from your inbox. If it took minutes (instead of hours) and you filled your sales pipeline each morning with a constant stream of activity, allowing you to focus almost exclusively on billable work. 
 	</p>
 	<p>
 		What then? Would you add that extra feature to your client's project and blow them away? Would you go for a walk with your child or significant other? Would you work on that side-project you've been itching to build?
@@ -109,7 +109,7 @@
 	</h2>
 
 	<p>
-		I've designed this service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into your inbox so that they're easy to scan in minutes.
+		I've designed the service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into your inbox so that they're easy to scan in minutes.
 	</p> 
 	<p>
 		<strong>"Wait. Can’t I just find these leads myself for free?"</strong>
@@ -161,14 +161,14 @@
 		</p>
 
 	<h2>
-			You get a daily newsletter delivering quality gigs to your inbox. ($768/year value)
+			You'll get a daily newsletter delivering quality gigs to your inbox. ($768/year value)
 	</h2>
 	<p>
 		This daily email includes:
 	</p>
 		<ul>
 			<li>
-				<strong>Workshop-exclusive Gigs:</strong> People now come to Workshop to connect with world-class consultancies and freelancers directly. The only way to get connected to these people is by having an active subscription. These are some of the most valuable leads because often times you're competing with only a handful of people, and the clients are people who want to pay for value.
+				<strong>Workshop-exclusive Gigs:</strong> People now come to me to connect with world-class consultancies and freelancers directly. The only way to get connected to these people is by having an active subscription. These are some of the most valuable leads because often times you're competing with only a handful of people, and the clients are people who want to pay for value.
 			</li>
 			<li>
 				<strong>Agency and Team Gigs:</strong> I look all over the web for people specifically looking to hire a creative agency or team. This includes: requests for proposals, consulting opportunities, copywriting, promotion, project management, and full-service design and development projects.
@@ -181,7 +181,7 @@
 
 
 		<h2>
-			Plus a mini-course developed to help you land those gigs. ($99 value)
+			Plus a mini-course developed to help you land those gigs. ($39 value)
 		</h2>
 
 		<p>
@@ -203,7 +203,7 @@
 		</h2>
 
 	<p>
-		<img src="../images/marketing/package-chat.png" alt="" style="width: 12em; margin-left: .75em;  " align="right"> <img src="../images/marketing/package-forum.png" alt="" style="width: 11em; margin-left: .75em;  " align="right"> It's not just me that will help you land clients. There's actually a full, thriving community of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz and my personal favorite, the Workshop hipchat. These will be there for real-time connection with other members. Based on how we've used them so far, here's a few ways you can improve your business with these tools:
+		<img src="../images/marketing/package-chat.png" alt="" style="width: 8em; margin-left: .75em;  " align="right"> <img src="../images/marketing/package-forum.png" alt="" style="width: 7em; margin-left: .25em;  " align="right"> Ultimately, it's not just me that will help you land clients. There's actually a full, thriving pool of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz (plus a member hipchat). These will be there for real-time connection with other members. Based on how we've used them so far, here's a few ways you can improve your business with these tools:
 	</p>
 
 	<ul>
