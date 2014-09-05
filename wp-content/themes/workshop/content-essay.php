@@ -7,25 +7,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-<?php
-if( get_field('featured_hn') )
-{
-    echo '<div style="margin-left: -30px; margin-top: -23px; margin-bottom: -5px;"><img src="/images/marketing/star1.svg" style="display:inline-block; width:18px; fill: #ace63c; "></div>';
-}
-else
-{
-    echo " ";
-}
-?>
 
-<p class="summary">Summary: <?php the_field('summary'); ?></p>
-<p class="author">This essay was written by  <?php echo get_avatar( get_the_author_email(), '20' ); ?> <?php the_author(); ?></p>
+<p class="summary"><?php the_field('summary'); ?></p>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-
+<hr>
 	<div class="entry-content">
 		<?php
 			wp_link_pages( array(

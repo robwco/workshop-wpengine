@@ -96,7 +96,7 @@
 		I then contacted each lead with a custom, highly-specific email and my business took off. In fact my revenue doubled, all from leads I found online.
 	</p>
 	<p>
-		Today, if I told you could buy the system I built, and instantly plug it in to your business so that you skipped the years of tweaking and just got 10+ highly-qualified leads, what would you do with it?
+		Today, if I told you could enjoy the fruits of my labor, instantly skip the years of testing lead generation methods, and just get 10+ highly-qualified leads, what would you do with it?
 	</p>
 	<p>
 		If tomorrow, instead of wasting time looking for leads, you had them sent directly to your email. If all you had to do was reply to the ones you're interested in straight from your inbox. If it took minutes (instead of hours) and you filled your sales pipeline each morning with a constant stream of activity, allowing you to focus almost exclusively on billable work. 

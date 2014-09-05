@@ -396,6 +396,67 @@ body {
   margin: auto;
   color: #868480;
   /*p strong { color: $body; font-weight: 500;}*/ }
+  body .weekly h1 {
+    font: 37px/1.378em "proxima-nova", Verdana, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center; }
+  body .weekly p {
+    font: 22px/1.422em "kandal", Georgia, serif;
+    letter-spacing: .01em; }
+    body .weekly p:first-child {
+      font-size: 3em; }
+  body .weekly a {
+    color: #727167;
+    font-style: italic; }
+  body .weekly h4 {
+    font-size: .9em;
+    color: #9b9993;
+    font-weight: 600;
+    letter-spacing: .2em; }
+  body .weekly p:first-child {
+    font-size: 90%; }
+  body .weekly p.summary {
+    font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+    text-align: right;
+    display: block;
+    margin: -1.55em 0 1.5em 0; }
+  body form.weekly {
+    width: 40em;
+    max-width: 100%;
+    margin: 0 auto 4em auto; }
+    body form.weekly h3 {
+      margin: 1.5em 0 1em 0; }
+    body form.weekly p {
+      display: inline-block;
+      margin: 0 1em 0 0;
+      font-weight: 300; }
+    body form.weekly button {
+      vertical-align: middle;
+      background-color: #727167;
+      border-radius: 3px;
+      cursor: pointer;
+      font: 0.7em/1.5em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
+      border: none;
+      color: #FFF;
+      text-transform: uppercase;
+      padding: .5em 1em;
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: .1em;
+      border-bottom: 2px solid #111111;
+      margin: auto;
+      text-align: center;
+      max-width: 100%; }
+      body form.weekly button:hover {
+        background: #444444; }
+      body form.weekly button:active, body form.weekly button:focus {
+        background: #111111;
+        border-bottom: 0;
+        border-top: 2px solid #727167;
+        outline: none;
+        box-shadow: 0 2px 1px #fff;
+        -moz-box-shadow: 0 2px 1px #fff;
+        -webkit-box-shadow: 0 2px 1px #fff; }
   body button, body div, body img, body p, body .entry-content {
     max-width: 100%; }
   body h1, body h2, body h3, body h4 {
@@ -732,7 +793,7 @@ body {
     color: #9f9d99;
     font-size: .85em; }
   body article + article {
-    margin: 4em 0; }
+    margin: 0; }
   body article + nav {
     margin: 0; }
   body .masthead + .masthead + .masthead {

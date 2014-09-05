@@ -9,10 +9,15 @@ $hover: #3477d3;
 $light-body: #9F9D99;
 
 $font: "proxima-nova",  Verdana, Helvetica, sans-serif;
+$weekly-font: "kandal", Georgia, serif;
+$weekly-header-font: "anonymous-pro", Georgia, serif;
 
 $body-font: 16px/26px $font;
+$weekly-body-font: 22px/1.422em $weekly-font;
 $header-font: 20px/28.75px $font;
+$weekly-header-font: 37px/1.378em $font;
 $button-font: 1.2em/1.5em $font;
+$weekly-button-font: .7em/1.5em $font;
 $logo-font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
 
 
@@ -54,7 +59,7 @@ $highlight-red: #F75432;
 $hr-gray: #D9D3CF;
 $quote-text: #9b9993;
 $quote-name: #9b9993;
-$quote-strong: #727167;
+$dark-gray: #727167;
 $text-gray: #9F9D99;
 $light-gray: #F1F0EC;
 $link-gray: #7191BC;
