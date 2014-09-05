@@ -16,24 +16,23 @@ get_header( 'home' ); ?>
 	<div id="primary" class="content-area weekly" >
 		<main id="main" class="site-main" role="main">
 
-<section class="mid-wrap">
-	<h1 style="font-size: 2em; text-align: left;">The web is a sales letter.</h1>
-	<p>
-		It's read by one person at a time. If you work on the web it's your job to say something people will want to read. Yet, as makers, we ignore our words.
-	</p>
-	<p>
-		I first realized this as a freelancer when the emails I wrote – <em>not my portfolio</em> – decided if I got hired. Later, when most people sold their product using a sleek website that didn't say anything, <a href="http://letsworkshop.com">I put a letter on mine</a>. In 8 months I made over one-hundred thousand dollars.
-	</p>
-	<p>
-		Below is a study of modern sales letters. I believe every word we write should point to one person in a crowd and say, <em>'I know what you're going through, that's why I'm talking to you now'</em>. Time is too short for anything else. These essays are an example of their own principles.
-	</p>
+<section class="small-wrap" style="margin-top: 4em;">
 
+<p>Hello web maker,</p>
+
+<p>I'll never forget putting a letter on my tiny website and making <em>one-hundred thousand dollars</em> 8 months later.</p>
+
+<p>One person at a time read it. Each word counted.</p>
+
+<p>Now when I look back at my freelancing days, it's clear the emails I wrote got me hired. <em>Not my portfolio</em> and not my sleek website that didn't say anything.</p>
+
+<p>Time is too short for a web that doesn't say anything. It needs to be a letter written from one person to another. If you want to learn how to do this for your website read on.</p>
+<h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send it to you.
+	</h3>
 </section>
-<section class="big-wrap">
+<section class="large-wrap">
 
 	<form class="weekly" action="http://letters.letsworkshop.com/t/i/s/qhdij/" method="post">
-			<h3>I'd love to deliver them to your inbox each week. Sign up below.
-	</h3>
 	    <p>
 	        <input id="fieldName" name="cm-name" type="text" placeholder="Your Name" />
 	    </p>
@@ -41,12 +40,13 @@ get_header( 'home' ); ?>
 	        <input id="fieldEmail" name="cm-qhdij-qhdij" type="email" required placeholder="Your Email"/>
 	    </p>
 	    <p>
-	        <button type="submit">Subscribe</button>
+	        <button type="submit">Yes, send it.</button>
 	    </p>
 	</form>
 </section>
 
-<div class="big-wrap">
+
+<div class="big-wrap" style="margin-top: 7em;">
 	<h4>RECENT SALES LETTER BREAKDOWNS</h4>
 	<hr>
 		<?php if ( have_posts() ) : ?>
@@ -72,11 +72,18 @@ get_header( 'home' ); ?>
 		<?php endif; ?>
 </div>
 
-
+<section class="small-wrap" style="margin-top: 4em;">
+	<center>
+		<h3>
+			The Web as a Sales Letter
+		</h3>
+	<p style="margin: -1em 0 3em 0;">
+		A weekly publication by <a href="http://twitter.com/letsworkshop">Robert Williams</a>
+	</p></center>
+</section>
 			<div class="small-wrap" style="text-align: center; margin-bottom: 2em;">
 
 				<?php posts_nav_link('|','Back','More Breakdowns'); ?> </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_footer( 'home' ); ?>

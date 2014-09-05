@@ -401,10 +401,8 @@ body {
     font-weight: 900;
     text-align: center; }
   body .weekly p {
-    font: 22px/1.422em "kandal", Georgia, serif;
+    font: 18px/1.422em "kandal", Georgia, serif;
     letter-spacing: .01em; }
-    body .weekly p:first-child {
-      font-size: 3em; }
   body .weekly a {
     color: #727167;
     font-style: italic; }
@@ -413,17 +411,15 @@ body {
     color: #9b9993;
     font-weight: 600;
     letter-spacing: .2em; }
-  body .weekly p:first-child {
-    font-size: 90%; }
   body .weekly p.summary {
     font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
     text-align: right;
     display: block;
     margin: -1.55em 0 1.5em 0; }
   body form.weekly {
-    width: 40em;
+    width: 37.5em;
     max-width: 100%;
-    margin: 0 auto 4em auto; }
+    margin: 2em auto 4em auto; }
     body form.weekly h3 {
       margin: 1.5em 0 1em 0; }
     body form.weekly p {
@@ -432,7 +428,8 @@ body {
       font-weight: 300; }
     body form.weekly button {
       vertical-align: middle;
-      background-color: #727167;
+      vertical-align: .4em;
+      background-color: #e44727;
       border-radius: 3px;
       cursor: pointer;
       font: 0.7em/1.5em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
@@ -443,7 +440,7 @@ body {
       font-weight: 700;
       display: inline-block;
       letter-spacing: .1em;
-      border-bottom: 2px solid #111111;
+      border-bottom: 2px solid #b72a22;
       margin: auto;
       text-align: center;
       max-width: 100%; }

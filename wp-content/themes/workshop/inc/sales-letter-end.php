@@ -1,4 +1,4 @@
-
+</center>
 
 	<p><strong>So what happens if I don't like it?</strong>
 	</p>

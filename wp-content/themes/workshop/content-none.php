@@ -13,7 +13,7 @@
 		<p class="page-title"><?php _e( 'First essay will be published this Wednesday, September 10th. Sign up now.', 'workshop' ); ?></p></center><hr>
 	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<!--<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 		<?php elseif ( is_search() ) : ?>
@@ -27,5 +27,5 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .page-content -->
+	</div><! .page-content -->
 </section><!-- .no-results -->

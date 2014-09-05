@@ -14,4 +14,3 @@
 	<p>
 		<a href="https://workshop.memberful.com/orders/new?plan=1798">Only $49/a when you pay in full</a>
 	</p>
-</center>
