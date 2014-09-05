@@ -401,7 +401,7 @@ body {
     font-weight: 900;
     text-align: center; }
   body .weekly p {
-    font: 18px/1.422em "kandal", Georgia, serif;
+    font: 20px/1.422em "kandal", Georgia, serif;
     letter-spacing: .01em; }
   body .weekly a {
     color: #727167;
@@ -417,18 +417,22 @@ body {
     display: block;
     margin: -1.55em 0 1.5em 0; }
   body form.weekly {
-    width: 37.5em;
-    max-width: 100%;
-    margin: 2em auto 4em auto; }
+    background-color: #faffbd;
+    padding: .5em .15em;
+    border-radius: .5em;
+    width: 39em;
+    max-width: 90%;
+    margin: 2em auto 4em auto;
+    text-align: center; }
     body form.weekly h3 {
       margin: 1.5em 0 1em 0; }
     body form.weekly p {
       display: inline-block;
-      margin: 0 1em 0 0;
+      margin: .35em;
       font-weight: 300; }
     body form.weekly button {
       vertical-align: middle;
-      vertical-align: .4em;
+      vertical-align: .3em;
       background-color: #e44727;
       border-radius: 3px;
       cursor: pointer;
@@ -445,11 +449,11 @@ body {
       text-align: center;
       max-width: 100%; }
       body form.weekly button:hover {
-        background: #444444; }
+        background: #f75432; }
       body form.weekly button:active, body form.weekly button:focus {
-        background: #111111;
+        background: #b72a22;
         border-bottom: 0;
-        border-top: 2px solid #727167;
+        border-top: 2px solid #f75432;
         outline: none;
         box-shadow: 0 2px 1px #fff;
         -moz-box-shadow: 0 2px 1px #fff;
@@ -500,8 +504,9 @@ body {
     padding-left: .4em;
     border-radius: .2em; }
     body input:focus {
-      background-color: #faffbd;
-      outline: 0; }
+      background-color: #f5f3f0;
+      outline: 0;
+      color: #111111; }
   body input + input {
     margin-top: .5em; }
   body input[type=text], body input[type=email] {
@@ -556,18 +561,18 @@ body {
   body .center {
     text-align: center; }
   body .small-wrap {
-    width: 100%;
     max-width: 30em;
-    margin: auto;
     padding: 1em 0 0 0; }
   body .mid-wrap {
-    width: 40em;
-    max-width: 100%;
-    margin: auto; }
+    max-width: 40em; }
   body .big-wrap {
-    width: 50em;
-    max-width: 100%;
+    max-width: 50em; }
+  body .small-wrap, body .mid-wrap, body .big-wrap {
+    width: 95%;
     margin: auto; }
+    @media (max-width: 630px) {
+      body .small-wrap, body .mid-wrap, body .big-wrap {
+        padding: .5em; } }
   body h1#logo {
     font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
     color: #111111; }

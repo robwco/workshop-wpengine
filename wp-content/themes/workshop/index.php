@@ -16,17 +16,22 @@ get_header( 'home' ); ?>
 	<div id="primary" class="content-area weekly" >
 		<main id="main" class="site-main" role="main">
 
-<section class="small-wrap" style="margin-top: 4em;">
+<section class="small-wrap" style="margin-top: 2em;">
 
-<p>Hello web maker,</p>
+<p>Dear web maker,</p>
 
-<p>I'll never forget putting a letter on my tiny website and making <em>one-hundred thousand dollars</em> 8 months later.</p>
+<p>I'll never forget putting a letter on my tiny website and making hundreds of thousands of dollars from it.</p>
 
-<p>One person at a time read it. Each word counted.</p>
+<p>One person at a time reading it. Each word telling them something.</p>
 
-<p>Now when I look back at my freelancing days, it's clear the emails I wrote got me hired. <em>Not my portfolio</em> and not my sleek website that didn't say anything.</p>
+<p>Now when I look back at my days as a freelancer, it's clear my portfolio wasn't what got me hired. Neither was my sleek website that didn't say anything. It was the emails I wrote. My sales letters.</p>
 
-<p>Time is too short for a web that doesn't say anything. It needs to be a letter written from one person to another. If you want to learn how to do this for your website read on.</p>
+<p>So pick someone out and say, "Hey you! I know exactly what you are going through. That's why I need to tell you this." Our attention spans are too short for anything else. </p>
+
+
+<p>I look at the web as a letter from one person to another. If you want to learn to look at it this way too, read on.</p>
+
+
 <h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send it to you.
 	</h3>
 </section>

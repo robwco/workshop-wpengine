@@ -463,15 +463,19 @@ CUSTOMIZATION STARTS HERE
       }
    }
    form.weekly {
-    width: 37.5em;
-    max-width: 100%;
+    background-color: $input-focus;
+    padding: .5em .15em;
+    border-radius: .5em;
+    width: 39em;
+    max-width: 90%;
     margin: 2em auto 4em auto;
+    text-align: center;
     h3 {margin: 1.5em 0 1em 0;}
-    p { display:inline-block; margin: 0 1em 0 0; font-weight: 300;}
-    button {vertical-align: middle; vertical-align: .4em; background-color: $button; border-radius: 3px; cursor: pointer; font: $weekly-button-font, Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; max-width: 100%;
-        &:hover { background: $body-black;
+    p { display:inline-block; margin: .35em; font-weight: 300;}
+    button {vertical-align: middle; vertical-align: .3em; background-color: $button; border-radius: 3px; cursor: pointer; font: $weekly-button-font, Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; max-width: 100%;
+        &:hover { background: $button-hover;
         }
-        &:active, &:focus { background: $black; border-bottom: 0; border-top: 2px solid $dark-gray;  outline: none; box-shadow: 0 2px 1px #fff; -moz-box-shadow: 0 2px 1px #fff; -webkit-box-shadow: 0 2px 1px #fff;
+        &:active, &:focus { background: $button-focus; border-bottom: 0; border-top: 2px solid $button-hover;  outline: none; box-shadow: 0 2px 1px #fff; -moz-box-shadow: 0 2px 1px #fff; -webkit-box-shadow: 0 2px 1px #fff;
         }
       }
 
@@ -501,7 +505,7 @@ CUSTOMIZATION STARTS HERE
       input[type=submit] { max-width: 100%; width: 15.75em; margin: 1em auto 0 auto;}
      }
     input { padding-left: .4em; border-radius: .2em;
-      &:focus { background-color: $input-focus; outline: 0; }
+      &:focus { background-color: $off-white; outline: 0; color: $black; }
     }
     input + input { margin-top: .5em; }
     input[type=text], input[type=email] { font: $header-font; height: 1.5em;  width: 100%; max-width: 13.45em;}
@@ -520,10 +524,18 @@ CUSTOMIZATION STARTS HERE
     hr { border: 0; height: 1px; background-color: $hr;}
     .connect {background-color: $off-white;  }
     .center {text-align: center;}
-    .small-wrap { width: 100%; max-width: 30em; margin: auto; padding: 1em 0 0 0;
+    .small-wrap { max-width: 30em; padding: 1em 0 0 0;
        }
-    .mid-wrap { width: 40em; max-width: 100%; margin: auto; }
-    .big-wrap { width: 50em; max-width: 100%; margin: auto; }
+    .mid-wrap { max-width: 40em; }
+    .big-wrap { max-width: 50em; }
+    .small-wrap, .mid-wrap, .big-wrap {
+      width: 95%; margin: auto; 
+      @media (max-width:630px) {
+        padding: .5em;
+      }
+
+}
+
     h1#logo {font: $logo-font; color: $header;
 
     }
