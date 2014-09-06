@@ -24,7 +24,7 @@ get_header( 'home' ); ?>
 
 <p>No fancy graphics, just me explaining what I was selling with words.</p>
 
-<p>When I think back to my days as a freelancer, it was my emails that got me hired too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was again my sales letters.</p>
+<p>When I think back to my days as a freelancer, it was my emails that got me hired then too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was again my sales letters.</p>
 
 <p>A sales letter picks one person out of a crowd and says, <em>&lsquo;Hey you! I know exactly what you're going through. That's why I need to tell you this.&rsquo;</em></p>
 
