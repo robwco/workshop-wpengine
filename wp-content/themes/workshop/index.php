@@ -20,19 +20,19 @@ get_header( 'home' ); ?>
 
 <p>Dear web maker,</p>
 
-<p>I'll never forget putting a letter on my tiny website and making hundreds of thousands of dollars from it.</p>
+<p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars from it.</p>
 
-<p>One person at a time reading it. Each word telling them something.</p>
+<p>No fancy graphics, just me explaining what I was selling with words.</p>
 
-<p>Now when I look back at my days as a freelancer, it's clear my portfolio wasn't what got me hired. Neither was my sleek website that didn't say anything. It was the emails I wrote. My sales letters.</p>
+<p>When I think back to my days as a freelancer, it was my emails that got me hired too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was again my sales letters.</p>
 
-<p>So pick someone out and say, "Hey you! I know exactly what you are going through. That's why I need to tell you this." Our attention spans are too short for anything else. </p>
+<p>A sales letter picks one person out of a crowd and says, <em>&lsquo;Hey you! I know exactly what you're going through. That's why I need to tell you this.&rsquo;</em></p>
 
+<p>We listen to them because they speak to us. Our attention spans are too short for anything less.</p>
 
-<p>I look at the web as a letter from one person to another. If you want to learn to look at it this way too, read on.</p>
+<p>I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
 
-
-<h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send it to you.
+<h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send them to you.
 	</h3>
 </section>
 <section class="large-wrap">
