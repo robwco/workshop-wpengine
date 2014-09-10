@@ -416,6 +416,38 @@ body {
     text-align: right;
     display: block;
     margin: -1.55em 0 1.5em 0; }
+  body .entry-content.weekly h1 {
+    text-align: left; }
+  body .entry-content.weekly blockquote p, body .entry-content.weekly blockquote {
+    font-size: 105%;
+    padding: .25em;
+    margin: 0;
+    color: #444444;
+    font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+    line-height: 1.5em; }
+    body .entry-content.weekly blockquote p a, body .entry-content.weekly blockquote a {
+      font-weight: 800;
+      color: #3477d3;
+      font-style: normal; }
+    body .entry-content.weekly blockquote p a:hover, body .entry-content.weekly blockquote a:hover {
+      text-decoration: underline; }
+    body .entry-content.weekly blockquote p strong, body .entry-content.weekly blockquote strong {
+      color: #444444; }
+  body .entry-content.weekly div.rightside_image {
+    float: left;
+    padding: 10px;
+    margin: 85px 10px 10px -230px;
+    font-size: 0.8em;
+    max-width: 40%;
+    height: 100%; }
+    body .entry-content.weekly div.rightside_image div {
+      padding: 5px;
+      background-color: #f5f3f0;
+      text-align: center;
+      border-radius: 5px; }
+    body .entry-content.weekly div.rightside_image img {
+      box-shadow: 0px 0px 3px #a6a498;
+      margin-top: -50px; }
   body form.weekly {
     background-color: #faffbd;
     padding: .5em .15em;

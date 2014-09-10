@@ -7,7 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php edit_post_link( __( 'Edit', 'workshop' ), '<span class="edit-link">', '</span>' ); ?>
 <section class="small-wrap">
-	<div class="entry-content">
+	<div class="entry-content weekly">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

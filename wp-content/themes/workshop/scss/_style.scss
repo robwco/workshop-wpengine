@@ -455,6 +455,8 @@ CUSTOMIZATION STARTS HERE
      p {font: $weekly-body-font; letter-spacing: .01em;
 
     }
+
+
     a { color: $dark-gray; font-style: italic; }
     h4 { font-size: .9em; color: $quote-text; font-weight: 600; letter-spacing: .2em;}
     
@@ -462,6 +464,33 @@ CUSTOMIZATION STARTS HERE
       font: $body-font; text-align: right; display: block; margin: -1.55em 0 1.5em 0; 
       }
    }
+.entry-content.weekly {    
+  h1 {text-align: left;}
+  blockquote p, blockquote { font-size: 105%; padding: .25em; margin: 0; color: $body-black; font: $body-font; line-height: 1.5em;
+    a { font-weight: 800; color: $link-blue; font-style: normal;}
+    a:hover {text-decoration: underline;}
+    strong {color: $body-black;}
+  }
+
+
+
+  div.rightside_image {
+float: left;
+padding: 10px;
+margin: 85px 10px 10px -230px;
+font-size: 0.8em;
+max-width: 40%;
+height: 100%;
+div { padding: 5px; 
+  background-color: $off-white;
+text-align: center;
+border-radius: 5px;}
+img {box-shadow: $shadow; margin-top:-50px;}
+}
+
+
+}
+
    form.weekly {
     background-color: $input-focus;
     padding: .5em .15em;
