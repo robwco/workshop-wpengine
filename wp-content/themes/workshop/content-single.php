@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php edit_post_link( __( 'Edit', 'workshop' ), '<span class="edit-link">', '</span>' ); ?>
-<section class="small-wrap">
+<section class="mid-wrap">
 	<div class="entry-content weekly">
 		<?php the_content(); ?>
 		<?php

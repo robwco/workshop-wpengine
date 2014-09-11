@@ -418,13 +418,18 @@ body {
     margin: -1.55em 0 1.5em 0; }
   body .entry-content.weekly h1 {
     text-align: left; }
+  body .entry-content.weekly p {
+    font-size: 110%;
+    color: #666; }
   body .entry-content.weekly blockquote p, body .entry-content.weekly blockquote {
     font-size: 105%;
-    padding: .25em;
+    padding: .5em .75em;
     margin: 0;
     color: #444444;
     font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    background-color: #f5f3f0;
+    border-radius: 5px; }
     body .entry-content.weekly blockquote p a, body .entry-content.weekly blockquote a {
       font-weight: 800;
       color: #3477d3;
@@ -433,12 +438,14 @@ body {
       text-decoration: underline; }
     body .entry-content.weekly blockquote p strong, body .entry-content.weekly blockquote strong {
       color: #444444; }
+    body .entry-content.weekly blockquote p cite, body .entry-content.weekly blockquote cite {
+      font-style: normal; }
   body .entry-content.weekly div.rightside_image {
-    float: left;
+    float: right;
     padding: 10px;
-    margin: 85px 10px 10px -230px;
+    margin: 60px 10px 10px 10px;
     font-size: 0.8em;
-    max-width: 40%;
+    max-width: 30%;
     height: 100%; }
     body .entry-content.weekly div.rightside_image div {
       padding: 5px;

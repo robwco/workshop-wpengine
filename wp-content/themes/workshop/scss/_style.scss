@@ -466,20 +466,23 @@ CUSTOMIZATION STARTS HERE
    }
 .entry-content.weekly {    
   h1 {text-align: left;}
-  blockquote p, blockquote { font-size: 105%; padding: .25em; margin: 0; color: $body-black; font: $body-font; line-height: 1.5em;
+  p {font-size: 110%; color: #666;}
+  blockquote p, blockquote { font-size: 105%; padding: .5em .75em; margin: 0; color: $body-black; font: $body-font; line-height: 1.5em; 
+  background-color: $off-white; border-radius: 5px;
     a { font-weight: 800; color: $link-blue; font-style: normal;}
     a:hover {text-decoration: underline;}
     strong {color: $body-black;}
+    cite { font-style: normal;}
   }
 
 
 
   div.rightside_image {
-float: left;
+float: right;
 padding: 10px;
-margin: 85px 10px 10px -230px;
+margin: 60px 10px 10px 10px;
 font-size: 0.8em;
-max-width: 40%;
+max-width: 30%;
 height: 100%;
 div { padding: 5px; 
   background-color: $off-white;
