@@ -449,10 +449,10 @@ th {
 CUSTOMIZATION STARTS HERE
 ----------------*/
 
-  body { font: $body-font; background-color: $white; max-width: 100%; margin: auto; color: $body;
+  body { font: $body-font; background-color: $white; max-width: 100%; margin: auto; color: $weekly-body;
     .weekly  {
      h1 {font: $weekly-header-font; font-weight: 900; text-align: center; }
-     p {font: $weekly-body-font; letter-spacing: .01em;
+     p {font: $weekly-body-font; letter-spacing: .01em; font-weight: 100;
 
     }
 
@@ -466,9 +466,10 @@ CUSTOMIZATION STARTS HERE
    }
 .entry-content.weekly {    
   h1 {text-align: left;}
-  p {font-size: 110%; color: #666;}
-  blockquote p, blockquote { font-size: 105%; padding: .5em .75em; margin: 0; color: $body-black; font: $body-font; line-height: 1.5em; 
-  background-color: $off-white; border-radius: 5px;
+  blockquote {padding: .75em; margin: 0; 
+box-shadow: $shadow; border-radius: 5px;}
+  blockquote p { margin: 0; color: $body-black; font: $body-font; line-height: 1.5em; font-size: 98%; 
+
     a { font-weight: 800; color: $link-blue; font-style: normal;}
     a:hover {text-decoration: underline;}
     strong {color: $body-black;}
@@ -480,7 +481,7 @@ CUSTOMIZATION STARTS HERE
   div.rightside_image {
 float: right;
 padding: 10px;
-margin: 60px 10px 10px 10px;
+margin: 60px 0px 10px 10px;
 font-size: 0.8em;
 max-width: 30%;
 height: 100%;
