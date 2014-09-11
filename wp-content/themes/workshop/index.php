@@ -18,7 +18,7 @@ get_header( 'home' ); ?>
 
 <section class="small-wrap" style="margin-top: 2em;">
 
-<p>Dear web maker,</p>
+<p>Dear professional website maker,</p>
 
 <p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars from it.</p>
 

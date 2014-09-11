@@ -468,7 +468,7 @@ CUSTOMIZATION STARTS HERE
   h1 {text-align: left;}
   blockquote {padding: .75em; margin: 0; 
 box-shadow: $shadow; border-radius: 5px;}
-  blockquote p { margin: 0; color: $body-black; font: $body-font; line-height: 1.5em; font-size: 98%; 
+  blockquote p { margin: 0; color: $body-black; font: $header-font; line-height: 1.5em; font-size: 98%; 
 
     a { font-weight: 800; color: $link-blue; font-style: normal;}
     a:hover {text-decoration: underline;}
@@ -483,13 +483,15 @@ float: right;
 padding: 10px;
 margin: 60px 0px 10px 10px;
 font-size: 0.8em;
-max-width: 30%;
+line-height: 1.5em;
+max-width: 25%;
 height: 100%;
 div { padding: 5px; 
   background-color: $off-white;
 text-align: center;
 border-radius: 5px;}
-img {box-shadow: $shadow; margin-top:-50px;}
+img {
+border: 1px solid $hr-gray; margin-top:-50px;}
 }
 
 
@@ -559,7 +561,7 @@ img {box-shadow: $shadow; margin-top:-50px;}
     .center {text-align: center;}
     .small-wrap { max-width: 30em; padding: 1em 0 0 0;
        }
-    .mid-wrap { max-width: 40em; }
+    .mid-wrap { max-width: 37em; }
     .big-wrap { max-width: 50em; }
     .small-wrap, .mid-wrap, .big-wrap {
       width: 95%; margin: auto; 
@@ -572,7 +574,7 @@ img {box-shadow: $shadow; margin-top:-50px;}
     h1#logo {font: $logo-font; color: $header;
 
     }
-    .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0;
+    .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0; font: $header;
       p { margin: .75em 0 0 0; text-align: left;}
     .quote-arrow { background-color:$off-white; content: ''; display: block; position: relative; bottom: -11px; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);
         }

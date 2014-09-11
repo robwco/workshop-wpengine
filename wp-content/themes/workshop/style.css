@@ -390,14 +390,14 @@ th {
 CUSTOMIZATION STARTS HERE
 ----------------*/
 body {
-  font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+  font: 16px/1.422em Georgia, serif;
   background-color: white;
   max-width: 100%;
   margin: auto;
   color: #333333;
   /*p strong { color: $body; font-weight: 500;}*/ }
   body .weekly h1 {
-    font: 37px/1.378em "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 30px/1.473em "proxima-nova", Verdana, Helvetica, sans-serif;
     font-weight: 900;
     text-align: center; }
   body .weekly p {
@@ -413,7 +413,7 @@ body {
     font-weight: 600;
     letter-spacing: .2em; }
   body .weekly p.summary {
-    font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 16px/1.422em Georgia, serif;
     text-align: right;
     display: block;
     margin: -1.55em 0 1.5em 0; }
@@ -427,7 +427,7 @@ body {
   body .entry-content.weekly blockquote p {
     margin: 0;
     color: #444444;
-    font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
     line-height: 1.5em;
     font-size: 98%; }
     body .entry-content.weekly blockquote p a {
@@ -445,7 +445,8 @@ body {
     padding: 10px;
     margin: 60px 0px 10px 10px;
     font-size: 0.8em;
-    max-width: 30%;
+    line-height: 1.5em;
+    max-width: 25%;
     height: 100%; }
     body .entry-content.weekly div.rightside_image div {
       padding: 5px;
@@ -453,7 +454,7 @@ body {
       text-align: center;
       border-radius: 5px; }
     body .entry-content.weekly div.rightside_image img {
-      box-shadow: 0px 0px 3px #a6a498;
+      border: 1px solid #d9d3cf;
       margin-top: -50px; }
   body form.weekly {
     background-color: #faffbd;
@@ -501,7 +502,7 @@ body {
     max-width: 100%; }
   body h1, body h2, body h3, body h4 {
     font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
-    color: #111111;
+    color: "proxima-nova", Verdana, Helvetica, sans-serif;
     font-weight: 900; }
   body h2 {
     font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
@@ -558,7 +559,7 @@ body {
     background-color: #e44727;
     border-radius: 3px;
     cursor: pointer;
-    font: 1.2em/1.5em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
+    font: 1.1em/1.3em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
     border: none;
     color: #FFF;
     text-transform: uppercase;
@@ -603,7 +604,7 @@ body {
     max-width: 30em;
     padding: 1em 0 0 0; }
   body .mid-wrap {
-    max-width: 40em; }
+    max-width: 37em; }
   body .big-wrap {
     max-width: 50em; }
   body .small-wrap, body .mid-wrap, body .big-wrap {
@@ -614,12 +615,13 @@ body {
         padding: .5em; } }
   body h1#logo {
     font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
-    color: #111111; }
+    color: "proxima-nova", Verdana, Helvetica, sans-serif; }
   body .testimonial-box {
     background-color: #f5f3f0;
     border-radius: 5px;
     padding: .1em 1em 0em 1em;
-    margin: 3em 0 0 0; }
+    margin: 3em 0 0 0;
+    font: "proxima-nova", Verdana, Helvetica, sans-serif; }
     body .testimonial-box p {
       margin: .75em 0 0 0;
       text-align: left; }
@@ -655,7 +657,7 @@ body {
       padding: 0;
       font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
       font-weight: 900;
-      color: #111111; }
+      color: "proxima-nova", Verdana, Helvetica, sans-serif; }
     body .plan h1 {
       /* font-size: 210%; line-height: 1.2em;*/ }
     body .plan .box-shadow {
@@ -665,7 +667,7 @@ body {
       margin: auto; }
       body .plan .box-shadow h2 {
         margin: .5em 0 0 0;
-        color: #111111; }
+        color: "proxima-nova", Verdana, Helvetica, sans-serif; }
       body .plan .box-shadow .quote-arrow {
         background-color: #f5f3f0;
         border: none; }
@@ -774,7 +776,7 @@ body {
     font-weight: 800;
     margin-left: -7.75em;
     margin-right: 2em;
-    color: #111111; }
+    color: "proxima-nova", Verdana, Helvetica, sans-serif; }
     @media (max-width: 880px) {
       body .guarantee {
         margin: 0em .5em 0em 0em; } }
@@ -808,7 +810,7 @@ body {
     text-align: left;
     font-size: .85em; }
     body blockquote strong {
-      color: #868480; }
+      color: #111111; }
     body blockquote img {
       border-radius: 100px;
       vertical-align: text-top; }
@@ -847,7 +849,7 @@ body {
     body form.comment-form input, body form.comment-form textarea {
       margin-left: -9em; }
     body form.comment-form textarea {
-      font: 16px/26px "proxima-nova", Verdana, Helvetica, sans-serif;
+      font: 16px/1.422em Georgia, serif;
       padding-left: .4em;
       border-radius: .2em;
       width: 100%;

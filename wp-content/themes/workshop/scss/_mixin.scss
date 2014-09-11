@@ -2,23 +2,24 @@
 /*Color Mix-ins*/
 
 /*Type*/
-$header: #111;
-$body: #868480;
+$header: #000;
+$body: #111;
 $weekly-body: #333;
 $link: #7191BC;
 $hover: #3477d3;
 $light-body: #9F9D99;
 
-$font: "proxima-nova",  Verdana, Helvetica, sans-serif;
+$font: Georgia, serif;
+$header: "proxima-nova",  Verdana, Helvetica, sans-serif;
 $weekly-font: Georgia, serif;
 $weekly-header-font: "anonymous-pro", Georgia, serif;
 
-$body-font: 16px/26px $font;
+$body-font: 16px/1.422em $font;
 $weekly-body-font: 16px/1.422em $weekly-font;
-$header-font: 20px/28.75px $font;
-$weekly-header-font: 37px/1.378em $font;
-$button-font: 1.2em/1.5em $font;
-$weekly-button-font: .7em/1.5em $font;
+$header-font: 20px/28.75px $header;
+$weekly-header-font: 30px/1.473em $header;
+$button-font: 1.1em/1.3em $header;
+$weekly-button-font: .7em/1.5em $header;
 $logo-font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
 
 
