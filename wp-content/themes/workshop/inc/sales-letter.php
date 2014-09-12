@@ -1,11 +1,12 @@
+		
 
 
 <section class="small-wrap plan">
 <div  style="text-align: right; display: block;">
-
 		<h1 id="logo">
 			<strong style="font-weight:900; font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
 		</h1>
+
 
 </div>
 	<p>Dear ambitious freelance consultant,

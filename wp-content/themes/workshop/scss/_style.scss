@@ -516,7 +516,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
    }
     button, div, img, p, .entry-content {max-width: 100%;}
-    /*p strong { color: $body; font-weight: 500;}*/
+    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: 13.5px; letter-spacing: .04em;}
     h1, h2, h3, h4 {
       font: $header-font; color: $header; font-weight: 900;
       }
@@ -575,7 +575,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
     }
     .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0; font: $header;
-      p { margin: .75em 0 0 0; text-align: left;}
+      p { margin: .75em 0 0 0; text-align: left; font-family: $header;}
     .quote-arrow { background-color:$off-white; content: ''; display: block; position: relative; bottom: -11px; margin: 0 auto 0 auto; width: 20px; height: 20px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);
         }
       }

@@ -394,8 +394,7 @@ body {
   background-color: white;
   max-width: 100%;
   margin: auto;
-  color: #333333;
-  /*p strong { color: $body; font-weight: 500;}*/ }
+  color: #333333; }
   body .weekly h1 {
     font: 30px/1.473em "proxima-nova", Verdana, Helvetica, sans-serif;
     font-weight: 900;
@@ -500,6 +499,11 @@ body {
         -webkit-box-shadow: 0 2px 1px #fff; }
   body button, body div, body img, body p, body .entry-content {
     max-width: 100%; }
+  body p strong, body li strong {
+    font-family: "proxima-nova", Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    letter-spacing: .04em; }
   body h1, body h2, body h3, body h4 {
     font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
     color: "proxima-nova", Verdana, Helvetica, sans-serif;
@@ -624,7 +628,8 @@ body {
     font: "proxima-nova", Verdana, Helvetica, sans-serif; }
     body .testimonial-box p {
       margin: .75em 0 0 0;
-      text-align: left; }
+      text-align: left;
+      font-family: "proxima-nova", Verdana, Helvetica, sans-serif; }
     body .testimonial-box .quote-arrow {
       background-color: #f5f3f0;
       content: '';
