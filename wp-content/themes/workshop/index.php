@@ -28,9 +28,9 @@ get_header( 'home' ); ?>
 
 <p>A sales letter picks one person out of a crowd and says, <em>&lsquo;Hey you! I know exactly what you're going through. That's why I need to tell you this.&rsquo;</em></p>
 
-<p>We listen to them because they speak to us. Our attention spans are too short for anything less.</p>
+<p>We listen to them because they speak to us. Our attention spans are too short for anything that doesn't call us out by name.</p>
 
-<p>I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
+<p>That's why I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
 
 <h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send them to you.
 	</h3>
