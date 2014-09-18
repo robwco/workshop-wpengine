@@ -31,14 +31,17 @@
 	<h2>
 		But it's not always easy to find the right opportunities–especially when you're already working too many hours.
 	</h2>
-
-	<section style="max-width: 100%; width: 35em; margin: 2em auto auto auto;">
+</div>
+<div class="big-wrap">
+	<section style="max-width: 100%; width: 35em; margin: -3em auto auto auto;">
 		<a href="https://workshop.memberful.com/orders/new?plan=1798">
 			<div id="pulling-dija" style="text-align: center;">
 				<img class="dima-illustration" src="../images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
 			</div>
 		</a>
 	</section>
+</div>
+<div class="small-wrap">
 
 	<p>
 		Doing lead generation on top of running a consulting business sucks.
