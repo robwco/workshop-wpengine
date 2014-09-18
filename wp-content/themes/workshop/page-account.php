@@ -60,7 +60,7 @@ get_header( 'home' ); ?>
 <?php
     $guide_posts = get_posts(array(
       'numberposts' => -1,
-      'post_type' => 'guide',
+      'post_type' => 'guides',
     ));
 
 
@@ -88,10 +88,14 @@ get_header( 'home' ); ?>
 
   <div class="profile-box signed-out">
 
+<div style="margin:auto; text-align:center;">
+  <p><img src="/images/marketing/locked.png"></p>
+<h2>This page is for members-only.</h2>
+
     Already a customer? Please <a title="Sign in" href="<?php echo memberful_sign_in_url(); ?>">sign in</a>.
 
   </div>
-
+</div>
 <?php endif; ?>
 
 </div>
