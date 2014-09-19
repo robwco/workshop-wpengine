@@ -555,8 +555,9 @@ body {
   body h1 + h2 {
     margin-top: .5em; }
   body h1, body .entry-title.single {
+    color: #111111;
     padding-top: 1em;
-    font-size: 325%;
+    font-size: 220%;
     line-height: 1.3em;
     margin-bottom: 0; }
     body h1 .kern, body .entry-title.single .kern {

@@ -35,7 +35,7 @@ get_header( 'home' ); ?>
 <h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send them to you.
 	</h3>
 </section>
-<section class="large-wrap">
+<section class="big-wrap">
 
 	<form class="weekly" action="http://letters.letsworkshop.com/t/i/s/qhdij/" method="post">
 	    <p>

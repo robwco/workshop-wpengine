@@ -561,7 +561,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
       }
     h2 { font: $header-font; color: $black; font-weight: 900; font-size: 150%;  }
     h1 + h2 { margin-top: .5em;}
-    h1, .entry-title.single { padding-top: 1em; font-size: 325%; line-height: 1.3em; margin-bottom: 0;
+    h1, .entry-title.single { color: $black;padding-top: 1em; font-size: 220%; line-height: 1.3em; margin-bottom: 0;
         .kern {letter-spacing: -.1em;}
       }
     h1.value-prop, h1.entry-title, .entry-title { font-size: 200%; line-height: 1.5em;

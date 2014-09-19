@@ -19,11 +19,11 @@ get_header( 'home' ); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<!--Don't remove-->
-			<?php include("inc/sales-letter.php"); ?>
+			<?php include("inc/sales/sales-letter.php"); ?>
 						<!--Don't remove-->
-			<?php include("inc/plan-brennan.php"); ?>
+			<?php include("inc/sales/plan-brennan.php"); ?>
 			<!--Don't remove-->
-			<?php include("inc/sales-letter-end.php"); ?>
+			<?php include("inc/sales/sales-letter-end.php"); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
