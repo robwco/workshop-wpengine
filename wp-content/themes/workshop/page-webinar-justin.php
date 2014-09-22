@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Webinar Sign up - Kurt
+Template Name: Webinar Sign up - Justin
 */
 /**
  * The template for displaying all pages.
@@ -48,12 +48,12 @@ get_header( 'home' ); ?>
 
 <section class="big-wrap">
 
-	<form class="weekly" action="http://letters.letsworkshop.com/t/i/s/ydjyty/" method="post">
+	<form class="weekly" action="http://letters.letsworkshop.com/t/i/s/ydillt/" method="post">
 	    <p>
 	        <input id="fieldName" name="cm-name" type="text" placeholder="Your Name" />
 	    </p>
 	    <p>
-	        <input id="fieldEmail" name="cm-ydjyty-ydjyty" type="email" required placeholder="Your Email"/>
+	        <input id="fieldEmail" name="cm-ydillt-ydillt" type="email" required placeholder="Your Email"/>
 	    </p>
 	    <p>
 	        <button type="submit">Claim your spot</button>
@@ -73,9 +73,9 @@ get_header( 'home' ); ?>
 
 	<h3>Robert Williams</h3><p>Robert started a freelance business from scratch, finding all of his clients online. Now he runs a newsletter and community that sends out freelance consulting gigs to your inbox.</p>
 <hr>
-	<img src="/images/marketing/kurt.png" style="margin: 20px 0 0 0; width: 60px; border-radius: 60px;">
+	<img src="/images/marketing/justin.png" style="margin: 20px 0 0 0; width: 60px; border-radius: 60px;">
 
-	<h3>Kurt Elster</h3> 
+	<h3>Justin Jackson</h3>
 	<p>Kurt Elster is a co-founder at Ethercycle and a passionate designer with an obsession for growing businesses. Five years ago he turned his struggling startup in to a successful web design agency that puts his clients in the strongest position to yield the best results from every visitor to their website.</p>
 
 </center>
