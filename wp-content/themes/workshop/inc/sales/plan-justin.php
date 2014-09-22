@@ -1,5 +1,5 @@
 	<p class="center">
-		12 payments of $60/month
+		12 payments of $64/month (Special Justin Jackson discount)
 	</p>
 
 	<div style="text-align: center; margin: 2em;">

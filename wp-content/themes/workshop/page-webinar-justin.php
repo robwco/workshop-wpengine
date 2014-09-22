@@ -26,7 +26,7 @@ get_header( 'home' ); ?>
 				<center>
 
 					<h1 style="margin: .25em 0;">&ldquo;My freelance business is plagued by dry spells.&rdquo;</h1>
-					<h2 style="font-weight: 500; color: #111;">Don't waste another day. Learn how to get more freelance work fast. Exclusively for members of Kurt Elster's mailing list.</h2>
+					<h2 style="font-weight: 500; color: #111;">Don't waste another day. Learn how to get more freelance work fast. Exclusively for members of Justin Jackson's mailing list.</h2>
 
 					<hr>
 										
@@ -73,7 +73,7 @@ get_header( 'home' ); ?>
 
 	<h3>Robert Williams</h3><p>Robert started a freelance business from scratch, finding all of his clients online. Now he runs a newsletter and community that sends out freelance consulting gigs to your inbox.</p>
 <hr>
-	<img src="/images/marketing/justin.png" style="margin: 20px 0 0 0; width: 60px; border-radius: 60px;">
+	<img src="/images/marketing/justin.jpg" style="margin: 20px 0 0 0; width: 60px; border-radius: 60px;">
 
 	<h3>Justin Jackson</h3>
 	<p>Kurt Elster is a co-founder at Ethercycle and a passionate designer with an obsession for growing businesses. Five years ago he turned his struggling startup in to a successful web design agency that puts his clients in the strongest position to yield the best results from every visitor to their website.</p>
