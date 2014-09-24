@@ -20,17 +20,19 @@ get_header( 'home' ); ?>
 
 <p>Dear professional website maker,</p>
 
-<p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars from it.</p>
+<p>I know you have trouble writing. As a result, your websites under-perform. You have trouble getting traffic. Your site just doesn't connect with people.</p>
 
-<p>No fancy graphics, just me explaining what I was selling with words.</p>
+<p>You're not creating something people want to read because <b>you don't even want to read what you write.</b></p>
 
-<p>When I think back to my days as a freelancer, it was my emails that got me hired then too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was again my sales letters.</p>
+<p>Next time, instead of using lorem ipsum, write a letter.</p>
 
-<p>A sales letter picks one person out of a crowd and says, <em>&lsquo;Hey you! I know exactly what you're going through. That's why I need to tell you this.&rsquo;</em></p>
+<p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars as a result. Nothing fancy, just me explaining what I was selling with words.</p>
 
-<p>We listen to them because they speak to us. Our attention spans are too short for anything that doesn't feel like it made just for us.</p>
+<p>When I think back to my days as a freelancer, it was my emails that got me hired then too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was my sales letters.</p>
 
-<p>That's why I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
+<p>A sales letter picks a person out of a crowd and says, <em>&lsquo;<b>You!</b> I know exactly what <b>you're</b> going through. That's why I need to tell <b>you</b> this.&rsquo;</em></p>
+
+<p>At first, websites like this stick out at us. Soon, we won't settle for anything else. That's why I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
 
 <h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send them to you.
 	</h3>

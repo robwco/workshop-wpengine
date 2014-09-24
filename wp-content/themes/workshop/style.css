@@ -390,7 +390,7 @@ th {
 CUSTOMIZATION STARTS HERE
 ----------------*/
 body {
-  font: 16px/1.422em Georgia, serif;
+  font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
   background-color: white;
   max-width: 100%;
   margin: auto;
@@ -439,8 +439,7 @@ body {
     font-weight: 900;
     text-align: center; }
   body .weekly p {
-    font: 16px/1.422em Georgia, serif;
-    letter-spacing: .01em;
+    font: 17px/1.522em "ff-tisa-web-pro", Georgia, serif;
     font-weight: 100; }
   body .weekly a {
     color: #727167;
@@ -451,7 +450,7 @@ body {
     font-weight: 600;
     letter-spacing: .2em; }
   body .weekly p.summary {
-    font: 16px/1.422em Georgia, serif;
+    font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
     text-align: right;
     display: block;
     margin: -1.55em 0 1.5em 0; }
@@ -541,7 +540,7 @@ body {
   body p strong, body li strong {
     font-family: "proxima-nova", Verdana, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 13.5px;
+    font-size: .9em;
     letter-spacing: .04em; }
   body h1, body h2, body h3, body h4 {
     font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
@@ -894,7 +893,7 @@ body {
     body form.comment-form input, body form.comment-form textarea {
       margin-left: -9em; }
     body form.comment-form textarea {
-      font: 16px/1.422em Georgia, serif;
+      font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
       padding-left: .4em;
       border-radius: .2em;
       width: 100%;

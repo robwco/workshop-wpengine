@@ -491,7 +491,7 @@ CUSTOMIZATION STARTS HERE
 
     .weekly  {
      h1 {font: $weekly-header-font; font-weight: 900; text-align: center; }
-     p {font: $weekly-body-font; letter-spacing: .01em; font-weight: 100;
+     p {font: $weekly-body-font; font-weight: 100;
 
     }
 
@@ -555,7 +555,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
    }
     button, div, img, p, .entry-content {max-width: 100%;}
-    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: 13.5px; letter-spacing: .04em;}
+    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: .9em; letter-spacing: .04em;}
     h1, h2, h3, h4 {
       font: $header-font; color: $header; font-weight: 900;
       }

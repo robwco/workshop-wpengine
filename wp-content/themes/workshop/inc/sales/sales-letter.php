@@ -1,19 +1,20 @@
 		
 
 
-<section class="small-wrap plan">
+<section class="mid-wrap">
 <div  style="text-align: right; display: block;">
 		<h1 id="logo">
-			<strong style="font-weight:900; font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em; margin-right: .3em;"><?php bloginfo( 'name' ); ?></strong>
+			<strong style="font-weight:900; font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 2em; display: inline-block; vertical-align: -.5em;"><?php bloginfo( 'name' ); ?></strong>
 		</h1>
+	</div>
+</section>
 
-
-</div>
+<section class="small-wrap">
 	<p>Dear ambitious freelance consultant,
 	</p>
-	<h1>
-		<strong>I know it <em>pains you</em> to admit that your business is plagued by dry spells.</strong>
-	</h1>
+	<h2>
+		I know it <em>pains you</em> to admit that your business is plagued by dry spells.
+	</h2>
 	<p>
 		After all, you know first-hand that there are thousands of businesses out there right now who would benefit greatly from hiring you. Not just benefit, possibly even transform their company (and life) forever as a result of working with your consultancy. You know this. The problem is, they don't.
 	</p>
@@ -32,16 +33,16 @@
 		But it's not always easy to find the right opportunities–especially when you're already working too many hours.
 	</h2>
 </div>
-<div class="big-wrap">
-	<section style="max-width: 100%; width: 35em; margin: -3em auto auto auto;">
+<section class="big-wrap">
+	<section style="max-width: 100%; width: 35em; margin: auto auto;">
 		<a href="https://workshop.memberful.com/orders/new?plan=1798">
 			<div id="pulling-dija" style="text-align: center;">
 				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
 			</div>
 		</a>
 	</section>
-</div>
-<div class="small-wrap">
+</section>
+<section class="small-wrap">
 
 	<p>
 		Doing lead generation on top of running a consulting business sucks.
