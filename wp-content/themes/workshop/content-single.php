@@ -29,7 +29,7 @@
 			</h3>
 			<p>
 
-				If you got value from the article, please share it with someone you know. However, it's pretty long so instead of just sharing it with your &ldquo;network&rdquo;, try highlighting only a portion, and sending that to somebody you know. Thanks.
+				If you got value from the article, please share it with other people. However, it's pretty long so instead of just sharing it with your &ldquo;network&rdquo;, try highlighting only a portion, and sending that to somebody you know. Thanks.
 			</p>
 
 		</section>
