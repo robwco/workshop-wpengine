@@ -48,7 +48,7 @@ get_header( 'home' ); ?>
       </h1>
       <hr>
       <p>
-        You're Workshop subscription is active. <a class="profile" href="<?php echo memberful_account_url(); ?>">You can update account details here.</a>
+        Your Workshop subscription is active. <a class="profile" href="<?php echo memberful_account_url(); ?>">You can update account details here.</a>
       </p>
 
       <p style="background-color: #f5f3f0; padding: .75em 1.25em; font-family: proxima-nova;">

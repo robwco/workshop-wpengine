@@ -13,7 +13,7 @@
 	<p>Dear ambitious freelance consultant,
 	</p>
 	<h2>
-		I know it <em>pains you</em> to admit that your business is plagued by dry spells.
+		I know it <em>pains you</em> to admit that dry spells plague your business.
 	</h2>
 	<p>
 		After all, you know first-hand that there are thousands of businesses out there right now who would benefit greatly from hiring you. Not just benefit, possibly even transform their company (and life) forever as a result of working with your consultancy. You know this. The problem is, they don't.
