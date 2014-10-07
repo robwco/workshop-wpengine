@@ -119,7 +119,7 @@
 			foreach($testimonial_posts as $post)
 			{
 
-				echo '<div class="testimonial-box"><p>' . get_field('testimonial') . '			<a href="http://letsworkshop.com/#read-testimonial" style="color: #B72A22;">Read another testimonial.</a></p><span class="quote-arrow"></span></div>' . '<p class="center">
+				echo '<div class="testimonial-box"><p>' . get_field('testimonial') . '			<a href="javascript:window.location.reload();" style="color: #B72A22;">Read another testimonial.</a></p><span class="quote-arrow"></span></div>' . '<p class="center">
 					<img src="' . get_field('profile_photo') . '" class="testimonial-img"> – ' . get_field('testimonial_name') . ', ' . get_field('job_title') . ', <img src="' . get_field('logo') . '" style="width:20px; border-radius:3px; vertical-align: -2px;"> ' . get_field('business_name') . '</p>';
 			}
 
