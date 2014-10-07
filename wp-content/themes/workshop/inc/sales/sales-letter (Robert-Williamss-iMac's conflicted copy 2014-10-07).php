@@ -22,16 +22,16 @@
 		Does your consultancy have more dry spells than you're comfortable with?
 	</h1>
 	<p>
-		There are thousands of businesses out there right who would benefit dearly from hiring your company to improve their website. These businesses could transform their company forever as a result of working with you. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them.
+		Thousands of businesses out there would benefit dearly from hiring your web design or development consultancy. These businesses could transform their company (and life) forever as a result of working with you. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them. Not theirs.
 	</p>
 
 	<h2>
 		But it's not always easy to find the right opportunities – especially when you're already working too much.
 	</h2>
 	<p>
-		Doing lead generation on top of running a consulting business sucks. Checking two dozen job boards, or worse: elance, every day for the rest of your career just isn't the best use of your time. You want to do the work you love, not search for it.
+		Doing lead generation on top of running a consulting business sucks. Checking hundreds of job boards, or worse: elance, every day for the rest of your career just isn't the best use of your time. You want to do the work you love, not search for it.
 		</p> 
-		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of just firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all, it's why we fall into dry spells.
+		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of just firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all it's why we fall into dry spells.
 	</p>
 	<h2>
 		I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. 
@@ -70,12 +70,7 @@
 		Don't you wish you could have it done <em>for you</em> each month at a fraction of your hourly rate?
 	</p>
 -->
-<section style="max-width: 100%; margin: 2em 0 -1em 0;">
 
-			<div id="pulling-dija" style="text-align: center;">
-				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
-			</div>
-	</section>
 	<h1>
 		Imagine what you could accomplish today if you didn't have to worry about finding work.
 	</h1>
@@ -92,7 +87,7 @@
 		Today, if I told you could enjoy the fruits of my labor, instantly skip the years of testing lead generation methods, and just get 10+ highly-qualified leads every morning, what would you do with it?
 	</p>
 	<p>
-		If instead of wasting your time looking for leads you got them sent directly to your inbox tomorrow. If all you had to do was reply to the ones you want, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning, allowing you to focuse almost exclusively on billable work yet still have a constant stream of sales activity.
+		If tomorrow you didn't waste time looking for leads and had them sent directly to you instead. If all you had to do was reply to them, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning. Allowing you to focuse almost exclusively on billable work and still have a constant stream of sales activity.
 	</p>
 	<p>
 		What then? Would you add that extra feature to your client's project and blow them away? Or would you use the free time to go on a walk and clear your head? Or maybe work on that side-project you've been itching to build?
@@ -104,23 +99,26 @@
 
 <section class="mid-wrap">
 	<h1>
-		Let me send you the best remote freelance consulting leads on the web.
+		Let me sort through thousands of job posts for you and just email you the best leads.
 	</h1>
 
 	<p>
-		I've designed the service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into your inbox so that they're easy to scan in minutes. If you reach out to a few of these opportunities every day you'll make thousands of dollars.
+		I've designed the service I'm describing for people like you, and I've made it very affordable on purpose. From the day you sign up you'll have the highest quality leads on the web, pre-qualified and sorted into your inbox so that they're easy to scan in minutes.
 	</p> 
 
 
 	<h2>
-			<center>This is what an email from me looks like:</center>
+			This is what it would look like:
 	</h2>
 </section>
 
 <section class="big-wrap">
-
 	<img src="/images/marketing/workshop-email.png">
-		<!--<ul style="display: inline-block;">
+</section>
+
+<section class="mid-wrap">
+
+		<ul>
 			<li>
 				<strong>Workshop-exclusive Gigs:</strong> People now come to me to connect with world-class consultancies and freelancers directly. The only way to get connected to these people is by having an active subscription. These are some of the most valuable leads because often times you're competing with only a handful of people, and the clients are people who want to pay for value.
 			</li>
@@ -130,33 +128,9 @@
 			<li>
 				<strong>Design and Development Gigs:</strong> I go to all the places people look for freelance designers and developers. The most common types of projects are: wordpress, web or user interface, branding, logos, packaging, infographics, front-end, drupal, javascript, python, django, PHP, back-end, system administration, ruby, rails, CMS, image processing, HTML/CSS, magento, and .NET.
 			</li>
-		</ul>-->
-
-	</img>
-</section>
-
-<section class="mid-wrap">
+		</ul>
 
 
-			
-
-		<h2 style="">
-<img src="/images/marketing/theshedplus.png" align="left" style="margin-right: 1em;"> 
-
-			Plus you also get access to a community of consultants ready to help you level up your business. <a href="/images/marketing/package-forum.png" style="color: #B72A22;">Take a look.</a>
-		</h2>
-
-<!--
-	<p>
-		<img src="/images/marketing/package-forum.png" alt="" style="width: 7em; margin-left: .25em;  " align="right"> Ultimately, it's not just me that will help you land clients. There's actually a full, thriving pool of people just like you that are eager to help at the drop of a hat should you choose to ask. To make this easier, I've created a discussion community using a brand-new software called groupbuzz (plus a member hipchat). These will be there for real-time connection with other members. Based on how we've used them so far, here's a few ways you can improve your business with these tools:
-	</p>-->
-</section>
-
-<section class="mid-wrap">
-
-
-
-<!--
 
 		<h2>
 			Plus a mini-course developed to help you land those gigs. ($39 value)
@@ -194,13 +168,13 @@
 
 		<li>Plus get access to my <strong>advanced freelance strategy sessions with world-class consultants</strong> live over google hangouts every month.</li>
 
-	</ul>-->
+	</ul>
 
 <center>
 
-	<h1>
+	<h2>
 		<strong>All for about 30¢ per lead</strong>
-	</h1>
+	</h2>
 
 
 

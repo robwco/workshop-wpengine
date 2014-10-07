@@ -390,7 +390,7 @@ th {
 CUSTOMIZATION STARTS HERE
 ----------------*/
 body {
-  font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
+  font: 21px/1.422em "futura-pt", Verdana, Helvetica, sans-serif;
   background-color: white;
   max-width: 100%;
   margin: auto;
@@ -411,8 +411,8 @@ body {
   body .baby-shampoo {
     margin: 2em auto;
     background-color: #F00072;
-    font-family: "proxima-nova", Verdana, Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: "sketchnote-square", Verdana, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 1.5em;
     padding: 1.5em 1.5em 0 0;
     margin: 0;
@@ -435,22 +435,22 @@ body {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
   body .weekly h1 {
-    font: 30px/1.473em "proxima-nova", Verdana, Helvetica, sans-serif;
-    font-weight: 900;
+    font: 30px/1.473em "sketchnote-square", Verdana, Helvetica, sans-serif;
+    font-weight: 700;
     text-align: center; }
   body .weekly p {
-    font: 17px/1.522em "ff-tisa-web-pro", Georgia, serif;
-    font-weight: 100; }
+    font: 17px/1.522em "futura-pt", Verdana, Helvetica, sans-serif;
+    font-weight: 400; }
   body .weekly a {
     color: #727167;
     font-style: italic; }
   body .weekly h4 {
     font-size: .9em;
     color: #9b9993;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .2em; }
   body .weekly p.summary {
-    font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
+    font: 21px/1.422em "futura-pt", Verdana, Helvetica, sans-serif;
     text-align: right;
     display: block;
     margin: -1.55em 0 1.5em 0; }
@@ -464,11 +464,11 @@ body {
   body .entry-content.weekly blockquote p {
     margin: 0;
     color: #444444;
-    font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
     line-height: 1.5em;
     font-size: 98%; }
     body .entry-content.weekly blockquote p a {
-      font-weight: 800;
+      font-weight: 700;
       color: #3477d3;
       font-style: normal; }
     body .entry-content.weekly blockquote p a:hover {
@@ -506,14 +506,14 @@ body {
     body form.weekly p {
       display: inline-block;
       margin: .35em;
-      font-weight: 300; }
+      font-weight: 400; }
     body form.weekly button {
       vertical-align: middle;
       vertical-align: .3em;
       background-color: #e44727;
       border-radius: 3px;
       cursor: pointer;
-      font: 0.7em/1.5em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
+      font: 0.7em/1.5em "sketchnote-square", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
       border: none;
       color: #FFF;
       text-transform: uppercase;
@@ -538,25 +538,25 @@ body {
   body button, body div, body img, body p, body .entry-content {
     max-width: 100%; }
   body p strong, body li strong {
-    font-family: "proxima-nova", Verdana, Helvetica, sans-serif;
+    font-family: "sketchnote-square", Verdana, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: .9em;
+    font-size: .7em;
     letter-spacing: .04em; }
   body h1, body h2, body h3, body h4 {
-    font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
-    color: "proxima-nova", Verdana, Helvetica, sans-serif;
-    font-weight: 900; }
+    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
+    color: "sketchnote-square", Verdana, Helvetica, sans-serif;
+    font-weight: 700; }
   body h2 {
-    font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
     color: #111111;
-    font-weight: 900;
-    font-size: 150%; }
+    font-weight: 700;
+    font-size: 100%; }
   body h1 + h2 {
     margin-top: .5em; }
   body h1, body .entry-title.single {
     color: #111111;
     padding-top: 1em;
-    font-size: 220%;
+    font-size: 150%;
     line-height: 1.3em;
     margin-bottom: 0; }
     body h1 .kern, body .entry-title.single .kern {
@@ -572,9 +572,10 @@ body {
     -webkit-transition: color .25s ease-in-out; }
     body a:hover {
       color: #3477d3; }
-  body ul {
+  body ul#menu-primary-menu {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    list-style-type: none; }
   body form.drip-opt-in {
     max-width: 100%;
     padding: 0em 1em;
@@ -593,7 +594,7 @@ body {
   body input + input {
     margin-top: .5em; }
   body input[type=text], body input[type=email] {
-    font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
+    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
     height: 1.5em;
     width: 100%;
     max-width: 13.45em; }
@@ -602,7 +603,7 @@ body {
     background-color: #e44727;
     border-radius: 3px;
     cursor: pointer;
-    font: 1.1em/1.3em "proxima-nova", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
+    font: 1.1em/1.3em "sketchnote-square", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
     border: none;
     color: #FFF;
     text-transform: uppercase;
@@ -647,28 +648,58 @@ body {
     max-width: 30em;
     padding: 1em 0 0 0; }
   body .mid-wrap {
-    max-width: 37em; }
+    max-width: 32em; }
   body .big-wrap {
-    max-width: 50em; }
+    max-width: 47em; }
   body .small-wrap, body .mid-wrap, body .big-wrap {
     width: 95%;
     margin: auto; }
     @media (max-width: 630px) {
       body .small-wrap, body .mid-wrap, body .big-wrap {
         padding: .5em; } }
+  body .big-wrap.kurt {
+    background-image: url("/images/marketing/kurt-illustration.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 35% auto;
+    height: 20em;
+    margin-top: 2em; }
+    @media (max-width: 900px) {
+      body .big-wrap.kurt {
+        background-image: none; } }
+  body .customer-pointer {
+    display: inline-block;
+    margin: 1em;
+    float: right;
+    width: 28em; }
+    body .customer-pointer img {
+      margin: 0 1em 0 0; }
+    body .customer-pointer p {
+      margin: 0;
+      display: table; }
+    @media (max-width: 900px) {
+      body .customer-pointer {
+        margin: 0;
+        float: none;
+        width: auto; }
+        body .customer-pointer img {
+          display: none; } }
   body h1#logo {
     font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
-    color: "proxima-nova", Verdana, Helvetica, sans-serif; }
+    color: "sketchnote-square", Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    float: left; }
   body .testimonial-box {
     background-color: #f5f3f0;
     border-radius: 5px;
     padding: .1em 1em 0em 1em;
     margin: 3em 0 0 0;
-    font: "proxima-nova", Verdana, Helvetica, sans-serif; }
+    font: "sketchnote-square", Verdana, Helvetica, sans-serif; }
     body .testimonial-box p {
       margin: .75em 0 0 0;
       text-align: left;
-      font-family: "proxima-nova", Verdana, Helvetica, sans-serif; }
+      font-family: "sketchnote-square", Verdana, Helvetica, sans-serif; }
     body .testimonial-box .quote-arrow {
       background-color: #f5f3f0;
       content: '';
@@ -699,9 +730,9 @@ body {
     body .plan h1, body .plan h2 {
       margin: 0;
       padding: 0;
-      font: 20px/28.75px "proxima-nova", Verdana, Helvetica, sans-serif;
+      font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
       font-weight: 900;
-      color: "proxima-nova", Verdana, Helvetica, sans-serif; }
+      color: "sketchnote-square", Verdana, Helvetica, sans-serif; }
     body .plan h1 {
       /* font-size: 210%; line-height: 1.2em;*/ }
     body .plan .box-shadow {
@@ -711,7 +742,7 @@ body {
       margin: auto; }
       body .plan .box-shadow h2 {
         margin: .5em 0 0 0;
-        color: "proxima-nova", Verdana, Helvetica, sans-serif; }
+        color: "sketchnote-square", Verdana, Helvetica, sans-serif; }
       body .plan .box-shadow .quote-arrow {
         background-color: #f5f3f0;
         border: none; }
@@ -741,20 +772,6 @@ body {
       -moz-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       box-shadow: -1px -1px 0px #D8D5CF; }
-    body .plan .customer-pointer {
-      display: inline-block;
-      margin: 0 -3em 0 0;
-      float: right;
-      max-width: 100%; }
-      body .plan .customer-pointer p {
-        margin: 2.5em 0 0 0; }
-      @media (max-width: 900px) {
-        body .plan .customer-pointer {
-          margin: 0 1em 2em 1em;
-          float: left;
-          width: auto; }
-          body .plan .customer-pointer img {
-            display: none; } }
     body .plan .customer-illustration {
       width: 300px;
       margin: 0 -1.5em 0 -2em; }
@@ -817,10 +834,10 @@ body {
     font-size: 1em;
     border-radius: .5em;
     padding: .2em .5em;
-    font-weight: 800;
+    font-weight: 700;
     margin-left: -7.75em;
     margin-right: 2em;
-    color: "proxima-nova", Verdana, Helvetica, sans-serif; }
+    color: "sketchnote-square", Verdana, Helvetica, sans-serif; }
     @media (max-width: 880px) {
       body .guarantee {
         margin: 0em .5em 0em 0em; } }
@@ -854,7 +871,7 @@ body {
     text-align: left;
     font-size: .85em; }
     body blockquote strong {
-      color: #111111; }
+      color: #333333; }
     body blockquote img {
       border-radius: 100px;
       vertical-align: text-top; }
@@ -893,7 +910,7 @@ body {
     body form.comment-form input, body form.comment-form textarea {
       margin-left: -9em; }
     body form.comment-form textarea {
-      font: 16px/1.422em "ff-tisa-web-pro", Georgia, serif;
+      font: 21px/1.422em "futura-pt", Verdana, Helvetica, sans-serif;
       padding-left: .4em;
       border-radius: .2em;
       width: 100%;
@@ -978,7 +995,7 @@ body {
   background-color: #f5f3f0; }
 
 .connect-wrap h1 {
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 2em;
   color: #9f9d99; }
 .connect-wrap .connect-letter {

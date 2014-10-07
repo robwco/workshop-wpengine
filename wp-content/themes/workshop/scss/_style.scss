@@ -464,7 +464,7 @@ CUSTOMIZATION STARTS HERE
     .center-baby-shampoo { margin: auto; width:11.5em; }
           .baby-shampoo {
            margin: 2em auto;
-  background-color: #F00072; font-family: $header; font-weight: 300; font-size: 1.5em; padding: 1.5em 1.5em 0 0; margin: 0;
+  background-color: #F00072; font-family: $header; font-weight: 400; font-size: 1.5em; padding: 1.5em 1.5em 0 0; margin: 0;
   
   display: inline-block;
   margin: 1em;
@@ -490,14 +490,14 @@ CUSTOMIZATION STARTS HERE
 
 
     .weekly  {
-     h1 {font: $weekly-header-font; font-weight: 900; text-align: center; }
-     p {font: $weekly-body-font; font-weight: 100;
+     h1 {font: $weekly-header-font; font-weight: 700; text-align: center; }
+     p {font: $weekly-body-font; font-weight: 400;
 
     }
 
 
     a { color: $dark-gray; font-style: italic; }
-    h4 { font-size: .9em; color: $quote-text; font-weight: 600; letter-spacing: .2em;}
+    h4 { font-size: .9em; color: $quote-text; font-weight: 700; letter-spacing: .2em;}
     
     p.summary {
       font: $body-font; text-align: right; display: block; margin: -1.55em 0 1.5em 0; 
@@ -509,7 +509,7 @@ CUSTOMIZATION STARTS HERE
 box-shadow: $shadow; border-radius: 5px;}
   blockquote p { margin: 0; color: $body-black; font: $header-font; line-height: 1.5em; font-size: 98%; 
 
-    a { font-weight: 800; color: $link-blue; font-style: normal;}
+    a { font-weight: 700; color: $link-blue; font-style: normal;}
     a:hover {text-decoration: underline;}
     strong {color: $body-black;}
     cite { font-style: normal;}
@@ -545,7 +545,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
     margin: 2em auto 4em auto;
     text-align: center;
     h3 {margin: 1.5em 0 1em 0;}
-    p { display:inline-block; margin: .35em; font-weight: 300;}
+    p { display:inline-block; margin: .35em; font-weight: 400;}
     button {vertical-align: middle; vertical-align: .3em; background-color: $button; border-radius: 3px; cursor: pointer; font: $weekly-button-font, Helvetica, sans-serif; border: none; color: #FFF; text-transform: uppercase; padding: .5em 1em; font-weight: 700; display: inline-block; letter-spacing: .1em; border-bottom: 2px solid #b72a22; margin: auto; text-align: center; max-width: 100%;
         &:hover { background: $button-hover;
         }
@@ -555,13 +555,13 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
    }
     button, div, img, p, .entry-content {max-width: 100%;}
-    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: .9em; letter-spacing: .04em;}
+    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: .7em; letter-spacing: .04em;}
     h1, h2, h3, h4 {
-      font: $header-font; color: $header; font-weight: 900;
+      font: $header-font; color: $header; font-weight: 700;
       }
-    h2 { font: $header-font; color: $black; font-weight: 900; font-size: 150%;  }
+    h2 { font: $header-font; color: $black; font-weight: 700; font-size: 100%;  }
     h1 + h2 { margin-top: .5em;}
-    h1, .entry-title.single { color: $black;padding-top: 1em; font-size: 220%; line-height: 1.3em; margin-bottom: 0;
+    h1, .entry-title.single { color: $black;padding-top: 1em; font-size: 150%; line-height: 1.3em; margin-bottom: 0;
         .kern {letter-spacing: -.1em;}
       }
     h1.value-prop, h1.entry-title, .entry-title { font-size: 200%; line-height: 1.5em;
@@ -573,7 +573,8 @@ border: 1px solid $hr-gray; margin-top:-50px;}
       &:hover { color: $hover; }
       &:visited { }
     }
-    ul { margin: 0; padding: 0;}
+    ul { }
+    ul#menu-primary-menu { margin: 0; padding: 0; list-style-type: none; }
     form.drip-opt-in { max-width:100%; padding:0em 1em; margin: 0 auto 2em auto;
       @media (max-width:700px) { }
       input[type=submit] { max-width: 100%; width: 15.75em; margin: 1em auto 0 auto;}
@@ -600,8 +601,8 @@ border: 1px solid $hr-gray; margin-top:-50px;}
     .center {text-align: center;}
     .small-wrap { max-width: 30em; padding: 1em 0 0 0;
        }
-    .mid-wrap { max-width: 37em; }
-    .big-wrap { max-width: 50em; }
+    .mid-wrap { max-width: 32em; }
+    .big-wrap { max-width: 47em; }
     .small-wrap, .mid-wrap, .big-wrap {
       width: 95%; margin: auto; 
       @media (max-width:630px) {
@@ -610,7 +611,14 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
 }
 
-    h1#logo {font: $logo-font; color: $header;
+.big-wrap.kurt {  background-image: url('/images/marketing/kurt-illustration.png'); background-repeat: no-repeat; background-position: left top; background-size: 35% auto; height: 20em; margin-top: 2em; @media (max-width:900px) { background-image: none;}
+}
+  .customer-pointer {display: inline-block; margin: 1em;  float: right; width: 28em; img {margin: 0 1em 0 0;}
+    p { margin: 0; display: table;}
+          @media (max-width:900px) { margin: 0; float: none;  img {display: none;} width: auto; }
+        }
+
+    h1#logo {font: $logo-font; color: $header; font-weight: 700; display: inline-block; float: left;;
 
     }
     .testimonial-box {  background-color:$off-white; border-radius: 5px; padding: .1em 1em 0em 1em; margin: 3em 0 0 0; font: $header;
@@ -632,8 +640,9 @@ border: 1px solid $hr-gray; margin-top:-50px;}
         }
         .quote-arrow {background-color: #f5f3f0; border:none;}
       }
+
     .menu-primary-menu-container, #menu-single-footer {
-      font-weight: normal; text-align: right; font-size: .8em; margin: 0 1.5em 1.5em 0; padding: 0;
+      font-weight: normal; text-align: right; font-size: .8em; margin: 0 1.5em 1.5em 0; padding: 0; 
       li { display: inline-block; text-indent: 0; margin: 0 .5em;}
       li:before { content: none; display: inline-block; }
     }
@@ -643,10 +652,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
     .quote-arrow2 { background-color: #fff; content: ''; display: block; position: relative; top: -20px; left: 50%; margin-left: -25px; width: 30px; height: 30px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); box-shadow: -1px -1px 0px #D8D5CF;
       }
 
-    .customer-pointer {display: inline-block; margin: 0 -3em 0 0;  float: right; max-width: 100%;
-    p { margin: 2.5em 0 0 0; }
-          @media (max-width:900px) { margin: 0 1em 2em 1em;  float: left; img {display: none;} width: auto; }
-        }
+  
     .customer-illustration {width: 300px; margin: 0 -1.5em 0 -2em; @media (max-width:720px) { margin: 0 0 -3em 0; width: 200px;} @media (max-width:600px) { display: none;}
     }
     .customer-video { @media (max-width:720px) { margin: 0 1em 0 2em;  float: left; img {display: none;} width: auto; } }
@@ -675,7 +681,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
 
     }
-    .guarantee { background-color: $gold; font-size: 1em; border-radius:.5em;  padding: .2em .5em; font-weight: 800; margin-left: -7.75em; margin-right:2em; color: $header;
+    .guarantee { background-color: $gold; font-size: 1em; border-radius:.5em;  padding: .2em .5em; font-weight: 700; margin-left: -7.75em; margin-right:2em; color: $header;
       @media (max-width:880px) { margin: 0em .5em 0em 0em; }
     }
     .masthead { color: $light-body; font-weight: normal; text-align: center; font-size: .85em; margin-top: 0;
@@ -737,7 +743,7 @@ border: 1px solid $hr-gray; margin-top:-50px;}
     }
 
 .connect-wrap {
-  h1 { font-weight: 900; margin-bottom: 2em; color: $text-gray;}
+  h1 { font-weight: 700; margin-bottom: 2em; color: $text-gray;}
   .connect-letter {background-color: $white; margin: 2em auto; max-width: 100%; max-width: 40em; box-shadow: $shadow; padding: .25em 2em 2em 2em; font-size: .9em; border-radius: 5px; }
 }
 

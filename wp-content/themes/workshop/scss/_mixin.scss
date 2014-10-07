@@ -3,20 +3,20 @@
 
 /*Type*/
 $header: #000;
-$body: #111;
+$body: #333;
 $weekly-body: #333;
 $link: #7191BC;
 $hover: #3477d3;
 $light-body: #9F9D99;
 
-$font: "ff-tisa-web-pro", Georgia, serif;
-$header: "proxima-nova",  Verdana, Helvetica, sans-serif;
-$weekly-font: "ff-tisa-web-pro", Georgia, serif;
-$weekly-header-font: "anonymous-pro", Georgia, serif;
+$font: "futura-pt", Verdana, Helvetica, sans-serif;
+$header: "sketchnote-square", Verdana, Helvetica, sans-serif;
+$weekly-font: "futura-pt", Verdana, Helvetica, sans-serif;
+$weekly-header-font: "futura-pt", Verdana, Helvetica, sans-serif;
 
-$body-font: 16px/1.422em $font;
+$body-font: 21px/1.422em $font;
 $weekly-body-font: 17px/1.522em $weekly-font;
-$header-font: 20px/28.75px $header;
+$header-font: 20px/1.422em $header;
 $weekly-header-font: 30px/1.473em $header;
 $button-font: 1.1em/1.3em $header;
 $weekly-button-font: .7em/1.5em $header;
