@@ -102,7 +102,7 @@
 		<?php
 
 		$testimonial_posts = get_posts(array(
-			'numberposts' => 1,
+			'numberposts' => 30,
 			'post_type' => 'testimonial',
 			'orderby' => 'rand',
 		));
