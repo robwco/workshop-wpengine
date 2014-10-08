@@ -551,6 +551,9 @@ body {
     color: #111111;
     font-weight: 700;
     font-size: 100%; }
+    @media (max-width: 900px) {
+      body h2 {
+        font-size: 80%; } }
   body h1 + h2 {
     margin-top: .5em; }
   body h1, body .entry-title.single {
@@ -561,6 +564,9 @@ body {
     margin-bottom: 0; }
     body h1 .kern, body .entry-title.single .kern {
       letter-spacing: -.1em; }
+    @media (max-width: 900px) {
+      body h1, body .entry-title.single {
+        font-size: 110%; } }
   body h1.value-prop, body h1.entry-title, body .entry-title {
     font-size: 200%;
     line-height: 1.5em; }
@@ -660,10 +666,10 @@ body {
   body .big-wrap.kurt {
     background-image: url("/images/marketing/kurt-illustration.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: 5% top;
     background-size: 35% auto;
     height: 20em;
-    margin-top: 2em; }
+    margin: 2em auto -3em auto; }
     @media (max-width: 900px) {
       body .big-wrap.kurt {
         background-image: none; } }

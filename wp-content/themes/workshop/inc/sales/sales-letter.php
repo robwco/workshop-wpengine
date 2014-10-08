@@ -7,9 +7,18 @@
 			<strong style="font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.75em; display: inline-block; vertical-align: -.4em; margin-right: .15em;"><span style="letter-spacing: -.075em;">W</span>orkshop</strong>
 		</h1>
 	</a>
-		<p style="float:right; display: inline-block; padding-top: 1em;"><a href="/weekly" style="padding-right: 1.5em;">Teardowns</a> <a href="/account">Sign in</a></p>
+		<p style="float:right; display: inline-block; padding-top: 1em;"><a href="/account">Sign in</a></p>
+
+
 </section>
 
+<section class="big-wrap" style="margin-bottom: -1em;">
+		<section style="max-width: 100%;">
+			<div id="pulling-dija" style="text-align: center;">
+				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
+			</div>
+	</section>
+</section>
 
 <section class="mid-wrap">
 <!--	<section style="max-width: 100%; margin: 0;">
@@ -45,6 +54,9 @@
 </section>
 
 
+
+
+
 <section class="mid-wrap">
 <!--
 	<h1>
@@ -70,12 +82,7 @@
 		Don't you wish you could have it done <em>for you</em> each month at a fraction of your hourly rate?
 	</p>
 -->
-<section style="max-width: 100%; margin: 2em 0 -1em 0;">
 
-			<div id="pulling-dija" style="text-align: center;">
-				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
-			</div>
-	</section>
 	<h1>
 		Imagine what you could accomplish today if you didn't have to worry about finding work.
 	</h1>
@@ -99,6 +106,19 @@
 	</p>
 
 
+
+</section>
+
+<section class="big-wrap kurt">
+
+			<section style="margin: auto; width: 350px; margin-bottom: .5em;">
+			<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
+		</section>
+<div class="customer-pointer">
+<img src="/images/marketing/kurt-arrow.png" align="left">
+<p style="font-size: .9em;">This is Kurt Elster, he runs a consultancy in Chicago.<br><a href="/saying-nope-to-spec-work/">See how he uses Workshop</a>.</p>
+
+</div>
 
 </section>
 
