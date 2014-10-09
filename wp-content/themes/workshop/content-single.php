@@ -23,7 +23,7 @@
 
 	<section class="big-wrap" style="display:table; margin: 2em auto; ">
 		<hr>
-		<section class="big-wrap" style="font-family: proxima-nova, sans-serif;">
+		<section class="big-wrap">
 			<h3>
 				Thanks for reading <em><?php the_title(); ?></em>
 			</h3>

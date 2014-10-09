@@ -431,16 +431,8 @@ body {
       position: absolute;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
-  body .weekly h1 {
-    font: 30px/1.473em "sketchnote-square", Verdana, Helvetica, sans-serif;
-    font-weight: 700;
-    text-align: center; }
-  body .weekly p {
-    font: 17px/1.522em "futura-pt", Verdana, Helvetica, sans-serif;
-    font-weight: 400; }
   body .weekly a {
-    color: #727167;
-    font-style: italic; }
+    color: #727167; }
   body .weekly h4 {
     font-size: .9em;
     color: #9b9993;
@@ -494,7 +486,7 @@ body {
     background-color: #faffbd;
     padding: .5em .15em;
     border-radius: .5em;
-    width: 39em;
+    width: 36em;
     max-width: 90%;
     margin: 2em auto 4em auto;
     text-align: center; }
@@ -597,7 +589,7 @@ body {
   body input + input {
     margin-top: .5em; }
   body input[type=text], body input[type=email] {
-    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
+    font: "futura-pt", Verdana, Helvetica, sans-serif;
     height: 1.5em;
     width: 100%;
     max-width: 13.45em; }
@@ -687,7 +679,7 @@ body {
         width: auto; }
         body .customer-pointer img {
           display: none; } }
-  body h1#logo {
+  body h1#logo, body span#logo, body #logo {
     font: 19px/33px "futura-pt", Verdana, Helvetica, sans-serif;
     color: "sketchnote-square", Verdana, Helvetica, sans-serif;
     font-weight: 700;
@@ -853,7 +845,10 @@ body {
   body h1.entry-title, body .entry-title {
     font-size: 110%;
     text-decoration: none;
-    text-align: left; }
+    text-align: left;
+    font-family: "futura-pt", Verdana, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: normal; }
     body h1.entry-title a, body .entry-title a {
       color: #111111;
       text-decoration: none; }

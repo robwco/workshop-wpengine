@@ -17,26 +17,26 @@ get_header( 'home' ); ?>
 		<main id="main" class="site-main" role="main">
 
 <section class="small-wrap" style="margin-top: 2em;">
+	<center>
+		<h2 style="margin: 0 0 2em 0;">
+			The Web as a Sales Letter
+		</h2>
+	</center>
 
-<p>Dear professional website maker,</p>
+<p>If you make websites, I know you have trouble writing. It's hard to connect with someone you want to sell something to and not feel sleazy.</p>
 
-<p>I know you have trouble writing. As a result, your websites under-perform. You have trouble getting traffic. Your site just doesn't connect with people.</p>
+<p>If you feel like you're not creating a site people want to read, it's because you don't even want to read what you write. Next time, instead of using lorem ipsum, write a letter.</p>
 
-<p>You're not creating something people want to read because <b>you don't even want to read what you write.</b></p>
+<p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars as a result. Nothing fancy, just me explaining what I was selling with words. A sales letter.</p>
 
-<p>Next time, instead of using lorem ipsum, write a letter.</p>
-
-<p>I'll never forget putting a letter on my website and making hundreds of thousands of dollars as a result. Nothing fancy, just me explaining what I was selling with words.</p>
-
-<p>When I think back to my days as a freelancer, it was my emails that got me hired then too. <em>Not my portfolio.</em> Not my sleek website that didn't say anything. It was my sales letters.</p>
-
-<p>A sales letter picks a person out of a crowd and says, <em>&lsquo;<b>You!</b> I know exactly what <b>you're</b> going through. That's why I need to tell <b>you</b> this.&rsquo;</em></p>
+<p>A sales letter picks someone out of a crowd and says, <em>&lsquo;You! I know exactly what you're going through. That's why I need to tell you this.&rsquo;</em></p>
 
 <p>At first, websites like this stick out at us. Soon, we won't settle for anything else. That's why I look at the web as a letter from one person to another. If you want to learn to look at it this way too, I have something for you.</p>
 
-<h3>Every week I analyze a new modern sales letter.<br> Sign up and I'll send them to you.
-	</h3>
+<h2>This site is a collection of evergreen principles for writing words on the web. Sign up to get updates.
+	</h2>
 </section>
+
 <section class="big-wrap">
 
 	<form class="weekly" action="http://letters.letsworkshop.com/t/i/s/qhdij/" method="post">
@@ -47,13 +47,15 @@ get_header( 'home' ); ?>
 	        <input id="fieldEmail" name="cm-qhdij-qhdij" type="email" required placeholder="Your Email"/>
 	    </p>
 	    <p>
-	        <button type="submit">Yes, send it.</button>
+	        <button type="submit">Yes, email me.</button>
 	    </p>
 	</form>
 </section>
 
 
-<div class="big-wrap" style="margin-top: 7em;">
+
+
+<div class="big-wrap" style="margin-top: 3em;">
 	<h4>RECENT SALES LETTER BREAKDOWNS</h4>
 	<hr>
 		<?php if ( have_posts() ) : ?>
@@ -79,18 +81,25 @@ get_header( 'home' ); ?>
 		<?php endif; ?>
 </div>
 
-<section class="small-wrap" style="margin-top: 4em;">
-	<center>
-		<h3>
-			The Web as a Sales Letter
-		</h3>
-	<p style="margin: -1em 0 3em 0;">
-		A weekly publication by <a href="http://twitter.com/letsworkshop">Robert Williams</a>
-	</p></center>
-</section>
+
+
+
 			<div class="small-wrap" style="text-align: center; margin-bottom: 2em;">
 
 				<?php posts_nav_link('|','Back','More Breakdowns'); ?> </div>
 
+
+<section class="small-wrap" style="margin: 2em auto;">
+<center>
+	<p style="margin: 0 0 3em 0;">
+		Brought to you by <a class="logo" href="http://letsworkshop.com">
+			<span style="font-size: 1.3em; color: #111; font-weight: 700;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.75em; display: inline-block; vertical-align: -.4em; margin-right: .15em;"><span style="letter-spacing: -.075em;">W</span>orkshop</span>
+		</span></a>
+	</p>
+	</center>
+</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
