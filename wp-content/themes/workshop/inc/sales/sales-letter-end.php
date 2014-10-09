@@ -45,7 +45,7 @@
 		</strong>
 	</p>
 		<p>
-			Right now Workshop is mostly focused on web design and development. However, we have a steady amount of other leads coming in like illustration, logo design, and other stuff. The best way to find out if Workshop has what you need is to sign up and see for yourself. I can also send you a sample email if you put give me your email address using the form in the lower right corner of this page.
+			Right now Workshop is mostly focused on web design and development. However, we have a steady amount of other leads coming in like illustration, logo design, and other stuff. The best way to find out if Workshop has what you need is to sign up and see for yourself. I can also send you a sample email if you give me your email address using the form in the lower right corner of this page.
 		</p>
 
 

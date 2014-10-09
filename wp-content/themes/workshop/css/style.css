@@ -30,7 +30,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  Workshop is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 */
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -395,13 +395,19 @@ body {
   max-width: 100%;
   margin: auto;
   color: #333333; }
-  @media (max-width: 930px) {
+  @media (max-width: 900px) {
     body {
-      font-size: 100%; } }
+      font-size: 80%; } }
   body .shampoo img {
     background-color: #FFF;
     margin: 0 0 0 -14em;
     max-width: 30%; }
+    @media (max-width: 930px) {
+      body .shampoo img {
+        float: left;
+        margin: 1em;
+        display: table;
+        width: 100%; } }
   body .center-baby-shampoo {
     margin: auto;
     width: 11.5em; }
@@ -606,7 +612,7 @@ body {
     background-color: #e44727;
     border-radius: 3px;
     cursor: pointer;
-    font: 1.1em/1.3em "futura-pt", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
+    font: 1.1em/1.3em "sketchnote-square", Verdana, Helvetica, sans-serif, Helvetica, sans-serif;
     border: none;
     color: #FFF;
     text-transform: uppercase;

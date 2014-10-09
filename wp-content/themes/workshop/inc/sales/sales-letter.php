@@ -31,16 +31,16 @@
 		Does your consultancy have more dry spells than you're comfortable with?
 	</h1>
 	<p>
-		There are thousands of businesses out there right who would benefit dearly from hiring your company to improve their website. These businesses could transform their company forever as a result of working with you. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them.
+		There are thousands of businesses out there right now that could transform their company forever by hiring you to improve their website. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them.
 	</p>
 
 	<h2>
 		But it's not always easy to find the right opportunities – especially when you're already working too much.
 	</h2>
 	<p>
-		Doing lead generation on top of running a consulting business sucks. Checking two dozen job boards, or worse: elance, every day for the rest of your career just isn't the best use of your time. You want to do the work you love, not search for it.
+		Doing lead generation on top of running a consulting business sucks. Checking two dozen job boards every day – or worse: elance – just isn't the best use of your time. You want to do the work you love, not search for it.
 		</p> 
-		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of just firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all, it's why we fall into dry spells.
+		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all, it's why we fall into dry spells.
 	</p>
 	<h2>
 		I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. 
@@ -84,7 +84,7 @@
 -->
 
 	<h1>
-		Imagine what you could accomplish today if you didn't have to worry about finding work.
+		Imagine what you could accomplish today if you weren't worried about finding work.
 	</h1>
 <!--	<p>
 		Once you realize this the game changes. I was no different. I suddenly became serious about finding prospects. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
@@ -99,7 +99,7 @@
 		Today, if I told you could enjoy the fruits of my labor, instantly skip the years of testing lead generation methods, and just get 10+ highly-qualified leads every morning, what would you do with it?
 	</p>
 	<p>
-		If instead of wasting your time looking for leads you got them sent directly to your inbox tomorrow. If all you had to do was reply to the ones you want, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning, allowing you to focuse almost exclusively on billable work yet still have a constant stream of sales activity.
+		If instead of wasting your time looking for leads you got them sent directly to your inbox. If overnight you could simply reply to the ones you want, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning, allowing you to focus almost exclusively on billable work – yet still have a constant stream of sales activity.
 	</p>
 	<p>
 		What then? Would you add that extra feature to your client's project and blow them away? Or would you use the free time to go on a walk and clear your head? Or maybe work on that side-project you've been itching to build?
@@ -160,10 +160,10 @@
 
 			
 
-		<h2 style="">
+		<h2 style="color: #333;">
 <img src="/images/marketing/theshedplus.png" align="left" style="margin-right: 1em;"> 
 
-			Plus you also get access to a community of consultants ready to help you level up your business. <a href="/images/marketing/package-forum.png" style="color: #B72A22;">Take a look.</a>
+			Plus you also get access to a community of freelancers and consultants ready to help you. <a href="/images/marketing/package-forum.png" style="color: #B72A22;">Take a look.</a>
 		</h2>
 
 <!--

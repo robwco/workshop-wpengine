@@ -450,12 +450,14 @@ CUSTOMIZATION STARTS HERE
 ----------------*/
 
   body { font: $body-font; background-color: $white; max-width: 100%; margin: auto; color: $weekly-body;
+          @media (max-width:930px) { font-size: 100%;
+        }
+
+
     .shampoo {
 
       img { background-color: #FFF; margin: 0 0 0 -14em; max-width: 30%;
-        @media (max-width:930px) {
-           float: left; margin: 1em; display: table; width: 100%;
-        }
+
       }
 
 
@@ -554,8 +556,10 @@ border: 1px solid $hr-gray; margin-top:-50px;}
       }
 
    }
-    button, div, img, p, .entry-content {max-width: 100%;}
-    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: .7em; letter-spacing: .04em;}
+    button, div, img, p, .entry-content {max-width: 100%;    }
+    p strong, li strong { font-family: $header; text-transform: uppercase; font-size: .7em; letter-spacing: .04em;
+
+    }
     h1, h2, h3, h4 {
       font: $header-font; color: $header; font-weight: 700;
       }
