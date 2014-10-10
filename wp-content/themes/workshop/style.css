@@ -398,6 +398,14 @@ body {
   @media (max-width: 930px) {
     body {
       font-size: 100%; } }
+  @media (max-width: 930px) {
+    body .desktop {
+      display: none; } }
+  body .mobile {
+    display: none; }
+    @media (max-width: 930px) {
+      body .mobile {
+        display: block; } }
   body .shampoo img {
     background-color: #FFF;
     margin: 0 0 0 -14em;
@@ -539,23 +547,31 @@ body {
     font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
     color: #111111;
     font-weight: 700;
-    font-size: 100%; }
+    font-size: 110%; }
     @media (max-width: 900px) {
       body h2 {
-        font-size: 80%; } }
+        font-size: 100%; } }
+  body h3 {
+    font: 20px/1.422em "sketchnote-square", Verdana, Helvetica, sans-serif;
+    color: #111111;
+    font-weight: 700;
+    font-size: 100%; }
+    @media (max-width: 900px) {
+      body h3 {
+        font-size: 90%; } }
   body h1 + h2 {
     margin-top: .5em; }
   body h1, body .entry-title.single {
     color: #111111;
     padding-top: 1em;
-    font-size: 150%;
+    font-size: 180%;
     line-height: 1.3em;
     margin-bottom: 0; }
     body h1 .kern, body .entry-title.single .kern {
       letter-spacing: -.1em; }
     @media (max-width: 900px) {
       body h1, body .entry-title.single {
-        font-size: 110%; } }
+        font-size: 120%; } }
   body h1.value-prop, body h1.entry-title, body .entry-title {
     font-size: 200%;
     line-height: 1.5em; }

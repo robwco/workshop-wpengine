@@ -7,7 +7,7 @@
 			<strong style="font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.75em; display: inline-block; vertical-align: -.4em; margin-right: .15em;"><span style="letter-spacing: -.075em;">W</span>orkshop</strong>
 		</h1>
 	</a>
-		<p style="float:right; display: inline-block; padding-top: 1em;"><a href="/account">Sign in</a></p>
+		<p style="float:right; display: inline-block; padding-top: 1em;"><a class="desktop" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Email 200+ wonderful freelancers for free</a><a class="mobile" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Find a freelancer</a> <a href="/account">Sign in</a></p>
 
 
 </section>
@@ -28,7 +28,7 @@
 			</div>
 	</section>-->
 	<h1>
-		Does your consultancy have more dry spells than you're comfortable with?
+		Does your consultancy have more leaky dry spells than you're comfortable with?
 	</h1>
 	<p>
 		There are thousands of businesses out there right now that could transform their company forever by hiring you to improve their website. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them.
@@ -84,7 +84,7 @@
 -->
 
 	<h1>
-		Imagine what you could accomplish today if you weren't worried about finding work.
+		Imagine what you could accomplish if you weren't worried about finding work.
 	</h1>
 <!--	<p>
 		Once you realize this the game changes. I was no different. I suddenly became serious about finding prospects. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects.
@@ -139,7 +139,7 @@
 
 <section class="big-wrap">
 
-	<img src="/images/marketing/workshop-email.png">
+	<div class="desktop"><img src="/images/marketing/workshop-email.png">
 		<!--<ul style="display: inline-block;">
 			<li>
 				<strong>Workshop-exclusive Gigs:</strong> People now come to me to connect with world-class consultancies and freelancers directly. The only way to get connected to these people is by having an active subscription. These are some of the most valuable leads because often times you're competing with only a handful of people, and the clients are people who want to pay for value.
@@ -152,7 +152,9 @@
 			</li>
 		</ul>-->
 
-	</img>
+	</img></div>
+	<center>
+	<div class="mobile"><a href="/images/marketing/workshop-email.png"><h1 style="color: #B72A22; font-size: 175%; margin: -1.25em 0 0 0; text-decoration: underline;" >View a sample email</h1></a></div></center>
 </section>
 
 <section class="mid-wrap">
@@ -160,11 +162,11 @@
 
 			
 
-		<h2 style="color: #333;">
+		<h3 style="color: #333;">
 <img src="/images/marketing/theshedplus.png" align="left" style="margin-right: 1em;"> 
 
 			Plus you also get access to a community of freelancers and consultants ready to help you. <a href="/images/marketing/package-forum.png" style="color: #B72A22;">Take a look.</a>
-		</h2>
+		</h3>
 
 <!--
 	<p>
