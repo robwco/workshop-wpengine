@@ -678,6 +678,19 @@ body {
     @media (max-width: 900px) {
       body .big-wrap.kurt {
         background-image: none; } }
+  body ul.testimonial_posts {
+    margin: 0;
+    padding: 0; }
+  body .big-wrap.ruben {
+    background-image: url("/images/marketing/ruben-illustration.png");
+    background-repeat: no-repeat;
+    background-position: 5% top;
+    background-size: 40% auto;
+    height: 20em;
+    margin: 2em auto -3em auto; }
+    @media (max-width: 900px) {
+      body .big-wrap.ruben {
+        background-image: none; } }
   body .customer-pointer {
     display: inline-block;
     margin: 1em;
@@ -685,14 +698,17 @@ body {
     width: 28em; }
     body .customer-pointer img {
       margin: 0 1em 0 0; }
+    @media (max-width: 900px) {
+      body .customer-pointer {
+        width: 100%; } }
     body .customer-pointer p {
       margin: 0;
       display: table; }
     @media (max-width: 900px) {
       body .customer-pointer {
-        margin: 0;
         float: none;
-        width: auto; }
+        text-align: center;
+        margin: auto; }
         body .customer-pointer img {
           display: none; } }
   body h1#logo, body span#logo, body #logo {

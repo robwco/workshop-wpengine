@@ -108,12 +108,10 @@
 
 
 </section>
-
-<section class="big-wrap kurt">
-
-			<section style="margin: auto; width: 350px; margin-bottom: .5em;">
-			<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
-		</section>
+	<section class="big-wrap kurt">
+		<section style="margin: auto; width: 350px; margin-bottom: .5em;">
+		<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
+	</section>
 <div class="customer-pointer">
 <img src="/images/marketing/kurt-arrow.png" align="left">
 <p style="font-size: .9em;">This is Kurt Elster, he runs a consultancy in Chicago.<br><a href="/saying-nope-to-spec-work/">See how he uses Workshop</a>.</p>

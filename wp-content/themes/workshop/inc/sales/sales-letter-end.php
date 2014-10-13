@@ -89,7 +89,7 @@
 		<?php
 
 		$testimonial_posts = get_posts(array(
-			'numberposts' => 30,
+			'numberposts' => 1,
 			'post_type' => 'testimonial',
 			'orderby' => 'rand',
 		));
@@ -101,12 +101,12 @@
 
 
 
-			echo '<ul>';
+			echo '<ul class="testimonial_posts">';
 
 			foreach($testimonial_posts as $post)
 			{
 
-				echo '<div class="testimonial-box"><p>' . get_field('testimonial') . '</p><span class="quote-arrow"></span></div>' . '<p class="center">
+				echo '<div class="testimonial-box"><p>' . get_field('testimonial') . ' <a style="color: #B72A22" href="javascript:window.location.reload();">Read another</a></p><span class="quote-arrow"></span></div>' . '<p class="center">
 					<img src="' . get_field('profile_photo') . '" class="testimonial-img"> – ' . get_field('testimonial_name') . ', ' . get_field('job_title') . ', <img src="' . get_field('logo') . '" style="width:20px; border-radius:3px; vertical-align: -2px;"> ' . get_field('business_name') . '</p>';
 			}
 

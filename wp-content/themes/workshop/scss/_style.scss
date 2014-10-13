@@ -627,9 +627,14 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
 .big-wrap.kurt {  background-image: url('/images/marketing/kurt-illustration.png'); background-repeat: no-repeat; background-position: 5% top; background-size: 35% auto; height: 20em; margin: 2em auto -3em auto; @media (max-width:900px) { background-image: none;}
 }
-  .customer-pointer {display: inline-block; margin: 1em;  float: right; width: 28em; img {margin: 0 1em 0 0;}
+
+ul.testimonial_posts { margin: 0; padding: 0;}
+
+.big-wrap.ruben {  background-image: url('/images/marketing/ruben-illustration.png'); background-repeat: no-repeat; background-position: 5% top; background-size: 40% auto; height: 20em; margin: 2em auto -3em auto; @media (max-width:900px) { background-image: none;}
+}
+  .customer-pointer {display: inline-block; margin: 1em;  float: right; width: 28em; img {margin: 0 1em 0 0;} @media (max-width:900px) { width: 100%;}
     p { margin: 0; display: table;}
-          @media (max-width:900px) { margin: 0; float: none;  img {display: none;} width: auto; }
+          @media (max-width:900px) { float: none; text-align: center; margin: auto; img {display: none;}  }
         }
 
     h1#logo, span#logo, #logo {font: $logo-font; color: $header; font-weight: 700; display: inline-block; float: left;
