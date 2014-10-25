@@ -38,7 +38,7 @@
 		But it's not always easy to find the right opportunities – especially when you're already working too much.
 	</h2>
 	<p>
-		Doing lead generation on top of running a consulting business sucks. Checking two dozen job boards every day – or worse: elance – just isn't the best use of your time. You want to do the work you love, not search for it.
+		Doing lead generation on top of running a consulting business sucks. Checking a million job boards every day – or worse: elance – just isn't the best use of your time. You want to do the work you love, not search for it.
 		</p> 
 		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all, it's why we fall into dry spells.
 	</p>
@@ -46,7 +46,7 @@
 		I too was in the vicious cycle of <strong>feast or famine freelancing</strong>. 
 	</h2>
 	<p>
-		Then I did something about it. I built a daily system for collecting their emails and phone numbers. I used twitter, job boards, industry websites, anything that could help me find more prospects. High-quality prospective clients that I could build my business (and my life) around.
+		Then I did something about it. I used twitter, job boards, industry websites, anything that could help me find more prospects. I built a daily system for collecting their emails and phone numbers. High-quality prospective clients that I could build my business (and my life) around.
 	</p>
 	<p>
 		I then contacted each lead with a friendly, personal email and my business took off. In fact my revenue doubled, helping me build a six-figure consultancy, all from leads I found online.
@@ -99,7 +99,7 @@
 		Today, if I told you could enjoy the fruits of my labor, instantly skip the years of testing lead generation methods, and just get 10+ highly-qualified leads every morning, what would you do with it?
 	</p>
 	<p>
-		If instead of wasting your time looking for leads you got them sent directly to your inbox. If overnight you could simply reply to the ones you want, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning, allowing you to focus almost exclusively on billable work – yet still have a constant stream of sales activity.
+		If overnight you just stopped wasting your time looking for leads and got them sent to you instead. If you could simply reply to people and projects you were excited to work for, straight from your inbox. If it took minutes (instead of hours) to fill your sales pipeline each morning and you focused almost exclusively on billable work – yet still had a constant stream of sales activity.
 	</p>
 	<p>
 		What then? Would you add that extra feature to your client's project and blow them away? Or would you use the free time to go on a walk and clear your head? Or maybe work on that side-project you've been itching to build?
