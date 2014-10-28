@@ -1,5 +1,3 @@
-		
-
 
 <section class="big-wrap" style="display: table;">
 	<a href="/">
@@ -12,15 +10,7 @@
 
 </section>
 
-<section class="big-wrap" style="margin-bottom: -1em;">
-		<section style="max-width: 100%;">
-			<div id="pulling-dija" style="text-align: center;">
-				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
-			</div>
-	</section>
-</section>
-
-<section class="mid-wrap">
+<section class="big-wrap" style="text-align: center; margin: 0em auto 4em auto;">
 <!--	<section style="max-width: 100%; margin: 0;">
 
 			<div id="pulling-dija" style="text-align: center;">
@@ -28,17 +18,38 @@
 			</div>
 	</section>-->
 	<h1>
-		Does your consultancy have more leaky dry spells than you're comfortable with?
+		The only thing better than wrapping up a client project is knowing exactly how you'll land the next one.
 	</h1>
-	<p>
-		There are thousands of businesses out there right now that could transform their company forever by hiring you to improve their website. You know this. The problem is, they don't. That's why <em>it's your duty</em> to find them.
-	</p>
+</section>
+<section class="big-wrap">
+	<div class="kurt">
+		<section style="margin: auto; width: 350px; margin-bottom: .5em;">
+			<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
+		</section>
+		<div class="customer-pointer">
+			<img src="/images/marketing/kurt-arrow.png" align="left">
+			<p style="font-size: .9em;">This is Kurt Elster, he runs a consultancy in Chicago.<br><a href="/ethercycle/">See how he uses Workshop</a>.</p>
+		</div>
+	</div>
+	<!--<div class="ruben">
+		<section style="margin: auto; width: 350px; margin-bottom: .5em;">
+			
+		</section>
+		<div class="customer-pointer">
+			<h2>&rdquo;Totally a no-brainer for most freelancers.&ldquo;</h2>
+			<img src="/images/marketing/kurt-arrow.png" align="left">
+			<p style="font-size: .9em;">This is Kurt Elster, he runs a consultancy in Chicago.<br><a href="/saying-nope-to-spec-work/">See how he uses Workshop</a>.</p>
+		</div>
+	</div>-->
+</section>
 
+
+<section class="mid-wrap">
 	<h2>
-		But it's not always easy to find the right opportunities – especially when you're already working too much.
+		Right now thousands of businesses are looking for someone like you to improve their website.
 	</h2>
 	<p>
-		Doing lead generation on top of running a consulting business sucks. Checking a million job boards every day – or worse: elance – just isn't the best use of your time. You want to do the work you love, not search for it.
+		But it's not always easy to find them – especially when you're already working too much. Doing lead generation on top of running a consulting business sucks. Checking a million job boards every day – or worse: elance – just isn't the best use of your time. You want to do the work you love, not search for it.
 		</p> 
 		<p>That's why too many consultancies wait for work to come to them (read: do nothing at all) – it's just easier. It's why we complain about less-than-ideal clients instead of firing them. It's also why we take on projects that don't pay us what we're worth. Worst of all, it's why we fall into dry spells.
 	</p>
@@ -55,6 +66,13 @@
 
 
 
+<section class="big-wrap" style="margin-bottom: -1em;">
+		<section style="max-width: 100%;">
+			<div id="pulling-dija" style="text-align: center;">
+				<img class="dima-illustration" src="/images/marketing/workshop-freelancer.png" alt="Getting pulled between finding leads and billable work?">
+			</div>
+	</section>
+</section>
 
 
 <section class="mid-wrap">
@@ -108,16 +126,19 @@
 
 
 </section>
-	<section class="big-wrap kurt">
-		<section style="margin: auto; width: 350px; margin-bottom: .5em;">
-		<iframe src="//fast.wistia.net/embed/iframe/j99rjad3m8" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="350" height="197"></iframe>
-	</section>
-<div class="customer-pointer">
-<img src="/images/marketing/kurt-arrow.png" align="left">
-<p style="font-size: .9em;">This is Kurt Elster, he runs a consultancy in Chicago.<br><a href="/saying-nope-to-spec-work/">See how he uses Workshop</a>.</p>
+<section class="big-wrap">
+<div class="ruben">
+	
+		<div style="padding-top: 2em; width: 65%; max-width: 100%; text-align: center;">
+		
+			<h1 style="margin-top: -.5em;">&rdquo;Totally a no-brainer for most freelancers.&ldquo;</h1>
+			<p style="text-align: center; padding-bottom: 1em;">– Ruben Gamez, Founder of <img style="width: 6em; vertical-align: -.2em;" src="/images/marketing/bidsketch.png"></p>
+			
 
-</div>
+		</div>
+	
 
+	</div>
 </section>
 
 <section class="mid-wrap">

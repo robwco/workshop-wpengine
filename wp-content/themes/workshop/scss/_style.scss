@@ -625,12 +625,12 @@ border: 1px solid $hr-gray; margin-top:-50px;}
 
 }
 
-.big-wrap.kurt {  background-image: url('/images/marketing/kurt-illustration.png'); background-repeat: no-repeat; background-position: 5% top; background-size: 35% auto; height: 20em; margin: 2em auto -3em auto; @media (max-width:900px) { background-image: none;}
+.kurt {  background-image: url('/images/marketing/kurt-illustration.png'); background-repeat: no-repeat; background-position: 5% top; background-size: 33% auto; height: 20em; margin: 2em auto -2em auto; @media (max-width:900px) { background-image: none;}
 }
 
 ul.testimonial_posts { margin: 0; padding: 0;}
 
-.big-wrap.ruben {  background-image: url('/images/marketing/ruben-illustration.png'); background-repeat: no-repeat; background-position: 5% top; background-size: 40% auto; height: 20em; margin: 2em auto -3em auto; @media (max-width:900px) { background-image: none;}
+.ruben {  background-image: url('/images/marketing/ruben.png'); background-repeat: no-repeat; background-position: 100% top; background-size: 33% auto; height: 20em; margin-bottom: -6em; max-width: 100%; @media (max-width:900px) {  margin-bottom: 0em; height: 12em; background-size: 30% auto; background-position: 50% right;} @media (max-width: 500px) {background-image: none;}
 }
   .customer-pointer {display: inline-block; margin: 1em;  float: right; width: 28em; img {margin: 0 1em 0 0;} @media (max-width:900px) { width: 100%;}
     p { margin: 0; display: table;}

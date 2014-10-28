@@ -668,28 +668,35 @@ body {
     @media (max-width: 630px) {
       body .small-wrap, body .mid-wrap, body .big-wrap {
         padding: .5em; } }
-  body .big-wrap.kurt {
+  body .kurt {
     background-image: url("/images/marketing/kurt-illustration.png");
     background-repeat: no-repeat;
     background-position: 5% top;
-    background-size: 35% auto;
+    background-size: 33% auto;
     height: 20em;
-    margin: 2em auto -3em auto; }
+    margin: 2em auto -2em auto; }
     @media (max-width: 900px) {
-      body .big-wrap.kurt {
+      body .kurt {
         background-image: none; } }
   body ul.testimonial_posts {
     margin: 0;
     padding: 0; }
-  body .big-wrap.ruben {
-    background-image: url("/images/marketing/ruben-illustration.png");
+  body .ruben {
+    background-image: url("/images/marketing/ruben.png");
     background-repeat: no-repeat;
-    background-position: 5% top;
-    background-size: 40% auto;
+    background-position: 100% top;
+    background-size: 33% auto;
     height: 20em;
-    margin: 2em auto -3em auto; }
+    margin-bottom: -6em;
+    max-width: 100%; }
     @media (max-width: 900px) {
-      body .big-wrap.ruben {
+      body .ruben {
+        margin-bottom: 0em;
+        height: 12em;
+        background-size: 30% auto;
+        background-position: 50% right; } }
+    @media (max-width: 500px) {
+      body .ruben {
         background-image: none; } }
   body .customer-pointer {
     display: inline-block;
