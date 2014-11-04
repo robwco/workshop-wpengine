@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sales Letter - Obie
+Template Name: Sales Letter - Paul
 */
 /**
  * The template for displaying all pages.
