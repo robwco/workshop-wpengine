@@ -2,10 +2,10 @@
 <section class="big-wrap" style="display: table;">
 	<a href="/">
 		<h1 id="logo">
-			<strong style="font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.75em; display: inline-block; vertical-align: -.4em; margin-right: .15em;"><span style="letter-spacing: -.075em;">W</span>orkshop</strong>
+			<strong style="font-size: 1.3em;"><img src="/images/logo/workshop-hd-100.png" style="width: 1.75em; display: inline-block; vertical-align: -.4em; margin-right: .15em;"><span style="letter-spacing: -.075em;">W</span>orkshop</strong> <span style="font-weight: 400; color: #444; padding: 0 0 0 .5em;">I send people who need websites your way.</span>
 		</h1>
 	</a>
-		<p style="float:right; display: inline-block; padding-top: 1em;"><a class="desktop" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Email 200+ wonderful freelancers for free</a><a class="mobile" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Find a freelancer</a> <a href="/account">Sign in</a></p>
+		<p style="float:right; display: inline-block; padding-top: 1em;"><a class="desktop" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Find Someone</a><a class="mobile" href="https://letsworkshop.wufoo.com/forms/email-over-200-wonderful-freelancers-by-tommorrow/" style="margin: 0 1em 0 0;">Freelancers</a> <a href="/account">Sign in</a> </p>
 
 
 </section>
